@@ -1,0 +1,586 @@
+�j%�(40) boot.esp�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d8c8h ( 55496) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d8f0 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ff8c vaddr=40080000 size=0008ch (   140) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=204d8h (132312) map[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040500 vaddr=4008008c size=0ea10h ( 59920) load[0m
+[0;32mI (214) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (214) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) cpu_start: Application information:[0m
+[0;32mI (238) cpu_start: Project name:     NODE[0m
+[0;32mI (242) cpu_start: App version:      1[0m
+[0;32mI (247) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (253) cpu_start: ELF file SHA256:  d853f212c...[0m
+[0;32mI (258) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (338) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (347) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (357) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (387) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) AODV: Routing Table:[0m
+[0;32mI (397) AODV: ---------------------------------------------------[0m
+[0;32mI (407) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (407) AODV: ---------------------------------------------------[0m
+[0;32mI (417) AODV: ---------------------------------------------------[0m
+[0;32mI (427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (437) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (437) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (437) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (447) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (447) DHT22: Hum 60.5[0m
+[0;32mI (447) DHT22: Tmp 25.5[0m
+[0;32mI (457) MQ131: MQ131 - O3 Concentration: 2341.14 ppb[0m
+[0;32mI (457) MQ136: MQ136 - SO2 Concentration: 384.71 ppm[0m
+
+[0;32mI (467) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (467) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (477) GPS: Received: [0m
+[0;32mI (477) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (487) SSD1306: INTERFACE is i2c[0m
+[0;32mI (497) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (497) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (497) SSD1306: CONFIG_RESET_GPIO=36[0m
+[0;32mI (507) SSD1306: New i2c driver is used[0m
+[0;32mI (507) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (517) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (527) gpio: GPIO[36]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (537) gpio: io_num=36 can only be input[0m
+[0;31mE (537) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (547) main_task: Returned from app_main()[0m
+[0;31mE (597) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (597) SSD1306: Panel is 128x64[0m
+[0;32mI (597) SSD1306: OLED configured successfully[0m
+[0;31mE (1457) DHT: Sensor Timeout
+[0m
+[0;31mE (2477) DHT: Sensor Timeout
+[0m
+[0;31mE (3497) DHT: Sensor Timeout
+[0m
+[0;31mE (4517) DHT: Sensor Timeout
+[0m
+[0;32mI (5427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5487) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (5487) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (5487) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (5487) DHT22: Hum 60.5[0m
+[0;32mI (5487) DHT22: Tmp 25.5[0m
+[0;32mI (5497) MQ131: MQ131 - O3 Concentration: 4095.14 ppb[0m
+[0;32mI (5497) MQ136: MQ136 - SO2 Concentration: 44.66 ppm[0m
+
+[0;32mI (5507) MICS6814: MICS6814 - CO Concentration: 1932.00 ppm[0m
+[0;32mI (5507) MICS6814: MICS6814 - NO2 Concentration: 12.70 ppm[0m
+
+[0;32mI (5517) GPS: Received: �
+[0;32mI (5517) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (5537) DHT: Sensor Timeout
+[0m
+[0;31mE (6557) DHT: Sensor Timeout
+[0m
+[0;31mE (7577) DHT: Sensor Timeout
+[0m
+[0;31mE (8597) DHT: Sensor Timeout
+[0m
+[0;31mE (9617) DHT: Sensor Timeout
+[0m
+[0;32mI (10427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10527) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (10527) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (10527) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (10527) DHT22: Hum 60.5[0m
+[0;32mI (10527) DHT22: Tmp 25.5[0m
+[0;32mI (10537) MQ131: MQ131 - O3 Concentration: 4095.14 ppb[0m
+[0;32mI (10537) MQ136: MQ136 - SO2 Concentration: 64.07 ppm[0m
+
+[0;32mI (10547) MICS6814: MICS6814 - CO Concentration: 1615.00 ppm[0m
+[0;32mI (10547) MICS6814: MICS6814 - NO2 Concentration: 10.22 ppm[0m
+
+[0;32mI (10557) GPS: Received: [0m
+[0;32mI (10557) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (10637) DHT: Sensor Timeout
+[0m
+[0;31mE (11657) DHT: Sensor Timeout
+[0m
+[0;31mE (12677) DHT: Sensor Timeout
+[0m
+[0;31mE (13697) DHT: Sensor Timeout
+[0m
+[0;31mE (14717) DHT: Sensor Timeout
+[0m
+[0;32mI (15427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (15567) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (15567) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (15567) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (15567) DHT22: Hum 60.5[0m
+[0;32mI (15567) DHT22: Tmp 25.5[0m
+[0;32mI (15577) MQ131: MQ131 - O3 Concentration: 4095.14 ppb[0m
+[0;32mI (15577) MQ136: MQ136 - SO2 Concentration: 50.81 ppm[0m
+
+[0;32mI (15587) MICS6814: MICS6814 - CO Concentration: 1860.00 ppm[0m
+[0;32mI (15587) MICS6814: MICS6814 - NO2 Concentration: 17.20 ppm[0m
+
+[0;32mI (15597) GPS: Received: [0m
+[0;32mI (15597) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (15737) DHT: Sensor Timeout
+[0m
+[0;31mE (16757) DHT: Sensor Timeout
+[0m
+[0;31mE (17777) DHT: Sensor Timeout
+[0m
+[0;31mE (18697) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (18697) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (18697) task_wdt: Tasks currently running:[0m
+[0;31mE (18697) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (18697) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (18697) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA52B:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D8F:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (18797) DHT: Sensor Timeout
+[0m
+[0;31mE (19817) DHT: Sensor Timeout
+[0m
+[0;32mI (20427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (20607) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (20607) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (20607) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (20607) DHT22: Hum 60.5[0m
+[0;32mI (20607) DHT22: Tmp 25.5[0m
+[0;32mI (20617) MQ131: MQ131 - O3 Concentration: 4095.14 ppb[0m
+[0;32mI (20617) MQ136: MQ136 - SO2 Concentration: 17.91 ppm[0m
+
+[0;32mI (20627) MICS6814: MICS6814 - CO Concentration: 3019.00 ppm[0m
+[0;32mI (20627) MICS6814: MICS6814 - NO2 Concentration: 28.37 ppm[0m
+
+[0;32mI (20637) GPS: Received: [0m
+[0;32mI (20637) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (20837) DHT: Sensor Timeout
+[0m
+[0;31mE (21857) DHT: Sensor Timeout
+[0m
+[0;31mE (22877) DHT: Sensor Timeout
+[0m
+[0;31mE (23697) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (23697) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (23697) task_wdt: Tasks currently running:[0m
+[0;31mE (23697) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (23697) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (23697) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA522:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D8F:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (23897) DHT: Sensor Timeout
+[0m
+[0;31mE (24917) DHT: Sensor Timeout
+[0m
+[0;32mI (25427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (25647) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (25647) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (25647) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (25647) DHT22: Hum 60.5[0m
+[0;32mI (25647) DHT22: Tmp 25.5[0m
+[0;32mI (25657) MQ131: MQ131 - O3 Concentration: 0.14 ppb[0m
+[0;32mI (25657) MQ136: MQ136 - SO2 Concentration: 179.28 ppm[0m
+
+[0;32mI (25667) MICS6814: MICS6814 - CO Concentration: 583.00 ppm[0m
+[0;32mI (25667) MICS6814: MICS6814 - NO2 Concentration: 4.45 ppm[0m
+
+[0;32mI (25677) GPS: Received: [0m
+[0;32mI (25677) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (25937) DHT: Sensor Timeout
+[0m
+[0;31mE (26957) DHT: Sensor Timeout
+[0m
+[0;31mE (27977) DHT: Sensor Timeout
+[0m
+[0;31mE (28697) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (28697) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (28697) task_wdt: Tasks currently running:[0m
+[0;31mE (28697) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (28697) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (28697) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA528:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D8F:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (28997) DHT: Sensor Timeout
+[0m
+[0;31mE (30017) DHT: Sensor Timeout
+[0m
+[0;32mI (30427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (30687) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (30687) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (30687) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (30687) DHT22: Hum 60.5[0m
+[0;32mI (30687) DHT22: Tmp 25.5[0m
+[0;32mI (30697) MQ131: MQ131 - O3 Concentration: 0.14 ppb[0m
+[0;32mI (30697) MQ136: MQ136 - SO2 Concentration: 163.28 ppm[0m
+
+[0;32mI (30707) MICS6814: MICS6814 - CO Concentration: 832.00 ppm[0m
+[0;32mI (30707) MICS6814: MICS6814 - NO2 Concentration: 5.19 ppm[0m
+
+[0;32mI (30717) GPS: Received: [0m
+[0;32mI (30717) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (31037) DHT: Sensor Timeout
+[0m
+[0;31mE (32057) DHT: Sensor Timeout
+[0m
+[0;31mE (33077) DHT: Sensor Timeout
+[0m
+[0;31mE (33697) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (33697) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (33697) task_wdt: Tasks currently running:[0m
+[0;31mE (33697) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (33697) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (33697) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA522:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D8F:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (34097) DHT: Sensor Timeout
+[0m
+[0;31mE (35117) DHT: Sensor Timeout
+[0m
+[0;32mI (35427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (35727) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (35727) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (35727) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (35727) DHT22: Hum 60.5[0m
+[0;32mI (35727) DHT22: Tmp 25.5[0m
+[0;32mI (35737) MQ131: MQ131 - O3 Concentration: 0.14 ppb[0m
+[0;32mI (35737) MQ136: MQ136 - SO2 Concentration: 449.39 ppm[0m
+
+[0;32mI (35747) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (35747) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (35757) GPS: Received: [0m
+[0;32mI (35757) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (36137) DHT: Sensor Timeout
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d8c8h ( 55496) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d8f0 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ff8c vaddr=40080000 size=0008ch (   140) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=204d8h (132312) map[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040500 vaddr=4008008c size=0ea10h ( 59920) load[0m
+[0;32mI (214) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (214) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) cpu_start: Application information:[0m
+[0;32mI (238) cpu_start: Project name:     NODE[0m
+[0;32mI (242) cpu_start: App version:      1[0m
+[0;32mI (247) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (253) cpu_start: ELF file SHA256:  d853f212c...[0m
+[0;32mI (258) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (338) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (347) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (357) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (387) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) AODV: Routing Table:[0m
+[0;32mI (397) AODV: ---------------------------------------------------[0m
+[0;32mI (407) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (407) AODV: ---------------------------------------------------[0m
+[0;32mI (417) AODV: ---------------------------------------------------[0m
+[0;32mI (427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (437) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (437) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (437) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (447) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (447) DHT22: Hum 60.5[0m
+[0;32mI (447) DHT22: Tmp 25.5[0m
+[0;32mI (457) MQ131: MQ131 - O3 Concentration: 0.14 ppb[0m
+[0;32mI (457) MQ136: MQ136 - SO2 Concentration: 76.86 ppm[0m
+
+[0;32mI (467) MICS6814: MICS6814 - CO Concentration: 1634.00 ppm[0m
+[0;32mI (467) MICS6814: MICS6814 - NO2 Concentration: 16.82 ppm[0m
+
+[0;32mI (477) GPS: Received: [0m
+[0;32mI (477) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (487) SSD1306: INTERFACE is i2c[0m
+[0;32mI (497) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (497) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (497) SSD1306: CONFIG_RESET_GPIO=36[0m
+[0;32mI (507) SSD1306: New i2c driver is used[0m
+[0;32mI (507) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (517) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (527) gpio: GPIO[36]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (537) gpio: io_num=36 can only be input[0m
+[0;31mE (537) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (547) main_task: Returned from app_main()[0m
+[0;31mE (597) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (597) SSD1306: Panel is 128x64[0m
+[0;32mI (597) SSD1306: OLED configured successfully[0m
+[0;31mE (1457) DHT: Sensor Timeout
+[0m
+[0;31mE (2477) DHT: Sensor Timeout
+[0m
+[0;31mE (3497) DHT: Sensor Timeout
+[0m
+[0;31mE (4517) DHT: Sensor Timeout
+[0m
+[0;32mI (5427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5487) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (5487) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (5487) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (5487) DHT22: Hum 60.5[0m
+[0;32mI (5487) DHT22: Tmp 25.5[0m
+[0;32mI (5497) MQ131: MQ131 - O3 Concentration: 16.14 ppb[0m
+[0;32mI (5497) MQ136: MQ136 - SO2 Concentration: 128.04 ppm[0m
+
+[0;32mI (5507) MICS6814: MICS6814 - CO Concentration: 3069.00 ppm[0m
+[0;32mI (5507) MICS6814: MICS6814 - NO2 Concentration: 16.38 ppm[0m
+
+[0;32mI (5517) GPS: Received: [0m
+[0;32mI (5517) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (5537) DHT: Sensor Timeout
+[0m
+[0;31mE (6457) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6457) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (6457) task_wdt: Tasks currently running:[0m
+[0;31mE (6457) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (6457) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (6457) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA522:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D7E:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (6557) DHT: Sensor Timeout
+[0m
+[0;31mE (7577) DHT: Sensor Timeout
+[0m
+[0;31mE (8597) DHT: Sensor Timeout
+[0m
+[0;31mE (9617) DHT: Sensor Timeout
+[0m
+[0;32mI (10427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10527) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (10527) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (10527) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (10527) DHT22: Hum 60.5[0m
+[0;32mI (10527) DHT22: Tmp 25.5[0m
+[0;32mI (10537) MQ131: MQ131 - O3 Concentration: 294.14 ppb[0m
+[0;32mI (10537) MQ136: MQ136 - SO2 Concentration: 189.47 ppm[0m
+
+[0;32mI (10547) MICS6814: MICS6814 - CO Concentration: 2235.00 ppm[0m
+[0;32mI (10547) MICS6814: MICS6814 - NO2 Concentration: 12.63 ppm[0m
+
+[0;32mI (10557) GPS: Received: [0m
+[0;32mI (10557) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (10637) DHT: Sensor Timeout
+[0m
+[0;31mE (11457) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11457) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (11457) task_wdt: Tasks currently running:[0m
+[0;31mE (11457) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (11457) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (11457) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA522:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D7E:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (11657) DHT: Sensor Timeout
+[0m
+[0;31mE (12677) DHT: Sensor Timeout
+[0m
+[0;31mE (13697) DHT: Sensor Timeout
+[0m
+[0;31mE (14717) DHT: Sensor Timeout
+[0m
+[0;32mI (15427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (15567) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (15567) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (15567) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (15567) DHT22: Hum 60.5[0m
+[0;32mI (15567) DHT22: Tmp 25.5[0m
+[0;32mI (15577) MQ131: MQ131 - O3 Concentration: 383.14 ppb[0m
+[0;32mI (15577) MQ136: MQ136 - SO2 Concentration: 232.41 ppm[0m
+
+[0;32mI (15587) MICS6814: MICS6814 - CO Concentration: 2218.00 ppm[0m
+[0;32mI (15587) MICS6814: MICS6814 - NO2 Concentration: 12.40 ppm[0m
+
+[0;32mI (15597) GPS: Received: [0m
+[0;32mI (15597) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (15737) DHT: Sensor Timeout
+[0m
+[0;31mE (16457) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (16457) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (16457) task_wdt: Tasks currently running:[0m
+[0;31mE (16457) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (16457) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (16457) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA525:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D7E:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (16757) DHT: Sensor Timeout
+[0m
+[0;31mE (17777) DHT: Sensor Timeout
+[0m
+[0;31mE (18797) DHT: Sensor Timeout
+[0m
+[0;31mE (19817) DHT: Sensor Timeout
+[0m
+[0;32mI (20427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (20607) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (20607) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (20607) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (20607) DHT22: Hum 60.5[0m
+[0;32mI (20607) DHT22: Tmp 25.5[0m
+[0;32mI (20617) MQ131: MQ131 - O3 Concentration: 233.14 ppb[0m
+[0;32mI (20617) MQ136: MQ136 - SO2 Concentration: 223.36 ppm[0m
+
+[0;32mI (20627) MICS6814: MICS6814 - CO Concentration: 1634.00 ppm[0m
+[0;32mI (20627) MICS6814: MICS6814 - NO2 Concentration: 9.13 ppm[0m
+
+[0;32mI (20637) GPS: Received: [0m
+[0;32mI (20637) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (20837) DHT: Sensor Timeout
+[0m
+[0;31mE (21457) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (21457) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (21457) task_wdt: Tasks currently running:[0m
+[0;31mE (21457) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (21457) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (21457) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA522:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D7E:0x3FFBB3C0 0x40087C85:0x3FFBB870
+
+[0;31mE (21857) DHT: Sensor Timeout
+[0m
+[0;31mE (22877) DHT: Sensor Timeout
+[0m
+[0;31mE (23897) DHT: Sensor Timeout
+[0m
+[0;31mE (24917) DHT: Sensor Timeout
+[0m
+[0;32mI (25427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (25647) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (25647) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (25647) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (25647) DHT22: Hum 60.5[0m
+[0;32mI (25647) DHT22: Tmp 25.5[0m
+[0;32mI (25657) MQ131: MQ131 - O3 Concentration: 199.14 ppb[0m
+[0;32mI (25657) MQ136: MQ136 - SO2 Concentration: 288.43 ppm[0m
+
+[0;32mI (25667) MICS6814: MICS6814 - CO Concentration: 782.00 ppm[0m
+[0;32mI (25667) MICS6814: MICS6814 - NO2 Concentration: 0.66 ppm[0m
+
+[0;32mI (25677) GPS: Received: [0m
+[0;32mI (25677) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (25937) DHT: Sensor Timeout
+[0m
+[0;31mE (26457) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (26457) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (26457) task_wdt: Tasks currently running:[0m
+[0;31mE (26457) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (26457) task_wdt: CPU 1: Display_Task[0m
+[0;31mE (26457) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40084E96:0x3FFB1890 0x4008317D:0x3FFB18B0 0x400DA525:0x3FFBB200 0x400DA690:0x3FFBB230 0x400DA749:0x3FFBB260 0x400DB049:0x3FFBB290 0x400D6C54:0x3FFBB2F0 0x400D665D:0x3FFBB330 0x400D6710:0x3FFBB350 0x400D6749:0x3FFBB390 0x400D5D7E:0x3FFBB3C0 0x40087C85:0x3FFBB870
+

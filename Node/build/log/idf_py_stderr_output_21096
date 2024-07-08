@@ -1,0 +1,126 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da52b: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d8f: Display_Task at C:/get-started/Node/main/main.c:797
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da522: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:430
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d8f: Display_Task at C:/get-started/Node/main/main.c:797
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da528: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d8f: Display_Task at C:/get-started/Node/main/main.c:797
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da522: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:430
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d8f: Display_Task at C:/get-started/Node/main/main.c:797
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da522: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:430
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d7e: Display_Task at C:/get-started/Node/main/main.c:776
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da522: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:430
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d7e: Display_Task at C:/get-started/Node/main/main.c:776
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da525: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d7e: Display_Task at C:/get-started/Node/main/main.c:776
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da522: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:430
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d7e: Display_Task at C:/get-started/Node/main/main.c:776
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40084e96: esp_crosscore_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x4008317d: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400da525: s_i2c_send_commands at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x400da690: s_i2c_transaction_start at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:509
+0x400da749: s_i2c_synchronous_transaction at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:780
+0x400db049: i2c_master_transmit at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:966
+0x400d6c54: i2c_display_image at C:/get-started/Node/components/display/ssd1306_i2c_new.c:159
+0x400d665d: ssd1306_display_image at C:/get-started/Node/components/display/ssd1306.c:84
+0x400d6710: ssd1306_display_text at C:/get-started/Node/components/display/ssd1306.c:102
+0x400d6749: ssd1306_clear_screen at C:/get-started/Node/components/display/ssd1306.c:173
+0x400d5d7e: Display_Task at C:/get-started/Node/main/main.c:776
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

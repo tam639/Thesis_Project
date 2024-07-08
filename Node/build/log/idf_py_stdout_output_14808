@@ -1,0 +1,106 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d7e8h ( 55272) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d810 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001feac vaddr=40080000 size=0016ch (   364) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21b58h (138072) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041b80 vaddr=4008016c size=0e930h ( 59696) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  07ed76c6b...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3590 len 0002CA70 (178 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 5 ===
+[0;32mI (2399) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (2399) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (2399) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (2409) DHT22: Hum 40.4[0m
+[0;32mI (2409) DHT22: Tmp 33.2[0m
+[0;32mI (2409) MQ131: MQ131 - O3 Concentration: 3.73 ppb[0m
+[0;32mI (2419) MQ136: MQ136 - SO2 Concentration: 27.06 ppm[0m
+
+[0;32mI (2429) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (2429) MICS6814: MICS6814 - NO2 Concentration: 0.67 ppm[0m
+
+[0;32mI (2439) GPS: Received: I�b��b�bb��b��b���b��R��j
+$GPGLL,2059.83970,N,10553.19811,E,102508.00,A,A*6E
+$GPRMC,102509.00,V,,,,,,,280624,,,N*78
+$GPVTG,,,,,,,,,N*30
+$GPGGA,102509.00,,,,,0,00,99.99,,,,,,*69
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,3,1,12,05,06,110,20,10,24,322,17,12,14,126,22,15,18,050,*70
+$GPGSV,3,2,12,18,71,195,22,23,49,355,19,24,52,049,10,25,13,157,*75
+$GPGSV,3,3,12,27,04,290,,28,10,209,,29,06,182,,32,30,271,18*79
+$GPGLL,,,,,102509.00,V,N*45
+$GPRMC,102510.00,V,,,,,,,280624,,,N*70
+$GPVTG,,,,,,,,,N*30
+$GPGGA,102510.00,,,,,0,00,99.99,,,,,,*61
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,3,1,12,05,06,110,,10,24,322,17,12,14,126,23,15,18,050,20*71
+$GPGSV,3,2,12,18,71,195,23,23,49,355,20,24,52,049,11,25,13,157,23*7E
+$GPGSV,3,3,12,27,04,290,,28,10,209,17,29,06,182,,32,30,271,19*7E
+$GPGLL,,,,,102510.00,V,N*4D
+[0m
+[0;32mI (2519) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (2519) SSD1306: INTERFACE is i2c[0m
+[0;32mI (2529) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (2529) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (2529) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (2539) SSD1306: New i2c driver is used[0m
+[0;32mI (2539) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2549) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2559) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2569) main_task: Returned from app_main()[0m
+[0;32mI (2619) SSD1306: Panel is 128x64[0m
+[0;32mI (2619) SSD1306: OLED configured successfully[0m

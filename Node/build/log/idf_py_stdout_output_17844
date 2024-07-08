@@ -1,0 +1,177 @@
+,V�m[0m
+[0;32mI (35)�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d2d8h ( 53976) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001d300 vaddr=3ffb0000 size=02654h (  9812) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001f95c vaddr=40080000 size=006bch (  1724) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1e30ch (123660) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003e334 vaddr=400806bc size=0e408h ( 58376) load[0m
+[0;32mI (210) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (210) boot: Disabling RNG early entropy source...[0m
+[0;32mI (221) cpu_start: Multicore app[0m
+[0;32mI (230) cpu_start: Pro cpu start user code[0m
+[0;32mI (230) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (230) cpu_start: Application information:[0m
+[0;32mI (233) cpu_start: Project name:     NODE[0m
+[0;32mI (238) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  63c65ec95...[0m
+[0;32mI (254) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (259) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (264) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (269) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (281) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFB3230 len 0002CDD0 (179 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 4008EAC4 len 0001153C (69 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (334) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (352) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (382) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (382) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (392) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (402) SSD1306: INTERFACE is i2c[0m
+[0;32mI (412) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (412) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (412) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (422) SSD1306: New i2c driver is used[0m
+[0;32mI (422) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (432) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (442) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (452) main_task: Returned from app_main()[0m
+[0;32mI (502) SSD1306: Panel is 128x64[0m
+[0;32mI (502) SSD1306: OLED configured successfully[0m
+[0;32mI (2392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (3062) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (4392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (5062) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (5392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (6592) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (8392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (10392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (11822) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (12392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (13822) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (14392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (15392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (16392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (18392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (20292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (20392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (20392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (22292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (22392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (24292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (24392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (25392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (26292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (26392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (28292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (28392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (30292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (30392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (30392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (32292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (32392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (34292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (34392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (35392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (36292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (36392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (38292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (38392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (40292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (40392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (40392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (42292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (42392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (44292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (44392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (45392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (46292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (46392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (48292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (48392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (50292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (50392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (50392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (52292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (52392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (54292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (54392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (55392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (56292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (56392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (58292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (58392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (60292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (60392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (60392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (62292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (62392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (64292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (64392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (65392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (66292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (66392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (68292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (68392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (70292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (70392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (70392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (72292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (72392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (74292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (74392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (75392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (76292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (76392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (78292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (78392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (80292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (80392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (80392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (82292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (82392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (84292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (84392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (85392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (86292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (86392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (88292) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (88392) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m

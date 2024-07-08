@@ -1,0 +1,96 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\Node\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/Node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/9] Building C object esp-idf/protocols/CMakeFiles/__idf_protocols.dir/uart.c.obj
+In file included from C:/get-started/Node/components/protocols/uart.h:10,
+                 from C:/get-started/Node/components/protocols/uart.c:1:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Node/components/protocols/uart.c:50:13: warning: 'rx_task1' defined but not used [-Wunused-function]
+   50 | static void rx_task1(void *arg)
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.c:38:13: warning: 'tx_task1' defined but not used [-Wunused-function]
+   38 | static void tx_task1(void *arg)
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:43:20: warning: 'TAG_TX' defined but not used [-Wunused-variable]
+   43 | static const char *TAG_TX = "Transmit UART";
+      |                    ^~~~~~
+[3/9] Linking C static library esp-idf\protocols\libprotocols.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/get-started/Node/main/main.c:10:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Node/main/main.c:23:27: warning: extra tokens at end of #include directive
+   23 | #include <font8x8_basic.h>>
+      |                           ^
+C:/get-started/Node/main/main.c: In function 'display_centered_text':
+C:/get-started/Node/main/main.c:35:9: warning: unused variable 'start_col' [-Wunused-variable]
+   35 |     int start_col = (128 - (text_len * 8)) / 2;
+      |         ^~~~~~~~~
+C:/get-started/Node/main/main.c: In function 'app_main':
+C:/get-started/Node/main/main.c:579:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  579 |     adc1_config_channel_atten(MQ131_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:15:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:581:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  581 |     adc1_config_channel_atten(MQ136_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:583:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  583 |     adc1_config_channel_atten(CO_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:584:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  584 |     adc1_config_channel_atten(NO2_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:567:10: warning: unused variable 'received_char' [-Wunused-variable]
+  567 |     char received_char;
+      |          ^~~~~~~~~~~~~
+In file included from C:/get-started/Node/main/main.c:27:
+C:/get-started/Node/components/protocols/uart.h: At top level:
+C:/get-started/Node/components/protocols/uart.h:72:13: warning: 'tx_task1' declared 'static' but never defined [-Wunused-function]
+   72 | static void tx_task1(void *arg);
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:74:13: warning: 'rx_task1' declared 'static' but never defined [-Wunused-function]
+   74 | static void rx_task1(void *arg);
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:76:22: warning: 'find_uart_by_rx' declared 'static' but never defined [-Wunused-function]
+   76 | inline static int8_t find_uart_by_rx(uint8_t rx_pin);
+      |                      ^~~~~~~~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:79:13: warning: 'handle_rx' declared 'static' but never defined [-Wunused-function]
+   79 | static void handle_rx(void *arg);
+      |             ^~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:81:13: warning: 'check_uart_no' declared 'static' but never defined [-Wunused-function]
+   81 | static bool check_uart_no(uint8_t uart_no);
+      |             ^~~~~~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:83:13: warning: 'check_uart_enabled' declared 'static' but never defined [-Wunused-function]
+   83 | static bool check_uart_enabled(uint8_t uart_no);
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from C:/get-started/Node/main/main.c:23:
+C:/get-started/Node/components/display/font8x8_basic.h:41:16: warning: 'font8x8_basic_tr' defined but not used [-Wunused-variable]
+   41 | static uint8_t font8x8_basic_tr[128][8] = {
+      |                ^~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable NODE.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/Node/build/NODE.bin
+[9/9] cmd.exe /C "cd /D C:\get-started\Node\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/Node/build/partition_table/partition-table.bin C:/get-started/Node/build/NODE.bin"
+NODE.bin binary size 0x3c7f0 bytes. Smallest app partition is 0x100000 bytes. 0xc3810 bytes (76%) free.

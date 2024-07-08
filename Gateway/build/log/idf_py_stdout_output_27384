@@ -1,0 +1,433 @@
+�+���m[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4b4h ( 46260) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b4dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d738 vaddr=40080000 size=028e0h ( 10464) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17370h ( 95088) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00037398 vaddr=400828e0 size=0af88h ( 44936) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (220) cpu_start: App version:      1[0m
+[0;32mI (225) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  f5d4f531d...[0m
+[0;32mI (236) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008D868 len 00012798 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (327) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) main_task: Returned from app_main()[0m
+
+Available after dequeue: 20 
+
+[0;32mI (14727) AODV: Node Number: 4[0m
+[0;32mI (14727) AODV: Temperature: 28.9°C, Humidity: 42.8%[0m
+[0;32mI (14727) AODV: PM1.0: 27, PM2.5: 38, PM10: 46[0m
+[0;32mI (14727) AODV: O3: 0.00 ppm, SO2: 145.18 ppm[0m
+[0;32mI (14737) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (14737) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4b4h ( 46260) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b4dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d738 vaddr=40080000 size=028e0h ( 10464) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17370h ( 95088) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00037398 vaddr=400828e0 size=0af88h ( 44936) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (220) cpu_start: App version:      1[0m
+[0;32mI (225) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  f5d4f531d...[0m
+[0;32mI (236) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008D868 len 00012798 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (327) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4b4h ( 46260) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b4dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d738 vaddr=40080000 size=028e0h ( 10464) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17370h ( 95088) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00037398 vaddr=400828e0 size=0af88h ( 44936) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (220) cpu_start: App version:      1[0m
+[0;32mI (225) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  f5d4f531d...[0m
+[0;32mI (236) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2B98 len 0002D468 (181 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008D868 len 00012798 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (327) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) main_task: Returned from app_main()[0m
+
+Available after dequeue: 20 
+
+[0;32mI (3517) AODV: Node Number: 4[0m
+[0;32mI (3517) AODV: Temperature: 28.9°C, Humidity: 42.3%[0m
+[0;32mI (3517) AODV: PM1.0: 25, PM2.5: 34, PM10: 40[0m
+[0;32mI (3517) AODV: O3: 0.00 ppm, SO2: 174.26 ppm[0m
+[0;32mI (3527) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (3527) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (8527) AODV: Node Number: 4[0m
+[0;32mI (8527) AODV: Temperature: 28.9°C, Humidity: 42.3%[0m
+[0;32mI (8527) AODV: PM1.0: 25, PM2.5: 37, PM10: 45[0m
+[0;32mI (8527) AODV: O3: 0.00 ppm, SO2: 185.07 ppm[0m
+[0;32mI (8537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (8537) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (13527) AODV: Node Number: 4[0m
+[0;32mI (13527) AODV: Temperature: 28.9°C, Humidity: 42.3%[0m
+[0;32mI (13527) AODV: PM1.0: 24, PM2.5: 36, PM10: 43[0m
+[0;32mI (13527) AODV: O3: 0.00 ppm, SO2: 191.45 ppm[0m
+[0;32mI (13537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (13537) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (18527) AODV: Node Number: 4[0m
+[0;32mI (18527) AODV: Temperature: 28.9°C, Humidity: 42.2%[0m
+[0;32mI (18527) AODV: PM1.0: 25, PM2.5: 35, PM10: 40[0m
+[0;32mI (18527) AODV: O3: 0.00 ppm, SO2: 195.79 ppm[0m
+[0;32mI (18537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (18537) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (23527) AODV: Node Number: 4[0m
+[0;32mI (23527) AODV: Temperature: 29.0°C, Humidity: 42.3%[0m
+[0;32mI (23527) AODV: PM1.0: 26, PM2.5: 37, PM10: 42[0m
+[0;32mI (23527) AODV: O3: 0.00 ppm, SO2: 198.78 ppm[0m
+[0;32mI (23537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (23537) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (28537) AODV: Node Number: 4[0m
+[0;32mI (28537) AODV: Temperature: 29.0°C, Humidity: 42.3%[0m
+[0;32mI (28537) AODV: PM1.0: 25, PM2.5: 37, PM10: 44[0m
+[0;32mI (28537) AODV: O3: 0.00 ppm, SO2: 200.00 ppm[0m
+[0;32mI (28547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (28547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (33537) AODV: Node Number: 4[0m
+[0;32mI (33537) AODV: Temperature: 29.0°C, Humidity: 42.1%[0m
+[0;32mI (33537) AODV: PM1.0: 25, PM2.5: 36, PM10: 46[0m
+[0;32mI (33537) AODV: O3: 0.00 ppm, SO2: 201.22 ppm[0m
+[0;32mI (33547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (33547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (38537) AODV: Node Number: 4[0m
+[0;32mI (38537) AODV: Temperature: 29.0°C, Humidity: 42.1%[0m
+[0;32mI (38537) AODV: PM1.0: 25, PM2.5: 35, PM10: 44[0m
+[0;32mI (38537) AODV: O3: 0.00 ppm, SO2: 202.46 ppm[0m
+[0;32mI (38547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (38547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (43537) AODV: Node Number: 4[0m
+[0;32mI (43537) AODV: Temperature: 29.0°C, Humidity: 42.1%[0m
+[0;32mI (43537) AODV: PM1.0: 26, PM2.5: 37, PM10: 44[0m
+[0;32mI (43537) AODV: O3: 0.00 ppm, SO2: 197.58 ppm[0m
+[0;32mI (43547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (43547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (48537) AODV: Node Number: 4[0m
+[0;32mI (48537) AODV: Temperature: 29.0°C, Humidity: 43.1%[0m
+[0;32mI (48537) AODV: PM1.0: 26, PM2.5: 38, PM10: 46[0m
+[0;32mI (48537) AODV: O3: 0.00 ppm, SO2: 187.25 ppm[0m
+[0;32mI (48547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (48547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (53537) AODV: Node Number: 4[0m
+[0;32mI (53537) AODV: Temperature: 29.0°C, Humidity: 43.7%[0m
+[0;32mI (53537) AODV: PM1.0: 26, PM2.5: 39, PM10: 47[0m
+[0;32mI (53537) AODV: O3: 0.00 ppm, SO2: 191.45 ppm[0m
+[0;32mI (53547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (53547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (58537) AODV: Node Number: 4[0m
+[0;32mI (58537) AODV: Temperature: 29.0°C, Humidity: 44.5%[0m
+[0;32mI (58537) AODV: PM1.0: 26, PM2.5: 39, PM10: 49[0m
+[0;32mI (58537) AODV: O3: 0.00 ppm, SO2: 183.99 ppm[0m
+[0;32mI (58547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (58547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (63537) AODV: Node Number: 4[0m
+[0;32mI (63537) AODV: Temperature: 29.1°C, Humidity: 46.0%[0m
+[0;32mI (63537) AODV: PM1.0: 25, PM2.5: 37, PM10: 46[0m
+[0;32mI (63537) AODV: O3: 0.00 ppm, SO2: 186.43 ppm[0m
+[0;32mI (63547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (63547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (68537) AODV: Node Number: 4[0m
+[0;32mI (68537) AODV: Temperature: 29.1°C, Humidity: 44.8%[0m
+[0;32mI (68537) AODV: PM1.0: 26, PM2.5: 37, PM10: 45[0m
+[0;32mI (68537) AODV: O3: 0.00 ppm, SO2: 179.79 ppm[0m
+[0;32mI (68547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (68547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (73537) AODV: Node Number: 4[0m
+[0;32mI (73537) AODV: Temperature: 29.2°C, Humidity: 44.9%[0m
+[0;32mI (73537) AODV: PM1.0: 26, PM2.5: 36, PM10: 41[0m
+[0;32mI (73537) AODV: O3: 0.00 ppm, SO2: 187.25 ppm[0m
+[0;32mI (73547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (73547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (78537) AODV: Node Number: 4[0m
+[0;32mI (78537) AODV: Temperature: 29.3°C, Humidity: 47.4%[0m
+[0;32mI (78537) AODV: PM1.0: 25, PM2.5: 34, PM10: 39[0m
+[0;32mI (78537) AODV: O3: 0.00 ppm, SO2: 186.15 ppm[0m
+[0;32mI (78547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (78547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (83537) AODV: Node Number: 4[0m
+[0;32mI (83537) AODV: Temperature: 29.3°C, Humidity: 47.7%[0m
+[0;32mI (83537) AODV: PM1.0: 25, PM2.5: 35, PM10: 40[0m
+[0;32mI (83537) AODV: O3: 0.00 ppm, SO2: 181.87 ppm[0m
+[0;32mI (83547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (83547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (88537) AODV: Node Number: 4[0m
+[0;32mI (88537) AODV: Temperature: 29.4°C, Humidity: 46.1%[0m
+[0;32mI (88537) AODV: PM1.0: 25, PM2.5: 34, PM10: 42[0m
+[0;32mI (88537) AODV: O3: 0.00 ppm, SO2: 182.93 ppm[0m
+[0;32mI (88547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (88547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (93537) AODV: Node Number: 4[0m
+[0;32mI (93537) AODV: Temperature: 29.4°C, Humidity: 44.9%[0m
+[0;32mI (93537) AODV: PM1.0: 26, PM2.5: 36, PM10: 44[0m
+[0;32mI (93537) AODV: O3: 0.00 ppm, SO2: 180.05 ppm[0m
+[0;32mI (93547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (93547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+
+
+Available after dequeue: 20 
+
+[0;32mI (98537) AODV: Node Number: 4[0m
+[0;32mI (98537) AODV: Temperature: 29.5°C, Humidity: 44.3%[0m
+[0;32mI (98537) AODV: PM1.0: 26, PM2.5: 37, PM10: 45[0m
+[0;32mI (98537) AODV: O3: 0.00 ppm, SO2: 189.75 ppm[0m
+[0;32mI (98547) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (98547) AODV: Latitude: 95.250046, Longitude: 20.099907[0m
+
+Available after enqueue: 20 
+

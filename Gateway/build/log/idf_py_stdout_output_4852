@@ -1,0 +1,226 @@
+닱�����m[0m
+[0;32mI �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a70h (166512) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00038a98 vaddr=3ffb0000 size=03c4ch ( 15436) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003c6ec vaddr=40080000 size=0392ch ( 14636) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cdd4h (642516) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000dcdfc vaddr=4008392c size=13c00h ( 80896) load[0m
+[0;32mI (440) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (440) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (460) cpu_start: Pro cpu start user code[0m
+[0;32mI (460) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (460) cpu_start: Application information:[0m
+[0;32mI (463) cpu_start: Project name:     main[0m
+[0;32mI (468) cpu_start: App version:      1[0m
+[0;32mI (472) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (478) cpu_start: ELF file SHA256:  dcc7450e0...[0m
+[0;32mI (484) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (489) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (494) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (499) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB8388 len 00027C78 (159 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 4009752C len 00008AD4 (34 KiB): IRAM[0m
+[0;32mI (543) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (550) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (565) main_task: Started on CPU0[0m
+[0;32mI (575) main_task: Calling app_main()[0m
+[0;32mI (605) uart_example: ESP_WIFI_MODE_STA[0m
+I (615) wifi:wifi driver task: 3ffc0450, prio:23, stack:6656, core=0
+I (635) wifi:wifi firmware version: a9f5b59
+I (635) wifi:wifi certification version: v7.0
+I (635) wifi:config NVS flash: enabled
+I (635) wifi:config nano formating: disabled
+I (635) wifi:Init data frame dynamic rx buffer num: 32
+I (645) wifi:Init static rx mgmt buffer num: 5
+I (645) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (655) wifi:Init static rx buffer size: 1600
+I (655) wifi:Init static rx buffer num: 10
+I (665) wifi:Init dynamic rx buffer num: 32
+[0;32mI (665) wifi_init: rx ba win: 6[0m
+[0;32mI (665) wifi_init: tcpip mbox: 32[0m
+[0;32mI (675) wifi_init: udp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (685) wifi_init: tcp rx win: 5760[0m
+[0;32mI (685) wifi_init: tcp mss: 1440[0m
+[0;32mI (695) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (695) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (705) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (785) wifi:mode : sta (08:b6:1f:34:f5:e4)
+I (795) wifi:enable tsf
+[0;32mI (795) wifi station: wifi_init_sta finished.[0m
+I (835) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (835) wifi:state: init -> auth (b0)
+I (955) wifi:state: auth -> init (8a0)
+I (955) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (955) wifi station: retry to connect to the AP[0m
+[0;32mI (955) wifi station: connect to the AP fail[0m
+[0;32mI (3375) wifi station: retry to connect to the AP[0m
+[0;32mI (3375) wifi station: connect to the AP fail[0m
+I (3385) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3385) wifi:state: init -> auth (b0)
+I (3445) wifi:state: auth -> assoc (0)
+I (3515) wifi:state: assoc -> run (10)
+I (3695) wifi:connected with Thanh Tam, aid = 2, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3695) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+I (3705) wifi:pm start, type: 1
+
+I (3705) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3705) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4715) esp_netif_handlers: sta ip: 192.168.1.14, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4715) wifi station: got IP:192.168.1.14[0m
+[0;32mI (4715) wifi station: connected to AP SSID:Thanh Tam password:06111976[0m
+[0;32mI (4725) MQTT: Other event id:7[0m
+[0;32mI (4735) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4735) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4745) main_task: Returned from app_main()[0m
+I (4745) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+
+Available: 20 
+
+[0;32mI (5345) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5345) MQTT: sent publish successful, msg_id=56516[0m
+[0;32mI (5355) MQTT: sent subscribe successful, msg_id=63583[0m
+[0;32mI (5355) uart_example: sent publish successful, msg_id=6989[0m
+[0;32mI (5615) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56516[0m
+[0;32mI (5965) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=63583[0m
+[0;32mI (5965) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6989[0m
+[0;32mI (5965) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (7755) uart_example: sent publish successful, msg_id=37711[0m
+[0;32mI (8125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37711[0m
+[0;32mI (8135) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (10755) uart_example: sent publish successful, msg_id=61875[0m
+[0;32mI (11085) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61875[0m
+[0;32mI (11085) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (13755) uart_example: sent publish successful, msg_id=53838[0m
+[0;32mI (14055) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53838[0m
+[0;32mI (14055) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (16755) uart_example: sent publish successful, msg_id=40339[0m
+[0;32mI (17125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40339[0m
+[0;32mI (17125) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (19755) uart_example: sent publish successful, msg_id=3623[0m
+[0;32mI (20125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3623[0m
+[0;32mI (20125) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (22755) uart_example: sent publish successful, msg_id=23126[0m
+[0;32mI (23205) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23126[0m
+[0;32mI (23205) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (25755) uart_example: sent publish successful, msg_id=39611[0m
+[0;32mI (26035) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+[0;32mI (26035) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39611[0m
+
+Available: 20 
+
+[0;32mI (28755) uart_example: sent publish successful, msg_id=5718[0m
+[0;32mI (29125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5718[0m
+[0;32mI (29125) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (31755) uart_example: sent publish successful, msg_id=57681[0m
+[0;32mI (32125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57681[0m
+[0;32mI (32125) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (34755) uart_example: sent publish successful, msg_id=59174[0m
+[0;32mI (35085) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59174[0m
+[0;32mI (35085) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (37755) uart_example: sent publish successful, msg_id=63780[0m
+[0;32mI (38115) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+[0;32mI (38125) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63780[0m
+
+Available: 20 
+
+[0;32mI (40755) uart_example: sent publish successful, msg_id=34474[0m
+[0;32mI (41085) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34474[0m
+[0;32mI (41095) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO
+
+Available: 20 
+
+[0;32mI (43755) uart_example: sent publish successful, msg_id=9987[0m
+[0;32mI (44055) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9987[0m
+[0;32mI (44095) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=esp/msg
+DATA=HELLO

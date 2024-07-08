@@ -1,0 +1,796 @@
+ets I (40) boot.esp32: SPI S�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b124h ( 45348) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b14c vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d3a8 vaddr=40080000 size=02c70h ( 11376) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16ec8h ( 93896) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036ef0 vaddr=40082c70 size=0aaf0h ( 43760) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  52bef0f47...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B18 len 0002D4E8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) main_task: Returned from app_main()[0m
+[0;31mE (4325) uart_example: Received data length is too short[0m
+[0;31mE (6325) uart_example: Received data length is too short[0m
+[0;32mI (7375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (7375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (7375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (7375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (7385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (7385) uart_example: Latitude: 95.250046, Longitude: 20.100077[0m
+[0;31mE (8325) uart_example: Received data length is too short[0m
+[0;31mE (10325) uart_example: Received data length is too short[0m
+[0;32mI (12435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (12435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (12435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (12435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (12445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (12445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (14325) uart_example: Received data length is too short[0m
+[0;31mE (16325) uart_example: Received data length is too short[0m
+[0;32mI (17375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (17375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (17375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (17375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (17385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (17385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (18325) uart_example: Received data length is too short[0m
+[0;31mE (20325) uart_example: Received data length is too short[0m
+[0;32mI (22435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (22435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (22435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (22435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (22445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (22445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (24325) uart_example: Received data length is too short[0m
+[0;31mE (26325) uart_example: Received data length is too short[0m
+[0;32mI (27375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (27375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (27375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (27375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (27385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (27385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (28325) uart_example: Received data length is too short[0m
+[0;31mE (30325) uart_example: Received data length is too short[0m
+[0;32mI (32435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (32435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (32435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (32435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (32445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (32445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (34325) uart_example: Received data length is too short[0m
+[0;31mE (36325) uart_example: Received data length is too short[0m
+[0;32mI (37375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (37375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (37375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (37375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (37385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (37385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (38325) uart_example: Received data length is too short[0m
+[0;31mE (40325) uart_example: Received data length is too short[0m
+[0;32mI (42435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (42435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (42435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (42435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (42445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (42445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (44325) uart_example: Received data length is too short[0m
+[0;31mE (46325) uart_example: Received data length is too short[0m
+[0;32mI (47375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (47375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (47375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (47375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (47385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (47385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (48325) uart_example: Received data length is too short[0m
+[0;31mE (50325) uart_example: Received data length is too short[0m
+[0;32mI (52435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (52435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (52435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (52435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (52445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (52445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (54325) uart_example: Received data length is too short[0m
+[0;31mE (56325) uart_example: Received data length is too short[0m
+[0;32mI (57375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (57375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (57375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (57375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (57385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (57385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (58325) uart_example: Received data length is too short[0m
+[0;31mE (60325) uart_example: Received data length is too short[0m
+[0;32mI (62435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (62435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (62435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (62435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (62445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (62445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (64325) uart_example: Received data length is too short[0m
+[0;31mE (66325) uart_example: Received data length is too short[0m
+[0;32mI (67375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (67375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (67375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (67375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (67385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (67385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (68325) uart_example: Received data length is too short[0m
+[0;31mE (70325) uart_example: Received data length is too short[0m
+[0;32mI (72435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (72435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (72435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (72435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (72445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (72445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (74325) uart_example: Received data length is too short[0m
+[0;31mE (76315) uart_example: Received data length is too short[0m
+[0;32mI (77375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (77375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (77375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (77375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (77385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (77385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (78325) uart_example: Received data length is too short[0m
+[0;31mE (80325) uart_example: Received data length is too short[0m
+[0;32mI (82435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (82435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (82435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (82435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (82445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (82445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (84325) uart_example: Received data length is too short[0m
+[0;31mE (86315) uart_example: Received data length is too short[0m
+[0;32mI (87375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (87375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (87375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (87375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (87385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (87385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (88325) uart_example: Received data length is too short[0m
+[0;31mE (90325) uart_example: Received data length is too short[0m
+[0;32mI (92435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (92435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (92435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (92435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (92445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (92445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (94315) uart_example: Received data length is too short[0m
+[0;31mE (96315) uart_example: Received data length is too short[0m
+[0;32mI (97375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (97375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (97375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (97375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (97385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (97385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (98315) uart_example: Received data length is too short[0m
+[0;31mE (100315) uart_example: Received data length is too short[0m
+[0;32mI (102435) uart_example: Timestamp: 1631375987[0m
+[0;32mI (102435) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (102435) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (102435) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (102445) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (102445) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (104325) uart_example: Received data length is too short[0m
+[0;31mE (106315) uart_example: Received data length is too short[0m
+[0;32mI (107375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (107375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (107375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (107375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (107385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (107385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (108315) uart_example: Received data length is too short[0m
+[0;31mE (110315) uart_example: Received data length is too short[0m
+[0;32mI (112425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (112425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (112425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (112425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (112435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (112435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (114315) uart_example: Received data length is too short[0m
+[0;31mE (116315) uart_example: Received data length is too short[0m
+[0;32mI (117365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (117365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (117365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (117365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (117375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (117375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (118315) uart_example: Received data length is too short[0m
+[0;31mE (120315) uart_example: Received data length is too short[0m
+[0;32mI (122425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (122425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (122425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (122425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (122435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (122435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (124315) uart_example: Received data length is too short[0m
+[0;31mE (126315) uart_example: Received data length is too short[0m
+[0;32mI (127375) uart_example: Timestamp: 1631375987[0m
+[0;32mI (127375) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (127375) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (127375) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (127385) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (127385) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (128315) uart_example: Received data length is too short[0m
+[0;31mE (130315) uart_example: Received data length is too short[0m
+[0;32mI (132425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (132425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (132425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (132425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (132435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (132435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (134315) uart_example: Received data length is too short[0m
+[0;31mE (136315) uart_example: Received data length is too short[0m
+[0;32mI (137365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (137365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (137365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (137365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (137375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (137375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (138315) uart_example: Received data length is too short[0m
+[0;31mE (140315) uart_example: Received data length is too short[0m
+[0;32mI (142425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (142425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (142425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (142425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (142435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (142435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (144315) uart_example: Received data length is too short[0m
+[0;31mE (146315) uart_example: Received data length is too short[0m
+[0;32mI (147365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (147365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (147365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (147365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (147375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (147375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (148315) uart_example: Received data length is too short[0m
+[0;31mE (150315) uart_example: Received data length is too short[0m
+[0;32mI (152425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (152425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (152425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (152425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (152435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (152435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (154315) uart_example: Received data length is too short[0m
+[0;31mE (156315) uart_example: Received data length is too short[0m
+[0;32mI (157365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (157365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (157365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (157365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (157375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (157375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (158315) uart_example: Received data length is too short[0m
+[0;31mE (160315) uart_example: Received data length is too short[0m
+[0;32mI (162425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (162425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (162425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (162425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (162435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (162435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (164315) uart_example: Received data length is too short[0m
+[0;31mE (166315) uart_example: Received data length is too short[0m
+[0;32mI (167365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (167365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (167365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (167365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (167375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (167375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (168315) uart_example: Received data length is too short[0m
+[0;31mE (170315) uart_example: Received data length is too short[0m
+[0;32mI (172425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (172425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (172425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (172425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (172435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (172435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (174315) uart_example: Received data length is too short[0m
+[0;31mE (176315) uart_example: Received data length is too short[0m
+[0;32mI (177365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (177365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (177365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (177365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (177375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (177375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (178315) uart_example: Received data length is too short[0m
+[0;31mE (180315) uart_example: Received data length is too short[0m
+[0;32mI (182425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (182425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (182425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (182425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (182435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (182435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (184315) uart_example: Received data length is too short[0m
+[0;31mE (186315) uart_example: Received data length is too short[0m
+[0;32mI (187365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (187365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (187365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (187365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (187375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (187375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (188315) uart_example: Received data length is too short[0m
+[0;31mE (190315) uart_example: Received data length is too short[0m
+[0;32mI (192425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (192425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (192425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (192425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (192435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (192435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (194315) uart_example: Received data length is too short[0m
+[0;31mE (196315) uart_example: Received data length is too short[0m
+[0;32mI (197365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (197365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (197365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (197365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (197375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (197375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (198315) uart_example: Received data length is too short[0m
+[0;31mE (200315) uart_example: Received data length is too short[0m
+[0;32mI (202425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (202425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (202425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (202425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (202435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (202435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (204315) uart_example: Received data length is too short[0m
+[0;31mE (206315) uart_example: Received data length is too short[0m
+[0;32mI (207365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (207365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (207365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (207365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (207375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (207375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (208315) uart_example: Received data length is too short[0m
+[0;31mE (210315) uart_example: Received data length is too short[0m
+[0;32mI (212425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (212425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (212425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (212425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (212435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (212435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (214315) uart_example: Received data length is too short[0m
+[0;31mE (216315) uart_example: Received data length is too short[0m
+[0;32mI (217365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (217365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (217365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (217365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (217375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (217375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (218315) uart_example: Received data length is too short[0m
+[0;31mE (220315) uart_example: Received data length is too short[0m
+[0;32mI (222425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (222425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (222425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (222425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (222435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (222435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (224315) uart_example: Received data length is too short[0m
+[0;31mE (226315) uart_example: Received data length is too short[0m
+[0;32mI (227365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (227365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (227365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (227365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (227375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (227375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (228315) uart_example: Received data length is too short[0m
+[0;31mE (230315) uart_example: Received data length is too short[0m
+[0;32mI (232425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (232425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (232425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (232425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (232435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (232435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (234315) uart_example: Received data length is too short[0m
+[0;31mE (236315) uart_example: Received data length is too short[0m
+[0;32mI (237365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (237365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (237365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (237365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (237375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (237375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (238315) uart_example: Received data length is too short[0m
+[0;31mE (240315) uart_example: Received data length is too short[0m
+[0;32mI (242425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (242425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (242425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (242425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (242435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (242435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (244315) uart_example: Received data length is too short[0m
+[0;31mE (246315) uart_example: Received data length is too short[0m
+[0;32mI (247365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (247365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (247365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (247365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (247375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (247375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (248315) uart_example: Received data length is too short[0m
+[0;31mE (250315) uart_example: Received data length is too short[0m
+[0;32mI (252425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (252425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (252425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (252425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (252435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (252435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (254315) uart_example: Received data length is too short[0m
+[0;31mE (256315) uart_example: Received data length is too short[0m
+[0;32mI (257365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (257365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (257365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (257365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (257375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (257375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (258315) uart_example: Received data length is too short[0m
+[0;31mE (260315) uart_example: Received data length is too short[0m
+[0;32mI (262425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (262425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (262425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (262425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (262435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (262435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (264315) uart_example: Received data length is too short[0m
+[0;31mE (266315) uart_example: Received data length is too short[0m
+[0;32mI (267365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (267365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (267365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (267365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (267375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (267375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (268315) uart_example: Received data length is too short[0m
+[0;31mE (270315) uart_example: Received data length is too short[0m
+[0;32mI (272425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (272425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (272425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (272425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (272435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (272435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (274315) uart_example: Received data length is too short[0m
+[0;31mE (276315) uart_example: Received data length is too short[0m
+[0;32mI (277365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (277365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (277365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (277365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (277375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (277375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (278315) uart_example: Received data length is too short[0m
+[0;31mE (280315) uart_example: Received data length is too short[0m
+[0;32mI (282425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (282425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (282425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (282425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (282435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (282435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (284315) uart_example: Received data length is too short[0m
+[0;31mE (286315) uart_example: Received data length is too short[0m
+[0;32mI (287365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (287365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (287365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (287365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (287375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (287375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (288315) uart_example: Received data length is too short[0m
+[0;31mE (290315) uart_example: Received data length is too short[0m
+[0;32mI (292425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (292425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (292425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (292425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (292435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (292435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (294315) uart_example: Received data length is too short[0m
+[0;31mE (296315) uart_example: Received data length is too short[0m
+[0;32mI (297365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (297365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (297365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (297365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (297375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (297375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (298315) uart_example: Received data length is too short[0m
+[0;31mE (300315) uart_example: Received data length is too short[0m
+[0;32mI (302425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (302425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (302425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (302425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (302435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (302435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (304315) uart_example: Received data length is too short[0m
+[0;31mE (306305) uart_example: Received data length is too short[0m
+[0;32mI (307365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (307365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (307365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (307365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (307375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (307375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (308315) uart_example: Received data length is too short[0m
+[0;31mE (310315) uart_example: Received data length is too short[0m
+[0;32mI (312425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (312425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (312425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (312425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (312435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (312435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (314315) uart_example: Received data length is too short[0m
+[0;31mE (316315) uart_example: Received data length is too short[0m
+[0;32mI (317365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (317365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (317365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (317365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (317375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (317375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (318315) uart_example: Received data length is too short[0m
+[0;31mE (320315) uart_example: Received data length is too short[0m
+[0;32mI (322425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (322425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (322425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (322425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (322435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (322435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (324315) uart_example: Received data length is too short[0m
+[0;31mE (326315) uart_example: Received data length is too short[0m
+[0;32mI (327365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (327365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (327365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (327365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (327375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (327375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (328305) uart_example: Received data length is too short[0m
+[0;31mE (330305) uart_example: Received data length is too short[0m
+[0;32mI (332425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (332425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (332425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (332425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (332435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (332435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (334315) uart_example: Received data length is too short[0m
+[0;31mE (336305) uart_example: Received data length is too short[0m
+[0;32mI (337365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (337365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (337365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (337365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (337375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (337375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (338315) uart_example: Received data length is too short[0m
+[0;31mE (340305) uart_example: Received data length is too short[0m
+[0;32mI (342425) uart_example: Timestamp: 1631375987[0m
+[0;32mI (342425) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (342425) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (342425) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (342435) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (342435) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (344305) uart_example: Received data length is too short[0m
+[0;31mE (346305) uart_example: Received data length is too short[0m
+[0;32mI (347365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (347365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (347365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (347365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (347375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (347375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (348305) uart_example: Received data length is too short[0m
+[0;31mE (350305) uart_example: Received data length is too short[0m
+[0;32mI (352415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (352415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (352415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (352415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (352425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (352425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (354305) uart_example: Received data length is too short[0m
+[0;31mE (356305) uart_example: Received data length is too short[0m
+[0;32mI (357365) uart_example: Timestamp: 1631375987[0m
+[0;32mI (357365) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (357365) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (357365) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (357375) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (357375) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (358305) uart_example: Received data length is too short[0m
+[0;31mE (360305) uart_example: Received data length is too short[0m
+[0;32mI (362415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (362415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (362415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (362415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (362425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (362425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (364305) uart_example: Received data length is too short[0m
+[0;31mE (366305) uart_example: Received data length is too short[0m
+[0;32mI (367355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (367355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (367355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (367355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (367365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (367365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (368305) uart_example: Received data length is too short[0m
+[0;31mE (370305) uart_example: Received data length is too short[0m
+[0;32mI (372415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (372415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (372415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (372415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (372425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (372425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (374305) uart_example: Received data length is too short[0m
+[0;31mE (376305) uart_example: Received data length is too short[0m
+[0;32mI (377355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (377355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (377355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (377355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (377365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (377365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (378305) uart_example: Received data length is too short[0m
+[0;31mE (380305) uart_example: Received data length is too short[0m
+[0;32mI (382415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (382415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (382415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (382415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (382425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (382425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (384305) uart_example: Received data length is too short[0m
+[0;31mE (386305) uart_example: Received data length is too short[0m
+[0;32mI (387355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (387355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (387355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (387355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (387365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (387365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (388305) uart_example: Received data length is too short[0m
+[0;31mE (390305) uart_example: Received data length is too short[0m
+[0;32mI (392415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (392415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (392415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (392415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (392425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (392425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (394305) uart_example: Received data length is too short[0m
+[0;31mE (396305) uart_example: Received data length is too short[0m
+[0;32mI (397355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (397355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (397355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (397355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (397365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (397365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (398305) uart_example: Received data length is too short[0m
+[0;31mE (400305) uart_example: Received data length is too short[0m
+[0;32mI (402415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (402415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (402415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (402415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (402425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (402425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (404305) uart_example: Received data length is too short[0m
+[0;31mE (406305) uart_example: Received data length is too short[0m
+[0;32mI (407355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (407355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (407355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (407355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (407365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (407365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (408305) uart_example: Received data length is too short[0m
+[0;31mE (410305) uart_example: Received data length is too short[0m
+[0;32mI (412415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (412415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (412415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (412415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (412425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (412425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (414305) uart_example: Received data length is too short[0m
+[0;31mE (416305) uart_example: Received data length is too short[0m
+[0;32mI (417355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (417355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (417355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (417355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (417365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (417365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (418305) uart_example: Received data length is too short[0m
+[0;31mE (420305) uart_example: Received data length is too short[0m
+[0;32mI (422415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (422415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (422415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (422415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (422425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (422425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (424305) uart_example: Received data length is too short[0m
+[0;31mE (426305) uart_example: Received data length is too short[0m
+[0;32mI (427355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (427355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (427355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (427355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (427365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (427365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (428305) uart_example: Received data length is too short[0m
+[0;31mE (430305) uart_example: Received data length is too short[0m
+[0;32mI (432415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (432415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (432415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (432415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (432425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (432425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (434305) uart_example: Received data length is too short[0m
+[0;31mE (436305) uart_example: Received data length is too short[0m
+[0;32mI (437355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (437355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (437355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (437355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (437365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (437365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (438305) uart_example: Received data length is too short[0m
+[0;31mE (440305) uart_example: Received data length is too short[0m
+[0;32mI (442415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (442415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (442415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (442415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (442425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (442425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (444305) uart_example: Received data length is too short[0m
+[0;31mE (446305) uart_example: Received data length is too short[0m
+[0;32mI (447355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (447355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (447355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (447355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (447365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (447365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (448305) uart_example: Received data length is too short[0m
+[0;31mE (450305) uart_example: Received data length is too short[0m
+[0;32mI (452415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (452415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (452415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (452415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (452425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (452425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (454305) uart_example: Received data length is too short[0m
+[0;31mE (456305) uart_example: Received data length is too short[0m
+[0;32mI (457355) uart_example: Timestamp: 1631375987[0m
+[0;32mI (457355) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (457355) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (457355) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (457365) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (457365) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m
+[0;31mE (458305) uart_example: Received data length is too short[0m
+[0;31mE (460305) uart_example: Received data length is too short[0m
+[0;32mI (462415) uart_example: Timestamp: 1631375987[0m
+[0;32mI (462415) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (462415) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (462415) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (462425) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (462425) uart_example: Latitude: 95.250046, Longitude: 20.099840[0m

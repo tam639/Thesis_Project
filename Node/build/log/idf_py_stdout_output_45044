@@ -1,0 +1,138 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/get-started/Node/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "NODE" version: 1
+-- Adding linker script C:/get-started/Node/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx display driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocols protocomm pthread sdmmc sensors soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace C:/Espressif/frameworks/esp-idf-v5.2.1/components/app_update C:/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader C:/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.2.1/components/bt C:/Espressif/frameworks/esp-idf-v5.2.1/components/cmock C:/Espressif/frameworks/esp-idf-v5.2.1/components/console C:/Espressif/frameworks/esp-idf-v5.2.1/components/cxx C:/get-started/Node/components/display C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver C:/Espressif/frameworks/esp-idf-v5.2.1/components/efuse C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif_stack C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal C:/Espressif/frameworks/esp-idf-v5.2.1/components/heap C:/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser C:/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test C:/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.2.1/components/json C:/Espressif/frameworks/esp-idf-v5.2.1/components/log C:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip C:/get-started/Node/main C:/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt C:/Espressif/frameworks/esp-idf-v5.2.1/components/newlib C:/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider C:/Espressif/frameworks/esp-idf-v5.2.1/components/openthread C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table C:/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon C:/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c C:/get-started/Node/components/protocols C:/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm C:/Espressif/frameworks/esp-idf-v5.2.1/components/pthread C:/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc C:/get-started/Node/components/sensors C:/Espressif/frameworks/esp-idf-v5.2.1/components/soc C:/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs C:/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.2.1/components/ulp C:/Espressif/frameworks/esp-idf-v5.2.1/components/unity C:/Espressif/frameworks/esp-idf-v5.2.1/components/usb C:/Espressif/frameworks/esp-idf-v5.2.1/components/vfs C:/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/get-started/Node/build
+[0/1] Re-running CMake...
+[1/17] Building C object esp-idf/protocols/CMakeFiles/__idf_protocols.dir/uart.c.obj
+[2/17] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\Node\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/Node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/15] Linking C static library esp-idf\protocols\libprotocols.a
+[4/15] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ssd1306_spi.c.obj
+[5/15] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ssd1306_i2c_new.c.obj
+[6/15] Building C object esp-idf/display/CMakeFiles/__idf_display.dir/ssd1306.c.obj
+[7/15] Linking C static library esp-idf\display\libdisplay.a
+[8/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/get-started/Node/main/main.c:10:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Node/main/main.c:23:27: warning: extra tokens at end of #include directive
+   23 | #include <font8x8_basic.h>>
+      |                           ^
+C:/get-started/Node/main/main.c: In function 'display_centered_text':
+C:/get-started/Node/main/main.c:35:9: warning: unused variable 'start_col' [-Wunused-variable]
+   35 |     int start_col = (128 - (text_len * 8)) / 2;
+      |         ^~~~~~~~~
+C:/get-started/Node/main/main.c: In function 'app_main':
+C:/get-started/Node/main/main.c:1072:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+ 1072 |     adc1_config_channel_atten(MQ131_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:15:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:1074:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+ 1074 |     adc1_config_channel_atten(MQ136_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:1076:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+ 1076 |     adc1_config_channel_atten(CO_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:1077:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+ 1077 |     adc1_config_channel_atten(NO2_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:1060:10: warning: unused variable 'received_char' [-Wunused-variable]
+ 1060 |     char received_char;
+      |          ^~~~~~~~~~~~~
+C:/get-started/Node/main/main.c: At top level:
+C:/get-started/Node/main/main.c:694:13: warning: 'tx_task3' defined but not used [-Wunused-function]
+  694 | static void tx_task3(void *arg)
+      |             ^~~~~~~~
+C:/get-started/Node/main/main.c:411:13: warning: 'rx_task1' defined but not used [-Wunused-function]
+  411 | static void rx_task1(void *arg)
+      |             ^~~~~~~~
+C:/get-started/Node/main/main.c:386:13: warning: 'tx_task1' defined but not used [-Wunused-function]
+  386 | static void tx_task1(void *arg)
+      |             ^~~~~~~~
+In file included from C:/get-started/Node/main/main.c:23:
+C:/get-started/Node/components/display/font8x8_basic.h:41:16: warning: 'font8x8_basic_tr' defined but not used [-Wunused-variable]
+   41 | static uint8_t font8x8_basic_tr[128][8] = {
+      |                ^~~~~~~~~~~~~~~~
+[9/15] Linking C static library esp-idf\main\libmain.a
+[10/15] Generating ld/sections.ld
+[11/15] Building C object CMakeFiles/NODE.elf.dir/project_elf_src_esp32.c.obj
+[12/15] Linking CXX executable NODE.elf
+[13/15] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/Node/build/NODE.bin
+[14/15] cmd.exe /C "cd /D C:\get-started\Node\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/Node/build/partition_table/partition-table.bin C:/get-started/Node/build/NODE.bin"
+NODE.bin binary size 0x366c0 bytes. Smallest app partition is 0x100000 bytes. 0xc9940 bytes (79%) free.
+[14/15] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/get-started/Node/build -P C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/resptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 NODE.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e8:db:84:0b:d1:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00046fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16365...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16365 compressed) at 0x00001000 in 0.8 seconds (effective 279.8 kbit/s)...
+Hash of data verified.
+Compressed 222912 bytes to 114307...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001d240... (28 %)
+Writing at 0x00023143... (42 %)
+Writing at 0x00029046... (57 %)
+Writing at 0x0002eae5... (71 %)
+Writing at 0x0003a4e5... (85 %)
+Writing at 0x0004013a... (100 %)
+Wrote 222912 bytes (114307 compressed) at 0x00010000 in 2.7 seconds (effective 653.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 397.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+un_serial_tool.cmake"

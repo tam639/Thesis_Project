@@ -1,0 +1,20 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\Node\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/Node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/9] Building C object esp-idf/sensors/CMakeFiles/__idf_sensors.dir/mq136.c.obj
+In file included from C:/get-started/Node/components/sensors/mq136.h:10,
+                 from C:/get-started/Node/components/sensors/mq136.c:1:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[3/9] Linking C static library esp-idf\sensors\libsensors.a
+[4/9] Linking C static library esp-idf\main\libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable NODE.elf
+FAILED: NODE.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-g++.exe -mlongcalls -Wno-frame-address -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32=0 -Wl,--Map=C:/get-started/Node/build/NODE.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32.peripherals.ld -T esp32.rom.ld -T esp32.rom.api.ld -T esp32.rom.libgcc.ld -T esp32.rom.newlib-data.ld -T esp32.rom.syscalls.ld -T esp32.rom.newlib-funcs.ld -T memory.ld -T sections.ld @CMakeFiles\NODE.elf.rsp -o NODE.elf  && cd ."
+C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/sensors/libsensors.a(mq131.c.obj):C:/get-started/Node/components/sensors/mq131.h:22: multiple definition of `TAG_MQ131'; esp-idf/main/libmain.a(main.c.obj):C:/get-started/Node/components/sensors/mq131.h:22: first defined here
+C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/sensors/libsensors.a(mq131.c.obj):C:/get-started/Node/components/sensors/mq131.h:20: multiple definition of `R0_MQ131'; esp-idf/main/libmain.a(main.c.obj):C:/get-started/Node/components/sensors/mq131.h:20: first defined here
+C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/sensors/libsensors.a(mq136.c.obj):C:/get-started/Node/components/sensors/mq136.h:22: multiple definition of `TAG_MQ136'; esp-idf/main/libmain.a(main.c.obj):C:/get-started/Node/components/sensors/mq136.h:22: first defined here
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

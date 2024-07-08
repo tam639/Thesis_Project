@@ -1,0 +1,786 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d878h ( 55416) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d8a0 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ff3c vaddr=40080000 size=000dch (   220) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21d30h (138544) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041d58 vaddr=400800dc size=0e9e8h ( 59880) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (245) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  52caa3fbd...[0m
+[0;32mI (261) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3690 len 0002C970 (178 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EAC4 len 0001153C (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2399) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (2409) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (2409) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (2419) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (2419) DHT22: Hum 46.5[0m
+[0;32mI (2419) DHT22: Tmp 32.3[0m
+[0;32mI (2429) MQ131: MQ131 - O3 Concentration: 17.45 ppb[0m
+[0;32mI (2429) MQ136: MQ136 - SO2 Concentration: 10.08 ppm[0m
+
+[0;32mI (2439) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (2439) MICS6814: MICS6814 - NO2 Concentration: 1.49 ppm[0m
+
+[0;32mI (2449) GPS: Received: [0m
+[0;32mI (2449) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (2459) SSD1306: INTERFACE is i2c[0m
+[0;32mI (2459) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (2469) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (2469) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (2479) SSD1306: New i2c driver is used[0m
+[0;32mI (2479) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2489) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2499) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2509) main_task: Returned from app_main()[0m
+[0;32mI (2559) SSD1306: Panel is 128x64[0m
+[0;32mI (2559) SSD1306: OLED configured successfully[0m
+[0;32mI (2899) RX_TASK: Read 6 bytes: C000041F06C7[0m
+[0;31mE (3409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (4409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (5409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (6409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (7399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (7409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (7459) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (7459) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (7459) PMS7003: PM10: 22 µg/m³[0m
+[0;32mI (7459) DHT22: Hum 46.5[0m
+[0;32mI (7459) DHT22: Tmp 32.3[0m
+[0;32mI (7469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (7469) MQ136: MQ136 - SO2 Concentration: 10.77 ppm[0m
+
+[0;32mI (7479) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (7489) MICS6814: MICS6814 - NO2 Concentration: 1.41 ppm[0m
+
+[0;32mI (7489) GPS: Received: [0m
+[0;32mI (7489) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (8409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (9409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (10409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (11409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (12399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (12409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (12499) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (12499) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (12499) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (12499) DHT22: Hum 46.4[0m
+[0;32mI (12499) DHT22: Tmp 32.3[0m
+[0;32mI (12509) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (12509) MQ136: MQ136 - SO2 Concentration: 11.23 ppm[0m
+
+[0;32mI (12519) MICS6814: MICS6814 - CO Concentration: 721.00 ppm[0m
+[0;32mI (12529) MICS6814: MICS6814 - NO2 Concentration: 1.74 ppm[0m
+
+[0;32mI (12529) GPS: Received: [0m
+[0;32mI (12539) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (13409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (14409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (15409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (16409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (17399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (17409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (17539) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (17539) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (17539) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (17539) DHT22: Hum 46.4[0m
+[0;32mI (17539) DHT22: Tmp 32.3[0m
+[0;32mI (17549) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (17549) MQ136: MQ136 - SO2 Concentration: 11.12 ppm[0m
+
+[0;32mI (17559) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (17569) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (17569) GPS: Received: [0m
+[0;32mI (17579) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (18409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (19409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (20409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (21409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (22399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (22409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (22579) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (22579) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (22589) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (22589) DHT22: Hum 46.3[0m
+[0;32mI (22599) DHT22: Tmp 32.3[0m
+[0;32mI (22599) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (22609) MQ136: MQ136 - SO2 Concentration: 10.83 ppm[0m
+
+[0;32mI (22609) MICS6814: MICS6814 - CO Concentration: 1292.00 ppm[0m
+[0;32mI (22619) MICS6814: MICS6814 - NO2 Concentration: 1.13 ppm[0m
+
+[0;32mI (22629) GPS: Received: [0m
+[0;32mI (22629) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (23409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (24409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (25409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (26409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (27399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (27409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (27639) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (27639) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (27639) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (27639) DHT22: Hum 46.3[0m
+[0;32mI (27639) DHT22: Tmp 32.3[0m
+[0;32mI (27649) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (27649) MQ136: MQ136 - SO2 Concentration: 10.83 ppm[0m
+
+[0;32mI (27659) MICS6814: MICS6814 - CO Concentration: 1139.00 ppm[0m
+[0;32mI (27669) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (27669) GPS: Received: [0m
+[0;32mI (27679) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (28409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (29409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (30409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (31409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (32399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (32409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (32679) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (32679) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (32679) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (32679) DHT22: Hum 46.2[0m
+[0;32mI (32679) DHT22: Tmp 32.3[0m
+[0;32mI (32689) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (32689) MQ136: MQ136 - SO2 Concentration: 11.14 ppm[0m
+
+[0;32mI (32699) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (32709) MICS6814: MICS6814 - NO2 Concentration: 1.49 ppm[0m
+
+[0;32mI (32709) GPS: Received: [0m
+[0;32mI (32719) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (33409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (34409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (35409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (36409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (37399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (37409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (37719) PMS7003: PM1.0: 11 µg/m³[0m
+[0;32mI (37719) PMS7003: PM2.5: 15 µg/m³[0m
+[0;32mI (37719) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (37719) DHT22: Hum 46.2[0m
+[0;32mI (37719) DHT22: Tmp 32.3[0m
+[0;32mI (37729) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (37729) MQ136: MQ136 - SO2 Concentration: 11.54 ppm[0m
+
+[0;32mI (37739) MICS6814: MICS6814 - CO Concentration: 636.00 ppm[0m
+[0;32mI (37749) MICS6814: MICS6814 - NO2 Concentration: 1.46 ppm[0m
+
+[0;32mI (37749) GPS: Received: [0m
+[0;32mI (37759) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (38409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (39409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (40409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (41409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (42399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (42409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (42759) PMS7003: PM1.0: 11 µg/m³[0m
+[0;32mI (42759) PMS7003: PM2.5: 14 µg/m³[0m
+[0;32mI (42759) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (42759) DHT22: Hum 46.2[0m
+[0;32mI (42759) DHT22: Tmp 32.3[0m
+[0;32mI (42769) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (42779) MQ136: MQ136 - SO2 Concentration: 11.95 ppm[0m
+
+[0;32mI (42789) MICS6814: MICS6814 - CO Concentration: 32.00 ppm[0m
+[0;32mI (42789) MICS6814: MICS6814 - NO2 Concentration: 1.70 ppm[0m
+
+[0;32mI (42799) GPS: Received: [0m
+[0;32mI (42799) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (43409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (44409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (45409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (46409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (47399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (47409) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (47809) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (47809) PMS7003: PM2.5: 15 µg/m³[0m
+[0;32mI (47809) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (47809) DHT22: Hum 46.1[0m
+[0;32mI (47809) DHT22: Tmp 32.4[0m
+[0;32mI (47819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (47819) MQ136: MQ136 - SO2 Concentration: 12.03 ppm[0m
+
+[0;32mI (47829) MICS6814: MICS6814 - CO Concentration: 2063.00 ppm[0m
+[0;32mI (47839) MICS6814: MICS6814 - NO2 Concentration: 1.74 ppm[0m
+
+[0;32mI (47839) GPS: Received: [0m
+[0;32mI (47849) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (48409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (49409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (50409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (51409) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (52399) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (52419) DHT: Sensor Timeout
+[0m
+[0;31mE (52419) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (52849) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (52849) PMS7003: PM2.5: 15 µg/m³[0m
+[0;32mI (52849) PMS7003: PM10: 16 µg/m³[0m
+[0;32mI (52849) DHT22: Hum 46.1[0m
+[0;32mI (52849) DHT22: Tmp 32.4[0m
+[0;32mI (52859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (52859) MQ136: MQ136 - SO2 Concentration: 11.80 ppm[0m
+
+[0;32mI (52869) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (52879) MICS6814: MICS6814 - NO2 Concentration: 1.31 ppm[0m
+
+[0;32mI (52879) GPS: Received: [0m
+[0;32mI (52889) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (53419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (54419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (55419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (56419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (57419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (57419) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (57889) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (57889) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (57889) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (57889) DHT22: Hum 46.0[0m
+[0;32mI (57889) DHT22: Tmp 32.4[0m
+[0;32mI (57899) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (57899) MQ136: MQ136 - SO2 Concentration: 11.43 ppm[0m
+
+[0;32mI (57909) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (57919) MICS6814: MICS6814 - NO2 Concentration: 1.44 ppm[0m
+
+[0;32mI (57919) GPS: Received: [0m
+[0;32mI (57929) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (58419) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (59429) DHT: Sensor Timeout
+[0m
+[0;31mE (59429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (60429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (61429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (62419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (62429) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (62929) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (62939) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (62939) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (62939) DHT22: Hum 46.0[0m
+[0;32mI (62939) DHT22: Tmp 32.4[0m
+[0;32mI (62949) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (62959) MQ136: MQ136 - SO2 Concentration: 11.58 ppm[0m
+
+[0;32mI (62959) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (62969) MICS6814: MICS6814 - NO2 Concentration: 1.54 ppm[0m
+
+[0;32mI (62969) GPS: Received: [0m
+[0;32mI (62979) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (63429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (64429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (65429) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (66439) DHT: Sensor Timeout
+[0m
+[0;31mE (66439) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (67419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (67439) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (67979) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (67979) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (67979) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (67979) DHT22: Hum 45.9[0m
+[0;32mI (67979) DHT22: Tmp 32.4[0m
+[0;32mI (67989) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (67989) MQ136: MQ136 - SO2 Concentration: 11.82 ppm[0m
+
+[0;32mI (67999) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (68009) MICS6814: MICS6814 - NO2 Concentration: 1.29 ppm[0m
+
+[0;32mI (68009) GPS: Received: [0m
+[0;32mI (68019) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (68439) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (69439) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (70439) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (71439) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (72419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (72439) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (73019) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (73019) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (73019) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (73019) DHT22: Hum 45.9[0m
+[0;32mI (73019) DHT22: Tmp 32.4[0m
+[0;32mI (73029) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (73029) MQ136: MQ136 - SO2 Concentration: 11.80 ppm[0m
+
+[0;32mI (73039) MICS6814: MICS6814 - CO Concentration: 2050.00 ppm[0m
+[0;32mI (73049) MICS6814: MICS6814 - NO2 Concentration: 1.71 ppm[0m
+
+[0;32mI (73049) GPS: Received: [0m
+[0;32mI (73059) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (73449) DHT: Sensor Timeout
+[0m
+[0;31mE (73459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (74459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (75459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (76459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (77419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (77459) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (78059) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (78059) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (78059) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (78059) DHT22: Hum 45.9[0m
+[0;32mI (78059) DHT22: Tmp 32.4[0m
+[0;32mI (78069) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (78069) MQ136: MQ136 - SO2 Concentration: 13.00 ppm[0m
+
+[0;32mI (78079) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (78089) MICS6814: MICS6814 - NO2 Concentration: 1.24 ppm[0m
+
+[0;32mI (78089) GPS: Received: [0m
+[0;32mI (78099) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (78459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (79459) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (80459) DHT: Sensor Timeout
+[0m
+[0;31mE (80469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (81469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (82419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (82469) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (83099) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (83099) PMS7003: PM2.5: 16 µg/m³[0m
+[0;32mI (83099) PMS7003: PM10: 16 µg/m³[0m
+[0;32mI (83099) DHT22: Hum 45.8[0m
+[0;32mI (83099) DHT22: Tmp 32.3[0m
+[0;32mI (83109) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (83119) MQ136: MQ136 - SO2 Concentration: 12.63 ppm[0m
+
+[0;32mI (83139) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (83139) MICS6814: MICS6814 - NO2 Concentration: 1.09 ppm[0m
+
+[0;32mI (83149) GPS: Received: [0m
+[0;32mI (83149) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (83469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (84469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (85469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (86469) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (87419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (87479) DHT: Sensor Timeout
+[0m
+[0;31mE (87479) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (88159) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (88159) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (88159) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (88159) DHT22: Hum 45.8[0m
+[0;32mI (88159) DHT22: Tmp 32.3[0m
+[0;32mI (88169) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (88169) MQ136: MQ136 - SO2 Concentration: 11.76 ppm[0m
+
+[0;32mI (88179) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (88189) MICS6814: MICS6814 - NO2 Concentration: 1.02 ppm[0m
+
+[0;32mI (88189) GPS: Received: [0m
+[0;32mI (88199) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (88479) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (89479) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (90479) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (91479) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (92419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (92479) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (93199) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (93199) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (93199) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (93199) DHT22: Hum 45.8[0m
+[0;32mI (93199) DHT22: Tmp 32.4[0m
+[0;32mI (93209) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (93209) MQ136: MQ136 - SO2 Concentration: 11.82 ppm[0m
+
+[0;32mI (93219) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (93229) MICS6814: MICS6814 - NO2 Concentration: 0.93 ppm[0m
+
+[0;32mI (93229) GPS: Received: [0m
+[0;32mI (93239) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (93479) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (94489) DHT: Sensor Timeout
+[0m
+[0;31mE (94499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (95499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (96499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (97419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (97499) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (98239) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (98239) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (98239) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (98239) DHT22: Hum 45.7[0m
+[0;32mI (98239) DHT22: Tmp 32.3[0m
+[0;32mI (98249) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (98249) MQ136: MQ136 - SO2 Concentration: 12.03 ppm[0m
+
+[0;32mI (98259) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (98269) MICS6814: MICS6814 - NO2 Concentration: 1.08 ppm[0m
+
+[0;32mI (98269) GPS: Received: [0m
+[0;32mI (98279) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (98499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (99499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (100499) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (101509) DHT: Sensor Timeout
+[0m
+[0;31mE (101519) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (102419) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (102519) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (103279) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (103279) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (103279) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (103279) DHT22: Hum 45.6[0m
+[0;32mI (103289) DHT22: Tmp 32.4[0m
+[0;32mI (103289) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (103299) MQ136: MQ136 - SO2 Concentration: 11.58 ppm[0m
+
+[0;32mI (103299) MICS6814: MICS6814 - CO Concentration: 923.00 ppm[0m
+[0;32mI (103309) MICS6814: MICS6814 - NO2 Concentration: 1.40 ppm[0m
+
+[0;32mI (103319) GPS: Received: [0m
+[0;32mI (103319) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (103519) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (104519) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (105519) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (106519) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (107429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (107519) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (108329) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (108329) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (108329) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (108329) DHT22: Hum 45.6[0m
+[0;32mI (108329) DHT22: Tmp 32.3[0m
+[0;32mI (108339) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (108339) MQ136: MQ136 - SO2 Concentration: 12.14 ppm[0m
+
+[0;32mI (108349) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (108359) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (108359) GPS: Received: [0m
+[0;32mI (108369) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (108529) DHT: Sensor Timeout
+[0m
+[0;31mE (108539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (109539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (110539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (111539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (112429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (112539) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (113369) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (113369) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (113369) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (113369) DHT22: Hum 45.6[0m
+[0;32mI (113369) DHT22: Tmp 32.3[0m
+[0;32mI (113379) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (113379) MQ136: MQ136 - SO2 Concentration: 12.39 ppm[0m
+
+[0;32mI (113389) MICS6814: MICS6814 - CO Concentration: 2066.00 ppm[0m
+[0;32mI (113399) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (113399) GPS: Received: [0m
+[0;32mI (113409) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (113539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (114539) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (115549) DHT: Sensor Timeout
+[0m
+[0;31mE (115549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (116549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (117429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (117549) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (118409) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (118409) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (118409) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (118409) DHT22: Hum 45.5[0m
+[0;32mI (118409) DHT22: Tmp 32.3[0m
+[0;32mI (118419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (118419) MQ136: MQ136 - SO2 Concentration: 11.50 ppm[0m
+
+[0;32mI (118429) MICS6814: MICS6814 - CO Concentration: 1765.00 ppm[0m
+[0;32mI (118439) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (118439) GPS: Received: [0m
+[0;32mI (118449) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (118549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (119549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (120549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (121549) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (122429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (122559) DHT: Sensor Timeout
+[0m
+[0;31mE (122559) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (123449) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (123449) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (123449) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (123449) DHT22: Hum 45.5[0m
+[0;32mI (123459) DHT22: Tmp 32.3[0m
+[0;32mI (123469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (123479) MQ136: MQ136 - SO2 Concentration: 11.69 ppm[0m
+
+[0;32mI (123489) MICS6814: MICS6814 - CO Concentration: 853.00 ppm[0m
+[0;32mI (123489) MICS6814: MICS6814 - NO2 Concentration: 1.55 ppm[0m
+
+[0;32mI (123499) GPS: Received: [0m
+[0;32mI (123499) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (123569) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (124569) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (125569) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (126569) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (127429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (127569) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (128509) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (128509) PMS7003: PM2.5: 16 µg/m³[0m
+[0;32mI (128509) PMS7003: PM10: 16 µg/m³[0m
+[0;32mI (128509) DHT22: Hum 45.5[0m
+[0;32mI (128509) DHT22: Tmp 32.3[0m
+[0;32mI (128519) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (128519) MQ136: MQ136 - SO2 Concentration: 11.80 ppm[0m
+
+[0;32mI (128529) MICS6814: MICS6814 - CO Concentration: 1923.00 ppm[0m
+[0;32mI (128539) MICS6814: MICS6814 - NO2 Concentration: 1.51 ppm[0m
+
+[0;32mI (128539) GPS: Received: [0m
+[0;32mI (128549) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (128569) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (129579) DHT: Sensor Timeout
+[0m
+[0;31mE (129579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (130579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (131579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (132429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (132579) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (133549) PMS7003: PM1.0: 11 µg/m³[0m
+[0;32mI (133549) PMS7003: PM2.5: 15 µg/m³[0m
+[0;32mI (133549) PMS7003: PM10: 15 µg/m³[0m
+[0;32mI (133549) DHT22: Hum 45.5[0m
+[0;32mI (133549) DHT22: Tmp 32.3[0m
+[0;32mI (133559) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (133559) MQ136: MQ136 - SO2 Concentration: 11.58 ppm[0m
+
+[0;32mI (133569) MICS6814: MICS6814 - CO Concentration: 1812.00 ppm[0m
+[0;31mE (133579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (133579) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (133589) GPS: Received: [0m
+[0;32mI (133589) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (134579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (135579) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (136589) DHT: Sensor Timeout
+[0m
+[0;31mE (136589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (137429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (137589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (138589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (138599) PMS7003: PM1.0: 10 µg/m³[0m
+[0;32mI (138599) PMS7003: PM2.5: 14 µg/m³[0m
+[0;32mI (138599) PMS7003: PM10: 14 µg/m³[0m
+[0;32mI (138599) DHT22: Hum 45.4[0m
+[0;32mI (138609) DHT22: Tmp 32.3[0m
+[0;32mI (138609) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (138619) MQ136: MQ136 - SO2 Concentration: 11.80 ppm[0m
+
+[0;32mI (138619) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (138629) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (138639) GPS: Received: [0m
+[0;32mI (138639) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (139589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (140589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (141589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (142429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (142589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (143589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (143649) PMS7003: PM1.0: 11 µg/m³[0m
+[0;32mI (143649) PMS7003: PM2.5: 16 µg/m³[0m
+[0;32mI (143649) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (143649) DHT22: Hum 45.4[0m
+[0;32mI (143649) DHT22: Tmp 32.3[0m
+[0;32mI (143659) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (143659) MQ136: MQ136 - SO2 Concentration: 12.77 ppm[0m
+
+[0;32mI (143669) MICS6814: MICS6814 - CO Concentration: 1281.00 ppm[0m
+[0;32mI (143679) MICS6814: MICS6814 - NO2 Concentration: 1.50 ppm[0m
+
+[0;32mI (143679) GPS: Received: [0m
+[0;32mI (143689) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (144589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (145589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (146589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (147429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (147589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (148589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (148689) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (148689) PMS7003: PM2.5: 16 µg/m³[0m
+[0;32mI (148689) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (148689) DHT22: Hum 45.4[0m
+[0;32mI (148689) DHT22: Tmp 32.3[0m
+[0;32mI (148699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (148699) MQ136: MQ136 - SO2 Concentration: 11.95 ppm[0m
+
+[0;32mI (148709) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (148719) MICS6814: MICS6814 - NO2 Concentration: 1.43 ppm[0m
+
+[0;32mI (148719) GPS: Received: [0m
+[0;32mI (148729) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (149589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (150589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (151589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (152429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (152589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (153589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (153729) PMS7003: PM1.0: 11 µg/m³[0m
+[0;32mI (153729) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (153729) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (153729) DHT22: Hum 45.4[0m
+[0;32mI (153729) DHT22: Tmp 32.3[0m
+[0;32mI (153739) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (153739) MQ136: MQ136 - SO2 Concentration: 12.35 ppm[0m
+
+[0;32mI (153749) MICS6814: MICS6814 - CO Concentration: 285.00 ppm[0m
+[0;32mI (153759) MICS6814: MICS6814 - NO2 Concentration: 1.32 ppm[0m
+
+[0;32mI (153759) GPS: Received: [0m
+[0;32mI (153769) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (154589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (155589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (156589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (157429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (157589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (158589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (158769) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (158769) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (158769) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (158769) DHT22: Hum 45.3[0m
+[0;32mI (158769) DHT22: Tmp 32.3[0m
+[0;32mI (158779) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (158779) MQ136: MQ136 - SO2 Concentration: 12.40 ppm[0m
+
+[0;32mI (158789) MICS6814: MICS6814 - CO Concentration: 746.00 ppm[0m
+[0;32mI (158799) MICS6814: MICS6814 - NO2 Concentration: 1.59 ppm[0m
+
+[0;32mI (158799) GPS: Received: [0m
+[0;32mI (158809) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (159589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (160589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (161589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (162429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (162589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (163589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (163809) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (163809) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (163809) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (163809) DHT22: Hum 45.3[0m
+[0;32mI (163809) DHT22: Tmp 32.3[0m
+[0;32mI (163819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (163819) MQ136: MQ136 - SO2 Concentration: 12.56 ppm[0m
+
+[0;32mI (163829) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (163839) MICS6814: MICS6814 - NO2 Concentration: 1.47 ppm[0m
+
+[0;32mI (163839) GPS: Received: [0m
+[0;32mI (163849) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (164589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (165589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (166589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (167429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (167589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (168589) DHT: Sensor Timeout
+[0m
+[0;31mE (168589) uart: uart_read_bytes(1398): uart driver error[0m
+=== Reading Node number 4 ===
+[0;32mI (168849) PMS7003: PM1.0: 12 µg/m³[0m
+[0;32mI (168849) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (168849) PMS7003: PM10: 17 µg/m³[0m
+[0;32mI (168849) DHT22: Hum 45.3[0m
+[0;32mI (168849) DHT22: Tmp 32.3[0m
+[0;32mI (168859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (168859) MQ136: MQ136 - SO2 Concentration: 11.86 ppm[0m
+
+[0;32mI (168869) MICS6814: MICS6814 - CO Concentration: 1409.00 ppm[0m
+[0;32mI (168879) MICS6814: MICS6814 - NO2 Concentration: 1.28 ppm[0m
+
+[0;32mI (168879) GPS: Received: [0m
+[0;32mI (168889) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (169589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (170589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (171589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;32mI (172429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (172589) uart: uart_read_bytes(1398): uart driver error[0m
+[0;31mE (173589) uart: uart_read_bytes(1398): uart driver error[0m

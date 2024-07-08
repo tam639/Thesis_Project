@@ -1,0 +1,169 @@
+oader[0m
+[0;32mI (36) boot: ch�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0d4h ( 45268) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b0fc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d358 vaddr=40080000 size=02cc0h ( 11456) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16e74h ( 93812) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036e9c vaddr=40082cc0 size=0aaa0h ( 43680) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  fa074ce85...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (297) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) main_task: Returned from app_main()[0m
+[0;32mI (355) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (355) AODV: Route added: 92 -> 132 (seq: 0, hops: 1)[0m
+[0;32mI (355) AODV: Sending RREQ for 63[0m
+[0;32mI (3375) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (3375) AODV: Route added: 92 -> 132 (seq: 0, hops: 2)[0m
+[0;32mI (3375) AODV: Sending RREQ for 63[0m
+[0;32mI (6395) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (6395) AODV: Route added: 92 -> 132 (seq: 0, hops: 3)[0m
+[0;32mI (6395) AODV: Sending RREQ for 63[0m
+[0;32mI (9415) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (9415) AODV: Route added: 92 -> 132 (seq: 0, hops: 4)[0m
+[0;32mI (9415) AODV: Sending RREQ for 63[0m
+[0;32mI (12435) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (12435) AODV: Route added: 92 -> 132 (seq: 0, hops: 5)[0m
+[0;32mI (12435) AODV: Sending RREQ for 63[0m
+[0;32mI (15455) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (15455) AODV: Route added: 92 -> 132 (seq: 0, hops: 6)[0m
+[0;32mI (15455) AODV: Sending RREQ for 63[0m
+[0;32mI (18475) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (18475) AODV: Route added: 92 -> 132 (seq: 0, hops: 7)[0m
+[0;32mI (18475) AODV: Sending RREQ for 63[0m
+[0;32mI (21495) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (21495) AODV: Route added: 92 -> 132 (seq: 0, hops: 8)[0m
+[0;32mI (21495) AODV: Sending RREQ for 63[0m
+[0;32mI (24515) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (24515) AODV: Route added: 92 -> 132 (seq: 0, hops: 9)[0m
+[0;32mI (24515) AODV: Sending RREQ for 63[0m
+[0;32mI (27535) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (27535) AODV: Route added: 92 -> 132 (seq: 0, hops: 10)[0m
+[0;32mI (27535) AODV: Sending RREQ for 63[0m
+[0;32mI (30555) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (30555) AODV: Route added: 92 -> 132 (seq: 0, hops: 11)[0m
+[0;32mI (30555) AODV: Sending RREQ for 63[0m
+[0;32mI (33575) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (33575) AODV: Route added: 92 -> 132 (seq: 0, hops: 12)[0m
+[0;32mI (33575) AODV: Sending RREQ for 63[0m
+[0;32mI (36595) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (36595) AODV: Route added: 92 -> 132 (seq: 0, hops: 13)[0m
+[0;32mI (36595) AODV: Sending RREQ for 63[0m
+[0;32mI (39615) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (39615) AODV: Route added: 92 -> 132 (seq: 0, hops: 14)[0m
+[0;32mI (39615) AODV: Sending RREQ for 63[0m
+[0;32mI (42635) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (42635) AODV: Route added: 92 -> 132 (seq: 0, hops: 15)[0m
+[0;32mI (42635) AODV: Sending RREQ for 63[0m
+[0;32mI (45655) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (45655) AODV: Route added: 92 -> 132 (seq: 0, hops: 16)[0m
+[0;32mI (45655) AODV: Sending RREQ for 63[0m
+[0;32mI (48675) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (48675) AODV: Route added: 92 -> 132 (seq: 0, hops: 17)[0m
+[0;32mI (48675) AODV: Sending RREQ for 63[0m
+[0;32mI (51695) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (51695) AODV: Route added: 92 -> 132 (seq: 0, hops: 18)[0m
+[0;32mI (51695) AODV: Sending RREQ for 63[0m
+[0;32mI (54715) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (54715) AODV: Route added: 92 -> 132 (seq: 0, hops: 19)[0m
+[0;32mI (54715) AODV: Sending RREQ for 63[0m
+[0;32mI (57735) AODV: Handling RREQ from 92 to 63[0m
+[0;32mI (57735) AODV: Route added: 92 -> 132 (seq: 0, hops: 20)[0m
+[0;32mI (57735) AODV: Sending RREQ for 63[0m
+[0;32mI (60755) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (60755) AODV: Routing table is full![0m
+[0;32mI (60755) AODV: Sending RREQ for 63[0m
+[0;32mI (63775) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (63775) AODV: Routing table is full![0m
+[0;32mI (63775) AODV: Sending RREQ for 63[0m
+[0;32mI (66795) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (66795) AODV: Routing table is full![0m
+[0;32mI (66795) AODV: Sending RREQ for 63[0m
+[0;32mI (69815) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (69815) AODV: Routing table is full![0m
+[0;32mI (69815) AODV: Sending RREQ for 63[0m
+[0;32mI (72835) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (72835) AODV: Routing table is full![0m
+[0;32mI (72835) AODV: Sending RREQ for 63[0m
+[0;32mI (75855) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (75855) AODV: Routing table is full![0m
+[0;32mI (75855) AODV: Sending RREQ for 63[0m
+[0;32mI (78875) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (78875) AODV: Routing table is full![0m
+[0;32mI (78875) AODV: Sending RREQ for 63[0m
+[0;32mI (81895) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (81895) AODV: Routing table is full![0m
+[0;32mI (81895) AODV: Sending RREQ for 63[0m
+[0;32mI (84915) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (84915) AODV: Routing table is full![0m
+[0;32mI (84915) AODV: Sending RREQ for 63[0m
+[0;32mI (87935) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (87935) AODV: Routing table is full![0m
+[0;32mI (87935) AODV: Sending RREQ for 63[0m
+[0;32mI (90955) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (90955) AODV: Routing table is full![0m
+[0;32mI (90955) AODV: Sending RREQ for 63[0m
+[0;32mI (93975) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (93975) AODV: Routing table is full![0m
+[0;32mI (93975) AODV: Sending RREQ for 63[0m
+[0;32mI (96995) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (96995) AODV: Routing table is full![0m
+[0;32mI (96995) AODV: Sending RREQ for 63[0m
+[0;32mI (100015) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (100015) AODV: Routing table is full![0m
+[0;32mI (100015) AODV: Sending RREQ for 63[0m
+[0;32mI (103035) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (103035) AODV: Routing table is full![0m
+[0;32mI (103035) AODV: Sending RREQ for 63[0m
+[0;32mI (106055) AODV: Handling RREQ from 92 to 63[0m
+[0;33mW (106055) AODV: Routing table is full![0m
+[0;32mI (106055) AODV: Sending RREQ for 63[0m

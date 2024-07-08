@@ -1,0 +1,1900 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d8c8h ( 55496) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d8f0 vaddr=3ffb0000 size=02654h (  9812) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ff4c vaddr=40080000 size=000cch (   204) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21ee0h (138976) map[0m
+[0;32mI (186) esp_image: segment 4: paddr=00041f08 vaddr=400800cc size=0e9f8h ( 59896) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (245) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  7fccadde7...[0m
+[0;32mI (261) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (276) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (294) heap_init: At 3FFB3268 len 0002CD98 (179 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (313) heap_init: At 4008EAC4 len 0001153C (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (341) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (399) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+=== Reading Sensors ===
+[0;32mI (419) DHT22: Hum 44.4[0m
+[0;32mI (419) DHT22: Tmp 29.2[0m
+
+[0;32mI (419) MQ131: MQ131 - O3 Concentration: 60.62 ppb[0m
+[0;32mI (429) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (429) MICS6814: MICS6814 - CO Concentration: 1789.00 ppm[0m
+[0;32mI (439) MICS6814: MICS6814 - NO2 Concentration: 1.50 ppm[0m
+
+[0;32mI (439) SSD1306: INTERFACE is i2c[0m
+[0;32mI (449) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (449) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (459) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (459) SSD1306: New i2c driver is used[0m
+[0;32mI (469) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (469) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (479) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (489) main_task: Returned from app_main()[0m
+[0;32mI (539) SSD1306: Panel is 128x64[0m
+[0;32mI (539) SSD1306: OLED configured successfully[0m
+=== Reading Sensors ===
+[0;32mI (1459) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (1459) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (1459) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (1459) DHT22: Hum 44.4[0m
+[0;32mI (1469) DHT22: Tmp 29.3[0m
+
+[0;32mI (1469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (1479) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (1479) MICS6814: MICS6814 - CO Concentration: 11.00 ppm[0m
+[0;32mI (1489) MICS6814: MICS6814 - NO2 Concentration: 2.07 ppm[0m
+
+[0;32mI (1519) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (2399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (2519) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (2519) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (2519) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (2519) DHT22: Hum 44.4[0m
+[0;32mI (2529) DHT22: Tmp 29.3[0m
+
+[0;32mI (2529) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (2539) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (2539) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (2549) MICS6814: MICS6814 - NO2 Concentration: 1.64 ppm[0m
+
+[0;32mI (2579) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;31mE (3589) DHT: Sensor Timeout
+[0m
+[0;32mI (3589) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (3589) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (3599) MICS6814: MICS6814 - CO Concentration: 205.00 ppm[0m
+[0;32mI (3599) MICS6814: MICS6814 - NO2 Concentration: 1.60 ppm[0m
+
+[0;32mI (3629) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*[0m
+
+[0;32mI (4399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (4639) DHT22: Hum 44.4[0m
+[0;32mI (4639) DHT22: Tmp 29.2[0m
+
+[0;32mI (4639) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (4649) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (4649) MICS6814: MICS6814 - CO Concentration: 2056.00 ppm[0m
+[0;32mI (4659) MICS6814: MICS6814 - NO2 Concentration: 1.41 ppm[0m
+
+[0;32mI (4679) GPS: Received: 30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+[0;32mI (4689) RX_TASK: Read 2 bytes: 6C6F[0m
+
+[0;32mI (5399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (5689) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (5689) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (5689) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (5689) DHT22: Hum 44.4[0m
+[0;32mI (5699) DHT22: Tmp 29.3[0m
+
+[0;32mI (5699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (5709) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (5709) MICS6814: MICS6814 - CO Concentration: 2273.00 ppm[0m
+[0;32mI (5719) MICS6814: MICS6814 - NO2 Concentration: 1.63 ppm[0m
+
+[0;32mI (5749) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (6399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (6689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (6749) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (6749) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (6749) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (6749) DHT22: Hum 44.4[0m
+[0;32mI (6759) DHT22: Tmp 29.4[0m
+
+[0;32mI (6759) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (6769) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (6769) MICS6814: MICS6814 - CO Concentration: 2077.00 ppm[0m
+[0;32mI (6779) MICS6814: MICS6814 - NO2 Concentration: 1.89 ppm[0m
+
+[0;32mI (6809) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,29,,,24*75
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (7809) DHT22: Hum 44.4[0m
+[0;32mI (7809) DHT22: Tmp 29.3[0m
+
+[0;32mI (7809) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (7819) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (7819) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (7829) MICS6814: MICS6814 - NO2 Concentration: 1.60 ppm[0m
+
+[0;32mI (7849) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,02,01,,,18,29,,,21*7B
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (8399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (8689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (8859) DHT22: Hum 44.4[0m
+[0;32mI (8859) DHT22: Tmp 29.3[0m
+
+[0;32mI (8859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (8859) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (8869) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (8869) MICS6814: MICS6814 - NO2 Concentration: 1.63 ppm[0m
+
+[0;32mI (8899) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,01,,,14*7C
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (9899) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (9899) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (9899) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (9899) DHT22: Hum 44.4[0m
+[0;32mI (9909) DHT22: Tmp 29.4[0m
+
+[0;32mI (9909) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (9919) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (9919) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (9929) MICS6814: MICS6814 - NO2 Concentration: 1.52 ppm[0m
+
+[0;32mI (9959) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,03,,,24*7D
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (10399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (10689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (10959) DHT22: Hum 44.4[0m
+[0;32mI (10959) DHT22: Tmp 29.5[0m
+
+[0;32mI (10959) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (10969) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (10969) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (10979) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (11009) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (12009) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (12009) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (12009) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (12009) DHT22: Hum 44.3[0m
+[0;32mI (12019) DHT22: Tmp 29.4[0m
+
+[0;32mI (12019) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (12029) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (12029) MICS6814: MICS6814 - CO Concentration: 623.00 ppm[0m
+[0;32mI (12039) MICS6814: MICS6814 - NO2 Concentration: 1.86 ppm[0m
+
+[0;32mI (12069) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (12399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (12689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (13069) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (13069) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (13069) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (13069) DHT22: Hum 44.3[0m
+[0;32mI (13079) DHT22: Tmp 29.4[0m
+
+[0;32mI (13079) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (13089) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (13089) MICS6814: MICS6814 - CO Concentration: 640.00 ppm[0m
+[0;32mI (13099) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (13129) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (14129) DHT22: Hum 44.3[0m
+[0;32mI (14129) DHT22: Tmp 29.4[0m
+
+[0;32mI (14129) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (14139) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (14139) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (14149) MICS6814: MICS6814 - NO2 Concentration: 1.55 ppm[0m
+
+[0;32mI (14179) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (14399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (14689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (15189) DHT22: Hum 44.3[0m
+[0;32mI (15189) DHT22: Tmp 29.4[0m
+
+[0;32mI (15189) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (15199) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (15199) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (15209) MICS6814: MICS6814 - NO2 Concentration: 1.48 ppm[0m
+
+[0;32mI (15239) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (15399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (16239) DHT22: Hum 44.3[0m
+[0;32mI (16239) DHT22: Tmp 29.5[0m
+
+[0;32mI (16239) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (16249) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (16249) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (16259) MICS6814: MICS6814 - NO2 Concentration: 1.28 ppm[0m
+
+[0;32mI (16289) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (16399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (16689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (17289) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (17289) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (17289) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (17289) DHT22: Hum 44.3[0m
+[0;32mI (17299) DHT22: Tmp 29.5[0m
+
+[0;32mI (17299) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (17309) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (17309) MICS6814: MICS6814 - CO Concentration: 739.00 ppm[0m
+[0;32mI (17319) MICS6814: MICS6814 - NO2 Concentration: 1.82 ppm[0m
+
+[0;32mI (17349) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,25,,,23*7E
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (18349) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (18349) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (18349) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (18349) DHT22: Hum 44.3[0m
+[0;32mI (18359) DHT22: Tmp 29.5[0m
+
+[0;32mI (18359) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (18369) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (18369) MICS6814: MICS6814 - CO Concentration: 1060.00 ppm[0m
+[0;32mI (18379) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (18399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (18409) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,04,,,24*7A
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (18689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (19409) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (19409) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (19409) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (19409) DHT22: Hum 44.3[0m
+[0;32mI (19419) DHT22: Tmp 29.5[0m
+
+[0;32mI (19419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (19429) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (19429) MICS6814: MICS6814 - CO Concentration: 1679.00 ppm[0m
+[0;32mI (19439) MICS6814: MICS6814 - NO2 Concentration: 2.02 ppm[0m
+
+[0;32mI (19469) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (20399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (20399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (20469) DHT22: Hum 44.2[0m
+[0;32mI (20469) DHT22: Tmp 29.5[0m
+
+[0;32mI (20469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (20479) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (20479) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (20489) MICS6814: MICS6814 - NO2 Concentration: 1.71 ppm[0m
+
+[0;32mI (20519) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (20689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (21519) DHT22: Hum 44.2[0m
+[0;32mI (21519) DHT22: Tmp 29.5[0m
+
+[0;32mI (21519) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (21529) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (21529) MICS6814: MICS6814 - CO Concentration: 939.00 ppm[0m
+[0;32mI (21539) MICS6814: MICS6814 - NO2 Concentration: 1.53 ppm[0m
+
+[0;32mI (21569) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (22399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (22569) DHT22: Hum 44.2[0m
+[0;32mI (22569) DHT22: Tmp 29.6[0m
+
+[0;32mI (22569) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (22579) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (22579) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (22589) MICS6814: MICS6814 - NO2 Concentration: 1.63 ppm[0m
+
+[0;32mI (22619) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*[0m
+
+[0;32mI (22689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (23629) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (23629) PMS7003: PM2.5: 24 µg/m³[0m
+[0;32mI (23629) PMS7003: PM10: 24 µg/m³[0m
+[0;32mI (23629) DHT22: Hum 44.2[0m
+[0;32mI (23639) DHT22: Tmp 29.6[0m
+
+[0;32mI (23639) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (23649) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (23649) MICS6814: MICS6814 - CO Concentration: 2148.00 ppm[0m
+[0;32mI (23659) MICS6814: MICS6814 - NO2 Concentration: 1.77 ppm[0m
+
+[0;32mI (23689) GPS: Received: 30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (24399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (24689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (24699) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (24699) PMS7003: PM2.5: 23 µg/m³[0m
+[0;32mI (24699) PMS7003: PM10: 23 µg/m³[0m
+[0;32mI (24699) DHT22: Hum 44.2[0m
+[0;32mI (24709) DHT22: Tmp 29.6[0m
+
+[0;32mI (24709) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (24719) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (24719) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (24729) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (24759) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (25399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (25759) DHT22: Hum 44.2[0m
+[0;32mI (25759) DHT22: Tmp 29.6[0m
+
+[0;32mI (25759) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (25769) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (25769) MICS6814: MICS6814 - CO Concentration: 2059.00 ppm[0m
+[0;32mI (25779) MICS6814: MICS6814 - NO2 Concentration: 1.51 ppm[0m
+
+[0;32mI (25809) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (26399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (26689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (26819) DHT: Sensor Timeout
+[0m
+[0;32mI (26819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (26819) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (26829) MICS6814: MICS6814 - CO Concentration: 1033.00 ppm[0m
+[0;32mI (26829) MICS6814: MICS6814 - NO2 Concentration: 1.78 ppm[0m
+
+[0;32mI (26859) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (27859) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (27859) PMS7003: PM2.5: 23 µg/m³[0m
+[0;32mI (27859) PMS7003: PM10: 23 µg/m³[0m
+[0;32mI (27859) DHT22: Hum 44.2[0m
+[0;32mI (27869) DHT22: Tmp 29.7[0m
+
+[0;32mI (27869) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (27879) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (27879) MICS6814: MICS6814 - CO Concentration: 16.00 ppm[0m
+[0;32mI (27889) MICS6814: MICS6814 - NO2 Concentration: 1.59 ppm[0m
+
+[0;32mI (27919) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,05,,,22*7D
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (28399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (28689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (28919) DHT22: Hum 44.1[0m
+[0;32mI (28919) DHT22: Tmp 29.7[0m
+
+[0;32mI (28919) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (28929) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (28929) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (28939) MICS6814: MICS6814 - NO2 Concentration: 1.19 ppm[0m
+
+[0;32mI (28969) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,05,,,19*75
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (29969) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (29969) PMS7003: PM2.5: 22 µg/m³[0m
+[0;32mI (29969) PMS7003: PM10: 24 µg/m³[0m
+[0;32mI (29969) DHT22: Hum 44.1[0m
+[0;32mI (29979) DHT22: Tmp 29.6[0m
+
+[0;32mI (29979) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (29989) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (29989) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (29999) MICS6814: MICS6814 - NO2 Concentration: 1.97 ppm[0m
+
+[0;32mI (30029) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,05,,,17*7B
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (30399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (30399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (30689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (31029) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (31029) PMS7003: PM2.5: 22 µg/m³[0m
+[0;32mI (31029) PMS7003: PM10: 23 µg/m³[0m
+[0;32mI (31029) DHT22: Hum 44.1[0m
+[0;32mI (31039) DHT22: Tmp 29.6[0m
+
+[0;32mI (31039) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (31049) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (31049) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (31059) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (31089) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (32089) DHT22: Hum 44.1[0m
+[0;32mI (32089) DHT22: Tmp 29.6[0m
+
+[0;32mI (32089) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (32099) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (32099) MICS6814: MICS6814 - CO Concentration: 1303.00 ppm[0m
+[0;32mI (32109) MICS6814: MICS6814 - NO2 Concentration: 1.68 ppm[0m
+
+[0;32mI (32139) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (32399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (32689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (33139) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (33139) PMS7003: PM2.5: 22 µg/m³[0m
+[0;32mI (33139) PMS7003: PM10: 23 µg/m³[0m
+[0;32mI (33139) DHT22: Hum 44.1[0m
+[0;32mI (33149) DHT22: Tmp 29.7[0m
+
+[0;32mI (33149) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (33159) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (33159) MICS6814: MICS6814 - CO Concentration: 1730.00 ppm[0m
+[0;32mI (33169) MICS6814: MICS6814 - NO2 Concentration: 1.49 ppm[0m
+
+[0;32mI (33199) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (34199) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (34199) PMS7003: PM2.5: 21 µg/m³[0m
+[0;32mI (34199) PMS7003: PM10: 22 µg/m³[0m
+[0;32mI (34199) DHT22: Hum 44.1[0m
+[0;32mI (34209) DHT22: Tmp 29.7[0m
+
+[0;32mI (34209) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (34219) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (34219) MICS6814: MICS6814 - CO Concentration: 985.00 ppm[0m
+[0;32mI (34229) MICS6814: MICS6814 - NO2 Concentration: 1.73 ppm[0m
+
+[0;32mI (34259) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (34399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (34689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (35259) DHT22: Hum 44.0[0m
+[0;32mI (35259) DHT22: Tmp 29.7[0m
+
+[0;32mI (35259) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (35269) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (35269) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (35279) MICS6814: MICS6814 - NO2 Concentration: 1.55 ppm[0m
+
+[0;32mI (35309) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (35399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (36309) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (36309) PMS7003: PM2.5: 21 µg/m³[0m
+[0;32mI (36309) PMS7003: PM10: 22 µg/m³[0m
+[0;32mI (36309) DHT22: Hum 44.0[0m
+[0;32mI (36319) DHT22: Tmp 29.7[0m
+
+[0;32mI (36319) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (36329) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (36329) MICS6814: MICS6814 - CO Concentration: 26.00 ppm[0m
+[0;32mI (36339) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (36369) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,28,,,24*74
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (36399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (36689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (37369) DHT22: Hum 44.0[0m
+[0;32mI (37369) DHT22: Tmp 29.7[0m
+
+[0;32mI (37369) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (37379) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (37379) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (37389) MICS6814: MICS6814 - NO2 Concentration: 1.61 ppm[0m
+
+[0;32mI (37419) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,28,,,20*70
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (38399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (38419) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (38419) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (38419) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (38419) DHT22: Hum 44.0[0m
+[0;32mI (38429) DHT22: Tmp 29.7[0m
+
+[0;32mI (38429) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (38439) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (38439) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (38449) MICS6814: MICS6814 - NO2 Concentration: 1.47 ppm[0m
+
+[0;32mI (38479) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,06,,,25*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (38689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (39479) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (39479) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (39479) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (39479) DHT22: Hum 44.0[0m
+[0;32mI (39489) DHT22: Tmp 29.7[0m
+
+[0;32mI (39489) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (39499) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (39499) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (39509) MICS6814: MICS6814 - NO2 Concentration: 1.48 ppm[0m
+
+[0;32mI (39539) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (40399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (40399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (40539) PMS7003: PM1.0: 13 µg/m³[0m
+[0;32mI (40539) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (40539) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (40539) DHT22: Hum 44.0[0m
+[0;32mI (40549) DHT22: Tmp 29.8[0m
+
+[0;32mI (40549) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (40559) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (40559) MICS6814: MICS6814 - CO Concentration: 18.00 ppm[0m
+[0;32mI (40569) MICS6814: MICS6814 - NO2 Concentration: 1.92 ppm[0m
+
+[0;32mI (40599) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (40689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (41599) DHT22: Hum 44.0[0m
+[0;32mI (41599) DHT22: Tmp 29.8[0m
+
+[0;32mI (41599) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (41609) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (41609) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (41619) MICS6814: MICS6814 - NO2 Concentration: 1.63 ppm[0m
+
+[0;32mI (41639) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,07,,,24*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*[0m
+
+[0;32mI (42399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (42649) DHT22: Hum 43.9[0m
+[0;32mI (42649) DHT22: Tmp 29.8[0m
+
+[0;32mI (42649) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (42659) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (42659) MICS6814: MICS6814 - CO Concentration: 1766.00 ppm[0m
+[0;32mI (42669) MICS6814: MICS6814 - NO2 Concentration: 1.72 ppm[0m
+
+[0;32mI (42689) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (42699) GPS: Received: 30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (43709) DHT22: Hum 43.9[0m
+[0;32mI (43709) DHT22: Tmp 29.8[0m
+
+[0;32mI (43709) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (43719) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (43719) MICS6814: MICS6814 - CO Concentration: 1600.00 ppm[0m
+[0;32mI (43729) MICS6814: MICS6814 - NO2 Concentration: 1.49 ppm[0m
+
+[0;32mI (43759) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (44399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (44689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (44759) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (44759) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (44759) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (44759) DHT22: Hum 43.9[0m
+[0;32mI (44769) DHT22: Tmp 29.8[0m
+
+[0;32mI (44769) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (44779) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (44779) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (44789) MICS6814: MICS6814 - NO2 Concentration: 1.47 ppm[0m
+
+[0;32mI (44819) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (45399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (45819) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (45819) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (45819) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (45819) DHT22: Hum 43.9[0m
+[0;32mI (45829) DHT22: Tmp 29.8[0m
+
+[0;32mI (45829) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (45839) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (45839) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (45849) MICS6814: MICS6814 - NO2 Concentration: 1.89 ppm[0m
+
+[0;32mI (45879) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (46399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (46689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (46879) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (46879) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (46879) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (46879) DHT22: Hum 43.9[0m
+[0;32mI (46889) DHT22: Tmp 29.8[0m
+
+[0;32mI (46889) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (46899) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (46899) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (46909) MICS6814: MICS6814 - NO2 Concentration: 1.42 ppm[0m
+
+[0;32mI (46939) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (47949) DHT22: Hum 43.9[0m
+[0;32mI (47949) DHT22: Tmp 29.8[0m
+
+[0;32mI (47949) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (47959) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (47959) MICS6814: MICS6814 - CO Concentration: 11.00 ppm[0m
+[0;32mI (47969) MICS6814: MICS6814 - NO2 Concentration: 1.67 ppm[0m
+
+[0;32mI (47999) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (48399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (48689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (48999) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (48999) PMS7003: PM2.5: 21 µg/m³[0m
+[0;32mI (48999) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (48999) DHT22: Hum 43.9[0m
+[0;32mI (49009) DHT22: Tmp 29.8[0m
+
+[0;32mI (49009) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (49019) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (49019) MICS6814: MICS6814 - CO Concentration: 2195.00 ppm[0m
+[0;32mI (49029) MICS6814: MICS6814 - NO2 Concentration: 1.89 ppm[0m
+
+[0;32mI (49059) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (50059) DHT22: Hum 43.8[0m
+[0;32mI (50059) DHT22: Tmp 29.8[0m
+
+[0;32mI (50059) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (50069) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (50069) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (50079) MICS6814: MICS6814 - NO2 Concentration: 1.66 ppm[0m
+
+[0;32mI (50109) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (50399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (50399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (50689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (51109) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (51109) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (51109) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (51109) DHT22: Hum 43.8[0m
+[0;32mI (51119) DHT22: Tmp 29.9[0m
+
+[0;32mI (51119) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (51129) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (51129) MICS6814: MICS6814 - CO Concentration: 956.00 ppm[0m
+[0;32mI (51139) MICS6814: MICS6814 - NO2 Concentration: 1.74 ppm[0m
+
+[0;32mI (51169) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (52169) DHT22: Hum 43.8[0m
+[0;32mI (52169) DHT22: Tmp 29.9[0m
+
+[0;32mI (52169) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (52179) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (52179) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (52189) MICS6814: MICS6814 - NO2 Concentration: 1.54 ppm[0m
+
+[0;32mI (52219) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (52399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (52689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (53229) DHT22: Hum 43.8[0m
+[0;32mI (53229) DHT22: Tmp 29.9[0m
+
+[0;32mI (53229) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (53239) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (53239) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (53249) MICS6814: MICS6814 - NO2 Concentration: 1.39 ppm[0m
+
+[0;32mI (53279) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (54279) DHT22: Hum 43.8[0m
+[0;32mI (54279) DHT22: Tmp 29.9[0m
+
+[0;32mI (54279) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (54289) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (54289) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (54299) MICS6814: MICS6814 - NO2 Concentration: 1.65 ppm[0m
+
+[0;32mI (54329) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,08,,,23*71
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (54399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (54689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (55329) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (55329) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (55329) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (55329) DHT22: Hum 43.8[0m
+[0;32mI (55339) DHT22: Tmp 29.9[0m
+
+[0;32mI (55339) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (55349) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (55349) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (55359) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (55389) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,08,,,20*72
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (55399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (56389) DHT22: Hum 43.7[0m
+[0;32mI (56389) DHT22: Tmp 30.0[0m
+
+[0;32mI (56389) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (56399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (56399) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (56409) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (56419) MICS6814: MICS6814 - NO2 Concentration: 1.60 ppm[0m
+
+[0;32mI (56439) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,08,,,16*77
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (56689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (57439) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (57439) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (57439) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (57439) DHT22: Hum 43.7[0m
+[0;32mI (57449) DHT22: Tmp 30.0[0m
+
+[0;32mI (57449) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (57459) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (57469) MICS6814: MICS6814 - CO Concentration: 2.00 ppm[0m
+[0;32mI (57469) MICS6814: MICS6814 - NO2 Concentration: 1.54 ppm[0m
+
+[0;32mI (57499) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,08,,,12*73
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (58399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (58499) DHT22: Hum 43.7[0m
+[0;32mI (58499) DHT22: Tmp 30.0[0m
+
+[0;32mI (58499) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (58509) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (58509) MICS6814: MICS6814 - CO Concentration: 1968.00 ppm[0m
+[0;32mI (58519) MICS6814: MICS6814 - NO2 Concentration: 1.50 ppm[0m
+
+[0;32mI (58549) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,02,08,,,09,09,,,28*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (58689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (59549) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (59549) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (59549) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (59549) DHT22: Hum 43.7[0m
+[0;32mI (59559) DHT22: Tmp 30.0[0m
+
+[0;32mI (59559) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (59569) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (59569) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (59579) MICS6814: MICS6814 - NO2 Concentration: 1.84 ppm[0m
+
+[0;32mI (59619) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,08,,,10*71
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*[0m
+
+[0;32mI (60399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (60399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (60629) DHT22: Hum 43.7[0m
+[0;32mI (60629) DHT22: Tmp 30.0[0m
+
+[0;32mI (60629) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (60639) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (60639) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (60649) MICS6814: MICS6814 - NO2 Concentration: 1.47 ppm[0m
+
+[0;32mI (60679) GPS: Received: 30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+[0;32mI (60689) RX_TASK: Read 2 bytes: 6C6F[0m
+
+=== Reading Sensors ===
+[0;32mI (61689) PMS7003: PM1.0: 17 µg/m³[0m
+[0;32mI (61689) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (61689) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (61689) DHT22: Hum 43.7[0m
+[0;32mI (61699) DHT22: Tmp 30.0[0m
+
+[0;32mI (61699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (61709) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (61709) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (61719) MICS6814: MICS6814 - NO2 Concentration: 1.89 ppm[0m
+
+[0;32mI (61749) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (62399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (62689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (62759) DHT22: Hum 43.7[0m
+[0;32mI (62759) DHT22: Tmp 30.0[0m
+
+[0;32mI (62759) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (62759) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (62769) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (62769) MICS6814: MICS6814 - NO2 Concentration: 1.56 ppm[0m
+
+[0;32mI (62799) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (63799) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (63799) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (63799) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (63799) DHT22: Hum 43.6[0m
+[0;32mI (63809) DHT22: Tmp 30.0[0m
+
+[0;32mI (63809) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (63819) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (63819) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (63829) MICS6814: MICS6814 - NO2 Concentration: 1.29 ppm[0m
+
+[0;32mI (63859) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (64399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (64689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (64859) DHT22: Hum 43.6[0m
+[0;32mI (64859) DHT22: Tmp 30.0[0m
+
+[0;32mI (64859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (64869) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (64869) MICS6814: MICS6814 - CO Concentration: 2065.00 ppm[0m
+[0;32mI (64879) MICS6814: MICS6814 - NO2 Concentration: 1.80 ppm[0m
+
+[0;32mI (64909) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (65399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (65909) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (65909) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (65909) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (65909) DHT22: Hum 43.6[0m
+[0;32mI (65919) DHT22: Tmp 30.0[0m
+
+[0;32mI (65919) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (65929) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (65929) MICS6814: MICS6814 - CO Concentration: 497.00 ppm[0m
+[0;32mI (65939) MICS6814: MICS6814 - NO2 Concentration: 1.51 ppm[0m
+
+[0;32mI (65969) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (66399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (66689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (66969) DHT22: Hum 43.4[0m
+[0;32mI (66969) DHT22: Tmp 30.0[0m
+
+[0;32mI (66969) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (66979) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (66979) MICS6814: MICS6814 - CO Concentration: 12.00 ppm[0m
+[0;32mI (66989) MICS6814: MICS6814 - NO2 Concentration: 1.88 ppm[0m
+
+[0;32mI (67019) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,10,,,20*7B
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (68019) DHT22: Hum 43.4[0m
+[0;32mI (68029) DHT22: Tmp 30.0[0m
+
+[0;32mI (68029) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (68029) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (68039) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (68039) MICS6814: MICS6814 - NO2 Concentration: 1.74 ppm[0m
+
+[0;32mI (68069) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (68399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (68689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (69069) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (69069) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (69069) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (69069) DHT22: Hum 43.4[0m
+[0;32mI (69079) DHT22: Tmp 30.0[0m
+
+[0;32mI (69079) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (69089) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (69089) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (69099) MICS6814: MICS6814 - NO2 Concentration: 1.53 ppm[0m
+
+[0;32mI (69129) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (70129) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (70129) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (70129) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (70129) DHT22: Hum 43.4[0m
+[0;32mI (70139) DHT22: Tmp 30.0[0m
+
+[0;32mI (70139) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (70149) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (70149) MICS6814: MICS6814 - CO Concentration: 4.00 ppm[0m
+[0;32mI (70159) MICS6814: MICS6814 - NO2 Concentration: 1.92 ppm[0m
+
+[0;32mI (70189) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (70399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (70399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (70689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (71189) DHT22: Hum 43.3[0m
+[0;32mI (71189) DHT22: Tmp 30.0[0m
+
+[0;32mI (71189) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (71199) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (71199) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (71209) MICS6814: MICS6814 - NO2 Concentration: 1.57 ppm[0m
+
+[0;32mI (71239) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (72239) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (72239) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (72239) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (72239) DHT22: Hum 43.3[0m
+[0;32mI (72249) DHT22: Tmp 30.0[0m
+
+[0;32mI (72249) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (72259) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (72259) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (72269) MICS6814: MICS6814 - NO2 Concentration: 1.95 ppm[0m
+
+[0;32mI (72299) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (72399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (72689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (73299) DHT22: Hum 43.3[0m
+[0;32mI (73299) DHT22: Tmp 30.0[0m
+
+[0;32mI (73299) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (73309) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (73309) MICS6814: MICS6814 - CO Concentration: 1230.00 ppm[0m
+[0;32mI (73319) MICS6814: MICS6814 - NO2 Concentration: 1.36 ppm[0m
+
+[0;32mI (73349) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (74349) DHT22: Hum 43.3[0m
+[0;32mI (74349) DHT22: Tmp 30.0[0m
+
+[0;32mI (74349) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (74359) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (74359) MICS6814: MICS6814 - CO Concentration: 2.00 ppm[0m
+[0;32mI (74369) MICS6814: MICS6814 - NO2 Concentration: 1.73 ppm[0m
+
+[0;32mI (74399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (74399) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (74689) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (75399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (75409) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (75409) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (75409) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (75409) DHT22: Hum 43.3[0m
+[0;32mI (75419) DHT22: Tmp 30.1[0m
+
+[0;32mI (75419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (75429) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (75429) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (75439) MICS6814: MICS6814 - NO2 Concentration: 2.02 ppm[0m
+
+[0;32mI (75469) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (76399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (76469) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (76469) PMS7003: PM2.5: 19 µg/m³[0m
+[0;32mI (76469) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (76469) DHT22: Hum 43.3[0m
+[0;32mI (76479) DHT22: Tmp 30.1[0m
+
+[0;32mI (76479) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (76489) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (76489) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (76499) MICS6814: MICS6814 - NO2 Concentration: 1.76 ppm[0m
+
+[0;32mI (76529) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,11,,,20*7A
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (76689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (77529) DHT22: Hum 43.2[0m
+[0;32mI (77529) DHT22: Tmp 30.1[0m
+
+[0;32mI (77529) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (77539) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (77539) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (77549) MICS6814: MICS6814 - NO2 Concentration: 1.49 ppm[0m
+
+[0;32mI (77579) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (78399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;32mI (78579) DHT22: Hum 43.2[0m
+[0;32mI (78579) DHT22: Tmp 30.1[0m
+
+[0;32mI (78579) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (78589) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (78589) MICS6814: MICS6814 - CO Concentration: 375.00 ppm[0m
+[0;32mI (78599) MICS6814: MICS6814 - NO2 Concentration: 1.60 ppm[0m
+
+[0;32mI (78629) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*[0m
+
+[0;32mI (78689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (79639) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (79639) PMS7003: PM2.5: 21 µg/m³[0m
+[0;32mI (79639) PMS7003: PM10: 21 µg/m³[0m
+[0;32mI (79639) DHT22: Hum 43.2[0m
+[0;32mI (79649) DHT22: Tmp 30.1[0m
+
+[0;32mI (79649) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (79659) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (79659) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (79669) MICS6814: MICS6814 - NO2 Concentration: 1.60 ppm[0m
+
+[0;32mI (79699) GPS: Received: 30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (80399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (80399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (80689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (80709) DHT22: Hum 43.2[0m
+[0;32mI (80709) DHT22: Tmp 30.1[0m
+
+[0;32mI (80709) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (80719) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (80719) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (80729) MICS6814: MICS6814 - NO2 Concentration: 1.72 ppm[0m
+
+[0;32mI (80759) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (81759) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (81759) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (81759) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (81759) DHT22: Hum 43.2[0m
+[0;32mI (81769) DHT22: Tmp 30.1[0m
+
+[0;32mI (81769) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (81779) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (81779) MICS6814: MICS6814 - CO Concentration: 1044.00 ppm[0m
+[0;32mI (81789) MICS6814: MICS6814 - NO2 Concentration: 1.56 ppm[0m
+
+[0;32mI (81819) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (82399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (82689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (82819) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (82819) PMS7003: PM2.5: 20 µg/m³[0m
+[0;32mI (82819) PMS7003: PM10: 20 µg/m³[0m
+[0;32mI (82819) DHT22: Hum 43.2[0m
+[0;32mI (82829) DHT22: Tmp 30.1[0m
+
+[0;32mI (82829) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (82839) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (82839) MICS6814: MICS6814 - CO Concentration: 2166.00 ppm[0m
+[0;32mI (82849) MICS6814: MICS6814 - NO2 Concentration: 1.82 ppm[0m
+
+[0;32mI (82879) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (83879) DHT22: Hum 43.2[0m
+[0;32mI (83879) DHT22: Tmp 30.1[0m
+
+[0;32mI (83879) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (83889) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (83889) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (83899) MICS6814: MICS6814 - NO2 Concentration: 1.54 ppm[0m
+
+[0;32mI (83929) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (84399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (84699) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (84929) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (84929) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (84929) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (84929) DHT22: Hum 43.1[0m
+[0;32mI (84939) DHT22: Tmp 30.1[0m
+
+[0;32mI (84939) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (84949) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (84949) MICS6814: MICS6814 - CO Concentration: 113.00 ppm[0m
+[0;32mI (84959) MICS6814: MICS6814 - NO2 Concentration: 1.72 ppm[0m
+
+[0;32mI (84989) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (85399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (85989) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (85989) PMS7003: PM2.5: 18 µg/m³[0m
+[0;32mI (85989) PMS7003: PM10: 18 µg/m³[0m
+[0;32mI (85989) DHT22: Hum 43.1[0m
+[0;32mI (85999) DHT22: Tmp 30.1[0m
+
+[0;32mI (85999) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (86009) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (86009) MICS6814: MICS6814 - CO Concentration: 2245.00 ppm[0m
+[0;32mI (86019) MICS6814: MICS6814 - NO2 Concentration: 2.03 ppm[0m
+
+[0;32mI (86049) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (86399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (86689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (87049) DHT22: Hum 43.1[0m
+[0;32mI (87049) DHT22: Tmp 30.1[0m
+
+[0;32mI (87049) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (87059) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (87059) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (87069) MICS6814: MICS6814 - NO2 Concentration: 1.72 ppm[0m
+
+[0;32mI (87099) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (88099) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (88099) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (88099) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (88099) DHT22: Hum 43.1[0m
+[0;32mI (88109) DHT22: Tmp 30.1[0m
+
+[0;32mI (88109) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (88119) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (88119) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (88129) MICS6814: MICS6814 - NO2 Concentration: 1.63 ppm[0m
+
+[0;32mI (88159) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,04,16,,,24,23,,,24,27,,,23,29,,,24*72
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (88399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (88689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (89159) DHT22: Hum 43.1[0m
+[0;32mI (89159) DHT22: Tmp 30.1[0m
+
+[0;32mI (89159) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (89169) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (89169) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (89179) MICS6814: MICS6814 - NO2 Concentration: 1.57 ppm[0m
+
+[0;32mI (89209) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,04,16,,,19,23,,,20,27,,,19,29,,,20*75
+$GPGLL,,,,,,V,N*64
+[0m
+
+=== Reading Sensors ===
+[0;32mI (90209) DHT22: Hum 43.1[0m
+[0;32mI (90209) DHT22: Tmp 30.2[0m
+
+[0;32mI (90209) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (90219) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (90219) MICS6814: MICS6814 - CO Concentration: 1954.00 ppm[0m
+[0;32mI (90229) MICS6814: MICS6814 - NO2 Concentration: 1.47 ppm[0m
+
+[0;32mI (90259) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+[0m
+
+[0;32mI (90399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (90399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (90689) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;32mI (91259) PMS7003: PM1.0: 14 µg/m³[0m
+[0;32mI (91259) PMS7003: PM2.5: 17 µg/m³[0m
+[0;32mI (91259) PMS7003: PM10: 19 µg/m³[0m
+[0;32mI (91259) DHT22: Hum 43.1[0m
+[0;32mI (91269) DHT22: Tmp 30.2[0m
+
+[0;32mI (91269) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (91279) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (91279) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (91289) MICS6814: MICS6814 - NO2 Concentration: 1.45 ppm[0m
+
+[0;32mI (91319) GPS: Received: $GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,01,27,,,25*7A
+$GPGLL,,,,,,V,N*64
+[0m
+

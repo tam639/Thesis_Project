@@ -1,0 +1,142 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b890h ( 47248) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b8b8 vaddr=3ffb0000 size=02284h (  8836) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001db44 vaddr=40080000 size=024d4h (  9428) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b63ch (112188) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003b664 vaddr=400824d4 size=0b42ch ( 46124) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) cpu_start: Application information:[0m
+[0;32mI (222) cpu_start: Project name:     NODE[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (231) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (237) cpu_start: ELF file SHA256:  0c79d62a0...[0m
+[0;32mI (243) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB3168 len 0002CE98 (179 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008D900 len 00012700 (73 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (323) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (342) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (372) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (392) main_task: Returned from app_main()[0m
+[0;32mI (2382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (4382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (5382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (8382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (9582) DHT: Sensor Timeout
+[0m
+[0;32mI (10382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (12382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (14382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (15382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (16382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (18382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (20382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (20382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (21882) DHT: Sensor Timeout
+[0m
+[0;32mI (22382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (24382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (25382) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (26382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (28382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (30382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (30392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (32382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (34382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (35392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (36382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (38382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (40382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (40392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (42382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (44382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (45392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (46382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (48382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (50382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (50392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (52382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (54382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (55392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (56382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (58382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (59642) DHT: Sensor Timeout
+[0m
+[0;32mI (60382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (60392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (62382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (64382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (65392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (66382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (68382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (70382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (70392) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (71902) DHT: Sensor Timeout
+[0m
+[0;32mI (72382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (74382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (75392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (76382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (78382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (80382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (80392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (82382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (84382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (85392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (86382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (88382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (90382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (90392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (92382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (94382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (95392) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (96382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (98382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (100382) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (100392) Transmit UART: Encoded and sent data over UART.[0m

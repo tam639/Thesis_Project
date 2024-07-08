@@ -1,0 +1,80 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\Node\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/Node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] Building C object esp-idf/sensors/CMakeFiles/__idf_sensors.dir/mq136.c.obj
+FAILED: esp-idf/sensors/CMakeFiles/__idf_sensors.dir/mq136.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/get-started/Node/build/config -IC:/get-started/Node/components/sensors -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/analog_comparator/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/dac/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2s/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/ledc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/parlio/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/rmt/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdio_slave/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sigma_delta/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/spi/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/temperature_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/get-started/Node=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sensors/CMakeFiles/__idf_sensors.dir/mq136.c.obj -MF esp-idf\sensors\CMakeFiles\__idf_sensors.dir\mq136.c.obj.d -o esp-idf/sensors/CMakeFiles/__idf_sensors.dir/mq136.c.obj -c C:/get-started/Node/components/sensors/mq136.c
+In file included from C:/get-started/Node/components/sensors/mq136.h:10,
+                 from C:/get-started/Node/components/sensors/mq136.c:1:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Node/components/sensors/mq136.c:3:13: error: redefinition of 'TAG_MQ136'
+    3 | const char *TAG_MQ136 = "MQ136";
+      |             ^~~~~~~~~
+C:/get-started/Node/components/sensors/mq136.h:22:13: note: previous definition of 'TAG_MQ136' with type 'const char *'
+   22 | const char *TAG_MQ136 = "MQ136";
+      |             ^~~~~~~~~
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/get-started/Node/main/main.c:10:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Node/main/main.c:23:27: warning: extra tokens at end of #include directive
+   23 | #include <font8x8_basic.h>>
+      |                           ^
+C:/get-started/Node/main/main.c: In function 'app_main':
+C:/get-started/Node/main/main.c:498:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  498 |     adc1_config_channel_atten(MQ131_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:15:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:500:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  500 |     adc1_config_channel_atten(MQ136_PIN, ADC_ATTEN_DB_11); // 11dB để đọc được điện áp từ 0-3.6V
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:502:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  502 |     adc1_config_channel_atten(CO_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:503:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  503 |     adc1_config_channel_atten(NO2_PIN, ADC_ATTEN_DB_11);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/get-started/Node/main/main.c:486:10: warning: unused variable 'received_char' [-Wunused-variable]
+  486 |     char received_char;
+      |          ^~~~~~~~~~~~~
+In file included from C:/get-started/Node/main/main.c:29:
+C:/get-started/Node/components/protocols/uart.h: At top level:
+C:/get-started/Node/components/protocols/uart.h:72:13: warning: 'tx_task1' declared 'static' but never defined [-Wunused-function]
+   72 | static void tx_task1(void *arg);
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:74:13: warning: 'rx_task1' declared 'static' but never defined [-Wunused-function]
+   74 | static void rx_task1(void *arg);
+      |             ^~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:76:22: warning: 'find_uart_by_rx' declared 'static' but never defined [-Wunused-function]
+   76 | inline static int8_t find_uart_by_rx(uint8_t rx_pin);
+      |                      ^~~~~~~~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:79:13: warning: 'handle_rx' declared 'static' but never defined [-Wunused-function]
+   79 | static void handle_rx(void *arg);
+      |             ^~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:81:13: warning: 'check_uart_no' declared 'static' but never defined [-Wunused-function]
+   81 | static bool check_uart_no(uint8_t uart_no);
+      |             ^~~~~~~~~~~~~
+C:/get-started/Node/components/protocols/uart.h:83:13: warning: 'check_uart_enabled' declared 'static' but never defined [-Wunused-function]
+   83 | static bool check_uart_enabled(uint8_t uart_no);
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from C:/get-started/Node/main/main.c:23:
+C:/get-started/Node/components/display/font8x8_basic.h:41:16: warning: 'font8x8_basic_tr' defined but not used [-Wunused-variable]
+   41 | static uint8_t font8x8_basic_tr[128][8] = {
+      |                ^~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

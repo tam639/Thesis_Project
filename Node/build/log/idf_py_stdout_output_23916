@@ -1,0 +1,211 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d7d8h ( 55256) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d800 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001fe9c vaddr=40080000 size=0017ch (   380) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21b0ch (137996) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041b34 vaddr=4008017c size=0e920h ( 59680) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  37744a0a8...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3590 len 0002CA70 (178 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (409) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (409) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (409) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (419) DHT22: Hum 35.6[0m
+[0;32mI (419) DHT22: Tmp 31.4[0m
+[0;32mI (419) MQ131: MQ131 - O3 Concentration: 2.99 ppb[0m
+[0;32mI (429) MQ136: MQ136 - SO2 Concentration: 22.04 ppm[0m
+
+[0;32mI (429) MICS6814: MICS6814 - CO Concentration: 21.00 ppm[0m
+[0;32mI (439) MICS6814: MICS6814 - NO2 Concentration: 0.72 ppm[0m
+
+[0;32mI (449) GPS: Received: [0m
+[0;32mI (449) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (459) SSD1306: INTERFACE is i2c[0m
+[0;32mI (459) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (459) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (469) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (469) SSD1306: New i2c driver is used[0m
+[0;32mI (479) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (489) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (499) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (509) main_task: Returned from app_main()[0m
+[0;32mI (559) SSD1306: Panel is 128x64[0m
+[0;32mI (559) SSD1306: OLED configured successfully[0m
+[0;32mI (5399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (5459) PMS7003: PM1.0: 20 µg/m³[0m
+[0;32mI (5459) PMS7003: PM2.5: 26 µg/m³[0m
+[0;32mI (5459) PMS7003: PM10: 26 µg/m³[0m
+[0;32mI (5459) DHT22: Hum 35.6[0m
+[0;32mI (5459) DHT22: Tmp 31.5[0m
+[0;32mI (5469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (5469) MQ136: MQ136 - SO2 Concentration: 22.30 ppm[0m
+
+[0;32mI (5479) MICS6814: MICS6814 - CO Concentration: 15.00 ppm[0m
+[0;32mI (5489) MICS6814: MICS6814 - NO2 Concentration: 0.44 ppm[0m
+
+[0;32mI (5489) GPS: Received: 2059.84895,N,10553.21268,E,1,06,1.62,48.6,M,-23.3,M,,*42
+$GPGSA,A,3,05,23,29,13,24,15,,,,,,,5.08,1.62,4.82*0B
+$GPGSV,4,1,13,05,24,069,20,10,03,288,,11,02,135,,12,00,163,*72
+$GPGSV,4,2,13,13,22,035,27,15,50,018,08,18,56,333,,20,09,090,*77
+$GPGSV,4,3,13,23,26,311,17,24,54,139,25,25,00,190,,29,37,212,09*7F
+$GPGSV,4,4,13,32,06,232,*4F
+$GPGLL,2059.84889,N,10553.21303,E,084853.00,A,A*61
+$GPRMC,084854.00,A,2059.84897,N,10553.21286,E,0.233,,280624,,,A*74
+$GPVTG,,T,,M,0.233,N,0.431,K,A*27
+$GPGGA,084854.00,[0m
+[0;32mI (5539) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (10399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (10549) PMS7003: PM1.0: 18 µg/m³[0m
+[0;32mI (10549) PMS7003: PM2.5: 26 µg/m³[0m
+[0;32mI (10549) PMS7003: PM10: 26 µg/m³[0m
+[0;32mI (10549) DHT22: Hum 35.6[0m
+[0;32mI (10549) DHT22: Tmp 31.5[0m
+[0;32mI (10559) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (10559) MQ136: MQ136 - SO2 Concentration: 23.07 ppm[0m
+
+[0;32mI (10569) MICS6814: MICS6814 - CO Concentration: 2050.00 ppm[0m
+[0;32mI (10579) MICS6814: MICS6814 - NO2 Concentration: 0.83 ppm[0m
+
+[0;32mI (10579) GPS: Received: ,1,13,05,24,069,22,10,03,288,,11,02,135,,12,00,162,*71
+$GPGSV,4,2,13,13,21,035,27,15,50,018,21,18,56,333,,20,09,090,*7F
+$GPGSV,4,3,13,23,26,311,19,24,54,139,27,25,00,190,,29,37,212,*7A
+$GPGSV,4,4,13,32,06,232,*4F
+$GPGLL,2059.84963,N,10553.21185,E,084857.00,A,A*6C
+$GPRMC,084859.00,A,2059.85002,N,10553.21204,E,0.784,,280624,,,A*7F
+$GPVTG,,T,,M,0.784,N,1.453,K,A*2B
+$GPGGA,084859.00,2059.85002,N,10553.21204,E,1,05,4.97,56.4,M,-23.3,M,,*45
+$GPGSA,A,3,05,23,13,24,15,,,,,,,,12.92,4.97,11.93*0E
+$GPGSV,4[0m
+[0;32mI (10629) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (12649) DHT: Sensor Timeout
+[0m
+[0;32mI (15399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (15639) PMS7003: PM1.0: 17 µg/m³[0m
+[0;32mI (15639) PMS7003: PM2.5: 24 µg/m³[0m
+[0;32mI (15639) PMS7003: PM10: 25 µg/m³[0m
+[0;32mI (15639) DHT22: Hum 35.6[0m
+[0;32mI (15639) DHT22: Tmp 31.5[0m
+[0;32mI (15649) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (15649) MQ136: MQ136 - SO2 Concentration: 22.55 ppm[0m
+
+[0;32mI (15659) MICS6814: MICS6814 - CO Concentration: 2150.00 ppm[0m
+[0;32mI (15669) MICS6814: MICS6814 - NO2 Concentration: 0.61 ppm[0m
+
+[0;32mI (15669) GPS: Received: $GPGSV,4,3,13,23,26,311,18,24,54,139,26,25,00,190,,29,37,212,*7A
+$GPGSV,4,4,13,32,06,232,*4F
+$GPGLL,2059.84930,N,10553.21282,E,084902.00,A,A*6F
+$GPRMC,084903.00,A,2059.84873,N,10553.21315,E,1.070,,280624,,,A*72
+$GPVTG,,T,,M,1.070,N,1.981,K,A*24
+$GPGGA,084903.00,2059.84873,N,10553.21315,E,1,05,1.67,50.5,M,-23.3,M,,*48
+$GPGSA,A,3,05,23,13,24,15,,,,,,,,3.46,1.67,3.03*07
+$GPGSV,4,1,13,05,24,069,22,10,03,288,,11,02,135,,12,00,162,*71
+$GPGSV,4,2,13,13,21,035,27,15,50,018,17,18,56,333,,20,09,090,*7A
+[0m
+[0;32mI (15719) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (20399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (20729) PMS7003: PM1.0: 18 µg/m³[0m
+[0;32mI (20729) PMS7003: PM2.5: 24 µg/m³[0m
+[0;32mI (20729) PMS7003: PM10: 24 µg/m³[0m
+[0;32mI (20729) DHT22: Hum 35.6[0m
+[0;32mI (20729) DHT22: Tmp 31.5[0m
+[0;32mI (20739) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (20739) MQ136: MQ136 - SO2 Concentration: 22.55 ppm[0m
+
+[0;32mI (20749) MICS6814: MICS6814 - CO Concentration: 136.00 ppm[0m
+[0;32mI (20759) MICS6814: MICS6814 - NO2 Concentration: 0.41 ppm[0m
+
+[0;32mI (20759) GPS: Received: .21341,E,084907.00,A,A*60
+$GPRMC,084908.00,A,2059.84834,N,10553.21309,E,0.445,,280624,,,A*74
+$GPVTG,,T,,M,0.445,N,0.824,K,A*28
+$GPGGA,084908.00,2059.84834,N,10553.21309,E,1,05,1.67,47.3,M,-23.3,M,,*4D
+$GPGSA,A,3,05,23,13,24,15,,,,,,,,3.46,1.67,3.03*07
+$GPGSV,4,1,13,05,24,069,23,10,03,288,,11,02,135,,12,00,162,*70
+$GPGSV,4,2,13,13,21,035,27,15,50,018,17,18,56,333,,20,09,091,*7B
+$GPGSV,4,3,13,23,26,311,18,24,55,138,27,25,00,190,,29,37,212,*7B
+$GPGSV,4,4,13,32,06,232,*4F
+$GPGLL,2059.84834,N,10553.21309,E,084908.00,A,A*62
+[0m
+[0;32mI (20809) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (25399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (25819) PMS7003: PM1.0: 18 µg/m³[0m
+[0;32mI (25819) PMS7003: PM2.5: 22 µg/m³[0m
+[0;32mI (25819) PMS7003: PM10: 24 µg/m³[0m
+[0;32mI (25819) DHT22: Hum 35.6[0m
+[0;32mI (25819) DHT22: Tmp 31.5[0m
+[0;32mI (25829) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (25829) MQ136: MQ136 - SO2 Concentration: 22.66 ppm[0m
+
+[0;32mI (25839) MICS6814: MICS6814 - CO Concentration: 2499.00 ppm[0m
+[0;32mI (25849) MICS6814: MICS6814 - NO2 Concentration: 0.46 ppm[0m
+
+[0;32mI (25859) GPS: Received: $GPRMC,084913.00,A,2059.84828,N,10553.21398,E,0.319,,280624,,,A*75
+$GPVTG,,T,,M,0.319,N,0.591,K,A*25
+$GPGGA,084913.00,2059.84828,N,10553.21398,E,1,05,1.67,47.9,M,-23.3,M,,*48
+$GPGSA,A,3,05,23,13,24,15,,,,,,,,3.46,1.67,3.03*07
+$GPGSV,4,1,13,05,24,069,22,10,03,288,,11,02,135,,12,00,162,*71
+$GPGSV,4,2,13,13,21,035,27,15,50,018,16,18,56,333,,20,09,091,*7A
+$GPGSV,4,3,13,23,26,311,16,24,55,138,25,25,00,190,,29,37,211,*74
+$GPGSV,4,4,13,32,06,232,*4F
+$GPGLL,2059.84828,N,10553.21398,E,084913.00,A,A*6D
+[0m
+[0;32mI (25899) GPS: UTC Time: 084913.00, Latitude: 20.997471, Longitude: 105.886902[0m

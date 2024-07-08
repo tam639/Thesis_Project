@@ -1,0 +1,464 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ba20h ( 47648) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ba48 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dca4 vaddr=40080000 size=02374h (  9076) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b218h (111128) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003b240 vaddr=40082374 size=0b58ch ( 46476) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) cpu_start: Application information:[0m
+[0;32mI (222) cpu_start: Project name:     NODE[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (231) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (237) cpu_start: ELF file SHA256:  8ccaaf6c3...[0m
+[0;32mI (243) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2D60 len 0002D2A0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008D900 len 00012700 (73 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (341) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (371) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2381) AODV: Routing Table:[0m
+[0;32mI (2381) AODV: ---------------------------------------------------[0m
+[0;32mI (2381) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (2381) AODV: ---------------------------------------------------[0m
+[0;32mI (2391) AODV: ---------------------------------------------------[0m
+[0;32mI (2391) AODV: Route table is empty![0m
+[0;32mI (2401) AODV: Sending RREQ for 1[0m
+[0;32mI (2401) main_task: Returned from app_main()[0m
+[0;32mI (5901) AODV: Read 6 bytes: C000041F06C7[0m
+[0;32mI (5901) AODV: data0 = 192; data1 = 0[0m
+[0;32mI (5901) AODV: data2 = 4; data3 = 31[0m
+[0;32mI (5901) AODV: data4 = 6; data5 = 251[0m
+[0;32mI (5901) AODV: Handling RREP to 48 from 63[0m
+[0;32mI (5911) AODV: Route added: 48 -> 251 (seq: 7, hops: 64)[0m
+[0;32mI (5911) AODV: Routing Table:[0m
+[0;32mI (5921) AODV: ---------------------------------------------------[0m
+[0;32mI (5921) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (5931) AODV: ---------------------------------------------------[0m
+[0;32mI (5941) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (5941) AODV: ---------------------------------------------------[0m
+[0;32mI (64451) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (64451) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (64451) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (64451) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (64451) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (64461) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (64461) AODV: Routing Table:[0m
+[0;32mI (64471) AODV: ---------------------------------------------------[0m
+[0;32mI (64471) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (64481) AODV: ---------------------------------------------------[0m
+[0;32mI (64491) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (64491) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (64501) AODV: ---------------------------------------------------[0m
+[0;32mI (71011) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (71011) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (71011) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (71011) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (71011) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (71021) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (71021) AODV: Routing Table:[0m
+[0;32mI (71031) AODV: ---------------------------------------------------[0m
+[0;32mI (71031) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (71041) AODV: ---------------------------------------------------[0m
+[0;32mI (71051) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (71051) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (71061) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (71071) AODV: ---------------------------------------------------[0m
+[0;32mI (77711) AODV: Read 20 bytes: 0101041200010104120001010412000101041200[0m
+[0;32mI (77711) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (77711) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (77711) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (77711) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (77721) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (77721) AODV: Routing Table:[0m
+[0;32mI (77731) AODV: ---------------------------------------------------[0m
+[0;32mI (77741) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (77741) AODV: ---------------------------------------------------[0m
+[0;32mI (77751) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (77761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (77761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (77771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (77771) AODV: ---------------------------------------------------[0m
+[0;32mI (84281) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (84281) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (84281) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (84281) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (84281) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (84291) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (84291) AODV: Routing Table:[0m
+[0;32mI (84301) AODV: ---------------------------------------------------[0m
+[0;32mI (84301) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (84311) AODV: ---------------------------------------------------[0m
+[0;32mI (84321) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (84321) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (84331) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (84341) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (84341) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (84351) AODV: ---------------------------------------------------[0m
+[0;32mI (90861) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (90861) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (90861) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (90861) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (90861) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (90871) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (90871) AODV: Routing Table:[0m
+[0;32mI (90881) AODV: ---------------------------------------------------[0m
+[0;32mI (90881) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (90891) AODV: ---------------------------------------------------[0m
+[0;32mI (90901) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (90901) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (90911) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (90921) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (90921) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (90931) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (90941) AODV: ---------------------------------------------------[0m
+[0;32mI (97701) AODV: Read 20 bytes: 0101041200010104120001010412000101041200[0m
+[0;32mI (97701) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (97701) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (97701) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (97701) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (97711) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (97711) AODV: Routing Table:[0m
+[0;32mI (97721) AODV: ---------------------------------------------------[0m
+[0;32mI (97731) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (97731) AODV: ---------------------------------------------------[0m
+[0;32mI (97741) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (97751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97781) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (97781) AODV: ---------------------------------------------------[0m
+[0;32mI (104291) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (104291) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (104291) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (104291) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (104291) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (104301) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (104301) AODV: Routing Table:[0m
+[0;32mI (104311) AODV: ---------------------------------------------------[0m
+[0;32mI (104321) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (104321) AODV: ---------------------------------------------------[0m
+[0;32mI (104331) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (104341) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104341) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104351) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104351) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104361) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104371) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104371) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (104381) AODV: ---------------------------------------------------[0m
+[0;32mI (110891) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (110891) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (110891) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (110891) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (110891) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (110901) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (110901) AODV: Routing Table:[0m
+[0;32mI (110911) AODV: ---------------------------------------------------[0m
+[0;32mI (110921) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (110921) AODV: ---------------------------------------------------[0m
+[0;32mI (110931) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (110941) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110941) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110951) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110951) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110961) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110971) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110971) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110981) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (110991) AODV: ---------------------------------------------------[0m
+[0;32mI (117701) AODV: Read 20 bytes: 0101041200010104120001010412000101041200[0m
+[0;32mI (117701) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (117701) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (117701) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (117701) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (117711) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (117721) AODV: Routing Table:[0m
+[0;32mI (117721) AODV: ---------------------------------------------------[0m
+[0;32mI (117731) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (117731) AODV: ---------------------------------------------------[0m
+[0;32mI (117741) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (117751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117781) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117781) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117791) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117801) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (117801) AODV: ---------------------------------------------------[0m
+[0;32mI (124311) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (124311) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (124311) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (124311) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (124311) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (124321) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (124321) AODV: Routing Table:[0m
+[0;32mI (124331) AODV: ---------------------------------------------------[0m
+[0;32mI (124341) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (124341) AODV: ---------------------------------------------------[0m
+[0;32mI (124351) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (124361) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124361) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124371) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124371) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124381) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124391) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124391) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124401) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124411) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124411) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (124421) AODV: ---------------------------------------------------[0m
+[0;32mI (130931) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (130931) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (130931) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (130931) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (130931) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (130941) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (130941) AODV: Routing Table:[0m
+[0;32mI (130951) AODV: ---------------------------------------------------[0m
+[0;32mI (130961) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (130961) AODV: ---------------------------------------------------[0m
+[0;32mI (130971) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (130981) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (130981) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (130991) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (130991) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131001) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131011) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131011) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131021) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131031) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131031) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131041) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (131051) AODV: ---------------------------------------------------[0m
+[0;32mI (137701) AODV: Read 20 bytes: 0101041200010104120001010412000101041200[0m
+[0;32mI (137701) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (137701) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (137701) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (137701) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (137711) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (137721) AODV: Routing Table:[0m
+[0;32mI (137721) AODV: ---------------------------------------------------[0m
+[0;32mI (137731) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (137731) AODV: ---------------------------------------------------[0m
+[0;32mI (137741) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (137751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137751) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137761) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137771) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137781) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137781) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137791) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137801) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137801) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137811) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137821) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (137821) AODV: ---------------------------------------------------[0m
+[0;32mI (144331) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (144331) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (144331) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (144331) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (144331) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (144341) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (144341) AODV: Routing Table:[0m
+[0;32mI (144351) AODV: ---------------------------------------------------[0m
+[0;32mI (144361) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (144361) AODV: ---------------------------------------------------[0m
+[0;32mI (144371) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (144381) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144381) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144391) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144391) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144401) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144411) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144411) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144421) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144431) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144431) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144441) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144451) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144451) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (144461) AODV: ---------------------------------------------------[0m
+[0;32mI (151121) AODV: Read 15 bytes: 010104120001010412000101041200[0m
+[0;32mI (151121) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (151121) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (151121) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (151121) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (151131) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (151131) AODV: Routing Table:[0m
+[0;32mI (151141) AODV: ---------------------------------------------------[0m
+[0;32mI (151151) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (151151) AODV: ---------------------------------------------------[0m
+[0;32mI (151161) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (151171) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151171) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151181) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151181) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151191) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151201) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151201) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151211) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151221) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151221) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151231) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151241) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151241) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151251) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (151261) AODV: ---------------------------------------------------[0m
+[0;32mI (157761) AODV: Read 10 bytes: 01010412000101041200[0m
+[0;32mI (157761) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (157761) AODV: data2 = 4; data3 = 18[0m
+[0;32mI (157761) AODV: data4 = 0; data5 = 1[0m
+[0;32mI (157761) AODV: Handling RREP to 18 from 4[0m
+[0;32mI (157771) AODV: Route added: 18 -> 1 (seq: 0, hops: 1)[0m
+[0;32mI (157771) AODV: Routing Table:[0m
+[0;32mI (157781) AODV: ---------------------------------------------------[0m
+[0;32mI (157781) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (157791) AODV: ---------------------------------------------------[0m
+[0;32mI (157801) AODV:        48 |      251 |         7 |        64[0m
+[0;32mI (157801) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157811) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157821) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157821) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157831) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157841) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157841) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157851) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157861) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157861) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157871) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157871) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157881) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157891) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157891) AODV:        18 |        1 |         0 |         1[0m
+[0;32mI (157901) AODV: ---------------------------------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ba20h ( 47648) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ba48 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dca4 vaddr=40080000 size=02374h (  9076) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b218h (111128) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003b240 vaddr=40082374 size=0b58ch ( 46476) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) cpu_start: Application information:[0m
+[0;32mI (222) cpu_start: Project name:     NODE[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (231) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (237) cpu_start: ELF file SHA256:  8ccaaf6c3...[0m
+[0;32mI (243) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2D60 len 0002D2A0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008D900 len 00012700 (73 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (341) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (371) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2381) AODV: Routing Table:[0m
+[0;32mI (2381) AODV: ---------------------------------------------------[0m
+[0;32mI (2381) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (2381) AODV: ---------------------------------------------------[0m
+[0;32mI (2391) AODV: ---------------------------------------------------[0m
+[0;32mI (2391) AODV: Route table is empty![0m
+[0;32mI (2401) AODV: Sending RREQ for 1[0m
+[0;32mI (2401) main_task: Returned from app_main()[0m
+[0;32mI (5901) AODV: Read 6 bytes: C000041F06C7[0m
+[0;32mI (5901) AODV: data0 = 192; data1 = 0[0m
+[0;32mI (5901) AODV: data2 = 4; data3 = 31[0m
+[0;32mI (5901) AODV: data4 = 6; data5 = 251[0m
+[0;32mI (5901) AODV: Handling RREP to 48 from 63[0m
+[0;32mI (5911) AODV: Route added: 48 -> 251 (seq: 7, hops: 72)[0m
+[0;32mI (5911) AODV: Routing Table:[0m
+[0;32mI (5921) AODV: ---------------------------------------------------[0m
+[0;32mI (5921) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (5931) AODV: ---------------------------------------------------[0m
+[0;32mI (5941) AODV:        48 |      251 |         7 |        72[0m
+[0;32mI (5941) AODV: ---------------------------------------------------[0m

@@ -1,0 +1,613 @@
+jձѥ��ɕ�bootloader[0ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b7e0h ( 47072) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b808 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001da64 vaddr=40080000 size=025b4h (  9652) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b2f4h (111348) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003b31c vaddr=400825b4 size=0b374h ( 45940) load[0m
+[0;32mI (198) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (198) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) cpu_start: Application information:[0m
+[0;32mI (221) cpu_start: Project name:     NODE[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  f3b0b9af7...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (247) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (252) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008D928 len 000126D8 (73 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (341) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (371) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (381) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (391) main_task: Returned from app_main()[0m
+[0;32mI (5381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (17491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (19491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (20381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (23491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (25381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (25491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (29491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (30381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (33491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (35381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (35491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (37491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (39491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (40381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (43491) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (45381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (48271) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (50271) RX_TASK: Read 3 bytes: 459912[0m
+[0;32mI (50381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (55381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (60381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (62241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (64241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (65381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (70241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (70381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (72241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (74241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (75381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (80241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (80381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (82241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (84241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (85381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (90241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (90381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (92241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (94241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (95381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (95771) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (97771) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (100241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (100381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (102241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (104241) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (105381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (110381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (114581) RX_TASK: Read 3 bytes: 456C6F[0m
+[0;32mI (115381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (120381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (125381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (128841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (130381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (130841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (135381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (136841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (140381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (140841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (142841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (144841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (145381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (146841) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (150381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (154461) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (155381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (160381) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (165381) Transmit UART: Encoded and sent data over UART.[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b7e0h ( 47072) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b808 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001da64 vaddr=40080000 size=025b4h (  9652) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b2f4h (111348) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=0003b31c vaddr=400825b4 size=0b374h ( 45940) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (198) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) cpu_start: Application information:[0m
+[0;32mI (221) cpu_start: Project name:     NODE[0m
+[0;32mI (226) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  f3b0b9af7...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (247) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (252) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2E38 len 0002D1C8 (180 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008D928 len 000126D8 (73 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (304) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (330) main_task: Started on CPU0[0m
+[0;32mI (340) main_task: Calling app_main()[0m
+[0;32mI (340) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (370) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (380) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) main_task: Returned from app_main()[0m
+[0;32mI (4100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (5380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (8100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (10100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (10380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (14100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (15380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (16100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (18100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (20100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (20380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (22100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (24100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (25380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (26100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (28100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (30100) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (30380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (35200) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (35380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (37200) RX_TASK: Read 4 bytes: 6C6F7812[0m
+[0;32mI (40380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (45380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (49390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (50380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (51390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (53390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (55380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (55390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (57390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (59390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (60380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (61390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (63390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (65380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (65390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (67390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (69390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (70380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (71390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (73390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (75380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (75390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (77390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (79390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (80380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (81390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (83390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (85380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (85390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (87390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (89390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (90380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (91390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (93390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (95380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (95390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (97390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (99390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (100380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (101390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (103390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (105380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (105390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (107390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (109390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (110380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (111390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (113390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (115380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (115390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (117390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (119390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (120380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (121390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (123390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (125380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (125390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (127390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (129390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (130380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (131390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (133390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (135380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (135390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (137390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (139390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (140380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (141390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (143390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (145380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (145390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (147390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (149390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (150380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (151390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (153390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (155380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (155390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (157390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (159390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (160380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (161390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (163390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (165380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (165390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (167390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (169390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (170380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (171390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (173390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (175380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (175390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (177390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (179390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (180380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (181390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (183390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (185380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (185390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (187390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (189390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (190380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (191390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (193390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (195380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (195390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (197390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (199390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (200380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (201390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (203390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (205380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (205390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (207390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (209390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (210380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (211390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (213390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (215380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (215390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (217380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (219390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (220380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (221390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (223390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (225380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (225390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (227390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (229390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (230380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (231390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (233390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (235380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (235390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (237390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (239390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (240380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (241390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (243390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (245380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (245390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (247390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (249390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (250380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (251390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (253390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (255380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (255390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (257390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (259390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (260380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (261390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (263390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (265380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (265390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (267390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (269390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (270380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (271390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (273390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (275380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (275390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (277390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (279390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (280380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (281390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (283390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (285380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (285390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (287390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (289390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (290380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (291390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (293390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (295380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (295390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (297390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (299390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (300380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (301390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (303380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (305380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (305390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (307390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (309390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (310380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (311390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (313390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (315380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (315390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (317390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (319390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (320380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (321390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (323390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (325380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (325390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (327390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (329390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (330380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (331390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (333390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (335380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (335390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (337390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (339390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (340380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (341380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (343390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (345380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (345390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (347390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (349390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (350380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (351390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (353390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (355380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (355390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (357390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (359390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (360380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (361380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (363390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (365380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (365380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (367390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (369390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (370380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (371390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (373390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (375380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (375390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (377390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (379390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (380380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (381390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (383390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (385380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (385390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (387390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (389390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (390380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (391390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (393390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (395380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (395390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (397390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (399390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (400380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (401390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (403390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (405380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (405390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (407380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (409390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (410380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (411390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (413390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (415380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (415390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (417390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (419390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (420380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (421390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (423390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (425380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (425390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (427390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (429380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (430380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (431390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (433390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (435380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (435390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (437390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (439390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (440380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (441390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (443390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (445380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (445390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (447390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (449390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (450380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (451390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (453390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (455380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (455390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (457380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (459380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (460380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (461390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (463390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (465380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (465380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (467390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (469380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (470380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (471380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (473390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (475380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (475390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (477390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (479390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (480380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (481390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (483390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (485380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (485390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (487380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (489380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (490380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (491390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (493390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (495380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (495390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (497390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (499390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (500380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (501390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (503390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (505380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (505390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (507380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (509390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (510380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (511380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (513390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (515380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (515380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (517380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (519390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (520380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (521390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (523390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (525380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (525390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (527390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (529380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (530380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (531380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (533390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (535380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (535390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (537380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (539390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (540380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (541390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (543390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (545380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (545390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (547390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (549380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (550380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (551380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (553390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (555380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (555380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (557390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (559390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (560380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (561390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (563380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (565380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (565390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (567390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (569390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (570380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (571390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (573380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (575380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (575390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (577380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (579390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (580380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (581390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (583380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (585380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (585390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (587390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (589390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (590380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (591390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (593380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (595380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (595380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (597390) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (599380) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (600380) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (601380) RX_TASK: Read 2 bytes: 6C6F[0m

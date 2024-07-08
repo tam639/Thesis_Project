@@ -1,0 +1,781 @@
+��Speed      �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d908h ( 55560) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d930 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ffcc vaddr=40080000 size=0004ch (    76) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21bb8h (138168) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041be0 vaddr=4008004c size=0ea50h ( 59984) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (245) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  cf57af9bf...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) AODV: Routing Table:[0m
+[0;32mI (399) AODV: ---------------------------------------------------[0m
+[0;32mI (409) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (409) AODV: ---------------------------------------------------[0m
+[0;32mI (419) AODV: ---------------------------------------------------[0m
+[0;32mI (429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (439) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (439) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (439) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (449) DHT22: Hum 43.0[0m
+[0;32mI (449) DHT22: Tmp 30.5[0m
+[0;32mI (449) MQ131: MQ131 - O3 Concentration: 30.20 ppb[0m
+[0;32mI (459) MQ136: MQ136 - SO2 Concentration: 59.08 ppm[0m
+
+[0;32mI (469) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (469) MICS6814: MICS6814 - NO2 Concentration: 3.57 ppm[0m
+
+[0;32mI (479) GPS: Received: [0m
+[0;32mI (479) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (489) SSD1306: INTERFACE is i2c[0m
+[0;32mI (489) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (499) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (499) SSD1306: CONFIG_RESET_GPIO=36[0m
+[0;32mI (499) SSD1306: New i2c driver is used[0m
+[0;32mI (509) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (519) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (529) gpio: GPIO[36]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (539) gpio: io_num=36 can only be input[0m
+[0;31mE (539) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (549) main_task: Returned from app_main()[0m
+[0;31mE (599) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (599) SSD1306: Panel is 128x64[0m
+[0;32mI (599) SSD1306: OLED configured successfully[0m
+[0;32mI (5429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5489) PMS7003: PM1.0: 23 µg/m³[0m
+[0;32mI (5489) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (5489) PMS7003: PM10: 42 µg/m³[0m
+[0;32mI (5489) DHT22: Hum 43.4[0m
+[0;32mI (5489) DHT22: Tmp 30.5[0m
+[0;32mI (5499) MQ131: MQ131 - O3 Concentration: 204.11 ppb[0m
+[0;32mI (5499) MQ136: MQ136 - SO2 Concentration: 9.42 ppm[0m
+
+[0;32mI (5509) MICS6814: MICS6814 - CO Concentration: 3999.00 ppm[0m
+[0;32mI (5509) MICS6814: MICS6814 - NO2 Concentration: 34.89 ppm[0m
+
+[0;32mI (5519) GPS: Received: [0m
+[0;32mI (5519) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (10429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10529) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (10529) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (10529) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (10529) DHT22: Hum 44.3[0m
+[0;32mI (10529) DHT22: Tmp 30.5[0m
+[0;32mI (10539) MQ131: MQ131 - O3 Concentration: 0.00 ppb[0m
+[0;32mI (10539) MQ136: MQ136 - SO2 Concentration: 485.99 ppm[0m
+
+[0;32mI (10549) MICS6814: MICS6814 - CO Concentration: 134.00 ppm[0m
+[0;32mI (10549) MICS6814: MICS6814 - NO2 Concentration: 1.73 ppm[0m
+
+[0;32mI (10559) GPS: Received: [0m
+[0;32mI (10559) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (15429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (15569) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (15569) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (15569) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (15569) DHT22: Hum 44.8[0m
+[0;32mI (15569) DHT22: Tmp 30.7[0m
+[0;32mI (15579) MQ131: MQ131 - O3 Concentration: 0.58 ppb[0m
+[0;32mI (15579) MQ136: MQ136 - SO2 Concentration: 391.27 ppm[0m
+
+[0;32mI (15589) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (15589) MICS6814: MICS6814 - NO2 Concentration: 0.62 ppm[0m
+
+[0;32mI (15599) GPS: Received: [0m
+[0;32mI (15599) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (20429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (20609) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (20609) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (20609) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (20609) DHT22: Hum 44.5[0m
+[0;32mI (20609) DHT22: Tmp 30.7[0m
+[0;32mI (20619) MQ131: MQ131 - O3 Concentration: 0.03 ppb[0m
+[0;32mI (20619) MQ136: MQ136 - SO2 Concentration: 120.62 ppm[0m
+
+[0;32mI (20629) MICS6814: MICS6814 - CO Concentration: 410.00 ppm[0m
+[0;32mI (20629) MICS6814: MICS6814 - NO2 Concentration: 1.78 ppm[0m
+
+[0;32mI (20639) GPS: Received: [0m
+[0;32mI (20639) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (25429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (25649) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (25649) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (25649) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (25649) DHT22: Hum 44.8[0m
+[0;32mI (25649) DHT22: Tmp 30.8[0m
+[0;32mI (25659) MQ131: MQ131 - O3 Concentration: 2.46 ppb[0m
+[0;32mI (25659) MQ136: MQ136 - SO2 Concentration: 298.21 ppm[0m
+
+[0;32mI (25669) MICS6814: MICS6814 - CO Concentration: 224.00 ppm[0m
+[0;32mI (25669) MICS6814: MICS6814 - NO2 Concentration: 0.48 ppm[0m
+
+[0;32mI (25679) GPS: Received: [0m
+[0;32mI (25679) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (30429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (30689) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (30689) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (30689) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (30689) DHT22: Hum 45.1[0m
+[0;32mI (30689) DHT22: Tmp 30.9[0m
+[0;32mI (30699) MQ131: MQ131 - O3 Concentration: 7.78 ppb[0m
+[0;32mI (30699) MQ136: MQ136 - SO2 Concentration: 421.77 ppm[0m
+
+[0;32mI (30709) MICS6814: MICS6814 - CO Concentration: 841.00 ppm[0m
+[0;32mI (30709) MICS6814: MICS6814 - NO2 Concentration: 7.39 ppm[0m
+
+[0;32mI (30719) GPS: Received: [0m
+[0;32mI (30719) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (35429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (35729) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (35729) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (35729) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (35729) DHT22: Hum 44.9[0m
+[0;32mI (35729) DHT22: Tmp 30.9[0m
+[0;32mI (35739) MQ131: MQ131 - O3 Concentration: 0.19 ppb[0m
+[0;32mI (35739) MQ136: MQ136 - SO2 Concentration: inf ppm[0m
+
+[0;32mI (35749) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (35749) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (35759) GPS: Received: [0m
+[0;32mI (35759) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (39749) i2c.master: s_i2c_synchronous_transaction(780): I2C transaction failed[0m
+[0;31mE (39749) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (39749) SSD1306: Could not write to device [0x3c at 0]: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (39859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (39859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (39959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (39959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (40429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (40459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+=== Reading Node number 4 ===
+[0;32mI (40769) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (40769) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (40769) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (40769) DHT22: Hum 44.9[0m
+[0;32mI (40779) DHT22: Tmp 30.9[0m
+[0;32mI (40779) MQ131: MQ131 - O3 Concentration: 0.82 ppb[0m
+[0;32mI (40789) MQ136: MQ136 - SO2 Concentration: 60.68 ppm[0m
+
+[0;32mI (40789) MICS6814: MICS6814 - CO Concentration: 601.00 ppm[0m
+[0;32mI (40799) MICS6814: MICS6814 - NO2 Concentration: 7.47 ppm[0m
+
+[0;32mI (40809) GPS: Received: [0m
+[0;32mI (40809) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (40859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (40959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (40959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (41959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (41959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (42959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (42959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (43959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (43959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44859) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (44959) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (44959) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45059) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45059) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45159) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45159) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45259) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45259) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45359) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45359) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (45429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (45459) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45459) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45559) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45559) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45659) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45659) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45759) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45759) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+=== Reading Node number 4 ===
+[0;32mI (45819) PMS7003: PM1.0: 24 µg/m³[0m
+[0;32mI (45819) PMS7003: PM2.5: 36 µg/m³[0m
+[0;32mI (45819) PMS7003: PM10: 43 µg/m³[0m
+[0;32mI (45819) DHT22: Hum 45.1[0m
+[0;32mI (45819) DHT22: Tmp 31.0[0m
+[0;32mI (45829) MQ131: MQ131 - O3 Concentration: 1.90 ppb[0m
+[0;32mI (45829) MQ136: MQ136 - SO2 Concentration: 63.31 ppm[0m
+
+[0;32mI (45839) MICS6814: MICS6814 - CO Concentration: 1958.00 ppm[0m
+[0;32mI (45839) MICS6814: MICS6814 - NO2 Concentration: 17.00 ppm[0m
+
+[0;32mI (45849) GPS: Received: [0m
+[0;32mI (45849) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (45859) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45869) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (45979) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (45979) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46079) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46079) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46179) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46179) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46279) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46279) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46379) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46379) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46479) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46479) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46579) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46579) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46679) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46679) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46779) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46779) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46879) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46879) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (46979) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (46979) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47079) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47079) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47179) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47179) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47279) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47279) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47379) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47379) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47479) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47479) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47579) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47579) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47679) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47679) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47779) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47779) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47879) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47879) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (47979) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (47979) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48079) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48079) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48179) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48179) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48279) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48279) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48379) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48379) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48479) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48479) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48579) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48579) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48679) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48679) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48779) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48779) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48879) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48879) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (48979) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (48979) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49079) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49079) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49179) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49179) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49279) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49279) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49379) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49379) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49479) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49479) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49579) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49579) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49679) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49679) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49779) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49779) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49879) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49879) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (49979) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (49979) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (50079) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (50079) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (50179) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (50179) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (50279) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (50279) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (50379) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (50379) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (50429) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (50479) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (50479) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d908h ( 55560) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d930 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ffcc vaddr=40080000 size=0004ch (    76) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21bb8h (138168) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041be0 vaddr=4008004c size=0ea50h ( 59984) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (245) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  cf57af9bf...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (409) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (409) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) AODV: Routing Table:[0m
+[0;32mI (419) AODV: ---------------------------------------------------[0m
+[0;32mI (429) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (439) AODV: ---------------------------------------------------[0m
+[0;32mI (439) AODV: ---------------------------------------------------[0m
+[0;32mI (449) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (459) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (459) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (469) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (469) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (469) DHT22: Hum 60.5[0m
+[0;32mI (479) DHT22: Tmp 25.5[0m
+[0;32mI (479) MQ131: MQ131 - O3 Concentration: 35.80 ppb[0m
+[0;32mI (489) MQ136: MQ136 - SO2 Concentration: 298.81 ppm[0m
+
+[0;32mI (489) MICS6814: MICS6814 - CO Concentration: 659.00 ppm[0m
+[0;32mI (499) MICS6814: MICS6814 - NO2 Concentration: 7.88 ppm[0m
+
+[0;32mI (499) GPS: Received: [0m
+[0;32mI (509) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (509) SSD1306: INTERFACE is i2c[0m
+[0;32mI (519) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (519) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (529) SSD1306: CONFIG_RESET_GPIO=36[0m
+[0;32mI (529) SSD1306: New i2c driver is used[0m
+[0;32mI (539) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (549) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (559) gpio: GPIO[36]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (559) gpio: io_num=36 can only be input[0m
+[0;31mE (569) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (569) main_task: Returned from app_main()[0m
+[0;31mE (619) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (619) SSD1306: Panel is 128x64[0m
+[0;32mI (619) SSD1306: OLED configured successfully[0m
+[0;31mE (1479) DHT: Sensor Timeout
+[0m
+[0;31mE (2499) DHT: Sensor Timeout
+[0m
+[0;31mE (3519) DHT: Sensor Timeout
+[0m
+[0;31mE (4539) DHT: Sensor Timeout
+[0m
+[0;32mI (5459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5509) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (5509) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (5509) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (5509) DHT22: Hum 60.5[0m
+[0;32mI (5509) DHT22: Tmp 25.5[0m
+[0;32mI (5519) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568.00 ppb[0m
+[0;32mI (5519) MQ136: MQ136 - SO2 Concentration: 107.38 ppm[0m
+
+[0;32mI (5529) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (5539) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (5539) GPS: Received: [0m
+[0;32mI (5539) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (5559) DHT: Sensor Timeout
+[0m
+[0;31mE (6579) DHT: Sensor Timeout
+[0m
+[0;31mE (7599) DHT: Sensor Timeout
+[0m
+[0;31mE (8619) DHT: Sensor Timeout
+[0m
+[0;31mE (9639) DHT: Sensor Timeout
+[0m
+[0;32mI (10459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10549) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (10549) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (10549) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (10549) DHT22: Hum 60.5[0m
+[0;32mI (10549) DHT22: Tmp 25.5[0m
+[0;32mI (10559) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568.00 ppb[0m
+[0;32mI (10559) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (10569) MICS6814: MICS6814 - CO Concentration: 3999.00 ppm[0m
+[0;32mI (10579) MICS6814: MICS6814 - NO2 Concentration: 39.87 ppm[0m
+
+[0;32mI (10579) GPS: Received: [0m
+[0;32mI (10589) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (10659) DHT: Sensor Timeout
+[0m
+[0;31mE (11679) DHT: Sensor Timeout
+[0m
+[0;31mE (12699) DHT: Sensor Timeout
+[0m
+[0;31mE (13719) DHT: Sensor Timeout
+[0m
+[0;31mE (14739) DHT: Sensor Timeout
+[0m
+[0;32mI (15459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (15589) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (15589) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (15589) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (15589) DHT22: Hum 60.5[0m
+[0;32mI (15589) DHT22: Tmp 25.5[0m
+[0;32mI (15599) MQ131: MQ131 - O3 Concentration: 0.18 ppb[0m
+[0;32mI (15599) MQ136: MQ136 - SO2 Concentration: 589.84 ppm[0m
+
+[0;32mI (15609) MICS6814: MICS6814 - CO Concentration: 76.00 ppm[0m
+[0;32mI (15609) MICS6814: MICS6814 - NO2 Concentration: 1.77 ppm[0m
+
+[0;32mI (15619) GPS: Received: [0m
+[0;32mI (15619) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (15759) DHT: Sensor Timeout
+[0m
+[0;31mE (16779) DHT: Sensor Timeout
+[0m
+[0;31mE (17799) DHT: Sensor Timeout
+[0m
+[0;32mI (20459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (20629) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (20629) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (20629) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (20629) DHT22: Hum 46.3[0m
+[0;32mI (20629) DHT22: Tmp 30.1[0m
+[0;32mI (20639) MQ131: MQ131 - O3 Concentration: 0.00 ppb[0m
+[0;32mI (20639) MQ136: MQ136 - SO2 Concentration: inf ppm[0m
+
+[0;32mI (20649) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (20649) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (20659) GPS: Received: �
+[0;32mI (20659) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (25459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (25669) PMS7003: PM1.0: 0 µg/m³[0m
+[0;32mI (25669) PMS7003: PM2.5: 0 µg/m³[0m
+[0;32mI (25669) PMS7003: PM10: 0 µg/m³[0m
+[0;32mI (25669) DHT22: Hum 46.0[0m
+[0;32mI (25669) DHT22: Tmp 30.1[0m
+[0;32mI (25679) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568.00 ppb[0m
+[0;32mI (25689) MQ136: MQ136 - SO2 Concentration: 0.00 ppm[0m
+
+[0;32mI (25689) MICS6814: MICS6814 - CO Concentration: 3999.00 ppm[0m
+[0;32mI (25699) MICS6814: MICS6814 - NO2 Concentration: 39.87 ppm[0m
+
+[0;32mI (25709) GPS: Received: [0m
+[0;32mI (25709) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (30459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (30719) PMS7003: PM1.0: 0 µg/m³[0m
+[0;32mI (30719) PMS7003: PM2.5: 0 µg/m³[0m
+[0;32mI (30719) PMS7003: PM10: 0 µg/m³[0m
+[0;32mI (30719) DHT22: Hum 45.5[0m
+[0;32mI (30719) DHT22: Tmp 30.3[0m
+[0;32mI (30729) MQ131: MQ131 - O3 Concentration: 0.14 ppb[0m
+[0;32mI (30729) MQ136: MQ136 - SO2 Concentration: 1489.47 ppm[0m
+
+[0;32mI (30739) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (30739) MICS6814: MICS6814 - NO2 Concentration: 0.67 ppm[0m
+
+[0;32mI (30749) GPS: Received: [0m
+[0;32mI (30749) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (35459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (35759) PMS7003: PM1.0: 1 µg/m³[0m
+[0;32mI (35759) PMS7003: PM2.5: 1 µg/m³[0m
+[0;32mI (35759) PMS7003: PM10: 1 µg/m³[0m
+[0;32mI (35759) DHT22: Hum 45.2[0m
+[0;32mI (35759) DHT22: Tmp 30.5[0m
+[0;32mI (35769) MQ131: MQ131 - O3 Concentration: 0.19 ppb[0m
+[0;32mI (35769) MQ136: MQ136 - SO2 Concentration: inf ppm[0m
+
+[0;32mI (35779) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (35779) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (35789) GPS: Received: [0m
+[0;32mI (35789) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (40459) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (40799) PMS7003: PM1.0: 1 µg/m³[0m
+[0;32mI (40799) PMS7003: PM2.5: 1 µg/m³[0m
+[0;32mI (40799) PMS7003: PM10: 1 µg/m³[0m
+[0;32mI (40799) DHT22: Hum 45.4[0m
+[0;32mI (40799) DHT22: Tmp 30.6[0m
+[0;32mI (40809) MQ131: MQ131 - O3 Concentration: 0.36 ppb[0m
+[0;32mI (40809) MQ136: MQ136 - SO2 Concentration: 17.55 ppm[0m
+
+[0;32mI (40819) MICS6814: MICS6814 - CO Concentration: 2576.00 ppm[0m
+[0;32mI (40819) MICS6814: MICS6814 - NO2 Concentration: 22.96 ppm[0m
+
+[0;32mI (40829) GPS: Received: [0m
+[0;32mI (40829) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d908h ( 55560) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d930 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ffcc vaddr=40080000 size=0004ch (    76) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21bc4h (138180) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041bec vaddr=4008004c size=0ea50h ( 59984) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (245) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  688d5c76b...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) AODV: Routing Table:[0m
+[0;32mI (399) AODV: ---------------------------------------------------[0m
+[0;32mI (409) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (409) AODV: ---------------------------------------------------[0m
+[0;32mI (419) AODV: ---------------------------------------------------[0m
+[0;32mI (429) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (439) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (439) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (439) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (449) DHT22: Hum 0.0[0m
+[0;32mI (449) DHT22: Tmp 0.0[0m
+[0;32mI (449) MQ131: MQ131 - O3 Concentration: 776079.94 ppb[0m
+[0;32mI (459) MQ136: MQ136 - SO2 Concentration: 1100.28 ppm[0m
+
+[0;32mI (469) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (469) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (479) GPS: Received: [0m
+[0;32mI (479) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (489) SSD1306: INTERFACE is i2c[0m
+[0;32mI (489) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (499) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (499) SSD1306: CONFIG_RESET_GPIO=36[0m
+[0;32mI (499) SSD1306: New i2c driver is used[0m
+[0;32mI (509) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (519) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (529) gpio: GPIO[36]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (539) gpio: io_num=36 can only be input[0m
+[0;31mE (539) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (549) main_task: Returned from app_main()[0m
+[0;31mE (599) gpio: gpio_set_level(238): GPIO output gpio_num error[0m
+[0;32mI (599) SSD1306: Panel is 128x64[0m
+[0;32mI (599) SSD1306: OLED configured successfully[0m

@@ -1,0 +1,194 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM9 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40087e53: xPortSetInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:556
+ (inlined by) xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:472
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x40087e53: xPortSetInterruptMaskFromISR at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:556
+ (inlined by) xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:472
+[0m
+[0;33m0x40087e50: xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:463
+0x400878d1: vPortEnterCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xQueueGiveFromISR at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1385
+0x40083a2b: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:638
+0x40082379: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:443
+0x4008321d: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38
+0x400d5ec0: Display_Task at C:/get-started/Node/main/main.c:784
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400851be: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x40084f2c: ipc_task at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400851bb: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d2693: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x40088a76: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40087ffa: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:197
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x40087ffa: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:197
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495
+[0m
+[0;33m0x40087ff7: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:193 (discriminator 1)
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495 (discriminator 1)
+0x40087938: xQueueGiveFromISR at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1516
+0x40083a2b: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:638
+0x40082379: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:443
+0x4008321d: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38
+0x400d5ec0: Display_Task at C:/get-started/Node/main/main.c:784
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400851be: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x40084f2c: ipc_task at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400851bb: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d2693: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x40088a76: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008387f: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:570
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x4008387f: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:570
+[0m
+[0;33m0x4008387c: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:569
+0x40082379: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:443
+0x4008321d: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38
+0x400d5ec0: Display_Task at C:/get-started/Node/main/main.c:784
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400851be: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x40084f2c: ipc_task at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400851bb: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d2693: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x40088a76: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083879: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:569
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x40083879: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:569
+[0m
+[0;33m0x40083876: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:566
+0x40082379: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:443
+0x4008321d: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38
+0x400d5ec0: Display_Task at C:/get-started/Node/main/main.c:784
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400851be: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x40084f2c: ipc_task at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400851bb: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d2693: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x40088a76: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082350: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:435
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+[0m
+[0;33m0x40083220: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x40082350: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:435
+[0m
+[0;33m0x4008234d: esp_clk_apb_freq at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/esp_clk.c:98
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38
+0x400d5ec0: Display_Task at C:/get-started/Node/main/main.c:784
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400851be: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x40084f2c: ipc_task at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400851bb: xt_utils_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d2693: esp_vApplicationIdleHook at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x40088a76: prvIdleTask at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x40087c85: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40087ffd: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:197
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d288f: uart_hal_write_txfifo at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400dae19: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:552
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x40087ffd: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:197
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495
+[0m
+[0;33m0x40087ffa: spinlock_release at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/spinlock.h:197
+ (inlined by) vPortExitCritical at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:495
+0x40087938: xQueueGiveFromISR at C:/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1516
+0x40083a2b: i2c_master_isr_handler_default at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:638
+0x40082379: shared_intr_isr at C:/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/intr_alloc.c:443
+0x4008321d: _xt_medint2 at C:/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400dae16: i2c_ll_master_set_filter at C:/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/i2c_ll.h:551
+ (inlined by) i2c_new_master_bus at C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/i2c_master.c:865
+0x400d6aa3: i2c_master_init at C:/get-started/Node/components/display/ssd1306_i2c_new.c:38

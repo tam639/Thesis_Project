@@ -1,0 +1,92 @@
+Y��+j5
+[0;32mI (36) boot:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b104h ( 45316) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b12c vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d388 vaddr=40080000 size=02c90h ( 11408) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16eb0h ( 93872) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036ed8 vaddr=40082c90 size=0aad0h ( 43728) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  4238a9711...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B18 len 0002D4E8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2335) main_task: Returned from app_main()[0m
+[0;32mI (16475) uart_example: Node Number: 5[0m
+[0;32mI (16475) uart_example: Temperature: 32.7°C, Humidity: 40.9%[0m
+[0;32mI (16475) uart_example: PM1.0: 19, PM2.5: 28, PM10: 32[0m
+[0;32mI (16475) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (16485) uart_example: CO: 18.28 ppm, NO2: 0.82 ppm[0m
+[0;32mI (16485) uart_example: Latitude: 20.998314, Longitude: 105.886520[0m
+[0;32mI (20535) uart_example: Node Number: 5[0m
+[0;32mI (20535) uart_example: Temperature: 32.7°C, Humidity: 40.9%[0m
+[0;32mI (20535) uart_example: PM1.0: 20, PM2.5: 28, PM10: 32[0m
+[0;32mI (20535) uart_example: O3: 655.35 ppm, SO2: 28.96 ppm[0m
+[0;32mI (20545) uart_example: CO: 1.00 ppm, NO2: 0.94 ppm[0m
+[0;32mI (20545) uart_example: Latitude: 20.997854, Longitude: 105.886780[0m
+[0;31mE (26615) uart_example: Received data length is too short[0m
+[0;32mI (30655) uart_example: Node Number: 5[0m
+[0;32mI (30655) uart_example: Temperature: 32.7°C, Humidity: 41.0%[0m
+[0;32mI (30655) uart_example: PM1.0: 19, PM2.5: 26, PM10: 27[0m
+[0;32mI (30655) uart_example: O3: 655.35 ppm, SO2: 28.96 ppm[0m
+[0;32mI (30665) uart_example: CO: 81.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (30665) uart_example: Latitude: 20.997854, Longitude: 105.886780[0m
+[0;32mI (36735) uart_example: Node Number: 5[0m
+[0;32mI (36735) uart_example: Temperature: 32.7°C, Humidity: 41.0%[0m
+[0;32mI (36735) uart_example: PM1.0: 17, PM2.5: 23, PM10: 24[0m
+[0;32mI (36735) uart_example: O3: 655.35 ppm, SO2: 28.90 ppm[0m
+[0;32mI (36745) uart_example: CO: 1.00 ppm, NO2: 0.79 ppm[0m
+[0;32mI (36745) uart_example: Latitude: 20.997463, Longitude: 105.887032[0m
+[0;32mI (40795) uart_example: Node Number: 5[0m
+[0;32mI (40795) uart_example: Temperature: 32.7°C, Humidity: 41.1%[0m
+[0;32mI (40795) uart_example: PM1.0: 17, PM2.5: 23, PM10: 24[0m
+[0;32mI (40795) uart_example: O3: 655.35 ppm, SO2: 28.90 ppm[0m
+[0;32mI (40805) uart_example: CO: 204.64 ppm, NO2: 0.73 ppm[0m
+[0;32mI (40805) uart_example: Latitude: 20.997463, Longitude: 105.887032[0m

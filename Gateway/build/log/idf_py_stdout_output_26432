@@ -1,0 +1,85 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\get-started\Gateway\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/get-started/Gateway/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/get-started/Gateway/main/main.c:7:
+C:/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/get-started/Gateway/main/main.c: In function 'handle_rreq':
+C:/get-started/Gateway/main/main.c:255:30: warning: unused variable 'route' [-Wunused-variable]
+  255 |         route_table_entry_t* route = find_route(rreq.dest_add);
+      |                              ^~~~~
+C:/get-started/Gateway/main/main.c: In function 'app_main':
+C:/get-started/Gateway/main/main.c:516:10: warning: unused variable 'received_char' [-Wunused-variable]
+  516 |     char received_char;
+      |          ^~~~~~~~~~~~~
+C:/get-started/Gateway/main/main.c: At top level:
+C:/get-started/Gateway/main/main.c:69:20: warning: 'TAG_GPS' defined but not used [-Wunused-variable]
+   69 | static const char *TAG_GPS = "GPS";
+      |                    ^~~~~~~
+C:/get-started/Gateway/main/main.c:68:20: warning: 'TAG_MICS6814' defined but not used [-Wunused-variable]
+   68 | static const char *TAG_MICS6814 = "MICS6814";
+      |                    ^~~~~~~~~~~~
+C:/get-started/Gateway/main/main.c:67:20: warning: 'TAG_MQ136' defined but not used [-Wunused-variable]
+   67 | static const char *TAG_MQ136 = "MQ136";
+      |                    ^~~~~~~~~
+C:/get-started/Gateway/main/main.c:66:20: warning: 'TAG_MQ131' defined but not used [-Wunused-variable]
+   66 | static const char *TAG_MQ131 = "MQ131";
+      |                    ^~~~~~~~~
+C:/get-started/Gateway/main/main.c:65:20: warning: 'TAG_PMS7003' defined but not used [-Wunused-variable]
+   65 | static const char *TAG_PMS7003 = "PMS7003";
+      |                    ^~~~~~~~~~~
+C:/get-started/Gateway/main/main.c:64:20: warning: 'TAG_DHT22' defined but not used [-Wunused-variable]
+   64 | static const char *TAG_DHT22 = "DHT22";
+      |                    ^~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable main.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/get-started/Gateway/build/main.bin
+[7/8] cmd.exe /C "cd /D C:\get-started\Gateway\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/get-started/Gateway/build/partition_table/partition-table.bin C:/get-started/Gateway/build/main.bin"
+main.bin binary size 0x350b0 bytes. Smallest app partition is 0x100000 bytes. 0xcaf50 bytes (79%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:esptool.py --chip esp32 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 main.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM6
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 08:b6:1f:34:f5:e4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00045fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16364...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16364 compressed) at 0x00001000 in 0.8 seconds (effective 254.0 kbit/s)...
+Hash of data verified.
+Compressed 217264 bytes to 111171...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001d0fd... (28 %)
+Writing at 0x00022f45... (42 %)
+Writing at 0x00028ec5... (57 %)
+Writing at 0x0002fc71... (71 %)
+Writing at 0x0003a084... (85 %)
+Writing at 0x0003fe0b... (100 %)
+Wrote 217264 bytes (111171 compressed) at 0x00010000 in 2.9 seconds (effective 609.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 323.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/get-started/Gateway/build -P C:/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,701 @@
+L[C��+ښ�j%�(36) boot: chip re�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=291b8h (168376) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=000391e0 vaddr=3ffb0000 size=03c4ch ( 15436) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003ce34 vaddr=40080000 size=031e4h ( 12772) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9da60h (645728) map[0m
+[0;32mI (398) esp_image: segment 4: paddr=000dda88 vaddr=400831e4 size=143d0h ( 82896) load[0m
+[0;32mI (442) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (442) boot: Disabling RNG early entropy source...[0m
+[0;32mI (454) cpu_start: Multicore app[0m
+[0;32mI (463) cpu_start: Pro cpu start user code[0m
+[0;32mI (463) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (463) cpu_start: Application information:[0m
+[0;32mI (466) cpu_start: Project name:     main[0m
+[0;32mI (470) cpu_start: App version:      1[0m
+[0;32mI (475) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (481) cpu_start: ELF file SHA256:  24991492e...[0m
+[0;32mI (486) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (492) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (496) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (501) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (506) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (513) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (519) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (532) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 400975B4 len 00008A4C (34 KiB): IRAM[0m
+[0;32mI (546) spi_flash: detected chip: generic[0m
+[0;32mI (549) spi_flash: flash io: dio[0m
+[0;33mW (553) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (607) uart_example: ESP_WIFI_MODE_STA[0m
+I (617) wifi:wifi driver task: 3ffc04a0, prio:23, stack:6656, core=0
+I (637) wifi:wifi firmware version: a9f5b59
+I (637) wifi:wifi certification version: v7.0
+I (637) wifi:config NVS flash: enabled
+I (637) wifi:config nano formating: disabled
+I (637) wifi:Init data frame dynamic rx buffer num: 32
+I (647) wifi:Init static rx mgmt buffer num: 5
+I (647) wifi:Init management short buffer num: 32
+I (647) wifi:Init dynamic tx buffer num: 32
+I (657) wifi:Init static rx buffer size: 1600
+I (657) wifi:Init static rx buffer num: 10
+I (667) wifi:Init dynamic rx buffer num: 32
+[0;32mI (667) wifi_init: rx ba win: 6[0m
+[0;32mI (667) wifi_init: tcpip mbox: 32[0m
+[0;32mI (677) wifi_init: udp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp tx win: 5760[0m
+[0;32mI (687) wifi_init: tcp rx win: 5760[0m
+[0;32mI (687) wifi_init: tcp mss: 1440[0m
+[0;32mI (697) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (697) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (707) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (787) wifi:mode : sta (08:b6:1f:34:f5:e4)
+I (787) wifi:enable tsf
+[0;32mI (797) wifi station: wifi_init_sta finished.[0m
+I (807) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (807) wifi:state: init -> auth (b0)
+I (817) wifi:state: auth -> init (8a0)
+I (817) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (817) wifi station: retry to connect to the AP[0m
+[0;32mI (817) wifi station: connect to the AP fail[0m
+[0;32mI (3237) wifi station: retry to connect to the AP[0m
+[0;32mI (3237) wifi station: connect to the AP fail[0m
+I (3247) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3247) wifi:state: init -> auth (b0)
+I (3307) wifi:state: auth -> assoc (0)
+I (3417) wifi:state: assoc -> run (10)
+I (3557) wifi:connected with Thanh Tam, aid = 2, channel 1, BW20, bssid = 10:39:4e:fd:17:30
+I (3557) wifi:security: WPA2-PSK, phy: bgn, rssi: -70
+I (3567) wifi:pm start, type: 1
+
+I (3567) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3627) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4567) esp_netif_handlers: sta ip: 192.168.1.14, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4567) wifi station: got IP:192.168.1.14[0m
+[0;32mI (4567) wifi station: connected to AP SSID:Thanh Tam password:06111976[0m
+[0;32mI (4577) MQTT: Other event id:7[0m
+[0;32mI (4587) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4587) wifi:<ba-add>idx:0 (ifx:0, 10:39:4e:fd:17:30), tid:0, ssn:5, winSize:64
+[0;32mI (4597) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4607) main_task: Returned from app_main()[0m
+[0;32mI (5177) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5177) MQTT: sent publish successful, msg_id=29508[0m
+[0;32mI (5177) MQTT: sent subscribe successful, msg_id=22293[0m
+[0;32mI (5487) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29508[0m
+[0;32mI (5797) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=22293[0m
+
+Available after enqueue: 19 
+
+[0;32mI (9727) MQTT: sent publish successful, msg_id=26614[0m
+
+Available after dequeue: 20 
+
+[0;32mI (9727) AODV: Node Number: 2[0m
+[0;32mI (9727) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (9737) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (9737) AODV: O3: 148.36 ppm, SO2: 559.37 ppm[0m
+[0;32mI (9747) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (9747) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (10097) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26614[0m
+
+Available after enqueue: 19 
+
+[0;32mI (14727) MQTT: sent publish successful, msg_id=50292[0m
+
+Available after dequeue: 20 
+
+[0;32mI (14727) AODV: Node Number: 2[0m
+[0;32mI (14727) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (14737) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (14737) AODV: O3: 58.59 ppm, SO2: 33.80 ppm[0m
+[0;32mI (14747) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (14747) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (15017) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50292[0m
+
+Available after enqueue: 19 
+
+[0;32mI (19727) MQTT: sent publish successful, msg_id=33825[0m
+
+Available after dequeue: 20 
+
+[0;32mI (19727) AODV: Node Number: 2[0m
+[0;32mI (19727) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (19737) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (19737) AODV: O3: 395.66 ppm, SO2: 156.19 ppm[0m
+[0;32mI (19747) AODV: CO: 191.64 ppm, NO2: 3.01 ppm[0m
+[0;32mI (19747) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (20037) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33825[0m
+
+Available after enqueue: 19 
+
+[0;32mI (24727) MQTT: sent publish successful, msg_id=16215[0m
+
+Available after dequeue: 20 
+
+[0;32mI (24727) AODV: Node Number: 2[0m
+[0;32mI (24727) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (24737) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (24737) AODV: O3: 105.97 ppm, SO2: 271.93 ppm[0m
+[0;32mI (24747) AODV: CO: 268.00 ppm, NO2: 0.41 ppm[0m
+[0;32mI (24747) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (25037) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16215[0m
+
+Available after enqueue: 19 
+
+[0;32mI (29727) MQTT: sent publish successful, msg_id=44598[0m
+
+Available after dequeue: 20 
+
+[0;32mI (29727) AODV: Node Number: 2[0m
+[0;32mI (29727) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (29737) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (29737) AODV: O3: 112.25 ppm, SO2: 578.06 ppm[0m
+[0;32mI (29747) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (29747) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (30077) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44598[0m
+
+Available after enqueue: 19 
+
+[0;32mI (34737) MQTT: sent publish successful, msg_id=57847[0m
+
+Available after dequeue: 20 
+
+[0;32mI (34737) AODV: Node Number: 2[0m
+[0;32mI (34737) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (34747) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (34747) AODV: O3: 380.58 ppm, SO2: 155.36 ppm[0m
+[0;32mI (34757) AODV: CO: 199.64 ppm, NO2: 3.26 ppm[0m
+[0;32mI (34757) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (35077) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57847[0m
+
+Available after enqueue: 19 
+
+[0;32mI (39737) MQTT: sent publish successful, msg_id=18066[0m
+
+Available after dequeue: 20 
+
+[0;32mI (39737) AODV: Node Number: 2[0m
+[0;32mI (39737) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (39747) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (39747) AODV: O3: 655.20 ppm, SO2: 195.20 ppm[0m
+[0;32mI (39757) AODV: CO: 613.00 ppm, NO2: 2.53 ppm[0m
+[0;32mI (39757) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (40197) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18066[0m
+
+Available after enqueue: 19 
+
+[0;32mI (44737) MQTT: sent publish successful, msg_id=35289[0m
+
+Available after dequeue: 20 
+
+[0;32mI (44737) AODV: Node Number: 2[0m
+[0;32mI (44737) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (44747) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (44747) AODV: O3: 191.66 ppm, SO2: 481.81 ppm[0m
+[0;32mI (44757) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (44757) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (45107) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35289[0m
+
+Available after enqueue: 19 
+
+[0;32mI (49737) MQTT: sent publish successful, msg_id=32131[0m
+
+Available after dequeue: 20 
+
+[0;32mI (49737) AODV: Node Number: 2[0m
+[0;32mI (49737) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (49747) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (49747) AODV: O3: 84.28 ppm, SO2: 632.49 ppm[0m
+[0;32mI (49757) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (49757) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (50137) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32131[0m
+
+Available after enqueue: 19 
+
+[0;32mI (52487) MQTT: sent publish successful, msg_id=13830[0m
+
+Available after dequeue: 20 
+
+[0;32mI (52487) AODV: Node Number: 4[0m
+[0;32mI (52487) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (52497) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (52497) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (52507) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (52507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (52787) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13830[0m
+
+Available after enqueue: 19 
+
+[0;32mI (54517) MQTT: sent publish successful, msg_id=2926[0m
+
+Available after dequeue: 20 
+
+[0;32mI (54517) AODV: Node Number: 2[0m
+[0;32mI (54517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (54527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (54527) AODV: O3: 306.46 ppm, SO2: 269.42 ppm[0m
+[0;32mI (54537) AODV: CO: 311.00 ppm, NO2: 0.15 ppm[0m
+[0;32mI (54537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (54847) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2926[0m
+
+Available after enqueue: 19 
+
+[0;32mI (57487) MQTT: sent publish successful, msg_id=46134[0m
+
+Available after dequeue: 20 
+
+[0;32mI (57487) AODV: Node Number: 4[0m
+[0;32mI (57487) AODV: Temperature: 30.1°C, Humidity: 53.0%[0m
+[0;32mI (57497) AODV: PM1.0: 19, PM2.5: 26, PM10: 27[0m
+[0;32mI (57497) AODV: O3: 0.00 ppm, SO2: 166.43 ppm[0m
+[0;32mI (57507) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (57507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (57807) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46134[0m
+
+Available after enqueue: 19 
+
+[0;32mI (59517) MQTT: sent publish successful, msg_id=13539[0m
+
+Available after dequeue: 20 
+
+[0;32mI (59517) AODV: Node Number: 2[0m
+[0;32mI (59517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (59527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (59527) AODV: O3: 130.63 ppm, SO2: 578.06 ppm[0m
+[0;32mI (59537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (59537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (59857) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13539[0m
+
+Available after enqueue: 19 
+
+[0;32mI (62487) MQTT: sent publish successful, msg_id=22809[0m
+
+Available after dequeue: 20 
+
+[0;32mI (62487) AODV: Node Number: 4[0m
+[0;32mI (62487) AODV: Temperature: 30.1°C, Humidity: 52.4%[0m
+[0;32mI (62497) AODV: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (62497) AODV: O3: 0.00 ppm, SO2: 168.98 ppm[0m
+[0;32mI (62507) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (62507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (62827) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22809[0m
+
+Available after enqueue: 19 
+
+[0;32mI (64517) MQTT: sent publish successful, msg_id=22202[0m
+
+Available after dequeue: 20 
+
+[0;32mI (64517) AODV: Node Number: 2[0m
+[0;32mI (64517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (64527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (64527) AODV: O3: 231.40 ppm, SO2: 468.35 ppm[0m
+[0;32mI (64537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (64537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (64927) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22202[0m
+
+Available after enqueue: 19 
+
+[0;32mI (67487) MQTT: sent publish successful, msg_id=31580[0m
+
+Available after dequeue: 20 
+
+[0;32mI (67487) AODV: Node Number: 4[0m
+[0;32mI (67487) AODV: Temperature: 30.2°C, Humidity: 51.7%[0m
+[0;32mI (67497) AODV: PM1.0: 20, PM2.5: 27, PM10: 31[0m
+[0;32mI (67497) AODV: O3: 0.00 ppm, SO2: 170.39 ppm[0m
+[0;32mI (67507) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (67507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (67847) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31580[0m
+
+Available after enqueue: 19 
+
+[0;32mI (69517) MQTT: sent publish successful, msg_id=51901[0m
+
+Available after dequeue: 20 
+
+[0;32mI (69517) AODV: Node Number: 2[0m
+[0;32mI (69517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (69527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (69527) AODV: O3: 626.97 ppm, SO2: 202.46 ppm[0m
+[0;32mI (69537) AODV: CO: 579.00 ppm, NO2: 2.41 ppm[0m
+[0;32mI (69537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (69797) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51901[0m
+
+Available after enqueue: 19 
+
+[0;32mI (72487) MQTT: sent publish successful, msg_id=33469[0m
+
+Available after dequeue: 20 
+
+[0;32mI (72487) AODV: Node Number: 4[0m
+[0;32mI (72487) AODV: Temperature: 30.2°C, Humidity: 51.5%[0m
+[0;32mI (72497) AODV: PM1.0: 18, PM2.5: 24, PM10: 29[0m
+[0;32mI (72497) AODV: O3: 0.00 ppm, SO2: 170.63 ppm[0m
+[0;32mI (72507) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (72507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (72867) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33469[0m
+
+Available after enqueue: 19 
+
+[0;32mI (74517) MQTT: sent publish successful, msg_id=2795[0m
+
+Available after dequeue: 20 
+
+[0;32mI (74517) AODV: Node Number: 2[0m
+[0;32mI (74517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (74527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (74527) AODV: O3: 110.30 ppm, SO2: 591.84 ppm[0m
+[0;32mI (74537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (74537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (74807) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2795[0m
+
+Available after enqueue: 19 
+
+[0;32mI (77487) MQTT: sent publish successful, msg_id=13992[0m
+
+Available after dequeue: 20 
+
+[0;32mI (77487) AODV: Node Number: 4[0m
+[0;32mI (77487) AODV: Temperature: 30.2°C, Humidity: 51.5%[0m
+[0;32mI (77497) AODV: PM1.0: 16, PM2.5: 22, PM10: 29[0m
+[0;32mI (77497) AODV: O3: 0.00 ppm, SO2: 171.35 ppm[0m
+[0;32mI (77507) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (77507) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (77877) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13992[0m
+
+Available after enqueue: 19 
+
+[0;32mI (79517) MQTT: sent publish successful, msg_id=49746[0m
+
+Available after dequeue: 20 
+
+[0;32mI (79517) AODV: Node Number: 2[0m
+[0;32mI (79517) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (79527) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (79527) AODV: O3: 338.11 ppm, SO2: 425.05 ppm[0m
+[0;32mI (79537) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (79537) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (79827) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49746[0m
+
+Available after enqueue: 19 
+
+[0;32mI (84507) MQTT: sent publish successful, msg_id=6096[0m
+
+Available after dequeue: 20 
+
+[0;32mI (84507) AODV: Node Number: 2[0m
+[0;32mI (84507) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (84517) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (84517) AODV: O3: 246.28 ppm, SO2: 281.31 ppm[0m
+[0;32mI (84527) AODV: CO: 265.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (84527) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (84847) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6096[0m
+
+Available after enqueue: 19 
+
+[0;32mI (89507) MQTT: sent publish successful, msg_id=41556[0m
+
+Available after dequeue: 20 
+
+[0;32mI (89507) AODV: Node Number: 2[0m
+[0;32mI (89507) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (89517) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (89517) AODV: O3: 127.86 ppm, SO2: 563.02 ppm[0m
+[0;32mI (89527) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (89527) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (89857) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41556[0m
+
+Available after enqueue: 19 
+
+[0;32mI (94507) MQTT: sent publish successful, msg_id=43126[0m
+
+Available after dequeue: 20 
+
+[0;32mI (94507) AODV: Node Number: 2[0m
+[0;32mI (94507) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (94517) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (94517) AODV: O3: 385.43 ppm, SO2: 174.50 ppm[0m
+[0;32mI (94527) AODV: CO: 79.64 ppm, NO2: 3.12 ppm[0m
+[0;32mI (94527) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (94877) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43126[0m
+
+Available after enqueue: 19 
+
+[0;32mI (99507) MQTT: sent publish successful, msg_id=62896[0m
+
+Available after dequeue: 20 
+
+[0;32mI (99507) AODV: Node Number: 2[0m
+[0;32mI (99507) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (99517) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (99517) AODV: O3: 87.41 ppm, SO2: 623.51 ppm[0m
+[0;32mI (99527) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (99527) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (99787) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62896[0m
+
+Available after enqueue: 19 
+
+[0;32mI (104507) MQTT: sent publish successful, msg_id=18109[0m
+
+Available after dequeue: 20 
+
+[0;32mI (104507) AODV: Node Number: 2[0m
+[0;32mI (104507) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (104517) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (104517) AODV: O3: 504.21 ppm, SO2: 271.42 ppm[0m
+[0;32mI (104527) AODV: CO: 295.00 ppm, NO2: 0.93 ppm[0m
+[0;32mI (104527) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (104807) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18109[0m
+
+Available after enqueue: 19 
+
+[0;32mI (107827) MQTT: sent publish successful, msg_id=60831[0m
+
+Available after dequeue: 20 
+
+[0;32mI (107827) AODV: Node Number: 4[0m
+[0;32mI (107827) AODV: Temperature: 30.2°C, Humidity: 53.8%[0m
+[0;32mI (107837) AODV: PM1.0: 16, PM2.5: 19, PM10: 19[0m
+[0;32mI (107837) AODV: O3: 0.00 ppm, SO2: 322.95 ppm[0m
+[0;32mI (107847) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (107847) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (108197) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60831[0m
+
+Available after enqueue: 19 
+
+[0;32mI (109857) MQTT: sent publish successful, msg_id=36197[0m
+
+Available after dequeue: 20 
+
+[0;32mI (109857) AODV: Node Number: 2[0m
+[0;32mI (109857) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (109867) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (109867) AODV: O3: 68.98 ppm, SO2: 641.72 ppm[0m
+[0;32mI (109877) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (109877) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (110137) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36197[0m
+
+Available after enqueue: 19 
+
+[0;32mI (112827) MQTT: sent publish successful, msg_id=4372[0m
+
+Available after dequeue: 20 
+
+[0;32mI (112827) AODV: Node Number: 4[0m
+[0;32mI (112827) AODV: Temperature: 30.2°C, Humidity: 56.1%[0m
+[0;32mI (112837) AODV: PM1.0: 18, PM2.5: 22, PM10: 22[0m
+[0;32mI (112837) AODV: O3: 0.00 ppm, SO2: 141.53 ppm[0m
+[0;32mI (112847) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (112847) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (113217) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4372[0m
+
+Available after enqueue: 19 
+
+[0;32mI (114857) MQTT: sent publish successful, msg_id=55530[0m
+
+Available after dequeue: 20 
+
+[0;32mI (114857) AODV: Node Number: 2[0m
+[0;32mI (114857) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (114867) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (114867) AODV: O3: 548.75 ppm, SO2: 157.86 ppm[0m
+[0;32mI (114877) AODV: CO: 173.64 ppm, NO2: 3.33 ppm[0m
+[0;32mI (114877) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (115467) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55530[0m
+
+Available after enqueue: 19 
+
+[0;32mI (117827) MQTT: sent publish successful, msg_id=2268[0m
+
+Available after dequeue: 20 
+
+[0;32mI (117827) AODV: Node Number: 4[0m
+[0;32mI (117827) AODV: Temperature: 30.3°C, Humidity: 55.2%[0m
+[0;32mI (117837) AODV: PM1.0: 18, PM2.5: 22, PM10: 22[0m
+[0;32mI (117837) AODV: O3: 0.00 ppm, SO2: 142.25 ppm[0m
+[0;32mI (117847) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (117847) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (118117) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2268[0m
+
+Available after enqueue: 19 
+
+[0;32mI (119857) MQTT: sent publish successful, msg_id=42348[0m
+
+Available after dequeue: 20 
+
+[0;32mI (119857) AODV: Node Number: 2[0m
+[0;32mI (119857) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (119867) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (119867) AODV: O3: 209.45 ppm, SO2: 496.00 ppm[0m
+[0;32mI (119877) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (119877) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (120167) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42348[0m
+
+Available after enqueue: 19 
+
+[0;32mI (122827) MQTT: sent publish successful, msg_id=15159[0m
+
+Available after dequeue: 20 
+
+[0;32mI (122827) AODV: Node Number: 4[0m
+[0;32mI (122827) AODV: Temperature: 30.3°C, Humidity: 54.0%[0m
+[0;32mI (122837) AODV: PM1.0: 15, PM2.5: 20, PM10: 20[0m
+[0;32mI (122837) AODV: O3: 0.00 ppm, SO2: 153.12 ppm[0m
+[0;32mI (122847) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (122847) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (123137) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15159[0m
+
+Available after enqueue: 19 
+
+[0;32mI (124857) MQTT: sent publish successful, msg_id=10603[0m
+
+Available after dequeue: 20 
+
+[0;32mI (124857) AODV: Node Number: 2[0m
+[0;32mI (124857) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (124867) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (124867) AODV: O3: 60.91 ppm, SO2: 31.15 ppm[0m
+[0;32mI (124877) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (124877) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (125207) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10603[0m
+
+Available after enqueue: 19 
+
+[0;32mI (127837) MQTT: sent publish successful, msg_id=7702[0m
+
+Available after dequeue: 20 
+
+[0;32mI (127837) AODV: Node Number: 4[0m
+[0;32mI (127847) AODV: Temperature: 30.3°C, Humidity: 52.9%[0m
+[0;32mI (127847) AODV: PM1.0: 16, PM2.5: 20, PM10: 23[0m
+[0;32mI (127857) AODV: O3: 0.00 ppm, SO2: 158.50 ppm[0m
+[0;32mI (127857) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (127867) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (128167) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7702[0m
+
+Available after enqueue: 19 
+
+[0;32mI (129867) MQTT: sent publish successful, msg_id=25301[0m
+
+Available after dequeue: 20 
+
+[0;32mI (129867) AODV: Node Number: 2[0m
+[0;32mI (129867) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (129877) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (129877) AODV: O3: 60.03 ppm, SO2: 28.51 ppm[0m
+[0;32mI (129887) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (129887) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (130227) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25301[0m
+
+Available after enqueue: 19 
+
+[0;32mI (132837) MQTT: sent publish successful, msg_id=44274[0m
+
+Available after dequeue: 20 
+
+[0;32mI (132837) AODV: Node Number: 4[0m
+[0;32mI (132837) AODV: Temperature: 30.4°C, Humidity: 52.6%[0m
+[0;32mI (132847) AODV: PM1.0: 16, PM2.5: 20, PM10: 23[0m
+[0;32mI (132847) AODV: O3: 0.00 ppm, SO2: 157.65 ppm[0m
+[0;32mI (132857) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (132857) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (133177) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44274[0m
+
+Available after enqueue: 19 
+
+[0;32mI (134867) MQTT: sent publish successful, msg_id=46653[0m
+
+Available after dequeue: 20 
+
+[0;32mI (134867) AODV: Node Number: 2[0m
+[0;32mI (134867) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (134877) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (134877) AODV: O3: 52.18 ppm, SO2: 166.89 ppm[0m
+[0;32mI (134887) AODV: CO: 113.64 ppm, NO2: 2.39 ppm[0m
+[0;32mI (134887) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (135247) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46653[0m
+
+Available after enqueue: 19 
+
+[0;32mI (137847) MQTT: sent publish successful, msg_id=40496[0m
+
+Available after dequeue: 20 
+
+[0;32mI (137847) AODV: Node Number: 4[0m
+[0;32mI (137847) AODV: Temperature: 30.4°C, Humidity: 52.3%[0m
+[0;32mI (137857) AODV: PM1.0: 17, PM2.5: 21, PM10: 24[0m
+[0;32mI (137857) AODV: O3: 0.00 ppm, SO2: 161.08 ppm[0m
+[0;32mI (137867) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (137867) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (138207) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40496[0m
+
+Available after enqueue: 19 
+
+[0;32mI (139877) MQTT: sent publish successful, msg_id=53722[0m
+
+Available after dequeue: 20 
+
+[0;32mI (139877) AODV: Node Number: 2[0m
+[0;32mI (139877) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (139887) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (139887) AODV: O3: 202.82 ppm, SO2: 491.66 ppm[0m
+[0;32mI (139897) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (139897) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (140237) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53722[0m
+
+Available after enqueue: 19 
+
+[0;32mI (142847) MQTT: sent publish successful, msg_id=38340[0m
+
+Available after dequeue: 20 
+
+[0;32mI (142847) AODV: Node Number: 4[0m
+[0;32mI (142847) AODV: Temperature: 30.4°C, Humidity: 51.8%[0m
+[0;32mI (142857) AODV: PM1.0: 16, PM2.5: 20, PM10: 22[0m
+[0;32mI (142857) AODV: O3: 0.00 ppm, SO2: 168.98 ppm[0m
+[0;32mI (142867) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (142867) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (143207) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38340[0m
+
+Available after enqueue: 19 
+
+[0;32mI (144877) MQTT: sent publish successful, msg_id=30958[0m
+
+Available after dequeue: 20 
+
+[0;32mI (144877) AODV: Node Number: 2[0m
+[0;32mI (144877) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (144887) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (144887) AODV: O3: 225.59 ppm, SO2: 295.86 ppm[0m
+[0;32mI (144897) AODV: CO: 224.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (144897) AODV: Latitude: 95.250046, Longitude: 20.099844[0m
+[0;32mI (145267) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30958[0m

@@ -1,0 +1,1684 @@
+ets J%�(40) boot.esp32:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0cf60h ( 53088) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001cf88 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001f624 vaddr=40080000 size=009f4h (  2548) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1d888h (120968) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003d8b0 vaddr=400809f4 size=0dd98h ( 56728) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     NODE[0m
+[0;32mI (236) cpu_start: App version:      1[0m
+[0;32mI (241) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  e7074bc42...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (272) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB35D0 len 0002CA30 (178 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008E78C len 00011874 (70 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (332) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (351) main_task: Calling app_main()[0m
+[0;32mI (351) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (381) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (391) AODV: Routing Table:[0m
+[0;32mI (391) AODV: ---------------------------------------------------[0m
+[0;32mI (401) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (401) AODV: ---------------------------------------------------[0m
+[0;32mI (411) AODV: ---------------------------------------------------[0m
+[0;32mI (421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (431) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (431) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (431) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (441) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (441) DHT22: Hum 60.5[0m
+[0;32mI (441) DHT22: Tmp 25.5[0m
+[0;32mI (451) MQ131: MQ131 - O3 Concentration: 3.93 ppb[0m
+[0;32mI (451) MQ136: MQ136 - SO2 Concentration: 159.78 ppm[0m
+
+[0;32mI (461) MICS6814: MICS6814 - CO Concentration: 838.00 ppm[0m
+[0;32mI (461) MICS6814: MICS6814 - NO2 Concentration: 7.98 ppm[0m
+
+[0;32mI (471) GPS: Received: [0m
+[0;32mI (471) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (481) SSD1306: INTERFACE is i2c[0m
+[0;32mI (481) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (491) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (491) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (501) SSD1306: Panel is 128x64[0m
+[0;31mE (501) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (511) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (521) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (521) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (531) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (541) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (551) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (561) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (571) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (571) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (581) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (591) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (601) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (611) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (611) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (621) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (631) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (641) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (651) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (651) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (661) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (671) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (681) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (691) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (691) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (701) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (711) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (721) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (731) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (731) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (741) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (751) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (761) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (771) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (771) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (781) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (791) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (801) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (811) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (811) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (821) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (831) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (841) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (851) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (851) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (861) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (871) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (881) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (891) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (891) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (901) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (911) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (921) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (931) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (941) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (941) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (951) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (961) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (971) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (971) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (981) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (991) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1001) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1011) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1021) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1021) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1031) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1041) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1051) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1061) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1061) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1071) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1081) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1091) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1101) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1101) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1111) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1121) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1131) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1141) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1151) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1151) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1161) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1171) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1181) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1191) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1191) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1201) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1211) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1221) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1231) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1231) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1241) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1251) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1261) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1271) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1281) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1281) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1291) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1301) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1311) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1321) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1321) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1331) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1341) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1351) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1361) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1361) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1371) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1381) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1391) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1401) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1411) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1411) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1421) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1431) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1441) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1451) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1451) DHT: Sensor Timeout
+[0m
+[0;31mE (1451) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;32mI (1451) main_task: Returned from app_main()[0m
+[0;31mE (1471) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1481) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1491) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1491) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1501) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1511) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1521) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1531) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1531) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1541) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1551) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1561) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1571) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1581) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1581) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1591) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1601) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1611) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1621) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1621) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1631) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1641) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1651) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1661) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1661) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1671) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1681) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1691) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1701) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1711) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1711) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1721) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1731) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1741) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1751) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1751) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1761) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1771) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1781) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1791) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1791) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1801) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1811) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1821) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1831) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1841) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1841) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1851) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1861) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1871) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1881) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1881) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1891) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1901) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1911) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1921) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1921) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1931) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1941) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1951) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1961) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1971) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1971) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (1981) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (1991) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2001) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2011) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2011) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2021) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2031) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2041) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2051) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2051) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2061) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2071) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2081) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2091) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2101) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2101) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2111) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2121) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2131) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2141) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2141) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2151) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2161) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2171) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2181) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2181) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2191) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2201) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2211) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2221) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2231) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2231) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2241) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2251) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2261) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2271) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2271) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2281) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2291) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2301) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2311) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2311) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2321) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2331) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2341) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2351) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2361) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2361) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2371) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2381) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2391) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2401) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2401) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2411) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2421) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2431) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2441) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2441) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2451) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2461) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2471) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2481) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2481) DHT: Sensor Timeout
+[0m
+[0;31mE (2491) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2501) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2511) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2511) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2521) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2531) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2541) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2551) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2551) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2561) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2571) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2581) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2591) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2591) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2601) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2611) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2621) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2631) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2631) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2641) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2651) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2661) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2671) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2671) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2681) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2691) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2701) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2711) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2721) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2721) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2731) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2741) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2751) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2761) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2761) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2771) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2781) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2791) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2801) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2801) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2811) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2821) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2831) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2841) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2851) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2851) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2861) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2871) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2881) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2891) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2891) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2901) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2911) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2921) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2931) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2931) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2941) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2951) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2961) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2971) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2981) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (2981) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (2991) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3001) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3011) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3021) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3021) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3031) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3041) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3051) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3061) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3061) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3071) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3081) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3091) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3101) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3111) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3111) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3121) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3131) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3141) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3151) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3151) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3161) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3171) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3181) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3191) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3191) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3201) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3211) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3221) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3231) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3241) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3241) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3251) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3261) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3271) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3281) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3281) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3291) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3301) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3311) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3321) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3321) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3331) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3341) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3351) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3361) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3371) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3371) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3381) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3391) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3401) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3411) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3411) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3421) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3431) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3441) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3451) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3451) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3461) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3471) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3481) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3491) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3501) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3501) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3511) DHT: Sensor Timeout
+[0m
+[0;31mE (3511) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3521) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3531) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3541) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3551) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3561) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3561) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3571) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3581) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3591) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3601) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3601) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3611) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3621) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3631) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3641) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3651) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3651) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3661) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3671) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3681) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3691) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3691) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3701) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3711) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3721) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3731) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3731) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3741) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3751) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3761) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3771) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3771) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3781) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3791) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3801) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3811) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3811) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3821) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3831) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3841) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3851) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3861) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3861) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3871) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3881) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3891) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3901) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3901) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3911) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3921) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3931) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3941) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3941) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3951) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3961) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3971) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3981) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (3991) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (3991) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4001) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4011) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4021) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4031) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4031) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4041) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4051) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4061) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4071) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4071) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4081) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4091) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4101) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4111) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4121) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4121) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4131) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4141) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4151) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4161) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4161) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4171) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4181) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4191) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4201) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4201) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4211) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4221) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4231) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4241) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4251) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4251) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4261) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4271) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4281) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4291) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4291) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4301) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4311) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4321) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4331) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4331) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4341) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4351) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4361) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4371) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4381) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4381) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4391) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4401) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4411) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4421) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4421) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4431) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4441) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4451) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4461) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4461) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4471) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4481) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4491) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4501) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4511) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4511) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4521) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4531) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4541) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4541) DHT: Sensor Timeout
+[0m
+[0;31mE (4551) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4561) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4571) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4571) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4581) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4591) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4601) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4611) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4611) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4621) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4631) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4641) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4651) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4661) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4661) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4671) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4681) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;31mE (4691) i2c.master: i2c_master_transmit(957): i2c handle not initialized[0m
+[0;31mE (4701) SSD1306: Could not write to device [0xa5a5a5a5 at 0]: 258 (ESP_ERR_INVALID_ARG)[0m
+[0;32mI (5421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5481) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (5481) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (5481) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (5481) DHT22: Hum 60.5[0m
+[0;32mI (5481) DHT22: Tmp 25.5[0m
+[0;32mI (5491) MQ131: MQ131 - O3 Concentration: 3.24 ppb[0m
+[0;32mI (5491) MQ136: MQ136 - SO2 Concentration: 162.62 ppm[0m
+
+[0;32mI (5501) MICS6814: MICS6814 - CO Concentration: 851.00 ppm[0m
+[0;32mI (5501) MICS6814: MICS6814 - NO2 Concentration: 3.89 ppm[0m
+
+[0;32mI (5511) GPS: Received: [0m
+[0;32mI (5511) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (5571) DHT: Sensor Timeout
+[0m
+[0;31mE (6591) DHT: Sensor Timeout
+[0m
+[0;31mE (7611) DHT: Sensor Timeout
+[0m
+[0;31mE (8631) DHT: Sensor Timeout
+[0m
+[0;31mE (9651) DHT: Sensor Timeout
+[0m
+[0;32mI (10421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10521) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (10521) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (10521) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (10521) DHT22: Hum 60.5[0m
+[0;32mI (10521) DHT22: Tmp 25.5[0m
+[0;32mI (10531) MQ131: MQ131 - O3 Concentration: 4.46 ppb[0m
+[0;32mI (10531) MQ136: MQ136 - SO2 Concentration: 187.80 ppm[0m
+
+[0;32mI (10541) MICS6814: MICS6814 - CO Concentration: 731.00 ppm[0m
+[0;32mI (10541) MICS6814: MICS6814 - NO2 Concentration: 3.42 ppm[0m
+
+[0;32mI (10551) GPS: Received: [0m
+[0;32mI (10551) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (10671) DHT: Sensor Timeout
+[0m
+[0;31mE (11691) DHT: Sensor Timeout
+[0m
+[0;31mE (12711) DHT: Sensor Timeout
+[0m
+[0;31mE (13731) DHT: Sensor Timeout
+[0m
+[0;31mE (14751) DHT: Sensor Timeout
+[0m
+[0;32mI (15421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (15561) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (15561) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (15561) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (15561) DHT22: Hum 60.5[0m
+[0;32mI (15561) DHT22: Tmp 25.5[0m
+[0;32mI (15571) MQ131: MQ131 - O3 Concentration: 3.93 ppb[0m
+[0;32mI (15571) MQ136: MQ136 - SO2 Concentration: 322.27 ppm[0m
+
+[0;32mI (15581) MICS6814: MICS6814 - CO Concentration: 228.00 ppm[0m
+[0;32mI (15581) MICS6814: MICS6814 - NO2 Concentration: 0.82 ppm[0m
+
+[0;32mI (15591) GPS: Received: [0m
+[0;32mI (15591) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (15771) DHT: Sensor Timeout
+[0m
+[0;31mE (16791) DHT: Sensor Timeout
+[0m
+[0;31mE (17811) DHT: Sensor Timeout
+[0m
+[0;31mE (18831) DHT: Sensor Timeout
+[0m
+[0;31mE (19851) DHT: Sensor Timeout
+[0m
+[0;32mI (20421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (20601) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (20601) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (20601) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (20601) DHT22: Hum 60.5[0m
+[0;32mI (20601) DHT22: Tmp 25.5[0m
+[0;32mI (20611) MQ131: MQ131 - O3 Concentration: 4.76 ppb[0m
+[0;32mI (20611) MQ136: MQ136 - SO2 Concentration: 528.39 ppm[0m
+
+[0;32mI (20621) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (20621) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (20631) GPS: Received: [0m
+[0;32mI (20631) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (20871) DHT: Sensor Timeout
+[0m
+[0;31mE (21891) DHT: Sensor Timeout
+[0m
+[0;31mE (22911) DHT: Sensor Timeout
+[0m
+[0;31mE (23931) DHT: Sensor Timeout
+[0m
+[0;31mE (24951) DHT: Sensor Timeout
+[0m
+[0;32mI (25421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (25641) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (25641) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (25641) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (25641) DHT22: Hum 60.5[0m
+[0;32mI (25641) DHT22: Tmp 25.5[0m
+[0;32mI (25651) MQ131: MQ131 - O3 Concentration: 5.72 ppb[0m
+[0;32mI (25651) MQ136: MQ136 - SO2 Concentration: 526.76 ppm[0m
+
+[0;32mI (25661) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (25661) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (25671) GPS: Received: [0m
+[0;32mI (25671) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (25971) DHT: Sensor Timeout
+[0m
+[0;31mE (26991) DHT: Sensor Timeout
+[0m
+[0;31mE (28011) DHT: Sensor Timeout
+[0m
+[0;31mE (29031) DHT: Sensor Timeout
+[0m
+[0;31mE (30051) DHT: Sensor Timeout
+[0m
+[0;32mI (30421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (30681) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (30681) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (30681) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (30681) DHT22: Hum 60.5[0m
+[0;32mI (30681) DHT22: Tmp 25.5[0m
+[0;32mI (30691) MQ131: MQ131 - O3 Concentration: 3.70 ppb[0m
+[0;32mI (30691) MQ136: MQ136 - SO2 Concentration: 520.33 ppm[0m
+
+[0;32mI (30701) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (30701) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (30711) GPS: Received: [0m
+[0;32mI (30711) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (31071) DHT: Sensor Timeout
+[0m
+[0;31mE (32091) DHT: Sensor Timeout
+[0m
+[0;31mE (33111) DHT: Sensor Timeout
+[0m
+[0;31mE (34131) DHT: Sensor Timeout
+[0m
+[0;31mE (35151) DHT: Sensor Timeout
+[0m
+[0;32mI (35421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (35721) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (35721) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (35721) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (35721) DHT22: Hum 60.5[0m
+[0;32mI (35721) DHT22: Tmp 25.5[0m
+[0;32mI (35731) MQ131: MQ131 - O3 Concentration: 4.46 ppb[0m
+[0;32mI (35731) MQ136: MQ136 - SO2 Concentration: 514.05 ppm[0m
+
+[0;32mI (35741) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (35741) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (35751) GPS: Received: [0m
+[0;32mI (35751) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (36171) DHT: Sensor Timeout
+[0m
+[0;31mE (37191) DHT: Sensor Timeout
+[0m
+[0;31mE (38211) DHT: Sensor Timeout
+[0m
+[0;31mE (39231) DHT: Sensor Timeout
+[0m
+[0;31mE (40251) DHT: Sensor Timeout
+[0m
+[0;32mI (40421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (40761) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (40761) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (40761) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (40761) DHT22: Hum 60.5[0m
+[0;32mI (40761) DHT22: Tmp 25.5[0m
+[0;32mI (40771) MQ131: MQ131 - O3 Concentration: 3.86 ppb[0m
+[0;32mI (40771) MQ136: MQ136 - SO2 Concentration: 463.16 ppm[0m
+
+[0;32mI (40781) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (40781) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (40791) GPS: Received: [0m
+[0;32mI (40791) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (41271) DHT: Sensor Timeout
+[0m
+[0;31mE (42291) DHT: Sensor Timeout
+[0m
+[0;31mE (43311) DHT: Sensor Timeout
+[0m
+[0;31mE (44331) DHT: Sensor Timeout
+[0m
+[0;31mE (45351) DHT: Sensor Timeout
+[0m
+[0;32mI (45421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (45801) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (45801) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (45801) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (45801) DHT22: Hum 60.5[0m
+[0;32mI (45801) DHT22: Tmp 25.5[0m
+[0;32mI (45811) MQ131: MQ131 - O3 Concentration: 4.88 ppb[0m
+[0;32mI (45811) MQ136: MQ136 - SO2 Concentration: 407.03 ppm[0m
+
+[0;32mI (45821) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (45821) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (45831) GPS: Received: [0m
+[0;32mI (45831) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (46371) DHT: Sensor Timeout
+[0m
+[0;31mE (47391) DHT: Sensor Timeout
+[0m
+[0;31mE (48411) DHT: Sensor Timeout
+[0m
+[0;31mE (49431) DHT: Sensor Timeout
+[0m
+[0;32mI (50421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (50451) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (50841) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (50841) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (50841) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (50841) DHT22: Hum 60.5[0m
+[0;32mI (50841) DHT22: Tmp 25.5[0m
+[0;32mI (50851) MQ131: MQ131 - O3 Concentration: 4.61 ppb[0m
+[0;32mI (50851) MQ136: MQ136 - SO2 Concentration: 204.03 ppm[0m
+
+[0;32mI (50861) MICS6814: MICS6814 - CO Concentration: 469.00 ppm[0m
+[0;32mI (50861) MICS6814: MICS6814 - NO2 Concentration: 1.23 ppm[0m
+
+[0;32mI (50871) GPS: Received: [0m
+[0;32mI (50871) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (51471) DHT: Sensor Timeout
+[0m
+[0;31mE (52491) DHT: Sensor Timeout
+[0m
+[0;31mE (53511) DHT: Sensor Timeout
+[0m
+[0;31mE (54531) DHT: Sensor Timeout
+[0m
+[0;32mI (55421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (55551) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (55881) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (55881) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (55881) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (55881) DHT22: Hum 60.5[0m
+[0;32mI (55881) DHT22: Tmp 25.5[0m
+[0;32mI (55891) MQ131: MQ131 - O3 Concentration: 4.17 ppb[0m
+[0;32mI (55891) MQ136: MQ136 - SO2 Concentration: 161.30 ppm[0m
+
+[0;32mI (55901) MICS6814: MICS6814 - CO Concentration: 860.00 ppm[0m
+[0;32mI (55901) MICS6814: MICS6814 - NO2 Concentration: 4.00 ppm[0m
+
+[0;32mI (55911) GPS: Received: [0m
+[0;32mI (55911) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (56571) DHT: Sensor Timeout
+[0m
+[0;31mE (57591) DHT: Sensor Timeout
+[0m
+[0;31mE (58611) DHT: Sensor Timeout
+[0m
+[0;31mE (59631) DHT: Sensor Timeout
+[0m
+[0;32mI (60421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (60651) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (60921) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (60921) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (60921) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (60921) DHT22: Hum 60.5[0m
+[0;32mI (60921) DHT22: Tmp 25.5[0m
+[0;32mI (60931) MQ131: MQ131 - O3 Concentration: 5.12 ppb[0m
+[0;32mI (60931) MQ136: MQ136 - SO2 Concentration: 243.34 ppm[0m
+
+[0;32mI (60941) MICS6814: MICS6814 - CO Concentration: 440.00 ppm[0m
+[0;32mI (60941) MICS6814: MICS6814 - NO2 Concentration: 1.81 ppm[0m
+
+[0;32mI (60951) GPS: Received: [0m
+[0;32mI (60951) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (61671) DHT: Sensor Timeout
+[0m
+[0;31mE (62691) DHT: Sensor Timeout
+[0m
+[0;31mE (63711) DHT: Sensor Timeout
+[0m
+[0;31mE (64731) DHT: Sensor Timeout
+[0m
+[0;32mI (65421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (65751) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (65961) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (65961) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (65961) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (65961) DHT22: Hum 60.5[0m
+[0;32mI (65961) DHT22: Tmp 25.5[0m
+[0;32mI (65971) MQ131: MQ131 - O3 Concentration: 4.68 ppb[0m
+[0;32mI (65971) MQ136: MQ136 - SO2 Concentration: 487.40 ppm[0m
+
+[0;32mI (65981) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (65981) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (65991) GPS: Received: [0m
+[0;32mI (65991) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (66771) DHT: Sensor Timeout
+[0m
+[0;31mE (67791) DHT: Sensor Timeout
+[0m
+[0;31mE (68811) DHT: Sensor Timeout
+[0m
+[0;31mE (69831) DHT: Sensor Timeout
+[0m
+[0;32mI (70421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (70851) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (71001) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (71001) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (71001) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (71001) DHT22: Hum 60.5[0m
+[0;32mI (71001) DHT22: Tmp 25.5[0m
+[0;32mI (71011) MQ131: MQ131 - O3 Concentration: 5.41 ppb[0m
+[0;32mI (71011) MQ136: MQ136 - SO2 Concentration: 435.19 ppm[0m
+
+[0;32mI (71021) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (71021) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (71031) GPS: Received: [0m
+[0;32mI (71031) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (71871) DHT: Sensor Timeout
+[0m
+[0;31mE (72891) DHT: Sensor Timeout
+[0m
+[0;31mE (73911) DHT: Sensor Timeout
+[0m
+[0;31mE (74931) DHT: Sensor Timeout
+[0m
+[0;32mI (75421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (75951) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (76041) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (76041) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (76041) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (76041) DHT22: Hum 60.5[0m
+[0;32mI (76041) DHT22: Tmp 25.5[0m
+[0;32mI (76051) MQ131: MQ131 - O3 Concentration: 4.10 ppb[0m
+[0;32mI (76051) MQ136: MQ136 - SO2 Concentration: 337.05 ppm[0m
+
+[0;32mI (76061) MICS6814: MICS6814 - CO Concentration: 11.00 ppm[0m
+[0;32mI (76061) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (76071) GPS: Received: [0m
+[0;32mI (76071) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (76971) DHT: Sensor Timeout
+[0m
+[0;31mE (77991) DHT: Sensor Timeout
+[0m
+[0;31mE (79011) DHT: Sensor Timeout
+[0m
+[0;31mE (80031) DHT: Sensor Timeout
+[0m
+[0;32mI (80421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (81051) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (81081) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (81081) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (81081) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (81081) DHT22: Hum 60.5[0m
+[0;32mI (81081) DHT22: Tmp 25.5[0m
+[0;32mI (81091) MQ131: MQ131 - O3 Concentration: 3.83 ppb[0m
+[0;32mI (81091) MQ136: MQ136 - SO2 Concentration: 205.30 ppm[0m
+
+[0;32mI (81101) MICS6814: MICS6814 - CO Concentration: 593.00 ppm[0m
+[0;32mI (81101) MICS6814: MICS6814 - NO2 Concentration: 2.41 ppm[0m
+
+[0;32mI (81111) GPS: Received: [0m
+[0;32mI (81111) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (82071) DHT: Sensor Timeout
+[0m
+[0;31mE (83091) DHT: Sensor Timeout
+[0m
+[0;31mE (84111) DHT: Sensor Timeout
+[0m
+[0;31mE (85131) DHT: Sensor Timeout
+[0m
+[0;32mI (85421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (86121) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (86121) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (86121) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (86121) DHT22: Hum 60.5[0m
+[0;32mI (86121) DHT22: Tmp 25.5[0m
+[0;32mI (86131) MQ131: MQ131 - O3 Concentration: 5.24 ppb[0m
+[0;32mI (86131) MQ136: MQ136 - SO2 Concentration: 468.35 ppm[0m
+
+[0;32mI (86141) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (86141) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+[0;31mE (86151) DHT: Sensor Timeout
+[0m
+
+[0;32mI (86151) GPS: Received: [0m
+[0;32mI (86161) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (87171) DHT: Sensor Timeout
+[0m
+[0;31mE (88191) DHT: Sensor Timeout
+[0m
+[0;31mE (89211) DHT: Sensor Timeout
+[0m
+[0;31mE (90231) DHT: Sensor Timeout
+[0m
+[0;32mI (90421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (91161) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (91161) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (91161) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (91161) DHT22: Hum 60.5[0m
+[0;32mI (91161) DHT22: Tmp 25.5[0m
+[0;32mI (91171) MQ131: MQ131 - O3 Concentration: 4.68 ppb[0m
+[0;32mI (91171) MQ136: MQ136 - SO2 Concentration: 473.66 ppm[0m
+
+[0;32mI (91181) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (91181) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (91191) GPS: Received: [0m
+[0;32mI (91191) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (91251) DHT: Sensor Timeout
+[0m
+[0;31mE (92271) DHT: Sensor Timeout
+[0m
+[0;31mE (93291) DHT: Sensor Timeout
+[0m
+[0;31mE (94311) DHT: Sensor Timeout
+[0m
+[0;31mE (95331) DHT: Sensor Timeout
+[0m
+[0;32mI (95421) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (96201) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (96201) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (96201) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (96201) DHT22: Hum 60.5[0m
+[0;32mI (96201) DHT22: Tmp 25.5[0m
+[0;32mI (96211) MQ131: MQ131 - O3 Concentration: 16.00 ppb[0m
+[0;32mI (96211) MQ136: MQ136 - SO2 Concentration: 461.88 ppm[0m
+
+[0;32mI (96221) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (96221) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (96231) GPS: Received: [0m
+[0;32mI (96231) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (96351) DHT: Sensor Timeout
+[0m
+[0;31mE (97371) DHT: Sensor Timeout
+[0m
+[0;31mE (98391) DHT: Sensor Timeout
+[0m
+[0;31mE (99411) DHT: Sensor Timeout
+[0m
+[0;32mI (100421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (100431) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (101241) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (101241) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (101241) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (101241) DHT22: Hum 60.5[0m
+[0;32mI (101241) DHT22: Tmp 25.5[0m
+[0;32mI (101251) MQ131: MQ131 - O3 Concentration: 4.39 ppb[0m
+[0;32mI (101251) MQ136: MQ136 - SO2 Concentration: 448.18 ppm[0m
+
+[0;32mI (101261) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (101261) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (101271) GPS: Received: [0m
+[0;32mI (101271) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (101451) DHT: Sensor Timeout
+[0m
+[0;31mE (102471) DHT: Sensor Timeout
+[0m
+[0;31mE (103491) DHT: Sensor Timeout
+[0m
+[0;31mE (104511) DHT: Sensor Timeout
+[0m
+[0;32mI (105421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (105531) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (106281) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (106281) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (106281) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (106281) DHT22: Hum 60.5[0m
+[0;32mI (106281) DHT22: Tmp 25.5[0m
+[0;32mI (106291) MQ131: MQ131 - O3 Concentration: 4.21 ppb[0m
+[0;32mI (106291) MQ136: MQ136 - SO2 Concentration: 408.05 ppm[0m
+
+[0;32mI (106301) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (106301) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (106311) GPS: Received: [0m
+[0;32mI (106311) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (106551) DHT: Sensor Timeout
+[0m
+[0;31mE (107571) DHT: Sensor Timeout
+[0m
+[0;31mE (108591) DHT: Sensor Timeout
+[0m
+[0;31mE (109611) DHT: Sensor Timeout
+[0m
+[0;32mI (110421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (110631) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (111321) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (111321) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (111321) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (111321) DHT22: Hum 60.5[0m
+[0;32mI (111321) DHT22: Tmp 25.5[0m
+[0;32mI (111331) MQ131: MQ131 - O3 Concentration: 4.31 ppb[0m
+[0;32mI (111331) MQ136: MQ136 - SO2 Concentration: 163.95 ppm[0m
+
+[0;32mI (111341) MICS6814: MICS6814 - CO Concentration: 799.00 ppm[0m
+[0;32mI (111341) MICS6814: MICS6814 - NO2 Concentration: 3.46 ppm[0m
+
+[0;32mI (111351) GPS: Received: [0m
+[0;32mI (111351) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (111651) DHT: Sensor Timeout
+[0m
+[0;31mE (112671) DHT: Sensor Timeout
+[0m
+[0;31mE (113691) DHT: Sensor Timeout
+[0m
+[0;31mE (114711) DHT: Sensor Timeout
+[0m
+[0;32mI (115421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (115731) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (116361) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (116361) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (116361) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (116361) DHT22: Hum 60.5[0m
+[0;32mI (116361) DHT22: Tmp 25.5[0m
+[0;32mI (116371) MQ131: MQ131 - O3 Concentration: 4.88 ppb[0m
+[0;32mI (116371) MQ136: MQ136 - SO2 Concentration: 426.16 ppm[0m
+
+[0;32mI (116381) MICS6814: MICS6814 - CO Concentration: 13.00 ppm[0m
+[0;32mI (116381) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (116391) GPS: Received: [0m
+[0;32mI (116391) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (116751) DHT: Sensor Timeout
+[0m
+[0;31mE (117771) DHT: Sensor Timeout
+[0m
+[0;31mE (118791) DHT: Sensor Timeout
+[0m
+[0;31mE (119811) DHT: Sensor Timeout
+[0m
+[0;32mI (120421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (120831) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (121401) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (121401) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (121401) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (121401) DHT22: Hum 60.5[0m
+[0;32mI (121401) DHT22: Tmp 25.5[0m
+[0;32mI (121411) MQ131: MQ131 - O3 Concentration: 4.65 ppb[0m
+[0;32mI (121411) MQ136: MQ136 - SO2 Concentration: 444.57 ppm[0m
+
+[0;32mI (121421) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (121421) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (121431) GPS: Received: [0m
+[0;32mI (121431) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (121851) DHT: Sensor Timeout
+[0m
+[0;31mE (122871) DHT: Sensor Timeout
+[0m
+[0;31mE (123891) DHT: Sensor Timeout
+[0m
+[0;31mE (124911) DHT: Sensor Timeout
+[0m
+[0;32mI (125421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (125931) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (126441) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (126441) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (126441) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (126441) DHT22: Hum 60.5[0m
+[0;32mI (126441) DHT22: Tmp 25.5[0m
+[0;32mI (126451) MQ131: MQ131 - O3 Concentration: 4.84 ppb[0m
+[0;32mI (126451) MQ136: MQ136 - SO2 Concentration: 450.61 ppm[0m
+
+[0;32mI (126461) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (126461) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (126471) GPS: Received: [0m
+[0;32mI (126471) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (126951) DHT: Sensor Timeout
+[0m
+[0;31mE (127971) DHT: Sensor Timeout
+[0m
+[0;31mE (128991) DHT: Sensor Timeout
+[0m
+[0;31mE (130011) DHT: Sensor Timeout
+[0m
+[0;32mI (130421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (131031) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (131481) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (131481) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (131481) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (131481) DHT22: Hum 60.5[0m
+[0;32mI (131481) DHT22: Tmp 25.5[0m
+[0;32mI (131491) MQ131: MQ131 - O3 Concentration: 4.88 ppb[0m
+[0;32mI (131491) MQ136: MQ136 - SO2 Concentration: 491.67 ppm[0m
+
+[0;32mI (131501) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (131501) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (131511) GPS: Received: [0m
+[0;32mI (131511) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (132051) DHT: Sensor Timeout
+[0m
+[0;31mE (133071) DHT: Sensor Timeout
+[0m
+[0;31mE (134091) DHT: Sensor Timeout
+[0m
+[0;31mE (135111) DHT: Sensor Timeout
+[0m
+[0;32mI (135421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (136131) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (136521) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (136521) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (136521) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (136521) DHT22: Hum 60.5[0m
+[0;32mI (136521) DHT22: Tmp 25.5[0m
+[0;32mI (136531) MQ131: MQ131 - O3 Concentration: 5.00 ppb[0m
+[0;32mI (136531) MQ136: MQ136 - SO2 Concentration: 501.89 ppm[0m
+
+[0;32mI (136541) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (136541) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (136551) GPS: Received: [0m
+[0;32mI (136551) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (137151) DHT: Sensor Timeout
+[0m
+[0;31mE (138171) DHT: Sensor Timeout
+[0m
+[0;31mE (139191) DHT: Sensor Timeout
+[0m
+[0;31mE (140211) DHT: Sensor Timeout
+[0m
+[0;32mI (140421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (141231) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (141561) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (141561) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (141561) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (141561) DHT22: Hum 60.5[0m
+[0;32mI (141561) DHT22: Tmp 25.5[0m
+[0;32mI (141571) MQ131: MQ131 - O3 Concentration: 4.88 ppb[0m
+[0;32mI (141571) MQ136: MQ136 - SO2 Concentration: 448.18 ppm[0m
+
+[0;32mI (141581) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (141581) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (141591) GPS: Received: [0m
+[0;32mI (141591) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (142251) DHT: Sensor Timeout
+[0m
+[0;31mE (143271) DHT: Sensor Timeout
+[0m
+[0;31mE (144291) DHT: Sensor Timeout
+[0m
+[0;31mE (145311) DHT: Sensor Timeout
+[0m
+[0;32mI (145421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (146331) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (146601) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (146601) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (146601) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (146601) DHT22: Hum 60.5[0m
+[0;32mI (146601) DHT22: Tmp 25.5[0m
+[0;32mI (146611) MQ131: MQ131 - O3 Concentration: 5.68 ppb[0m
+[0;32mI (146611) MQ136: MQ136 - SO2 Concentration: 410.11 ppm[0m
+
+[0;32mI (146621) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (146621) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (146631) GPS: Received: [0m
+[0;32mI (146631) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (147351) DHT: Sensor Timeout
+[0m
+[0;31mE (148371) DHT: Sensor Timeout
+[0m
+[0;31mE (149391) DHT: Sensor Timeout
+[0m
+[0;31mE (150411) DHT: Sensor Timeout
+[0m
+[0;32mI (150421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (151431) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (151641) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (151641) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (151641) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (151641) DHT22: Hum 60.5[0m
+[0;32mI (151641) DHT22: Tmp 25.5[0m
+[0;32mI (151651) MQ131: MQ131 - O3 Concentration: 0.77 ppb[0m
+[0;32mI (151651) MQ136: MQ136 - SO2 Concentration: 163.73 ppm[0m
+
+[0;32mI (151661) MICS6814: MICS6814 - CO Concentration: 824.00 ppm[0m
+[0;32mI (151661) MICS6814: MICS6814 - NO2 Concentration: 3.77 ppm[0m
+
+[0;32mI (151671) GPS: Received: [0m
+[0;32mI (151671) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (152451) DHT: Sensor Timeout
+[0m
+[0;31mE (153471) DHT: Sensor Timeout
+[0m
+[0;31mE (154491) DHT: Sensor Timeout
+[0m
+[0;32mI (155421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (155511) DHT: Sensor Timeout
+[0m
+[0;31mE (156531) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (156681) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (156681) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (156681) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (156681) DHT22: Hum 60.5[0m
+[0;32mI (156681) DHT22: Tmp 25.5[0m
+[0;32mI (156691) MQ131: MQ131 - O3 Concentration: 5.46 ppb[0m
+[0;32mI (156691) MQ136: MQ136 - SO2 Concentration: 283.47 ppm[0m
+
+[0;32mI (156701) MICS6814: MICS6814 - CO Concentration: 333.00 ppm[0m
+[0;32mI (156701) MICS6814: MICS6814 - NO2 Concentration: 1.42 ppm[0m
+
+[0;32mI (156711) GPS: Received: [0m
+[0;32mI (156711) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (157551) DHT: Sensor Timeout
+[0m
+[0;31mE (158571) DHT: Sensor Timeout
+[0m
+[0;31mE (159591) DHT: Sensor Timeout
+[0m
+[0;32mI (160421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (160611) DHT: Sensor Timeout
+[0m
+[0;31mE (161631) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (161721) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (161721) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (161721) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (161721) DHT22: Hum 60.5[0m
+[0;32mI (161721) DHT22: Tmp 25.5[0m
+[0;32mI (161731) MQ131: MQ131 - O3 Concentration: 5.68 ppb[0m
+[0;32mI (161731) MQ136: MQ136 - SO2 Concentration: 497.46 ppm[0m
+
+[0;32mI (161741) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (161741) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (161751) GPS: Received: [0m
+[0;32mI (161751) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (162651) DHT: Sensor Timeout
+[0m
+[0;31mE (163671) DHT: Sensor Timeout
+[0m
+[0;31mE (164691) DHT: Sensor Timeout
+[0m
+[0;32mI (165421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (165711) DHT: Sensor Timeout
+[0m
+[0;31mE (166731) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (166761) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (166761) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (166761) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (166761) DHT22: Hum 60.5[0m
+[0;32mI (166761) DHT22: Tmp 25.5[0m
+[0;32mI (166771) MQ131: MQ131 - O3 Concentration: 5.12 ppb[0m
+[0;32mI (166771) MQ136: MQ136 - SO2 Concentration: 463.16 ppm[0m
+
+[0;32mI (166781) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (166781) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (166791) GPS: Received: [0m
+[0;32mI (166791) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (167751) DHT: Sensor Timeout
+[0m
+[0;31mE (168771) DHT: Sensor Timeout
+[0m
+[0;31mE (169791) DHT: Sensor Timeout
+[0m
+[0;32mI (170421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (170811) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (171801) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (171801) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (171801) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (171801) DHT22: Hum 60.5[0m
+[0;32mI (171801) DHT22: Tmp 25.5[0m
+[0;32mI (171811) MQ131: MQ131 - O3 Concentration: 4.61 ppb[0m
+[0;32mI (171811) MQ136: MQ136 - SO2 Concentration: 227.06 ppm[0m
+
+[0;32mI (171821) MICS6814: MICS6814 - CO Concentration: 357.00 ppm[0m
+[0;32mI (171821) MICS6814: MICS6814 - NO2 Concentration: 0.61 ppm[0m
+
+[0;31mE (171831) DHT: Sensor Timeout
+[0m
+[0;32mI (171831) GPS: Received: [0m
+[0;32mI (171841) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (172861) DHT: Sensor Timeout
+[0m
+[0;31mE (173881) DHT: Sensor Timeout
+[0m
+[0;31mE (174901) DHT: Sensor Timeout
+[0m
+[0;32mI (175421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (175921) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (176851) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (176851) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (176851) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (176851) DHT22: Hum 60.5[0m
+[0;32mI (176851) DHT22: Tmp 25.5[0m
+[0;32mI (176861) MQ131: MQ131 - O3 Concentration: 6.52 ppb[0m
+[0;32mI (176861) MQ136: MQ136 - SO2 Concentration: 429.51 ppm[0m
+
+[0;32mI (176871) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (176871) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (176881) GPS: Received: [0m
+[0;32mI (176881) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (176941) DHT: Sensor Timeout
+[0m
+[0;31mE (177961) DHT: Sensor Timeout
+[0m
+[0;31mE (178981) DHT: Sensor Timeout
+[0m
+[0;31mE (180001) DHT: Sensor Timeout
+[0m
+[0;32mI (180421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (181021) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (181891) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (181891) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (181891) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (181891) DHT22: Hum 60.5[0m
+[0;32mI (181891) DHT22: Tmp 25.5[0m
+[0;32mI (181901) MQ131: MQ131 - O3 Concentration: 5.24 ppb[0m
+[0;32mI (181901) MQ136: MQ136 - SO2 Concentration: 173.04 ppm[0m
+
+[0;32mI (181911) MICS6814: MICS6814 - CO Concentration: 705.00 ppm[0m
+[0;32mI (181911) MICS6814: MICS6814 - NO2 Concentration: 2.80 ppm[0m
+
+[0;32mI (181921) GPS: Received: [0m
+[0;32mI (181921) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (182041) DHT: Sensor Timeout
+[0m
+[0;31mE (183061) DHT: Sensor Timeout
+[0m
+[0;31mE (184081) DHT: Sensor Timeout
+[0m
+[0;31mE (185101) DHT: Sensor Timeout
+[0m
+[0;32mI (185421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (186121) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (186931) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (186931) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (186931) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (186931) DHT22: Hum 60.5[0m
+[0;32mI (186931) DHT22: Tmp 25.5[0m
+[0;32mI (186941) MQ131: MQ131 - O3 Concentration: 5.76 ppb[0m
+[0;32mI (186941) MQ136: MQ136 - SO2 Concentration: 483.20 ppm[0m
+
+[0;32mI (186951) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (186951) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (186961) GPS: Received: [0m
+[0;32mI (186961) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (187141) DHT: Sensor Timeout
+[0m
+[0;31mE (188161) DHT: Sensor Timeout
+[0m
+[0;31mE (189181) DHT: Sensor Timeout
+[0m
+[0;31mE (190201) DHT: Sensor Timeout
+[0m
+[0;32mI (190421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (191221) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (191971) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (191971) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (191971) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (191971) DHT22: Hum 60.5[0m
+[0;32mI (191971) DHT22: Tmp 25.5[0m
+[0;32mI (191981) MQ131: MQ131 - O3 Concentration: 4.68 ppb[0m
+[0;32mI (191981) MQ136: MQ136 - SO2 Concentration: 468.35 ppm[0m
+
+[0;32mI (191991) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (191991) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (192001) GPS: Received: [0m
+[0;32mI (192001) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (192241) DHT: Sensor Timeout
+[0m
+[0;31mE (193261) DHT: Sensor Timeout
+[0m
+[0;31mE (194281) DHT: Sensor Timeout
+[0m
+[0;31mE (195301) DHT: Sensor Timeout
+[0m
+[0;32mI (195421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (196321) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (197011) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (197011) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (197011) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (197011) DHT22: Hum 60.5[0m
+[0;32mI (197011) DHT22: Tmp 25.5[0m
+[0;32mI (197021) MQ131: MQ131 - O3 Concentration: 0.01 ppb[0m
+[0;32mI (197021) MQ136: MQ136 - SO2 Concentration: 423.96 ppm[0m
+
+[0;32mI (197031) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (197031) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (197041) GPS: Received: [0m
+[0;32mI (197041) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (197341) DHT: Sensor Timeout
+[0m
+[0;31mE (198361) DHT: Sensor Timeout
+[0m
+[0;31mE (199381) DHT: Sensor Timeout
+[0m
+[0;31mE (200401) DHT: Sensor Timeout
+[0m
+[0;32mI (200421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (201421) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (202051) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (202051) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (202051) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (202051) DHT22: Hum 60.5[0m
+[0;32mI (202051) DHT22: Tmp 25.5[0m
+[0;32mI (202061) MQ131: MQ131 - O3 Concentration: 4.65 ppb[0m
+[0;32mI (202061) MQ136: MQ136 - SO2 Concentration: 397.05 ppm[0m
+
+[0;32mI (202071) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (202071) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (202081) GPS: Received: [0m
+[0;32mI (202081) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (202441) DHT: Sensor Timeout
+[0m
+[0;31mE (203461) DHT: Sensor Timeout
+[0m
+[0;31mE (204481) DHT: Sensor Timeout
+[0m
+[0;32mI (205421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (205501) DHT: Sensor Timeout
+[0m
+[0;31mE (206521) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (207091) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (207091) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (207091) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (207091) DHT22: Hum 60.5[0m
+[0;32mI (207091) DHT22: Tmp 25.5[0m
+[0;32mI (207101) MQ131: MQ131 - O3 Concentration: 5.50 ppb[0m
+[0;32mI (207101) MQ136: MQ136 - SO2 Concentration: 198.78 ppm[0m
+
+[0;32mI (207111) MICS6814: MICS6814 - CO Concentration: 470.00 ppm[0m
+[0;32mI (207111) MICS6814: MICS6814 - NO2 Concentration: 1.30 ppm[0m
+
+[0;32mI (207121) GPS: Received: [0m
+[0;32mI (207121) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (207541) DHT: Sensor Timeout
+[0m
+[0;31mE (208561) DHT: Sensor Timeout
+[0m
+[0;31mE (209581) DHT: Sensor Timeout
+[0m
+[0;32mI (210421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (210601) DHT: Sensor Timeout
+[0m
+[0;31mE (211621) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (212131) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (212131) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (212131) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (212131) DHT22: Hum 60.5[0m
+[0;32mI (212131) DHT22: Tmp 25.5[0m
+[0;32mI (212141) MQ131: MQ131 - O3 Concentration: 5.81 ppb[0m
+[0;32mI (212141) MQ136: MQ136 - SO2 Concentration: 155.78 ppm[0m
+
+[0;32mI (212151) MICS6814: MICS6814 - CO Concentration: 922.00 ppm[0m
+[0;32mI (212151) MICS6814: MICS6814 - NO2 Concentration: 4.35 ppm[0m
+
+[0;32mI (212161) GPS: Received: [0m
+[0;32mI (212161) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (212641) DHT: Sensor Timeout
+[0m
+[0;31mE (213661) DHT: Sensor Timeout
+[0m
+[0;31mE (214681) DHT: Sensor Timeout
+[0m
+[0;32mI (215421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (215701) DHT: Sensor Timeout
+[0m
+[0;31mE (216721) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (217171) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (217171) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (217171) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (217171) DHT22: Hum 60.5[0m
+[0;32mI (217171) DHT22: Tmp 25.5[0m
+[0;32mI (217181) MQ131: MQ131 - O3 Concentration: 5.54 ppb[0m
+[0;32mI (217181) MQ136: MQ136 - SO2 Concentration: 427.27 ppm[0m
+
+[0;32mI (217191) MICS6814: MICS6814 - CO Concentration: 21.00 ppm[0m
+[0;32mI (217191) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (217201) GPS: Received: [0m
+[0;32mI (217201) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (217741) DHT: Sensor Timeout
+[0m
+[0;31mE (218761) DHT: Sensor Timeout
+[0m
+[0;31mE (219781) DHT: Sensor Timeout
+[0m
+[0;32mI (220421) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (220801) DHT: Sensor Timeout
+[0m

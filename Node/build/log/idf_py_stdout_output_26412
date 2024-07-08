@@ -1,0 +1,580 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d808h ( 55304) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d830 vaddr=3ffb0000 size=02664h (  9828) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001fe9c vaddr=40080000 size=0017ch (   380) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21b94h (138132) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041bbc vaddr=4008017c size=0e920h ( 59680) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (240) cpu_start: Project name:     NODE[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  d97c98e21...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3590 len 0002CA70 (178 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (409) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (429) PMS7003: PM1.0: 0 µg/m³[0m
+[0;32mI (429) PMS7003: PM2.5: 0 µg/m³[0m
+[0;32mI (429) PMS7003: PM10: 0 µg/m³[0m
+[0;32mI (429) DHT22: Hum 36.6[0m
+[0;32mI (439) DHT22: Tmp 31.2[0m
+[0;32mI (439) MQ131: MQ131 - O3 Concentration: 24.88 ppb[0m
+[0;32mI (449) MQ136: MQ136 - SO2 Concentration: 12.27 ppm[0m
+
+[0;32mI (449) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (459) MICS6814: MICS6814 - NO2 Concentration: 2.71 ppm[0m
+
+[0;32mI (459) GPS: Received: [0m
+[0;32mI (469) GPS: UTC Time: , Latitude: 0.000000, Longitude: 0.000000[0m
+[0;32mI (469) SSD1306: INTERFACE is i2c[0m
+[0;32mI (479) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (479) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (489) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (489) SSD1306: New i2c driver is used[0m
+[0;32mI (499) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (499) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (509) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (519) main_task: Returned from app_main()[0m
+[0;32mI (539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (549) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (569) SSD1306: Panel is 128x64[0m
+[0;32mI (569) SSD1306: OLED configured successfully[0m
+[0;32mI (679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (819) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1089) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1089) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1229) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1499) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1499) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (1909) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2049) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2439) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2449) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (2479) DHT: Sensor Timeout
+[0m
+[0;32mI (2579) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2579) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2579) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2589) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2719) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2719) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2719) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2719) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2859) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (2989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3119) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3119) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3119) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3129) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3389) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3389) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3389) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3529) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3529) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3529) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3669) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3669) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3669) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3939) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3939) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3939) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (3949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4209) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4209) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4209) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4349) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4349) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4349) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4349) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4479) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4479) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4479) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4619) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4619) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4619) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4619) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4749) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4749) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4749) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4759) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4889) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4889) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4889) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (4899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5019) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5019) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5019) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5029) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5159) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5159) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5159) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5299) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5299) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5429) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5429) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5429) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5439) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (5469) PMS7003: PM1.0: 0 µg/m³[0m
+[0;32mI (5469) PMS7003: PM2.5: 0 µg/m³[0m
+[0;32mI (5469) PMS7003: PM10: 0 µg/m³[0m
+[0;32mI (5469) DHT22: Hum 36.6[0m
+[0;32mI (5469) DHT22: Tmp 31.2[0m
+[0;32mI (5469) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (5479) MQ136: MQ136 - SO2 Concentration: 12.52 ppm[0m
+
+[0;32mI (5489) MICS6814: MICS6814 - CO Concentration: 32.00 ppm[0m
+[0;32mI (5489) MICS6814: MICS6814 - NO2 Concentration: 1.89 ppm[0m
+
+[0;32mI (5499) GPS: Received: $GPRMC,081446.00,A,2059.84156,N,10553.21203,E,0.950,,280624,,,A*79
+$GPVTG,,T,,M,0.950,N,1.759,K,A*25
+$GPGGA,081446.00,2059.84156,N,10553.21203,E,1,06,1.29,12.6,M,-23.3,M,,*45
+$GPGSA,A,3,23,15,05,13,29,24,,,,,,,2.88,1.29,2.58*0A
+$GPGSV,3,1,12,04,,,08,05,29,052,26,11,13,126,16,12,00,175,*49
+$GPGSV,3,2,12,13,36,035,22,15,65,004,20,18,40,331,,20,15,076,17*76
+$GPGSV,3,3,12,23,20,296,20,24,41,155,20,25,00,202,,29,50,228,13*75
+$GPGLL,2059.84120,N,10553.21264,E,081447.00,A,A*67
+[0m
+[0;32mI (5549) GPS: UTC Time: 081446.00, Latitude: 20.997360, Longitude: 105.886864[0m
+[0;32mI (5569) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5569) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5569) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5569) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5579) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5709) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5709) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5709) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5719) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5839) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5849) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5979) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5989) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (5999) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6129) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6129) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6129) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6259) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6269) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6269) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6539) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6549) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6679) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6809) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6819) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6949) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (6959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7079) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7089) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7089) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7219) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7229) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7359) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7489) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7499) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7629) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7759) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7769) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7899) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (7909) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8039) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8169) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8309) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8459) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8589) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8589) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (8609) DHT: Sensor Timeout
+[0m
+[0;32mI (8609) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8609) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8749) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (8879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9019) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9019) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9149) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9149) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9149) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9159) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9419) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9419) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9419) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9429) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9559) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9559) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9559) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9569) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9699) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9839) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9969) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (9969) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10109) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10379) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10509) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;32mI (10549) PMS7003: PM1.0: 16 µg/m³[0m
+[0;32mI (10549) PMS7003: PM2.5: 21 µg/m³[0m
+[0;32mI (10549) PMS7003: PM10: 22 µg/m³[0m
+[0;32mI (10549) DHT22: Hum 36.6[0m
+[0;32mI (10549) DHT22: Tmp 31.2[0m
+[0;32mI (10559) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (10559) MQ136: MQ136 - SO2 Concentration: 12.25 ppm[0m
+
+[0;32mI (10569) MICS6814: MICS6814 - CO Concentration: 52.00 ppm[0m
+[0;32mI (10579) MICS6814: MICS6814 - NO2 Concentration: 2.30 ppm[0m
+
+[0;32mI (10579) GPS: Received: $GPRMC,081451.00,A,2059.84126,N,10553.21274,E,0.201,,280624,,,A*77
+$GPVTG,,T,,M,0.201,N,0.372,K,A*26
+$GPGGA,081451.00,2059.84126,N,10553.21274,E,1,05,1.29,12.7,M,-23.3,M,,*46
+$GPGSA,A,3,23,15,05,13,24,,,,,,,,2.88,1.29,2.58*01
+$GPGSV,3,1,12,04,,,09,05,29,052,25,11,13,126,15,12,00,175,*48
+$GPGSV,3,2,12,13,36,035,19,15,65,004,20,18,40,331,,20,15,076,17*7E
+$GPGSV,3,3,12,23,20,296,21,24,41,155,16,25,00,202,,29,50,228,*73
+$GPGLL,2059.84126,N,10553.21274,E,081451.00,A,A*67
+[0m
+[0;32mI (10629) GPS: UTC Time: 081451.00, Latitude: 20.997355, Longitude: 105.886879[0m
+[0;32mI (10639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10649) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10649) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10659) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10789) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10789) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10789) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10799) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10919) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10919) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10929) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10929) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11059) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11059) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11059) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11069) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11189) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11189) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11199) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11199) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11329) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11329) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11329) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11339) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11469) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11469) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11469) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11469) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11599) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11599) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11599) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11609) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (11879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12149) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12279) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12279) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12279) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12289) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12409) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12419) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12549) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12549) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12549) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12559) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12559) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12689) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12699) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12829) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12839) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12959) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (12969) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13099) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13109) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13229) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13229) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13239) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13369) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13379) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13509) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13639) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13649) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13779) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13779) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13779) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13779) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13909) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13909) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13909) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (13919) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14049) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14049) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14049) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14049) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14179) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14189) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14319) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14449) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14459) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14589) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14589) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14589) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14599) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14599) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14729) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14729) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14729) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14739) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14869) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14879) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14999) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14999) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (14999) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15009) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15139) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (15149) Transmit UART: Encoded and sent data over UART.[0m

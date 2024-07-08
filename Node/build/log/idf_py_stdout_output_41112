@@ -1,0 +1,851 @@
+ Multicore bootload�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d868h ( 55400) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001d890 vaddr=3ffb0000 size=02654h (  9812) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001feec vaddr=40080000 size=0012ch (   300) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21ec8h (138952) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=00041ef0 vaddr=4008012c size=0e998h ( 59800) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (236) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (236) cpu_start: Application information:[0m
+[0;32mI (239) cpu_start: Project name:     NODE[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  e6821d1ef...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (265) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3268 len 0002CD98 (179 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EAC4 len 0001153C (69 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;33mW (327) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (349) main_task: Started on CPU0[0m
+[0;32mI (359) main_task: Calling app_main()[0m
+[0;32mI (359) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (389) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (399) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+=== Reading Sensors ===
+[0;31mE (419) DHT: Sensor Timeout
+[0m
+[0;32mI (419) MQ131: MQ131 - O3 Concentration: 1.48 ppb[0m
+[0;32mI (419) MQ136: MQ136 - SO2 Concentration: 644.07 ppm[0m
+
+[0;32mI (429) MICS6814: MICS6814 - CO Concentration: 271.00 ppm[0m
+[0;32mI (439) MICS6814: MICS6814 - NO2 Concentration: 4.11 ppm[0m
+
+[0;32mI (439) SSD1306: INTERFACE is i2c[0m
+[0;32mI (449) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (449) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (449) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (459) SSD1306: New i2c driver is used[0m
+[0;32mI (459) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (469) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (479) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (489) main_task: Returned from app_main()[0m
+[0;32mI (539) SSD1306: Panel is 128x64[0m
+[0;32mI (539) SSD1306: OLED configured successfully[0m
+=== Reading Sensors ===
+[0;31mE (1459) DHT: Sensor Timeout
+[0m
+[0;32mI (1459) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (1459) MQ136: MQ136 - SO2 Concentration: 18.43 ppm[0m
+
+[0;32mI (1469) MICS6814: MICS6814 - CO Concentration: 384.00 ppm[0m
+[0;32mI (1469) MICS6814: MICS6814 - NO2 Concentration: 23.29 ppm[0m
+
+[0;32mI (2399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (2499) DHT: Sensor Timeout
+[0m
+[0;32mI (2499) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (2499) MQ136: MQ136 - SO2 Concentration: 17.31 ppm[0m
+
+[0;32mI (2509) MICS6814: MICS6814 - CO Concentration: 453.00 ppm[0m
+[0;32mI (2509) MICS6814: MICS6814 - NO2 Concentration: 23.44 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (3539) DHT: Sensor Timeout
+[0m
+[0;32mI (3539) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (3539) MQ136: MQ136 - SO2 Concentration: 15.25 ppm[0m
+
+[0;32mI (3549) MICS6814: MICS6814 - CO Concentration: 247.00 ppm[0m
+[0;32mI (3549) MICS6814: MICS6814 - NO2 Concentration: 21.47 ppm[0m
+
+[0;32mI (4179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (4399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (4579) DHT: Sensor Timeout
+[0m
+[0;32mI (4579) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (4579) MQ136: MQ136 - SO2 Concentration: 12.92 ppm[0m
+
+[0;32mI (4589) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (4589) MICS6814: MICS6814 - NO2 Concentration: 18.42 ppm[0m
+
+[0;32mI (5399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;31mE (5619) DHT: Sensor Timeout
+[0m
+[0;32mI (5619) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (5619) MQ136: MQ136 - SO2 Concentration: 13.61 ppm[0m
+
+[0;32mI (5629) MICS6814: MICS6814 - CO Concentration: 26.00 ppm[0m
+[0;32mI (5629) MICS6814: MICS6814 - NO2 Concentration: 18.89 ppm[0m
+
+[0;32mI (6179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (6399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (6659) DHT: Sensor Timeout
+[0m
+[0;32mI (6659) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (6659) MQ136: MQ136 - SO2 Concentration: 19.50 ppm[0m
+
+[0;32mI (6669) MICS6814: MICS6814 - CO Concentration: 54.00 ppm[0m
+[0;32mI (6669) MICS6814: MICS6814 - NO2 Concentration: 19.38 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (7699) DHT: Sensor Timeout
+[0m
+[0;32mI (7699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (7699) MQ136: MQ136 - SO2 Concentration: 19.88 ppm[0m
+
+[0;32mI (7709) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (7709) MICS6814: MICS6814 - NO2 Concentration: 20.25 ppm[0m
+
+[0;32mI (8179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (8399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (8739) DHT: Sensor Timeout
+[0m
+[0;32mI (8739) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (8739) MQ136: MQ136 - SO2 Concentration: 18.41 ppm[0m
+
+[0;32mI (8749) MICS6814: MICS6814 - CO Concentration: 141.00 ppm[0m
+[0;32mI (8749) MICS6814: MICS6814 - NO2 Concentration: 21.14 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (9779) DHT: Sensor Timeout
+[0m
+[0;32mI (9779) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (9779) MQ136: MQ136 - SO2 Concentration: 17.71 ppm[0m
+
+[0;32mI (9789) MICS6814: MICS6814 - CO Concentration: 345.00 ppm[0m
+[0;32mI (9789) MICS6814: MICS6814 - NO2 Concentration: 22.84 ppm[0m
+
+[0;32mI (10179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (10399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (10819) DHT: Sensor Timeout
+[0m
+[0;32mI (10819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (10819) MQ136: MQ136 - SO2 Concentration: 17.46 ppm[0m
+
+[0;32mI (10829) MICS6814: MICS6814 - CO Concentration: 338.00 ppm[0m
+[0;32mI (10829) MICS6814: MICS6814 - NO2 Concentration: 22.61 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (11859) DHT: Sensor Timeout
+[0m
+[0;32mI (11859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (11859) MQ136: MQ136 - SO2 Concentration: 14.41 ppm[0m
+
+[0;32mI (11869) MICS6814: MICS6814 - CO Concentration: 66.00 ppm[0m
+[0;32mI (11869) MICS6814: MICS6814 - NO2 Concentration: 20.27 ppm[0m
+
+[0;32mI (12179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (12399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (12899) DHT: Sensor Timeout
+[0m
+[0;32mI (12899) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (12899) MQ136: MQ136 - SO2 Concentration: 14.06 ppm[0m
+
+[0;32mI (12909) MICS6814: MICS6814 - CO Concentration: 4.00 ppm[0m
+[0;32mI (12909) MICS6814: MICS6814 - NO2 Concentration: 19.22 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (13939) DHT: Sensor Timeout
+[0m
+[0;32mI (13939) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (13939) MQ136: MQ136 - SO2 Concentration: 15.04 ppm[0m
+
+[0;32mI (13949) MICS6814: MICS6814 - CO Concentration: 34.00 ppm[0m
+[0;32mI (13949) MICS6814: MICS6814 - NO2 Concentration: 19.60 ppm[0m
+
+[0;32mI (14179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (14399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (14979) DHT: Sensor Timeout
+[0m
+[0;32mI (14979) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (14979) MQ136: MQ136 - SO2 Concentration: 18.85 ppm[0m
+
+[0;32mI (14989) MICS6814: MICS6814 - CO Concentration: 61.00 ppm[0m
+[0;32mI (14989) MICS6814: MICS6814 - NO2 Concentration: 20.14 ppm[0m
+
+[0;32mI (15399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;31mE (16019) DHT: Sensor Timeout
+[0m
+[0;32mI (16019) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (16019) MQ136: MQ136 - SO2 Concentration: 19.13 ppm[0m
+
+[0;32mI (16029) MICS6814: MICS6814 - CO Concentration: 74.00 ppm[0m
+[0;32mI (16029) MICS6814: MICS6814 - NO2 Concentration: 20.34 ppm[0m
+
+[0;32mI (16179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (16399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (17059) DHT: Sensor Timeout
+[0m
+[0;32mI (17059) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (17059) MQ136: MQ136 - SO2 Concentration: 18.39 ppm[0m
+
+[0;32mI (17069) MICS6814: MICS6814 - CO Concentration: 207.00 ppm[0m
+[0;32mI (17069) MICS6814: MICS6814 - NO2 Concentration: 21.83 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (18099) DHT: Sensor Timeout
+[0m
+[0;32mI (18099) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (18099) MQ136: MQ136 - SO2 Concentration: 17.57 ppm[0m
+
+[0;32mI (18109) MICS6814: MICS6814 - CO Concentration: 345.00 ppm[0m
+[0;32mI (18109) MICS6814: MICS6814 - NO2 Concentration: 22.92 ppm[0m
+
+[0;32mI (18179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (18399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (19139) DHT: Sensor Timeout
+[0m
+[0;32mI (19139) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (19139) MQ136: MQ136 - SO2 Concentration: 17.84 ppm[0m
+
+[0;32mI (19149) MICS6814: MICS6814 - CO Concentration: 343.00 ppm[0m
+[0;32mI (19149) MICS6814: MICS6814 - NO2 Concentration: 22.55 ppm[0m
+
+[0;32mI (20179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (20179) DHT: Sensor Timeout
+[0m
+[0;32mI (20179) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (20179) MQ136: MQ136 - SO2 Concentration: 14.81 ppm[0m
+
+[0;32mI (20189) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (20189) MICS6814: MICS6814 - NO2 Concentration: 20.23 ppm[0m
+
+[0;32mI (20399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (20399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (21219) DHT: Sensor Timeout
+[0m
+[0;32mI (21219) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (21219) MQ136: MQ136 - SO2 Concentration: 12.92 ppm[0m
+
+[0;32mI (21229) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (21229) MICS6814: MICS6814 - NO2 Concentration: 18.85 ppm[0m
+
+[0;32mI (22179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (22259) DHT: Sensor Timeout
+[0m
+[0;32mI (22259) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (22259) MQ136: MQ136 - SO2 Concentration: 13.84 ppm[0m
+
+[0;32mI (22269) MICS6814: MICS6814 - CO Concentration: 21.00 ppm[0m
+[0;32mI (22269) MICS6814: MICS6814 - NO2 Concentration: 19.09 ppm[0m
+
+[0;32mI (22399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (23299) DHT: Sensor Timeout
+[0m
+[0;32mI (23299) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (23299) MQ136: MQ136 - SO2 Concentration: 16.80 ppm[0m
+
+[0;32mI (23309) MICS6814: MICS6814 - CO Concentration: 42.00 ppm[0m
+[0;32mI (23309) MICS6814: MICS6814 - NO2 Concentration: 19.50 ppm[0m
+
+[0;32mI (24179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (24339) DHT: Sensor Timeout
+[0m
+[0;32mI (24339) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (24339) MQ136: MQ136 - SO2 Concentration: 19.93 ppm[0m
+
+[0;32mI (24349) MICS6814: MICS6814 - CO Concentration: 73.00 ppm[0m
+[0;32mI (24349) MICS6814: MICS6814 - NO2 Concentration: 20.23 ppm[0m
+
+[0;32mI (24399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (25379) DHT: Sensor Timeout
+[0m
+[0;32mI (25379) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (25379) MQ136: MQ136 - SO2 Concentration: 19.69 ppm[0m
+
+[0;32mI (25389) MICS6814: MICS6814 - CO Concentration: 77.00 ppm[0m
+[0;32mI (25389) MICS6814: MICS6814 - NO2 Concentration: 20.10 ppm[0m
+[0;32mI (25399) Transmit UART: Encoded and sent data over UART.[0m
+
+[0;32mI (26179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (26399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (26419) DHT: Sensor Timeout
+[0m
+[0;32mI (26419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (26419) MQ136: MQ136 - SO2 Concentration: 18.43 ppm[0m
+
+[0;32mI (26429) MICS6814: MICS6814 - CO Concentration: 282.00 ppm[0m
+[0;32mI (26429) MICS6814: MICS6814 - NO2 Concentration: 22.47 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (27459) DHT: Sensor Timeout
+[0m
+[0;32mI (27459) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (27459) MQ136: MQ136 - SO2 Concentration: 17.60 ppm[0m
+
+[0;32mI (27469) MICS6814: MICS6814 - CO Concentration: 433.00 ppm[0m
+[0;32mI (27469) MICS6814: MICS6814 - NO2 Concentration: 23.52 ppm[0m
+
+[0;32mI (28179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (28399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (28499) DHT: Sensor Timeout
+[0m
+[0;32mI (28499) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (28499) MQ136: MQ136 - SO2 Concentration: 17.66 ppm[0m
+
+[0;32mI (28509) MICS6814: MICS6814 - CO Concentration: 422.00 ppm[0m
+[0;32mI (28509) MICS6814: MICS6814 - NO2 Concentration: 23.11 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (29539) DHT: Sensor Timeout
+[0m
+[0;32mI (29539) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (29539) MQ136: MQ136 - SO2 Concentration: 15.17 ppm[0m
+
+[0;32mI (29549) MICS6814: MICS6814 - CO Concentration: 175.00 ppm[0m
+[0;32mI (29549) MICS6814: MICS6814 - NO2 Concentration: 20.84 ppm[0m
+
+[0;32mI (30179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (30399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (30399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (30579) DHT: Sensor Timeout
+[0m
+[0;32mI (30579) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (30579) MQ136: MQ136 - SO2 Concentration: 12.86 ppm[0m
+
+[0;32mI (30589) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (30589) MICS6814: MICS6814 - NO2 Concentration: 18.82 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (31619) DHT: Sensor Timeout
+[0m
+[0;32mI (31619) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (31619) MQ136: MQ136 - SO2 Concentration: 13.63 ppm[0m
+
+[0;32mI (31629) MICS6814: MICS6814 - CO Concentration: 15.00 ppm[0m
+[0;32mI (31629) MICS6814: MICS6814 - NO2 Concentration: 18.74 ppm[0m
+
+[0;32mI (32179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (32399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (32659) DHT: Sensor Timeout
+[0m
+[0;32mI (32659) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (32659) MQ136: MQ136 - SO2 Concentration: 15.60 ppm[0m
+
+[0;32mI (32669) MICS6814: MICS6814 - CO Concentration: 43.00 ppm[0m
+[0;32mI (32669) MICS6814: MICS6814 - NO2 Concentration: 19.27 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (33699) DHT: Sensor Timeout
+[0m
+[0;32mI (33699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (33699) MQ136: MQ136 - SO2 Concentration: 19.17 ppm[0m
+
+[0;32mI (33709) MICS6814: MICS6814 - CO Concentration: 65.00 ppm[0m
+[0;32mI (33709) MICS6814: MICS6814 - NO2 Concentration: 19.78 ppm[0m
+
+[0;32mI (34179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (34399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (34739) DHT: Sensor Timeout
+[0m
+[0;32mI (34739) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (34739) MQ136: MQ136 - SO2 Concentration: 19.93 ppm[0m
+
+[0;32mI (34749) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (34749) MICS6814: MICS6814 - NO2 Concentration: 20.26 ppm[0m
+
+[0;32mI (35399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;31mE (35779) DHT: Sensor Timeout
+[0m
+[0;32mI (35779) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (35779) MQ136: MQ136 - SO2 Concentration: 18.96 ppm[0m
+
+[0;32mI (35789) MICS6814: MICS6814 - CO Concentration: 125.00 ppm[0m
+[0;32mI (35789) MICS6814: MICS6814 - NO2 Concentration: 20.93 ppm[0m
+
+[0;32mI (36179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (36399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (36819) DHT: Sensor Timeout
+[0m
+[0;32mI (36819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (36819) MQ136: MQ136 - SO2 Concentration: 18.07 ppm[0m
+
+[0;32mI (36829) MICS6814: MICS6814 - CO Concentration: 360.00 ppm[0m
+[0;32mI (36829) MICS6814: MICS6814 - NO2 Concentration: 23.13 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (37859) DHT: Sensor Timeout
+[0m
+[0;32mI (37859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (37859) MQ136: MQ136 - SO2 Concentration: 17.64 ppm[0m
+
+[0;32mI (37869) MICS6814: MICS6814 - CO Concentration: 441.00 ppm[0m
+[0;32mI (37869) MICS6814: MICS6814 - NO2 Concentration: 23.28 ppm[0m
+
+[0;32mI (38179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (38399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (38899) DHT: Sensor Timeout
+[0m
+[0;32mI (38899) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (38899) MQ136: MQ136 - SO2 Concentration: 17.29 ppm[0m
+
+[0;32mI (38909) MICS6814: MICS6814 - CO Concentration: 366.00 ppm[0m
+[0;32mI (38909) MICS6814: MICS6814 - NO2 Concentration: 22.46 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (39939) DHT: Sensor Timeout
+[0m
+[0;32mI (39939) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (39939) MQ136: MQ136 - SO2 Concentration: 13.71 ppm[0m
+
+[0;32mI (39949) MICS6814: MICS6814 - CO Concentration: 74.00 ppm[0m
+[0;32mI (39949) MICS6814: MICS6814 - NO2 Concentration: 19.85 ppm[0m
+
+[0;32mI (40179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (40399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (40399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (40979) DHT: Sensor Timeout
+[0m
+[0;32mI (40979) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (40979) MQ136: MQ136 - SO2 Concentration: 12.73 ppm[0m
+
+[0;32mI (40989) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (40989) MICS6814: MICS6814 - NO2 Concentration: 18.62 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (42019) DHT: Sensor Timeout
+[0m
+[0;32mI (42019) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (42019) MQ136: MQ136 - SO2 Concentration: 13.69 ppm[0m
+
+[0;32mI (42029) MICS6814: MICS6814 - CO Concentration: 22.00 ppm[0m
+[0;32mI (42029) MICS6814: MICS6814 - NO2 Concentration: 18.86 ppm[0m
+
+[0;32mI (42179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (42399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (43059) DHT: Sensor Timeout
+[0m
+[0;32mI (43059) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (43059) MQ136: MQ136 - SO2 Concentration: 17.71 ppm[0m
+
+[0;32mI (43069) MICS6814: MICS6814 - CO Concentration: 47.00 ppm[0m
+[0;32mI (43069) MICS6814: MICS6814 - NO2 Concentration: 19.34 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (44099) DHT: Sensor Timeout
+[0m
+[0;32mI (44099) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (44099) MQ136: MQ136 - SO2 Concentration: 20.34 ppm[0m
+
+[0;32mI (44109) MICS6814: MICS6814 - CO Concentration: 76.00 ppm[0m
+[0;32mI (44109) MICS6814: MICS6814 - NO2 Concentration: 20.02 ppm[0m
+
+[0;32mI (44179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (44399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (45139) DHT: Sensor Timeout
+[0m
+[0;32mI (45139) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (45139) MQ136: MQ136 - SO2 Concentration: 19.52 ppm[0m
+
+[0;32mI (45149) MICS6814: MICS6814 - CO Concentration: 85.00 ppm[0m
+[0;32mI (45149) MICS6814: MICS6814 - NO2 Concentration: 20.33 ppm[0m
+
+[0;32mI (45399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (46179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (46179) DHT: Sensor Timeout
+[0m
+[0;32mI (46179) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (46179) MQ136: MQ136 - SO2 Concentration: 18.57 ppm[0m
+
+[0;32mI (46189) MICS6814: MICS6814 - CO Concentration: 454.00 ppm[0m
+[0;32mI (46189) MICS6814: MICS6814 - NO2 Concentration: 23.88 ppm[0m
+
+[0;32mI (46399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (47219) DHT: Sensor Timeout
+[0m
+[0;32mI (47219) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (47219) MQ136: MQ136 - SO2 Concentration: 17.91 ppm[0m
+
+[0;32mI (47229) MICS6814: MICS6814 - CO Concentration: 447.00 ppm[0m
+[0;32mI (47229) MICS6814: MICS6814 - NO2 Concentration: 23.43 ppm[0m
+
+[0;32mI (48179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (48259) DHT: Sensor Timeout
+[0m
+[0;32mI (48259) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (48259) MQ136: MQ136 - SO2 Concentration: 17.22 ppm[0m
+
+[0;32mI (48269) MICS6814: MICS6814 - CO Concentration: 379.00 ppm[0m
+[0;32mI (48269) MICS6814: MICS6814 - NO2 Concentration: 22.56 ppm[0m
+
+[0;32mI (48399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (49299) DHT: Sensor Timeout
+[0m
+[0;32mI (49299) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (49299) MQ136: MQ136 - SO2 Concentration: 13.71 ppm[0m
+
+[0;32mI (49309) MICS6814: MICS6814 - CO Concentration: 58.00 ppm[0m
+[0;32mI (49309) MICS6814: MICS6814 - NO2 Concentration: 19.44 ppm[0m
+
+[0;32mI (50179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (50339) DHT: Sensor Timeout
+[0m
+[0;32mI (50339) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (50339) MQ136: MQ136 - SO2 Concentration: 12.98 ppm[0m
+
+[0;32mI (50349) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (50349) MICS6814: MICS6814 - NO2 Concentration: 18.63 ppm[0m
+
+[0;32mI (50399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (50399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (51379) DHT: Sensor Timeout
+[0m
+[0;32mI (51379) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (51379) MQ136: MQ136 - SO2 Concentration: 14.37 ppm[0m
+
+[0;32mI (51389) MICS6814: MICS6814 - CO Concentration: 38.00 ppm[0m
+[0;32mI (51389) MICS6814: MICS6814 - NO2 Concentration: 19.10 ppm[0m
+
+[0;32mI (52179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (52399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (52419) DHT: Sensor Timeout
+[0m
+[0;32mI (52419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (52419) MQ136: MQ136 - SO2 Concentration: 19.67 ppm[0m
+
+[0;32mI (52429) MICS6814: MICS6814 - CO Concentration: 63.00 ppm[0m
+[0;32mI (52429) MICS6814: MICS6814 - NO2 Concentration: 19.56 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (53459) DHT: Sensor Timeout
+[0m
+[0;32mI (53459) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (53459) MQ136: MQ136 - SO2 Concentration: 19.34 ppm[0m
+
+[0;32mI (53469) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (53469) MICS6814: MICS6814 - NO2 Concentration: 20.25 ppm[0m
+
+[0;32mI (54179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (54399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (54499) DHT: Sensor Timeout
+[0m
+[0;32mI (54499) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (54499) MQ136: MQ136 - SO2 Concentration: 18.69 ppm[0m
+
+[0;32mI (54509) MICS6814: MICS6814 - CO Concentration: 247.00 ppm[0m
+[0;32mI (54509) MICS6814: MICS6814 - NO2 Concentration: 21.97 ppm[0m
+
+[0;32mI (55399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;31mE (55539) DHT: Sensor Timeout
+[0m
+[0;32mI (55539) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (55539) MQ136: MQ136 - SO2 Concentration: 17.71 ppm[0m
+
+[0;32mI (55549) MICS6814: MICS6814 - CO Concentration: 439.00 ppm[0m
+[0;32mI (55549) MICS6814: MICS6814 - NO2 Concentration: 23.48 ppm[0m
+
+[0;32mI (56179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (56399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (56579) DHT: Sensor Timeout
+[0m
+[0;32mI (56579) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (56579) MQ136: MQ136 - SO2 Concentration: 17.51 ppm[0m
+
+[0;32mI (56589) MICS6814: MICS6814 - CO Concentration: 375.00 ppm[0m
+[0;32mI (56589) MICS6814: MICS6814 - NO2 Concentration: 22.43 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (57619) DHT: Sensor Timeout
+[0m
+[0;32mI (57619) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (57619) MQ136: MQ136 - SO2 Concentration: 13.10 ppm[0m
+
+[0;32mI (57629) MICS6814: MICS6814 - CO Concentration: 16.00 ppm[0m
+[0;32mI (57629) MICS6814: MICS6814 - NO2 Concentration: 19.20 ppm[0m
+
+[0;32mI (58179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (58399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (58659) DHT: Sensor Timeout
+[0m
+[0;32mI (58659) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (58659) MQ136: MQ136 - SO2 Concentration: 13.57 ppm[0m
+
+[0;32mI (58669) MICS6814: MICS6814 - CO Concentration: 11.00 ppm[0m
+[0;32mI (58669) MICS6814: MICS6814 - NO2 Concentration: 18.72 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (59699) DHT: Sensor Timeout
+[0m
+[0;32mI (59699) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (59699) MQ136: MQ136 - SO2 Concentration: 16.69 ppm[0m
+
+[0;32mI (59709) MICS6814: MICS6814 - CO Concentration: 42.00 ppm[0m
+[0;32mI (59709) MICS6814: MICS6814 - NO2 Concentration: 19.28 ppm[0m
+
+[0;32mI (60179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (60399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (60399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (60739) DHT: Sensor Timeout
+[0m
+[0;32mI (60739) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (60739) MQ136: MQ136 - SO2 Concentration: 20.39 ppm[0m
+
+[0;32mI (60749) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (60749) MICS6814: MICS6814 - NO2 Concentration: 20.09 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (61779) DHT: Sensor Timeout
+[0m
+[0;32mI (61779) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (61779) MQ136: MQ136 - SO2 Concentration: 18.73 ppm[0m
+
+[0;32mI (61789) MICS6814: MICS6814 - CO Concentration: 191.00 ppm[0m
+[0;32mI (61789) MICS6814: MICS6814 - NO2 Concentration: 21.37 ppm[0m
+
+[0;32mI (62179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (62399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (62819) DHT: Sensor Timeout
+[0m
+[0;32mI (62819) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (62819) MQ136: MQ136 - SO2 Concentration: 17.82 ppm[0m
+
+[0;32mI (62829) MICS6814: MICS6814 - CO Concentration: 435.00 ppm[0m
+[0;32mI (62829) MICS6814: MICS6814 - NO2 Concentration: 23.38 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (63859) DHT: Sensor Timeout
+[0m
+[0;32mI (63859) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (63859) MQ136: MQ136 - SO2 Concentration: 16.78 ppm[0m
+
+[0;32mI (63869) MICS6814: MICS6814 - CO Concentration: 329.00 ppm[0m
+[0;32mI (63869) MICS6814: MICS6814 - NO2 Concentration: 22.03 ppm[0m
+
+[0;32mI (64179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (64399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (64899) DHT: Sensor Timeout
+[0m
+[0;32mI (64899) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (64899) MQ136: MQ136 - SO2 Concentration: 12.77 ppm[0m
+
+[0;32mI (64909) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (64909) MICS6814: MICS6814 - NO2 Concentration: 18.57 ppm[0m
+
+[0;32mI (65399) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Sensors ===
+[0;31mE (65939) DHT: Sensor Timeout
+[0m
+[0;32mI (65939) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (65939) MQ136: MQ136 - SO2 Concentration: 14.10 ppm[0m
+
+[0;32mI (65949) MICS6814: MICS6814 - CO Concentration: 29.00 ppm[0m
+[0;32mI (65949) MICS6814: MICS6814 - NO2 Concentration: 18.94 ppm[0m
+
+[0;32mI (66179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (66399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (66979) DHT: Sensor Timeout
+[0m
+[0;32mI (66979) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (66979) MQ136: MQ136 - SO2 Concentration: 19.57 ppm[0m
+
+[0;32mI (66989) MICS6814: MICS6814 - CO Concentration: 64.00 ppm[0m
+[0;32mI (66989) MICS6814: MICS6814 - NO2 Concentration: 19.76 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (68019) DHT: Sensor Timeout
+[0m
+[0;32mI (68019) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (68019) MQ136: MQ136 - SO2 Concentration: 18.96 ppm[0m
+
+[0;32mI (68029) MICS6814: MICS6814 - CO Concentration: 91.00 ppm[0m
+[0;32mI (68029) MICS6814: MICS6814 - NO2 Concentration: 20.37 ppm[0m
+
+[0;32mI (68179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (68399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (69059) DHT: Sensor Timeout
+[0m
+[0;32mI (69059) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (69059) MQ136: MQ136 - SO2 Concentration: 17.93 ppm[0m
+
+[0;32mI (69069) MICS6814: MICS6814 - CO Concentration: 405.00 ppm[0m
+[0;32mI (69069) MICS6814: MICS6814 - NO2 Concentration: 23.24 ppm[0m
+
+=== Reading Sensors ===
+[0;31mE (70099) DHT: Sensor Timeout
+[0m
+[0;32mI (70099) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (70099) MQ136: MQ136 - SO2 Concentration: 17.00 ppm[0m
+
+[0;32mI (70109) MICS6814: MICS6814 - CO Concentration: 392.00 ppm[0m
+[0;32mI (70109) MICS6814: MICS6814 - NO2 Concentration: 22.71 ppm[0m
+
+[0;32mI (70179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (70399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (70399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (71139) DHT: Sensor Timeout
+[0m
+[0;32mI (71139) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (71139) MQ136: MQ136 - SO2 Concentration: 12.79 ppm[0m
+
+[0;32mI (71149) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (71149) MICS6814: MICS6814 - NO2 Concentration: 18.83 ppm[0m
+
+[0;32mI (72179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (72179) DHT: Sensor Timeout
+[0m
+[0;32mI (72179) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (72179) MQ136: MQ136 - SO2 Concentration: 13.61 ppm[0m
+
+[0;32mI (72189) MICS6814: MICS6814 - CO Concentration: 47.00 ppm[0m
+[0;32mI (72189) MICS6814: MICS6814 - NO2 Concentration: 20.08 ppm[0m
+
+[0;32mI (72399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (73219) DHT: Sensor Timeout
+[0m
+[0;32mI (73219) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (73219) MQ136: MQ136 - SO2 Concentration: 18.41 ppm[0m
+
+[0;32mI (73229) MICS6814: MICS6814 - CO Concentration: 60.00 ppm[0m
+[0;32mI (73229) MICS6814: MICS6814 - NO2 Concentration: 19.64 ppm[0m
+
+[0;32mI (74179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (74259) DHT: Sensor Timeout
+[0m
+[0;32mI (74259) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (74259) MQ136: MQ136 - SO2 Concentration: 19.60 ppm[0m
+
+[0;32mI (74269) MICS6814: MICS6814 - CO Concentration: 79.00 ppm[0m
+[0;32mI (74269) MICS6814: MICS6814 - NO2 Concentration: 20.18 ppm[0m
+
+[0;32mI (74399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (75299) DHT: Sensor Timeout
+[0m
+[0;32mI (75299) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (75299) MQ136: MQ136 - SO2 Concentration: 18.00 ppm[0m
+
+[0;32mI (75309) MICS6814: MICS6814 - CO Concentration: 338.00 ppm[0m
+[0;32mI (75309) MICS6814: MICS6814 - NO2 Concentration: 22.83 ppm[0m
+
+[0;32mI (75399) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (76179) RX_TASK: Read 2 bytes: 6C6F[0m
+=== Reading Sensors ===
+[0;31mE (76339) DHT: Sensor Timeout
+[0m
+[0;32mI (76339) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (76339) MQ136: MQ136 - SO2 Concentration: 17.26 ppm[0m
+
+[0;32mI (76349) MICS6814: MICS6814 - CO Concentration: 319.00 ppm[0m
+[0;32mI (76349) MICS6814: MICS6814 - NO2 Concentration: 22.45 ppm[0m
+
+[0;32mI (76399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (77379) DHT: Sensor Timeout
+[0m
+[0;32mI (77379) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (77379) MQ136: MQ136 - SO2 Concentration: 15.04 ppm[0m
+
+[0;32mI (77389) MICS6814: MICS6814 - CO Concentration: 95.00 ppm[0m
+[0;32mI (77389) MICS6814: MICS6814 - NO2 Concentration: 20.39 ppm[0m
+
+[0;32mI (78179) RX_TASK: Read 2 bytes: 6C6F[0m
+[0;32mI (78399) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+=== Reading Sensors ===
+[0;31mE (78419) DHT: Sensor Timeout
+[0m
+[0;32mI (78419) MQ131: MQ131 - O3 Concentration: 631654296015678004493549568000.00 ppb[0m
+[0;32mI (78419) MQ136: MQ136 - SO2 Concentration: 12.90 ppm[0m
+
+[0;32mI (78429) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (78429) MICS6814: MICS6814 - NO2 Concentration: 18.62 ppm[0m
+

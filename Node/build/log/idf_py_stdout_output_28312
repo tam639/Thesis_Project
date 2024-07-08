@@ -1,0 +1,509 @@
+ets JJ��ѹesp32: SP�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d8c8h ( 55496) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d8f0 vaddr=3ffb0000 size=02694h (  9876) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001ff8c vaddr=40080000 size=0008ch (   140) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=204bch (132284) map[0m
+[0;32mI (183) esp_image: segment 4: paddr=000404e4 vaddr=4008008c size=0ea10h ( 59920) load[0m
+[0;32mI (214) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) cpu_start: Application information:[0m
+[0;32mI (238) cpu_start: Project name:     NODE[0m
+[0;32mI (243) cpu_start: App version:      1[0m
+[0;32mI (247) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (253) cpu_start: ELF file SHA256:  efeb05bc7...[0m
+[0;32mI (258) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB35E0 len 0002CA20 (178 KiB): DRAM[0m
+[0;32mI (298) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (338) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (347) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+[0;32mI (357) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (387) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) AODV: Routing Table:[0m
+[0;32mI (397) AODV: ---------------------------------------------------[0m
+[0;32mI (407) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (407) AODV: ---------------------------------------------------[0m
+[0;32mI (417) AODV: ---------------------------------------------------[0m
+[0;32mI (427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (437) DHT: Sensor Timeout
+[0m
+=== Reading Node number 4 ===
+[0;32mI (437) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (437) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (447) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (447) DHT22: Hum 60.5[0m
+[0;32mI (447) DHT22: Tmp 25.5[0m
+[0;32mI (457) MQ131: MQ131 - O3 Concentration: 192.00 ppb[0m
+[0;32mI (457) MQ136: MQ136 - SO2 Concentration: 450.61 ppm[0m
+
+[0;32mI (467) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (467) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (477) GPS: Received: [0m
+[0;32mI (477) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;32mI (487) SSD1306: INTERFACE is i2c[0m
+[0;32mI (497) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (497) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (497) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (507) SSD1306: New i2c driver is used[0m
+[0;32mI (507) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (517) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (527) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (537) main_task: Returned from app_main()[0m
+[0;32mI (587) SSD1306: Panel is 128x64[0m
+[0;32mI (587) SSD1306: OLED configured successfully[0m
+[0;31mE (1457) DHT: Sensor Timeout
+[0m
+[0;31mE (2477) DHT: Sensor Timeout
+[0m
+[0;31mE (3497) DHT: Sensor Timeout
+[0m
+[0;31mE (4517) DHT: Sensor Timeout
+[0m
+[0;32mI (5427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (5487) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (5487) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (5487) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (5487) DHT22: Hum 60.5[0m
+[0;32mI (5487) DHT22: Tmp 25.5[0m
+[0;32mI (5497) MQ131: MQ131 - O3 Concentration: 4095.00 ppb[0m
+[0;32mI (5497) MQ136: MQ136 - SO2 Concentration: 202.47 ppm[0m
+
+[0;32mI (5507) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (5507) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (5517) GPS: Received: [0m
+[0;32mI (5517) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (5537) DHT: Sensor Timeout
+[0m
+[0;31mE (6557) DHT: Sensor Timeout
+[0m
+[0;31mE (7577) DHT: Sensor Timeout
+[0m
+[0;31mE (8597) DHT: Sensor Timeout
+[0m
+[0;31mE (9617) DHT: Sensor Timeout
+[0m
+[0;32mI (10427) Transmit UART: Encoded and sent data over UART.[0m
+=== Reading Node number 4 ===
+[0;32mI (10527) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (10527) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (10527) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (10527) DHT22: Hum 60.5[0m
+[0;32mI (10527) DHT22: Tmp 25.5[0m
+[0;32mI (10537) MQ131: MQ131 - O3 Concentration: 4095.00 ppb[0m
+[0;32mI (10537) MQ136: MQ136 - SO2 Concentration: 196.98 ppm[0m
+
+[0;32mI (10547) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (10547) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (10557) GPS: Received: [0m
+[0;32mI (10557) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (10637) DHT: Sensor Timeout
+[0m
+[0;31mE (11657) DHT: Sensor Timeout
+[0m
+[0;31mE (12677) DHT: Sensor Timeout
+[0m
+[0;31mE (13697) DHT: Sensor Timeout
+[0m
+[0;32mI (13927) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (13927) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (13927) i2c.master: s_i2c_synchronous_transaction(780): I2C transaction failed[0m
+[0;31mE (13937) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (13947) SSD1306: Could not write to device [0x3c at 0]: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (14057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14717) DHT: Sensor Timeout
+[0m
+[0;31mE (14757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (14957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (14957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (15427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (15457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+=== Reading Node number 4 ===
+[0;32mI (15567) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (15567) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (15567) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (15567) DHT22: Hum 60.5[0m
+[0;32mI (15577) DHT22: Tmp 25.5[0m
+[0;32mI (15577) MQ131: MQ131 - O3 Concentration: 4095.00 ppb[0m
+[0;32mI (15587) MQ136: MQ136 - SO2 Concentration: 208.20 ppm[0m
+
+[0;32mI (15587) MICS6814: MICS6814 - CO Concentration: 1.00 ppm[0m
+[0;32mI (15597) MICS6814: MICS6814 - NO2 Concentration: 0.05 ppm[0m
+
+[0;32mI (15607) GPS: Received: [0m
+[0;32mI (15607) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (15657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15737) DHT: Sensor Timeout
+[0m
+[0;31mE (15757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (15957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (15957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16757) DHT: Sensor Timeout
+[0m
+[0;31mE (16857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (16957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (16957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17777) DHT: Sensor Timeout
+[0m
+[0;31mE (17857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (17957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (17957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18797) DHT: Sensor Timeout
+[0m
+[0;31mE (18857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (18957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (18957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19657) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19757) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19757) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19817) DHT: Sensor Timeout
+[0m
+[0;31mE (19857) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19857) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (19957) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (19957) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20057) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20057) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20157) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20157) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20257) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20257) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20357) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20357) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (20427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (20457) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20457) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20557) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20557) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+=== Reading Node number 4 ===
+[0;32mI (20617) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (20617) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (20617) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (20617) DHT22: Hum 60.5[0m
+[0;32mI (20617) DHT22: Tmp 25.5[0m
+[0;32mI (20627) MQ131: MQ131 - O3 Concentration: 4095.00 ppb[0m
+[0;32mI (20627) MQ136: MQ136 - SO2 Concentration: 27.41 ppm[0m
+
+[0;32mI (20637) MICS6814: MICS6814 - CO Concentration: 2400.00 ppm[0m
+[0;32mI (20637) MICS6814: MICS6814 - NO2 Concentration: 24.53 ppm[0m
+
+[0;32mI (20647) GPS: Received: [0m
+[0;32mI (20647) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (20657) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20667) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20777) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20777) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20837) DHT: Sensor Timeout
+[0m
+[0;31mE (20877) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20877) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (20977) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (20977) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21077) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21077) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21177) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21177) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21277) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21277) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21377) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21377) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21477) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21477) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21577) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21577) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21677) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21677) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21777) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21777) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21857) DHT: Sensor Timeout
+[0m
+[0;31mE (21877) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21877) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (21977) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (21977) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22077) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22077) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22177) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22177) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22277) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22277) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22377) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22377) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22477) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22477) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22577) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22577) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22677) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22677) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22777) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22777) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22877) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22877) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (22877) DHT: Sensor Timeout
+[0m
+[0;31mE (22977) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (22977) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23077) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23077) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23177) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23177) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23277) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23277) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23377) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23377) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23477) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23477) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23577) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23577) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23677) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23677) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23777) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23777) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23877) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23877) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (23897) DHT: Sensor Timeout
+[0m
+[0;31mE (23977) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (23977) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24077) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24077) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24177) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24177) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24277) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24277) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24377) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24377) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24477) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24477) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24577) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24577) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24677) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24677) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24777) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24777) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24877) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24877) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (24917) DHT: Sensor Timeout
+[0m
+[0;31mE (24977) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (24977) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25077) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25077) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25177) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25177) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25277) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25277) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25377) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25377) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (25427) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (25477) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25477) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25577) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25577) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+=== Reading Node number 4 ===
+[0;32mI (25657) PMS7003: PM1.0: 15 µg/m³[0m
+[0;32mI (25657) PMS7003: PM2.5: 25 µg/m³[0m
+[0;32mI (25657) PMS7003: PM10: 40 µg/m³[0m
+[0;32mI (25657) DHT22: Hum 60.5[0m
+[0;32mI (25657) DHT22: Tmp 25.5[0m
+[0;32mI (25667) MQ131: MQ131 - O3 Concentration: 4095.00 ppb[0m
+[0;32mI (25667) MQ136: MQ136 - SO2 Concentration: 91.30 ppm[0m
+
+[0;31mE (25677) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;32mI (25677) MICS6814: MICS6814 - CO Concentration: 1271.00 ppm[0m
+[0;31mE (25677) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (25687) MICS6814: MICS6814 - NO2 Concentration: 12.64 ppm[0m
+
+[0;32mI (25707) GPS: Received: [0m
+[0;32mI (25707) GPS: UTC Time: , Latitude: 95.250046, Longitude: 20.099951[0m
+[0;31mE (25797) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25797) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25897) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25897) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (25937) DHT: Sensor Timeout
+[0m
+[0;31mE (25997) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (25997) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26097) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26097) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26197) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26197) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26297) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26297) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26397) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26397) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26497) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26497) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26597) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26597) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26697) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26697) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26797) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26797) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26897) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26897) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (26957) DHT: Sensor Timeout
+[0m
+[0;31mE (26997) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (26997) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27097) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27097) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27197) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27197) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27297) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27297) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27397) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27397) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27497) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27497) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27597) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27597) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27697) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27697) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27797) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27797) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27897) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27897) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;31mE (27977) DHT: Sensor Timeout
+[0m
+[0;31mE (27997) i2c.master: i2c_master_transmit(966): I2C transaction failed[0m
+[0;31mE (27997) SSD1306: Could not write to device [0x3c at 0]: 263 (ESP_ERR_TIMEOUT)[0m

@@ -1,0 +1,715 @@
+�����m[0m
+[0;32mI (ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b104h ( 45316) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b12c vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d388 vaddr=40080000 size=02c90h ( 11408) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16e78h ( 93816) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036ea0 vaddr=40082c90 size=0aad0h ( 43728) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  7cdaf744d...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B18 len 0002D4E8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2335) main_task: Returned from app_main()[0m
+[0;32mI (11175) uart_example: Node Number: 5[0m
+[0;32mI (11175) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (11175) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (11175) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (11185) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (11185) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (16175) uart_example: Node Number: 5[0m
+[0;32mI (16175) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (16175) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (16175) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (16185) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (16185) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (21175) uart_example: Node Number: 5[0m
+[0;32mI (21175) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (21175) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (21175) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (21185) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (21185) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (26175) uart_example: Node Number: 5[0m
+[0;32mI (26175) uart_example: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (26175) uart_example: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (26175) uart_example: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (26185) uart_example: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (26185) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (40585) uart_example: Node Number: 5[0m
+[0;32mI (40585) uart_example: Temperature: 33.1°C, Humidity: 40.4%[0m
+[0;32mI (40585) uart_example: PM1.0: 19, PM2.5: 28, PM10: 30[0m
+[0;32mI (40585) uart_example: O3: 655.35 ppm, SO2: 27.46 ppm[0m
+[0;32mI (40595) uart_example: CO: 32.00 ppm, NO2: 0.44 ppm[0m
+[0;32mI (40595) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (45595) uart_example: Node Number: 5[0m
+[0;32mI (45595) uart_example: Temperature: 33.1°C, Humidity: 40.3%[0m
+[0;32mI (45595) uart_example: PM1.0: 19, PM2.5: 26, PM10: 28[0m
+[0;32mI (45595) uart_example: O3: 655.35 ppm, SO2: 27.55 ppm[0m
+[0;32mI (45605) uart_example: CO: 1.00 ppm, NO2: 0.66 ppm[0m
+[0;32mI (45605) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (62805) uart_example: Node Number: 5[0m
+[0;32mI (62805) uart_example: Temperature: 33.1°C, Humidity: 40.3%[0m
+[0;32mI (62805) uart_example: PM1.0: 22, PM2.5: 29, PM10: 30[0m
+[0;32mI (62805) uart_example: O3: 655.35 ppm, SO2: 28.02 ppm[0m
+[0;32mI (62815) uart_example: CO: 1.00 ppm, NO2: 0.57 ppm[0m
+[0;32mI (62815) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (67805) uart_example: Node Number: 5[0m
+[0;32mI (67805) uart_example: Temperature: 33.1°C, Humidity: 40.2%[0m
+[0;32mI (67805) uart_example: PM1.0: 20, PM2.5: 28, PM10: 28[0m
+[0;32mI (67805) uart_example: O3: 655.35 ppm, SO2: 28.14 ppm[0m
+[0;32mI (67815) uart_example: CO: 273.28 ppm, NO2: 0.82 ppm[0m
+[0;32mI (67815) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (72805) uart_example: Node Number: 5[0m
+[0;32mI (72805) uart_example: Temperature: 33.1°C, Humidity: 40.1%[0m
+[0;32mI (72805) uart_example: PM1.0: 20, PM2.5: 27, PM10: 28[0m
+[0;32mI (72805) uart_example: O3: 655.35 ppm, SO2: 28.02 ppm[0m
+[0;32mI (72815) uart_example: CO: 54.00 ppm, NO2: 0.71 ppm[0m
+[0;32mI (72815) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (77805) uart_example: Node Number: 5[0m
+[0;32mI (77805) uart_example: Temperature: 33.1°C, Humidity: 40.1%[0m
+[0;32mI (77805) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (77805) uart_example: O3: 655.35 ppm, SO2: 27.82 ppm[0m
+[0;32mI (77815) uart_example: CO: 1.00 ppm, NO2: 0.68 ppm[0m
+[0;32mI (77815) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (82815) uart_example: Node Number: 5[0m
+[0;32mI (82815) uart_example: Temperature: 33.1°C, Humidity: 40.1%[0m
+[0;32mI (82815) uart_example: PM1.0: 19, PM2.5: 27, PM10: 27[0m
+[0;32mI (82815) uart_example: O3: 655.35 ppm, SO2: 28.17 ppm[0m
+[0;32mI (82825) uart_example: CO: 1.00 ppm, NO2: 0.46 ppm[0m
+[0;32mI (82825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (87815) uart_example: Node Number: 5[0m
+[0;32mI (87815) uart_example: Temperature: 33.1°C, Humidity: 40.0%[0m
+[0;32mI (87815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (87815) uart_example: O3: 655.35 ppm, SO2: 28.32 ppm[0m
+[0;32mI (87825) uart_example: CO: 1.00 ppm, NO2: 0.40 ppm[0m
+[0;32mI (87825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (92815) uart_example: Node Number: 5[0m
+[0;32mI (92815) uart_example: Temperature: 33.1°C, Humidity: 40.0%[0m
+[0;32mI (92815) uart_example: PM1.0: 20, PM2.5: 28, PM10: 28[0m
+[0;32mI (92815) uart_example: O3: 655.35 ppm, SO2: 28.47 ppm[0m
+[0;32mI (92825) uart_example: CO: 289.28 ppm, NO2: 0.36 ppm[0m
+[0;32mI (92825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (97815) uart_example: Node Number: 5[0m
+[0;32mI (97815) uart_example: Temperature: 33.1°C, Humidity: 39.9%[0m
+[0;32mI (97815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (97815) uart_example: O3: 655.35 ppm, SO2: 28.29 ppm[0m
+[0;32mI (97825) uart_example: CO: 80.00 ppm, NO2: 0.43 ppm[0m
+[0;32mI (97825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (102815) uart_example: Node Number: 5[0m
+[0;32mI (102815) uart_example: Temperature: 33.1°C, Humidity: 39.9%[0m
+[0;32mI (102815) uart_example: PM1.0: 21, PM2.5: 28, PM10: 28[0m
+[0;32mI (102815) uart_example: O3: 655.35 ppm, SO2: 28.29 ppm[0m
+[0;32mI (102825) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (102825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (107815) uart_example: Node Number: 5[0m
+[0;32mI (107815) uart_example: Temperature: 33.1°C, Humidity: 39.9%[0m
+[0;32mI (107815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 28[0m
+[0;32mI (107815) uart_example: O3: 655.35 ppm, SO2: 27.88 ppm[0m
+[0;32mI (107825) uart_example: CO: 78.00 ppm, NO2: 0.52 ppm[0m
+[0;32mI (107825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (112815) uart_example: Node Number: 5[0m
+[0;32mI (112815) uart_example: Temperature: 33.1°C, Humidity: 39.9%[0m
+[0;32mI (112815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 30[0m
+[0;32mI (112815) uart_example: O3: 655.35 ppm, SO2: 28.20 ppm[0m
+[0;32mI (112825) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (112825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (117815) uart_example: Node Number: 5[0m
+[0;32mI (117815) uart_example: Temperature: 33.1°C, Humidity: 39.8%[0m
+[0;32mI (117815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 30[0m
+[0;32mI (117815) uart_example: O3: 655.35 ppm, SO2: 28.02 ppm[0m
+[0;32mI (117825) uart_example: CO: 647.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (117825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (122815) uart_example: Node Number: 5[0m
+[0;32mI (122815) uart_example: Temperature: 33.1°C, Humidity: 39.8%[0m
+[0;32mI (122815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 28[0m
+[0;32mI (122815) uart_example: O3: 655.35 ppm, SO2: 28.11 ppm[0m
+[0;32mI (122825) uart_example: CO: 116.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (122825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (127815) uart_example: Node Number: 5[0m
+[0;32mI (127815) uart_example: Temperature: 33.0°C, Humidity: 39.7%[0m
+[0;32mI (127815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 31[0m
+[0;32mI (127815) uart_example: O3: 655.35 ppm, SO2: 28.50 ppm[0m
+[0;32mI (127825) uart_example: CO: 1.00 ppm, NO2: 0.44 ppm[0m
+[0;32mI (127825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (132815) uart_example: Node Number: 5[0m
+[0;32mI (132815) uart_example: Temperature: 33.0°C, Humidity: 39.7%[0m
+[0;32mI (132815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 31[0m
+[0;32mI (132815) uart_example: O3: 655.35 ppm, SO2: 28.65 ppm[0m
+[0;32mI (132825) uart_example: CO: 382.64 ppm, NO2: 0.46 ppm[0m
+[0;32mI (132825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (137815) uart_example: Node Number: 5[0m
+[0;32mI (137815) uart_example: Temperature: 33.0°C, Humidity: 39.6%[0m
+[0;32mI (137815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 33[0m
+[0;32mI (137815) uart_example: O3: 655.35 ppm, SO2: 28.38 ppm[0m
+[0;32mI (137825) uart_example: CO: 1.00 ppm, NO2: 0.66 ppm[0m
+[0;32mI (137825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (142815) uart_example: Node Number: 5[0m
+[0;32mI (142815) uart_example: Temperature: 33.1°C, Humidity: 39.6%[0m
+[0;32mI (142815) uart_example: PM1.0: 21, PM2.5: 27, PM10: 33[0m
+[0;32mI (142815) uart_example: O3: 655.35 ppm, SO2: 28.29 ppm[0m
+[0;32mI (142825) uart_example: CO: 610.64 ppm, NO2: 0.90 ppm[0m
+[0;32mI (142825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (147815) uart_example: Node Number: 5[0m
+[0;32mI (147815) uart_example: Temperature: 33.1°C, Humidity: 39.5%[0m
+[0;32mI (147815) uart_example: PM1.0: 22, PM2.5: 29, PM10: 32[0m
+[0;32mI (147815) uart_example: O3: 655.35 ppm, SO2: 28.53 ppm[0m
+[0;32mI (147825) uart_example: CO: 1.00 ppm, NO2: 0.79 ppm[0m
+[0;32mI (147825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (152815) uart_example: Node Number: 5[0m
+[0;32mI (152815) uart_example: Temperature: 33.0°C, Humidity: 39.5%[0m
+[0;32mI (152815) uart_example: PM1.0: 22, PM2.5: 29, PM10: 29[0m
+[0;32mI (152815) uart_example: O3: 655.35 ppm, SO2: 28.78 ppm[0m
+[0;32mI (152825) uart_example: CO: 1.00 ppm, NO2: 0.76 ppm[0m
+[0;32mI (152825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (157815) uart_example: Node Number: 5[0m
+[0;32mI (157815) uart_example: Temperature: 33.1°C, Humidity: 39.5%[0m
+[0;32mI (157815) uart_example: PM1.0: 21, PM2.5: 28, PM10: 29[0m
+[0;32mI (157815) uart_example: O3: 655.35 ppm, SO2: 29.05 ppm[0m
+[0;32mI (157825) uart_example: CO: 285.64 ppm, NO2: 0.51 ppm[0m
+[0;32mI (157825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (162815) uart_example: Node Number: 5[0m
+[0;32mI (162815) uart_example: Temperature: 33.1°C, Humidity: 39.4%[0m
+[0;32mI (162815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 28[0m
+[0;32mI (162815) uart_example: O3: 655.35 ppm, SO2: 29.05 ppm[0m
+[0;32mI (162825) uart_example: CO: 75.00 ppm, NO2: 0.52 ppm[0m
+[0;32mI (162825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (167815) uart_example: Node Number: 5[0m
+[0;32mI (167815) uart_example: Temperature: 33.1°C, Humidity: 39.3%[0m
+[0;32mI (167815) uart_example: PM1.0: 20, PM2.5: 28, PM10: 28[0m
+[0;32mI (167815) uart_example: O3: 655.35 ppm, SO2: 29.29 ppm[0m
+[0;32mI (167825) uart_example: CO: 1.00 ppm, NO2: 0.69 ppm[0m
+[0;32mI (167825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (172815) uart_example: Node Number: 5[0m
+[0;32mI (172815) uart_example: Temperature: 33.1°C, Humidity: 39.3%[0m
+[0;32mI (172815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (172815) uart_example: O3: 655.35 ppm, SO2: 28.81 ppm[0m
+[0;32mI (172825) uart_example: CO: 130.00 ppm, NO2: 0.89 ppm[0m
+[0;32mI (172825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (177815) uart_example: Node Number: 5[0m
+[0;32mI (177815) uart_example: Temperature: 33.0°C, Humidity: 39.3%[0m
+[0;32mI (177815) uart_example: PM1.0: 21, PM2.5: 26, PM10: 26[0m
+[0;32mI (177815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (177825) uart_example: CO: 641.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (177825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (182815) uart_example: Node Number: 5[0m
+[0;32mI (182815) uart_example: Temperature: 33.0°C, Humidity: 39.2%[0m
+[0;32mI (182815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 28[0m
+[0;32mI (182815) uart_example: O3: 655.35 ppm, SO2: 28.50 ppm[0m
+[0;32mI (182825) uart_example: CO: 110.00 ppm, NO2: 0.86 ppm[0m
+[0;32mI (182825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (187815) uart_example: Node Number: 5[0m
+[0;32mI (187815) uart_example: Temperature: 33.0°C, Humidity: 39.2%[0m
+[0;32mI (187815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (187815) uart_example: O3: 655.35 ppm, SO2: 29.29 ppm[0m
+[0;32mI (187825) uart_example: CO: 81.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (187825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (192815) uart_example: Node Number: 5[0m
+[0;32mI (192815) uart_example: Temperature: 33.0°C, Humidity: 39.1%[0m
+[0;32mI (192815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (192815) uart_example: O3: 655.35 ppm, SO2: 29.29 ppm[0m
+[0;32mI (192825) uart_example: CO: 1.00 ppm, NO2: 0.52 ppm[0m
+[0;32mI (192825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (197815) uart_example: Node Number: 5[0m
+[0;32mI (197815) uart_example: Temperature: 33.0°C, Humidity: 39.1%[0m
+[0;32mI (197815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (197815) uart_example: O3: 655.35 ppm, SO2: 29.14 ppm[0m
+[0;32mI (197825) uart_example: CO: 1.00 ppm, NO2: 0.61 ppm[0m
+[0;32mI (197825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (202815) uart_example: Node Number: 5[0m
+[0;32mI (202815) uart_example: Temperature: 33.0°C, Humidity: 39.1%[0m
+[0;32mI (202815) uart_example: PM1.0: 20, PM2.5: 24, PM10: 26[0m
+[0;32mI (202815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (202825) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (202825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (207815) uart_example: Node Number: 5[0m
+[0;32mI (207815) uart_example: Temperature: 33.0°C, Humidity: 39.0%[0m
+[0;32mI (207815) uart_example: PM1.0: 20, PM2.5: 24, PM10: 26[0m
+[0;32mI (207815) uart_example: O3: 655.35 ppm, SO2: 29.02 ppm[0m
+[0;32mI (207825) uart_example: CO: 627.64 ppm, NO2: 0.73 ppm[0m
+[0;32mI (207825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (212815) uart_example: Node Number: 5[0m
+[0;32mI (212815) uart_example: Temperature: 33.0°C, Humidity: 39.0%[0m
+[0;32mI (212815) uart_example: PM1.0: 21, PM2.5: 26, PM10: 28[0m
+[0;32mI (212815) uart_example: O3: 655.35 ppm, SO2: 29.39 ppm[0m
+[0;32mI (212825) uart_example: CO: 411.00 ppm, NO2: 0.54 ppm[0m
+[0;32mI (212825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (217815) uart_example: Node Number: 5[0m
+[0;32mI (217815) uart_example: Temperature: 33.0°C, Humidity: 39.0%[0m
+[0;32mI (217815) uart_example: PM1.0: 21, PM2.5: 27, PM10: 27[0m
+[0;32mI (217815) uart_example: O3: 655.35 ppm, SO2: 29.29 ppm[0m
+[0;32mI (217825) uart_example: CO: 79.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (217825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (222815) uart_example: Node Number: 5[0m
+[0;32mI (222815) uart_example: Temperature: 33.0°C, Humidity: 39.0%[0m
+[0;32mI (222815) uart_example: PM1.0: 21, PM2.5: 27, PM10: 28[0m
+[0;32mI (222815) uart_example: O3: 655.35 ppm, SO2: 28.68 ppm[0m
+[0;32mI (222825) uart_example: CO: 501.64 ppm, NO2: 0.56 ppm[0m
+[0;32mI (222825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (227815) uart_example: Node Number: 5[0m
+[0;32mI (227815) uart_example: Temperature: 33.0°C, Humidity: 39.0%[0m
+[0;32mI (227815) uart_example: PM1.0: 19, PM2.5: 25, PM10: 27[0m
+[0;32mI (227815) uart_example: O3: 655.35 ppm, SO2: 28.96 ppm[0m
+[0;32mI (227825) uart_example: CO: 552.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (227825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (232815) uart_example: Node Number: 5[0m
+[0;32mI (232815) uart_example: Temperature: 33.0°C, Humidity: 38.9%[0m
+[0;32mI (232815) uart_example: PM1.0: 19, PM2.5: 24, PM10: 26[0m
+[0;32mI (232815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (232825) uart_example: CO: 47.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (232825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (237815) uart_example: Node Number: 5[0m
+[0;32mI (237815) uart_example: Temperature: 33.0°C, Humidity: 38.8%[0m
+[0;32mI (237815) uart_example: PM1.0: 19, PM2.5: 24, PM10: 26[0m
+[0;32mI (237815) uart_example: O3: 655.35 ppm, SO2: 29.32 ppm[0m
+[0;32mI (237825) uart_example: CO: 27.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (237825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (242815) uart_example: Node Number: 5[0m
+[0;32mI (242815) uart_example: Temperature: 33.0°C, Humidity: 38.7%[0m
+[0;32mI (242815) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (242815) uart_example: O3: 655.35 ppm, SO2: 29.39 ppm[0m
+[0;32mI (242825) uart_example: CO: 1.00 ppm, NO2: 0.52 ppm[0m
+[0;32mI (242825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (247815) uart_example: Node Number: 5[0m
+[0;32mI (247815) uart_example: Temperature: 33.0°C, Humidity: 38.7%[0m
+[0;32mI (247815) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (247815) uart_example: O3: 655.35 ppm, SO2: 29.08 ppm[0m
+[0;32mI (247825) uart_example: CO: 1.00 ppm, NO2: 0.70 ppm[0m
+[0;32mI (247825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (252815) uart_example: Node Number: 5[0m
+[0;32mI (252815) uart_example: Temperature: 33.0°C, Humidity: 38.6%[0m
+[0;32mI (252815) uart_example: PM1.0: 19, PM2.5: 26, PM10: 27[0m
+[0;32mI (252815) uart_example: O3: 655.35 ppm, SO2: 29.39 ppm[0m
+[0;32mI (252825) uart_example: CO: 525.64 ppm, NO2: 0.49 ppm[0m
+[0;32mI (252825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (257815) uart_example: Node Number: 5[0m
+[0;32mI (257815) uart_example: Temperature: 33.0°C, Humidity: 38.6%[0m
+[0;32mI (257815) uart_example: PM1.0: 19, PM2.5: 26, PM10: 27[0m
+[0;32mI (257815) uart_example: O3: 655.35 ppm, SO2: 29.26 ppm[0m
+[0;32mI (257825) uart_example: CO: 277.28 ppm, NO2: 0.72 ppm[0m
+[0;32mI (257825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (262825) uart_example: Node Number: 5[0m
+[0;32mI (262825) uart_example: Temperature: 33.0°C, Humidity: 38.6%[0m
+[0;32mI (262825) uart_example: PM1.0: 19, PM2.5: 26, PM10: 27[0m
+[0;32mI (262825) uart_example: O3: 655.35 ppm, SO2: 29.20 ppm[0m
+[0;32mI (262835) uart_example: CO: 182.64 ppm, NO2: 0.51 ppm[0m
+[0;32mI (262835) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (267815) uart_example: Node Number: 5[0m
+[0;32mI (267815) uart_example: Temperature: 33.0°C, Humidity: 38.5%[0m
+[0;32mI (267815) uart_example: PM1.0: 19, PM2.5: 24, PM10: 25[0m
+[0;32mI (267815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (267825) uart_example: CO: 79.00 ppm, NO2: 0.79 ppm[0m
+[0;32mI (267825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (272815) uart_example: Node Number: 5[0m
+[0;32mI (272815) uart_example: Temperature: 33.0°C, Humidity: 38.5%[0m
+[0;32mI (272815) uart_example: PM1.0: 20, PM2.5: 30, PM10: 30[0m
+[0;32mI (272815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (272825) uart_example: CO: 76.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (272825) uart_example: Latitude: 95.250046, Longitude: 20.099897[0m
+[0;32mI (277815) uart_example: Node Number: 5[0m
+[0;32mI (277815) uart_example: Temperature: 33.0°C, Humidity: 38.5%[0m
+[0;32mI (277815) uart_example: PM1.0: 19, PM2.5: 30, PM10: 31[0m
+[0;32mI (277815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (277825) uart_example: CO: 74.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (277825) uart_example: Latitude: 20.997364, Longitude: 105.886780[0m
+[0;32mI (282815) uart_example: Node Number: 5[0m
+[0;32mI (282815) uart_example: Temperature: 33.0°C, Humidity: 38.4%[0m
+[0;32mI (282815) uart_example: PM1.0: 20, PM2.5: 30, PM10: 30[0m
+[0;32mI (282815) uart_example: O3: 655.35 ppm, SO2: 29.17 ppm[0m
+[0;32mI (282825) uart_example: CO: 1.00 ppm, NO2: 0.56 ppm[0m
+[0;32mI (282825) uart_example: Latitude: 20.997364, Longitude: 105.886780[0m
+[0;32mI (287815) uart_example: Node Number: 5[0m
+[0;32mI (287815) uart_example: Temperature: 33.0°C, Humidity: 38.4%[0m
+[0;32mI (287815) uart_example: PM1.0: 21, PM2.5: 30, PM10: 31[0m
+[0;32mI (287815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (287825) uart_example: CO: 30.00 ppm, NO2: 0.79 ppm[0m
+[0;32mI (287825) uart_example: Latitude: 20.997364, Longitude: 105.886780[0m
+[0;32mI (292825) uart_example: Node Number: 5[0m
+[0;32mI (292825) uart_example: Temperature: 33.1°C, Humidity: 38.3%[0m
+[0;32mI (292825) uart_example: PM1.0: 19, PM2.5: 27, PM10: 28[0m
+[0;32mI (292825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (292835) uart_example: CO: 27.00 ppm, NO2: 0.69 ppm[0m
+[0;32mI (292835) uart_example: Latitude: 20.997364, Longitude: 105.886780[0m
+[0;32mI (297825) uart_example: Node Number: 5[0m
+[0;32mI (297825) uart_example: Temperature: 33.1°C, Humidity: 38.2%[0m
+[0;32mI (297825) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (297825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (297835) uart_example: CO: 32.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (297835) uart_example: Latitude: 20.997395, Longitude: 105.886780[0m
+[0;32mI (302825) uart_example: Node Number: 5[0m
+[0;32mI (302825) uart_example: Temperature: 33.1°C, Humidity: 38.2%[0m
+[0;32mI (302825) uart_example: PM1.0: 19, PM2.5: 26, PM10: 26[0m
+[0;32mI (302825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (302835) uart_example: CO: 1.00 ppm, NO2: 0.80 ppm[0m
+[0;32mI (302835) uart_example: Latitude: 20.997454, Longitude: 105.886780[0m
+[0;32mI (307825) uart_example: Node Number: 5[0m
+[0;32mI (307825) uart_example: Temperature: 33.1°C, Humidity: 38.1%[0m
+[0;32mI (307825) uart_example: PM1.0: 19, PM2.5: 27, PM10: 28[0m
+[0;32mI (307825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (307835) uart_example: CO: 1.00 ppm, NO2: 0.77 ppm[0m
+[0;32mI (307835) uart_example: Latitude: 20.997461, Longitude: 105.886780[0m
+[0;32mI (312825) uart_example: Node Number: 5[0m
+[0;32mI (312825) uart_example: Temperature: 33.1°C, Humidity: 38.1%[0m
+[0;32mI (312825) uart_example: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (312825) uart_example: O3: 655.35 ppm, SO2: 30.16 ppm[0m
+[0;32mI (312835) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (312835) uart_example: Latitude: 20.997498, Longitude: 105.886780[0m
+[0;32mI (317815) uart_example: Node Number: 5[0m
+[0;32mI (317815) uart_example: Temperature: 33.0°C, Humidity: 38.0%[0m
+[0;32mI (317815) uart_example: PM1.0: 20, PM2.5: 29, PM10: 30[0m
+[0;32mI (317815) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (317825) uart_example: CO: 1.00 ppm, NO2: 0.73 ppm[0m
+[0;32mI (317825) uart_example: Latitude: 20.997355, Longitude: 105.886780[0m
+[0;32mI (322825) uart_example: Node Number: 5[0m
+[0;32mI (322825) uart_example: Temperature: 32.9°C, Humidity: 38.3%[0m
+[0;32mI (322825) uart_example: PM1.0: 20, PM2.5: 27, PM10: 29[0m
+[0;32mI (322825) uart_example: O3: 655.35 ppm, SO2: 30.13 ppm[0m
+[0;32mI (322835) uart_example: CO: 1.00 ppm, NO2: 0.76 ppm[0m
+[0;32mI (322835) uart_example: Latitude: 20.997358, Longitude: 105.886780[0m
+[0;32mI (327825) uart_example: Node Number: 5[0m
+[0;32mI (327825) uart_example: Temperature: 32.9°C, Humidity: 38.3%[0m
+[0;32mI (327825) uart_example: PM1.0: 20, PM2.5: 27, PM10: 31[0m
+[0;32mI (327825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (327835) uart_example: CO: 1.00 ppm, NO2: 0.80 ppm[0m
+[0;32mI (327835) uart_example: Latitude: 20.997375, Longitude: 105.886780[0m
+[0;32mI (332825) uart_example: Node Number: 5[0m
+[0;32mI (332825) uart_example: Temperature: 32.9°C, Humidity: 38.3%[0m
+[0;32mI (332825) uart_example: PM1.0: 19, PM2.5: 25, PM10: 29[0m
+[0;32mI (332825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (332835) uart_example: CO: 605.00 ppm, NO2: 0.69 ppm[0m
+[0;32mI (332835) uart_example: Latitude: 20.997375, Longitude: 105.886780[0m
+[0;32mI (337825) uart_example: Node Number: 5[0m
+[0;32mI (337825) uart_example: Temperature: 32.9°C, Humidity: 38.3%[0m
+[0;32mI (337825) uart_example: PM1.0: 19, PM2.5: 26, PM10: 29[0m
+[0;32mI (337825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (337835) uart_example: CO: 1.00 ppm, NO2: 0.98 ppm[0m
+[0;32mI (337835) uart_example: Latitude: 20.997375, Longitude: 105.886780[0m
+[0;32mI (342825) uart_example: Node Number: 5[0m
+[0;32mI (342825) uart_example: Temperature: 32.9°C, Humidity: 38.3%[0m
+[0;32mI (342825) uart_example: PM1.0: 19, PM2.5: 25, PM10: 26[0m
+[0;32mI (342825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (342835) uart_example: CO: 1.00 ppm, NO2: 0.74 ppm[0m
+[0;32mI (342835) uart_example: Latitude: 20.997559, Longitude: 105.886520[0m
+[0;32mI (347825) uart_example: Node Number: 5[0m
+[0;32mI (347825) uart_example: Temperature: 32.9°C, Humidity: 38.2%[0m
+[0;32mI (347825) uart_example: PM1.0: 19, PM2.5: 25, PM10: 25[0m
+[0;32mI (347825) uart_example: O3: 655.35 ppm, SO2: 30.29 ppm[0m
+[0;32mI (347835) uart_example: CO: 34.64 ppm, NO2: 0.81 ppm[0m
+[0;32mI (347835) uart_example: Latitude: 20.997505, Longitude: 105.886780[0m
+[0;32mI (352825) uart_example: Node Number: 5[0m
+[0;32mI (352825) uart_example: Temperature: 33.0°C, Humidity: 37.9%[0m
+[0;32mI (352825) uart_example: PM1.0: 19, PM2.5: 27, PM10: 27[0m
+[0;32mI (352825) uart_example: O3: 655.35 ppm, SO2: 30.45 ppm[0m
+[0;32mI (352835) uart_example: CO: 541.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (352835) uart_example: Latitude: 20.997662, Longitude: 105.886520[0m
+[0;32mI (357825) uart_example: Node Number: 5[0m
+[0;32mI (357825) uart_example: Temperature: 33.0°C, Humidity: 37.9%[0m
+[0;32mI (357825) uart_example: PM1.0: 20, PM2.5: 29, PM10: 29[0m
+[0;32mI (357825) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (357835) uart_example: CO: 37.64 ppm, NO2: 0.85 ppm[0m
+[0;32mI (357835) uart_example: Latitude: 20.997698, Longitude: 105.886520[0m
+[0;32mI (362865) uart_example: Node Number: 5[0m
+[0;32mI (362865) uart_example: Temperature: 33.0°C, Humidity: 37.9%[0m
+[0;32mI (362865) uart_example: PM1.0: 20, PM2.5: 29, PM10: 32[0m
+[0;32mI (362865) uart_example: O3: 655.35 ppm, SO2: 29.39 ppm[0m
+[0;32mI (362875) uart_example: CO: 482.00 ppm, NO2: 0.66 ppm[0m
+[0;32mI (362875) uart_example: Latitude: 20.997675, Longitude: 105.886520[0m
+[0;32mI (367865) uart_example: Node Number: 5[0m
+[0;32mI (367865) uart_example: Temperature: 33.0°C, Humidity: 37.9%[0m
+[0;32mI (367865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 31[0m
+[0;32mI (367865) uart_example: O3: 655.35 ppm, SO2: 30.29 ppm[0m
+[0;32mI (367875) uart_example: CO: 294.00 ppm, NO2: 0.54 ppm[0m
+[0;32mI (367875) uart_example: Latitude: 20.997663, Longitude: 105.886520[0m
+[0;32mI (372865) uart_example: Node Number: 5[0m
+[0;32mI (372865) uart_example: Temperature: 32.9°C, Humidity: 38.1%[0m
+[0;32mI (372865) uart_example: PM1.0: 18, PM2.5: 28, PM10: 29[0m
+[0;32mI (372865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (372875) uart_example: CO: 103.64 ppm, NO2: 0.82 ppm[0m
+[0;32mI (372875) uart_example: Latitude: 20.997534, Longitude: 105.886780[0m
+[0;32mI (377865) uart_example: Node Number: 5[0m
+[0;32mI (377865) uart_example: Temperature: 32.9°C, Humidity: 38.1%[0m
+[0;32mI (377865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 30[0m
+[0;32mI (377865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (377875) uart_example: CO: 407.64 ppm, NO2: 0.58 ppm[0m
+[0;32mI (377875) uart_example: Latitude: 20.997534, Longitude: 105.886780[0m
+[0;32mI (382865) uart_example: Node Number: 5[0m
+[0;32mI (382865) uart_example: Temperature: 32.9°C, Humidity: 38.1%[0m
+[0;32mI (382865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 30[0m
+[0;32mI (382865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (382875) uart_example: CO: 293.28 ppm, NO2: 0.81 ppm[0m
+[0;32mI (382875) uart_example: Latitude: 20.997534, Longitude: 105.886780[0m
+[0;32mI (387865) uart_example: Node Number: 5[0m
+[0;32mI (387865) uart_example: Temperature: 32.9°C, Humidity: 38.1%[0m
+[0;32mI (387865) uart_example: PM1.0: 19, PM2.5: 25, PM10: 25[0m
+[0;32mI (387865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (387875) uart_example: CO: 1.00 ppm, NO2: 0.76 ppm[0m
+[0;32mI (387875) uart_example: Latitude: 20.997465, Longitude: 105.886780[0m
+[0;32mI (392865) uart_example: Node Number: 5[0m
+[0;32mI (392865) uart_example: Temperature: 32.8°C, Humidity: 38.1%[0m
+[0;32mI (392865) uart_example: PM1.0: 19, PM2.5: 26, PM10: 28[0m
+[0;32mI (392865) uart_example: O3: 655.35 ppm, SO2: 29.17 ppm[0m
+[0;32mI (392875) uart_example: CO: 552.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (392875) uart_example: Latitude: 20.997452, Longitude: 105.886780[0m
+[0;32mI (397865) uart_example: Node Number: 5[0m
+[0;32mI (397865) uart_example: Temperature: 32.8°C, Humidity: 38.0%[0m
+[0;32mI (397865) uart_example: PM1.0: 18, PM2.5: 25, PM10: 25[0m
+[0;32mI (397865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (397875) uart_example: CO: 1.00 ppm, NO2: 0.72 ppm[0m
+[0;32mI (397875) uart_example: Latitude: 20.997463, Longitude: 105.886780[0m
+[0;32mI (402865) uart_example: Node Number: 5[0m
+[0;32mI (402865) uart_example: Temperature: 32.8°C, Humidity: 38.0%[0m
+[0;32mI (402865) uart_example: PM1.0: 18, PM2.5: 25, PM10: 25[0m
+[0;32mI (402865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (402875) uart_example: CO: 25.00 ppm, NO2: 0.66 ppm[0m
+[0;32mI (402875) uart_example: Latitude: 20.997503, Longitude: 105.886780[0m
+[0;32mI (407865) uart_example: Node Number: 5[0m
+[0;32mI (407865) uart_example: Temperature: 32.8°C, Humidity: 38.0%[0m
+[0;32mI (407865) uart_example: PM1.0: 20, PM2.5: 26, PM10: 27[0m
+[0;32mI (407865) uart_example: O3: 655.35 ppm, SO2: 30.07 ppm[0m
+[0;32mI (407875) uart_example: CO: 39.00 ppm, NO2: 0.76 ppm[0m
+[0;32mI (407875) uart_example: Latitude: 20.997555, Longitude: 105.886780[0m
+[0;32mI (412865) uart_example: Node Number: 5[0m
+[0;32mI (412865) uart_example: Temperature: 32.8°C, Humidity: 38.0%[0m
+[0;32mI (412865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 28[0m
+[0;32mI (412865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (412875) uart_example: CO: 46.00 ppm, NO2: 0.83 ppm[0m
+[0;32mI (412875) uart_example: Latitude: 20.997578, Longitude: 105.886780[0m
+[0;32mI (417865) uart_example: Node Number: 5[0m
+[0;32mI (417865) uart_example: Temperature: 32.8°C, Humidity: 37.9%[0m
+[0;32mI (417865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (417865) uart_example: O3: 655.35 ppm, SO2: 29.36 ppm[0m
+[0;32mI (417875) uart_example: CO: 42.00 ppm, NO2: 0.62 ppm[0m
+[0;32mI (417875) uart_example: Latitude: 20.997585, Longitude: 105.886780[0m
+[0;32mI (422865) uart_example: Node Number: 5[0m
+[0;32mI (422865) uart_example: Temperature: 32.9°C, Humidity: 37.9%[0m
+[0;32mI (422865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (422865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (422875) uart_example: CO: 32.64 ppm, NO2: 0.68 ppm[0m
+[0;32mI (422875) uart_example: Latitude: 20.997536, Longitude: 105.886780[0m
+[0;32mI (427865) uart_example: Node Number: 5[0m
+[0;32mI (427865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (427865) uart_example: PM1.0: 19, PM2.5: 25, PM10: 27[0m
+[0;32mI (427865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (427875) uart_example: CO: 453.64 ppm, NO2: 0.75 ppm[0m
+[0;32mI (427875) uart_example: Latitude: 20.997536, Longitude: 105.886780[0m
+[0;32mI (432865) uart_example: Node Number: 5[0m
+[0;32mI (432865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (432865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (432865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (432875) uart_example: CO: 1.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (432875) uart_example: Latitude: 20.997536, Longitude: 105.886780[0m
+[0;32mI (437865) uart_example: Node Number: 5[0m
+[0;32mI (437865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (437865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (437865) uart_example: O3: 655.35 ppm, SO2: 29.39 ppm[0m
+[0;32mI (437875) uart_example: CO: 1.00 ppm, NO2: 0.68 ppm[0m
+[0;32mI (437875) uart_example: Latitude: 20.997536, Longitude: 105.886780[0m
+[0;32mI (442865) uart_example: Node Number: 5[0m
+[0;32mI (442865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (442865) uart_example: PM1.0: 21, PM2.5: 27, PM10: 27[0m
+[0;32mI (442865) uart_example: O3: 655.35 ppm, SO2: 29.05 ppm[0m
+[0;32mI (442875) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (442875) uart_example: Latitude: 20.997227, Longitude: 105.886780[0m
+[0;32mI (447865) uart_example: Node Number: 5[0m
+[0;32mI (447865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (447865) uart_example: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (447865) uart_example: O3: 655.35 ppm, SO2: 28.08 ppm[0m
+[0;32mI (447875) uart_example: CO: 82.64 ppm, NO2: 0.56 ppm[0m
+[0;32mI (447875) uart_example: Latitude: 20.997238, Longitude: 105.886780[0m
+[0;32mI (452865) uart_example: Node Number: 5[0m
+[0;32mI (452865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (452865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 30[0m
+[0;32mI (452865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (452875) uart_example: CO: 145.64 ppm, NO2: 0.84 ppm[0m
+[0;32mI (452875) uart_example: Latitude: 20.997334, Longitude: 105.886780[0m
+[0;32mI (457865) uart_example: Node Number: 5[0m
+[0;32mI (457865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (457865) uart_example: PM1.0: 20, PM2.5: 30, PM10: 33[0m
+[0;32mI (457865) uart_example: O3: 655.35 ppm, SO2: 29.14 ppm[0m
+[0;32mI (457875) uart_example: CO: 318.00 ppm, NO2: 0.70 ppm[0m
+[0;32mI (457875) uart_example: Latitude: 20.997448, Longitude: 105.886780[0m
+[0;32mI (462865) uart_example: Node Number: 5[0m
+[0;32mI (462865) uart_example: Temperature: 32.8°C, Humidity: 37.8%[0m
+[0;32mI (462865) uart_example: PM1.0: 20, PM2.5: 32, PM10: 34[0m
+[0;32mI (462865) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (462875) uart_example: CO: 76.00 ppm, NO2: 0.81 ppm[0m
+[0;32mI (462875) uart_example: Latitude: 20.997103, Longitude: 105.886780[0m
+[0;32mI (467865) uart_example: Node Number: 5[0m
+[0;32mI (467865) uart_example: Temperature: 32.8°C, Humidity: 37.7%[0m
+[0;32mI (467865) uart_example: PM1.0: 21, PM2.5: 30, PM10: 31[0m
+[0;32mI (467865) uart_example: O3: 655.35 ppm, SO2: 30.48 ppm[0m
+[0;32mI (467875) uart_example: CO: 3.00 ppm, NO2: 0.49 ppm[0m
+[0;32mI (467875) uart_example: Latitude: 20.996281, Longitude: 105.887032[0m
+[0;32mI (472865) uart_example: Node Number: 5[0m
+[0;32mI (472865) uart_example: Temperature: 32.8°C, Humidity: 37.7%[0m
+[0;32mI (472865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (472865) uart_example: O3: 655.35 ppm, SO2: 30.29 ppm[0m
+[0;32mI (472875) uart_example: CO: 1.00 ppm, NO2: 0.68 ppm[0m
+[0;32mI (472875) uart_example: Latitude: 20.996258, Longitude: 105.887032[0m
+[0;32mI (477865) uart_example: Node Number: 5[0m
+[0;32mI (477865) uart_example: Temperature: 32.8°C, Humidity: 37.7%[0m
+[0;32mI (477865) uart_example: PM1.0: 19, PM2.5: 27, PM10: 28[0m
+[0;32mI (477865) uart_example: O3: 655.35 ppm, SO2: 30.32 ppm[0m
+[0;32mI (477875) uart_example: CO: 73.00 ppm, NO2: 0.72 ppm[0m
+[0;32mI (477875) uart_example: Latitude: 20.996258, Longitude: 105.887032[0m
+[0;32mI (482875) uart_example: Node Number: 5[0m
+[0;32mI (482875) uart_example: Temperature: 32.8°C, Humidity: 37.6%[0m
+[0;32mI (482875) uart_example: PM1.0: 21, PM2.5: 32, PM10: 34[0m
+[0;32mI (482875) uart_example: O3: 655.35 ppm, SO2: 30.48 ppm[0m
+[0;32mI (482885) uart_example: CO: 16.00 ppm, NO2: 0.89 ppm[0m
+[0;32mI (482885) uart_example: Latitude: 20.996258, Longitude: 105.887032[0m
+[0;32mI (487865) uart_example: Node Number: 5[0m
+[0;32mI (487865) uart_example: Temperature: 32.8°C, Humidity: 37.6%[0m
+[0;32mI (487865) uart_example: PM1.0: 19, PM2.5: 29, PM10: 30[0m
+[0;32mI (487865) uart_example: O3: 655.35 ppm, SO2: 30.64 ppm[0m
+[0;32mI (487875) uart_example: CO: 1.00 ppm, NO2: 0.68 ppm[0m
+[0;32mI (487875) uart_example: Latitude: 20.996258, Longitude: 105.887032[0m
+[0;32mI (492865) uart_example: Node Number: 5[0m
+[0;32mI (492865) uart_example: Temperature: 32.8°C, Humidity: 37.6%[0m
+[0;32mI (492865) uart_example: PM1.0: 19, PM2.5: 27, PM10: 27[0m
+[0;32mI (492865) uart_example: O3: 655.35 ppm, SO2: 30.96 ppm[0m
+[0;32mI (492875) uart_example: CO: 1.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (492875) uart_example: Latitude: 20.996344, Longitude: 105.887032[0m
+[0;32mI (497875) uart_example: Node Number: 5[0m
+[0;32mI (497875) uart_example: Temperature: 32.8°C, Humidity: 37.5%[0m
+[0;32mI (497875) uart_example: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (497875) uart_example: O3: 655.35 ppm, SO2: 30.96 ppm[0m
+[0;32mI (497885) uart_example: CO: 557.64 ppm, NO2: 0.51 ppm[0m
+[0;32mI (497885) uart_example: Latitude: 20.996319, Longitude: 105.887032[0m
+[0;32mI (502865) uart_example: Node Number: 5[0m
+[0;32mI (502865) uart_example: Temperature: 32.8°C, Humidity: 37.5%[0m
+[0;32mI (502865) uart_example: PM1.0: 19, PM2.5: 24, PM10: 26[0m
+[0;32mI (502865) uart_example: O3: 655.35 ppm, SO2: 30.64 ppm[0m
+[0;32mI (502875) uart_example: CO: 86.00 ppm, NO2: 0.94 ppm[0m
+[0;32mI (502875) uart_example: Latitude: 20.996231, Longitude: 105.887032[0m
+[0;32mI (507865) uart_example: Node Number: 5[0m
+[0;32mI (507865) uart_example: Temperature: 32.8°C, Humidity: 37.5%[0m
+[0;32mI (507865) uart_example: PM1.0: 18, PM2.5: 24, PM10: 27[0m
+[0;32mI (507865) uart_example: O3: 655.35 ppm, SO2: 30.80 ppm[0m
+[0;32mI (507875) uart_example: CO: 80.00 ppm, NO2: 0.82 ppm[0m
+[0;32mI (507875) uart_example: Latitude: 20.996578, Longitude: 105.887032[0m
+[0;32mI (512865) uart_example: Node Number: 5[0m
+[0;32mI (512865) uart_example: Temperature: 32.8°C, Humidity: 37.5%[0m
+[0;32mI (512865) uart_example: PM1.0: 19, PM2.5: 26, PM10: 29[0m
+[0;32mI (512865) uart_example: O3: 655.35 ppm, SO2: 31.18 ppm[0m
+[0;32mI (512875) uart_example: CO: 79.00 ppm, NO2: 0.88 ppm[0m
+[0;32mI (512875) uart_example: Latitude: 20.996893, Longitude: 105.887032[0m
+[0;32mI (517865) uart_example: Node Number: 5[0m
+[0;32mI (517865) uart_example: Temperature: 32.8°C, Humidity: 37.4%[0m
+[0;32mI (517865) uart_example: PM1.0: 19, PM2.5: 26, PM10: 28[0m
+[0;32mI (517865) uart_example: O3: 655.35 ppm, SO2: 31.21 ppm[0m
+[0;32mI (517875) uart_example: CO: 13.00 ppm, NO2: 0.42 ppm[0m
+[0;32mI (517875) uart_example: Latitude: 20.997049, Longitude: 105.886780[0m
+[0;32mI (522865) uart_example: Node Number: 5[0m
+[0;32mI (522865) uart_example: Temperature: 32.8°C, Humidity: 37.4%[0m
+[0;32mI (522865) uart_example: PM1.0: 20, PM2.5: 27, PM10: 29[0m
+[0;32mI (522865) uart_example: O3: 655.35 ppm, SO2: 30.83 ppm[0m
+[0;32mI (522875) uart_example: CO: 1.00 ppm, NO2: 0.70 ppm[0m
+[0;32mI (522875) uart_example: Latitude: 20.997143, Longitude: 105.886780[0m
+[0;32mI (527875) uart_example: Node Number: 5[0m
+[0;32mI (527875) uart_example: Temperature: 32.8°C, Humidity: 37.4%[0m
+[0;32mI (527875) uart_example: PM1.0: 18, PM2.5: 23, PM10: 25[0m
+[0;32mI (527875) uart_example: O3: 655.35 ppm, SO2: 30.32 ppm[0m
+[0;32mI (527885) uart_example: CO: 1.00 ppm, NO2: 0.61 ppm[0m
+[0;32mI (527885) uart_example: Latitude: 20.997143, Longitude: 105.886780[0m
+[0;32mI (532865) uart_example: Node Number: 5[0m
+[0;32mI (532865) uart_example: Temperature: 32.8°C, Humidity: 37.4%[0m
+[0;32mI (532865) uart_example: PM1.0: 17, PM2.5: 23, PM10: 24[0m
+[0;32mI (532865) uart_example: O3: 655.35 ppm, SO2: 30.73 ppm[0m
+[0;32mI (532875) uart_example: CO: 63.00 ppm, NO2: 0.64 ppm[0m
+[0;32mI (532875) uart_example: Latitude: 20.997143, Longitude: 105.886780[0m
+[0;32mI (537875) uart_example: Node Number: 5[0m
+[0;32mI (537875) uart_example: Temperature: 32.8°C, Humidity: 37.4%[0m
+[0;32mI (537875) uart_example: PM1.0: 19, PM2.5: 24, PM10: 24[0m
+[0;32mI (537875) uart_example: O3: 655.35 ppm, SO2: 30.04 ppm[0m
+[0;32mI (537885) uart_example: CO: 7.00 ppm, NO2: 0.57 ppm[0m
+[0;32mI (537885) uart_example: Latitude: 20.997143, Longitude: 105.886780[0m
+[0;32mI (542875) uart_example: Node Number: 5[0m
+[0;32mI (542875) uart_example: Temperature: 32.8°C, Humidity: 37.3%[0m
+[0;32mI (542875) uart_example: PM1.0: 19, PM2.5: 25, PM10: 25[0m
+[0;32mI (542875) uart_example: O3: 655.35 ppm, SO2: 30.92 ppm[0m
+[0;32mI (542885) uart_example: CO: 1.00 ppm, NO2: 0.51 ppm[0m
+[0;32mI (542885) uart_example: Latitude: 20.997334, Longitude: 105.886780[0m
+[0;32mI (547875) uart_example: Node Number: 5[0m
+[0;32mI (547875) uart_example: Temperature: 32.8°C, Humidity: 37.3%[0m
+[0;32mI (547875) uart_example: PM1.0: 20, PM2.5: 26, PM10: 28[0m
+[0;32mI (547875) uart_example: O3: 655.35 ppm, SO2: 30.45 ppm[0m
+[0;32mI (547885) uart_example: CO: 82.28 ppm, NO2: 0.67 ppm[0m
+[0;32mI (547885) uart_example: Latitude: 20.997337, Longitude: 105.886780[0m
+[0;32mI (552875) uart_example: Node Number: 5[0m
+[0;32mI (552875) uart_example: Temperature: 32.8°C, Humidity: 37.3%[0m
+[0;32mI (552875) uart_example: PM1.0: 20, PM2.5: 28, PM10: 30[0m
+[0;32mI (552875) uart_example: O3: 655.35 ppm, SO2: 30.13 ppm[0m
+[0;32mI (552885) uart_example: CO: 30.00 ppm, NO2: 0.68 ppm[0m
+[0;32mI (552885) uart_example: Latitude: 20.997343, Longitude: 105.886780[0m
+[0;32mI (557875) uart_example: Node Number: 5[0m
+[0;32mI (557875) uart_example: Temperature: 32.8°C, Humidity: 37.3%[0m
+[0;32mI (557875) uart_example: PM1.0: 21, PM2.5: 28, PM10: 30[0m
+[0;32mI (557875) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (557885) uart_example: CO: 1.00 ppm, NO2: 0.67 ppm[0m
+[0;32mI (557885) uart_example: Latitude: 20.997328, Longitude: 105.886780[0m
+[0;32mI (562875) uart_example: Node Number: 5[0m
+[0;32mI (562875) uart_example: Temperature: 32.8°C, Humidity: 37.3%[0m
+[0;32mI (562875) uart_example: PM1.0: 21, PM2.5: 29, PM10: 29[0m
+[0;32mI (562875) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (562885) uart_example: CO: 1.00 ppm, NO2: 0.76 ppm[0m
+[0;32mI (562885) uart_example: Latitude: 20.997290, Longitude: 105.886780[0m
+[0;32mI (567875) uart_example: Node Number: 5[0m
+[0;32mI (567875) uart_example: Temperature: 32.7°C, Humidity: 37.3%[0m
+[0;32mI (567875) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (567875) uart_example: O3: 655.35 ppm, SO2: 30.01 ppm[0m
+[0;32mI (567885) uart_example: CO: 14.28 ppm, NO2: 0.82 ppm[0m
+[0;32mI (567885) uart_example: Latitude: 20.997309, Longitude: 105.886780[0m
+[0;32mI (572875) uart_example: Node Number: 5[0m
+[0;32mI (572875) uart_example: Temperature: 32.8°C, Humidity: 37.2%[0m
+[0;32mI (572875) uart_example: PM1.0: 20, PM2.5: 27, PM10: 27[0m
+[0;32mI (572875) uart_example: O3: 655.35 ppm, SO2: 30.48 ppm[0m
+[0;32mI (572885) uart_example: CO: 1.00 ppm, NO2: 0.83 ppm[0m
+[0;32mI (572885) uart_example: Latitude: 20.997309, Longitude: 105.886780[0m

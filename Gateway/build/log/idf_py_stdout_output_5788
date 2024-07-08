@@ -1,0 +1,1251 @@
+�������m[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (4826) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (4826) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (4826) AODV: Routing Table:[0m
+[0;32mI (4826) AODV: ---------------------------------------------------[0m
+[0;32mI (4826) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (4836) AODV: ---------------------------------------------------[0m
+[0;32mI (4846) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (4846) AODV: ---------------------------------------------------[0m
+[0;32mI (4856) AODV: Sending RREP to 5[0m
+[0;32mI (4856) AODV: next hop = 5[0m
+[0;32mI (4866) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (4866) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (44586) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (44586) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (44586) AODV: Routing Table:[0m
+[0;32mI (44586) AODV: ---------------------------------------------------[0m
+[0;32mI (44596) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (44596) AODV: ---------------------------------------------------[0m
+[0;32mI (44606) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (44606) AODV: ---------------------------------------------------[0m
+[0;32mI (44616) AODV: Sending RREP to 2[0m
+[0;32mI (44626) AODV: next hop = 5[0m
+[0;32mI (44626) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (44626) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (54646) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (54646) AODV: Routing Table:[0m
+[0;32mI (54646) AODV: ---------------------------------------------------[0m
+[0;32mI (54646) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (54656) AODV: ---------------------------------------------------[0m
+[0;32mI (54656) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (54666) AODV: ---------------------------------------------------[0m
+[0;32mI (54676) AODV: Sending RREP to 2[0m
+[0;32mI (54676) AODV: next hop = 5[0m
+[0;32mI (54676) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (54686) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (105106) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (105106) AODV: Routing Table:[0m
+[0;32mI (105106) AODV: ---------------------------------------------------[0m
+[0;32mI (105106) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (105116) AODV: ---------------------------------------------------[0m
+[0;32mI (105116) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (105126) AODV: ---------------------------------------------------[0m
+[0;32mI (105136) AODV: Sending RREP to 2[0m
+[0;32mI (105136) AODV: next hop = 5[0m
+[0;32mI (105136) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (105146) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (119706) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (119706) AODV: Route added: 4 -> 4 (seq: 1, hops: 1)[0m
+[0;32mI (119706) AODV: Routing Table:[0m
+[0;32mI (119706) AODV: ---------------------------------------------------[0m
+[0;32mI (119716) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (119716) AODV: ---------------------------------------------------[0m
+[0;32mI (119726) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (119736) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (119736) AODV: ---------------------------------------------------[0m
+[0;32mI (119746) AODV: Sending RREP to 4[0m
+[0;32mI (119746) AODV: next hop = 4[0m
+[0;32mI (119756) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (119756) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (126496) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (126496) AODV: Routing Table:[0m
+[0;32mI (126496) AODV: ---------------------------------------------------[0m
+[0;32mI (126496) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (126506) AODV: ---------------------------------------------------[0m
+[0;32mI (126506) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (126516) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (126526) AODV: ---------------------------------------------------[0m
+[0;32mI (126526) AODV: Sending RREP to 2[0m
+[0;32mI (126536) AODV: next hop = 5[0m
+[0;32mI (126536) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (126546) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (128786) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (128786) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (128786) AODV: Routing Table:[0m
+[0;32mI (128786) AODV: ---------------------------------------------------[0m
+[0;32mI (128796) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (128796) AODV: ---------------------------------------------------[0m
+[0;32mI (128806) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (128816) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (128816) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (128826) AODV: ---------------------------------------------------[0m
+[0;32mI (128836) AODV: Sending RREP to 5[0m
+[0;32mI (128836) AODV: next hop = 5[0m
+[0;32mI (128836) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (128846) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (130486) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (130486) AODV: Routing Table:[0m
+[0;32mI (130486) AODV: ---------------------------------------------------[0m
+[0;32mI (130486) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (130496) AODV: ---------------------------------------------------[0m
+[0;32mI (130496) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (130506) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (130516) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (130516) AODV: ---------------------------------------------------[0m
+[0;32mI (130526) AODV: Sending RREP to 2[0m
+[0;32mI (130526) AODV: next hop = 5[0m
+[0;32mI (130536) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (130536) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (132246) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (132246) AODV: Routing Table:[0m
+[0;32mI (132246) AODV: ---------------------------------------------------[0m
+[0;32mI (132246) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (132256) AODV: ---------------------------------------------------[0m
+[0;32mI (132256) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (132266) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (132276) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (132276) AODV: ---------------------------------------------------[0m
+[0;32mI (132286) AODV: Sending RREP to 5[0m
+[0;32mI (132286) AODV: next hop = 5[0m
+[0;32mI (132296) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (132296) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (3026) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (3026) AODV: Route added: 2 -> 4 (seq: 0, hops: 2)[0m
+[0;32mI (3026) AODV: Routing Table:[0m
+[0;32mI (3026) AODV: ---------------------------------------------------[0m
+[0;32mI (3026) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (3036) AODV: ---------------------------------------------------[0m
+[0;32mI (3046) AODV:         2 |        4 |         0 |         2[0m
+[0;32mI (3046) AODV: ---------------------------------------------------[0m
+[0;32mI (3056) AODV: Sending RREP to 2[0m
+[0;32mI (3056) AODV: next hop = 4[0m
+[0;32mI (3066) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (3066) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (8196) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (8196) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (8196) AODV: Routing Table:[0m
+[0;32mI (8196) AODV: ---------------------------------------------------[0m
+[0;32mI (8196) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (8206) AODV: ---------------------------------------------------[0m
+[0;32mI (8216) AODV:         2 |        4 |         0 |         2[0m
+[0;32mI (8216) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (8226) AODV: ---------------------------------------------------[0m
+[0;32mI (8236) AODV: Sending RREP to 5[0m
+[0;32mI (8236) AODV: next hop = 5[0m
+[0;32mI (8236) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (8246) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (3466) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (3466) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (3466) AODV: Routing Table:[0m
+[0;32mI (3466) AODV: ---------------------------------------------------[0m
+[0;32mI (3466) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (3476) AODV: ---------------------------------------------------[0m
+[0;32mI (3486) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (3486) AODV: ---------------------------------------------------[0m
+[0;32mI (3496) AODV: Sending RREP to 5[0m
+[0;32mI (3496) AODV: next hop = 5[0m
+[0;32mI (3506) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (3506) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (7826) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (7826) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (7826) AODV: Routing Table:[0m
+[0;32mI (7826) AODV: ---------------------------------------------------[0m
+[0;32mI (7826) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (7836) AODV: ---------------------------------------------------[0m
+[0;32mI (7846) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (7846) AODV: ---------------------------------------------------[0m
+[0;32mI (7856) AODV: Sending RREP to 2[0m
+[0;32mI (7856) AODV: next hop = 5[0m
+[0;32mI (7866) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (7866) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (7846) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (7846) AODV: Route added: 4 -> 4 (seq: 1, hops: 1)[0m
+[0;32mI (7846) AODV: Routing Table:[0m
+[0;32mI (7846) AODV: ---------------------------------------------------[0m
+[0;32mI (7846) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (7856) AODV: ---------------------------------------------------[0m
+[0;32mI (7866) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (7866) AODV: ---------------------------------------------------[0m
+[0;32mI (7876) AODV: Sending RREP to 4[0m
+[0;32mI (7876) AODV: next hop = 4[0m
+[0;32mI (7886) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (7886) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (11936) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (11936) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (11936) AODV: Routing Table:[0m
+[0;32mI (11936) AODV: ---------------------------------------------------[0m
+[0;32mI (11946) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (11946) AODV: ---------------------------------------------------[0m
+[0;32mI (11956) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (11956) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (11966) AODV: ---------------------------------------------------[0m
+[0;32mI (11976) AODV: Sending RREP to 5[0m
+[0;32mI (11976) AODV: next hop = 5[0m
+[0;32mI (11986) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (11986) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (15006) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (15006) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (15006) AODV: Routing Table:[0m
+[0;32mI (15006) AODV: ---------------------------------------------------[0m
+[0;32mI (15016) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (15016) AODV: ---------------------------------------------------[0m
+[0;32mI (15026) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (15026) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (15036) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (15046) AODV: ---------------------------------------------------[0m
+[0;32mI (15046) AODV: Sending RREP to 2[0m
+[0;32mI (15056) AODV: next hop = 5[0m
+[0;32mI (15056) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (15066) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (25036) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (25036) AODV: Routing Table:[0m
+[0;32mI (25036) AODV: ---------------------------------------------------[0m
+[0;32mI (25036) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (25046) AODV: ---------------------------------------------------[0m
+[0;32mI (25046) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (25056) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (25066) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (25066) AODV: ---------------------------------------------------[0m
+[0;32mI (25076) AODV: Sending RREP to 5[0m
+[0;32mI (25076) AODV: next hop = 5[0m
+[0;32mI (25086) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (25086) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (27746) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (27746) AODV: Routing Table:[0m
+[0;32mI (27746) AODV: ---------------------------------------------------[0m
+[0;32mI (27746) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (27756) AODV: ---------------------------------------------------[0m
+[0;32mI (27756) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (27766) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (27776) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (27776) AODV: ---------------------------------------------------[0m
+[0;32mI (27786) AODV: Sending RREP to 4[0m
+[0;32mI (27786) AODV: next hop = 4[0m
+[0;32mI (27796) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (27796) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (3136) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (3136) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (3136) AODV: Routing Table:[0m
+[0;32mI (3136) AODV: ---------------------------------------------------[0m
+[0;32mI (3136) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (3146) AODV: ---------------------------------------------------[0m
+[0;32mI (3156) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (3156) AODV: ---------------------------------------------------[0m
+[0;32mI (3166) AODV: Sending RREP to 2[0m
+[0;32mI (3166) AODV: next hop = 5[0m
+[0;32mI (3176) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (3176) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (5516) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (5516) AODV: Route added: 4 -> 4 (seq: 1, hops: 1)[0m
+[0;32mI (5516) AODV: Routing Table:[0m
+[0;32mI (5516) AODV: ---------------------------------------------------[0m
+[0;32mI (5516) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (5526) AODV: ---------------------------------------------------[0m
+[0;32mI (5536) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (5536) AODV: ---------------------------------------------------[0m
+[0;32mI (5546) AODV: Sending RREP to 4[0m
+[0;32mI (5546) AODV: next hop = 4[0m
+[0;32mI (5556) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (5556) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (7856) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (7856) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (7856) AODV: Routing Table:[0m
+[0;32mI (7856) AODV: ---------------------------------------------------[0m
+[0;32mI (7856) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (7866) AODV: ---------------------------------------------------[0m
+[0;32mI (7876) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (7876) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (7886) AODV: ---------------------------------------------------[0m
+[0;32mI (7896) AODV: Sending RREP to 5[0m
+[0;32mI (7896) AODV: next hop = 5[0m
+[0;32mI (7896) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (7906) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (3296) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (3296) AODV: Route added: 2 -> 4 (seq: 0, hops: 2)[0m
+[0;32mI (3296) AODV: Routing Table:[0m
+[0;32mI (3296) AODV: ---------------------------------------------------[0m
+[0;32mI (3296) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (3306) AODV: ---------------------------------------------------[0m
+[0;32mI (3316) AODV:         2 |        4 |         0 |         2[0m
+[0;32mI (3316) AODV: ---------------------------------------------------[0m
+[0;32mI (3326) AODV: Sending RREP to 2[0m
+[0;32mI (3326) AODV: next hop = 4[0m
+[0;32mI (3336) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (3336) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (13266) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (13266) AODV: Route added: 4 -> 4 (seq: 1, hops: 1)[0m
+[0;32mI (13266) AODV: Routing Table:[0m
+[0;32mI (13266) AODV: ---------------------------------------------------[0m
+[0;32mI (13276) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (13276) AODV: ---------------------------------------------------[0m
+[0;32mI (13286) AODV:         2 |        4 |         0 |         2[0m
+[0;32mI (13286) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (13296) AODV: ---------------------------------------------------[0m
+[0;32mI (13306) AODV: Sending RREP to 4[0m
+[0;32mI (13306) AODV: next hop = 4[0m
+[0;32mI (13316) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (13316) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (18566) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (18566) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (18566) AODV: Routing Table:[0m
+[0;32mI (18566) AODV: ---------------------------------------------------[0m
+[0;32mI (18576) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (18576) AODV: ---------------------------------------------------[0m
+[0;32mI (18586) AODV:         2 |        4 |         0 |         2[0m
+[0;32mI (18586) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (18596) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (18606) AODV: ---------------------------------------------------[0m
+[0;32mI (18606) AODV: Sending RREP to 5[0m
+[0;32mI (18616) AODV: next hop = 5[0m
+[0;32mI (18616) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (18626) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (2936) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (2936) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (2936) AODV: Routing Table:[0m
+[0;32mI (2936) AODV: ---------------------------------------------------[0m
+[0;32mI (2936) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (2946) AODV: ---------------------------------------------------[0m
+[0;32mI (2956) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (2956) AODV: ---------------------------------------------------[0m
+[0;32mI (2966) AODV: Sending RREP to 2[0m
+[0;32mI (2966) AODV: next hop = 5[0m
+[0;32mI (2976) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (2976) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (5336) AODV: Handling RREQ from 4 to 1[0m
+[0;32mI (5336) AODV: Route added: 4 -> 4 (seq: 1, hops: 1)[0m
+[0;32mI (5336) AODV: Routing Table:[0m
+[0;32mI (5336) AODV: ---------------------------------------------------[0m
+[0;32mI (5336) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (5346) AODV: ---------------------------------------------------[0m
+[0;32mI (5356) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (5356) AODV: ---------------------------------------------------[0m
+[0;32mI (5366) AODV: Sending RREP to 4[0m
+[0;32mI (5366) AODV: next hop = 4[0m
+[0;32mI (5376) AODV: rrep.src_add = 1; rrep.dest_add = 4[0m
+[0;32mI (5376) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (14496) AODV: Handling RREQ from 5 to 1[0m
+[0;32mI (14496) AODV: Route added: 5 -> 5 (seq: 1, hops: 1)[0m
+[0;32mI (14496) AODV: Routing Table:[0m
+[0;32mI (14496) AODV: ---------------------------------------------------[0m
+[0;32mI (14506) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (14506) AODV: ---------------------------------------------------[0m
+[0;32mI (14516) AODV:         4 |        4 |         1 |         1[0m
+[0;32mI (14516) AODV:         5 |        5 |         1 |         1[0m
+[0;32mI (14526) AODV: ---------------------------------------------------[0m
+[0;32mI (14536) AODV: Sending RREP to 5[0m
+[0;32mI (14536) AODV: next hop = 5[0m
+[0;32mI (14546) AODV: rrep.src_add = 1; rrep.dest_add = 5[0m
+[0;32mI (14546) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2b4h ( 45748) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b2dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d538 vaddr=40080000 size=02ae0h ( 10976) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17004h ( 94212) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=0003702c vaddr=40082ae0 size=0ac80h ( 44160) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  60355eadc...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (3896) AODV: Handling RREQ from 2 to 1[0m
+[0;32mI (3896) AODV: Route added: 2 -> 5 (seq: 0, hops: 2)[0m
+[0;32mI (3896) AODV: Routing Table:[0m
+[0;32mI (3896) AODV: ---------------------------------------------------[0m
+[0;32mI (3896) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (3906) AODV: ---------------------------------------------------[0m
+[0;32mI (3916) AODV:         2 |        5 |         0 |         2[0m
+[0;32mI (3916) AODV: ---------------------------------------------------[0m
+[0;32mI (3926) AODV: Sending RREP to 2[0m
+[0;32mI (3926) AODV: next hop = 5[0m
+[0;32mI (3936) AODV: rrep.src_add = 1; rrep.dest_add = 2[0m
+[0;32mI (3936) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m

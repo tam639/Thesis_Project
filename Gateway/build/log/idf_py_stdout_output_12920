@@ -1,0 +1,4598 @@
+V�m[0m
+[0;32mI (36) booets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1b4h ( 45492) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b1dc vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d438 vaddr=40080000 size=02be0h ( 11232) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16ffch ( 94204) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00037024 vaddr=40082be0 size=0ac88h ( 44168) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (212) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (212) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  48ff5f028...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B48 len 0002D4B8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D868 len 00012798 (73 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (326) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;31mE (456) uart_example: Received data length is too short[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (456) AODV: Node Number: 0[0m
+[0;32mI (456) AODV: Temperature: 0.0°C, Humidity: 0.0%[0m
+[0;32mI (456) AODV: PM1.0: 0, PM2.5: 0, PM10: 0[0m
+[0;32mI (466) AODV: O3: 0.00 ppm, SO2: 0.00 ppm[0m
+[0;32mI (466) AODV: CO: 0.00 ppm, NO2: 0.00 ppm[0m
+[0;32mI (476) AODV: Latitude: 0.000000, Longitude: 0.000000[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (4526) AODV: Node Number: 4[0m
+[0;32mI (4526) AODV: Temperature: 30.0°C, Humidity: 38.9%[0m
+[0;32mI (4526) AODV: PM1.0: 19, PM2.5: 30, PM10: 35[0m
+[0;32mI (4526) AODV: O3: 655.35 ppm, SO2: 6.20 ppm[0m
+[0;32mI (4536) AODV: CO: 1.00 ppm, NO2: 1.98 ppm[0m
+[0;32mI (4536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (9526) AODV: Node Number: 4[0m
+[0;32mI (9526) AODV: Temperature: 30.0°C, Humidity: 38.6%[0m
+[0;32mI (9526) AODV: PM1.0: 19, PM2.5: 30, PM10: 35[0m
+[0;32mI (9526) AODV: O3: 655.35 ppm, SO2: 5.89 ppm[0m
+[0;32mI (9536) AODV: CO: 646.28 ppm, NO2: 2.05 ppm[0m
+[0;32mI (9536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (14526) AODV: Node Number: 4[0m
+[0;32mI (14526) AODV: Temperature: 30.0°C, Humidity: 38.6%[0m
+[0;32mI (14526) AODV: PM1.0: 20, PM2.5: 31, PM10: 34[0m
+[0;32mI (14526) AODV: O3: 655.35 ppm, SO2: 6.34 ppm[0m
+[0;32mI (14536) AODV: CO: 63.00 ppm, NO2: 2.18 ppm[0m
+[0;32mI (14536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (19526) AODV: Node Number: 4[0m
+[0;32mI (19526) AODV: Temperature: 30.1°C, Humidity: 38.5%[0m
+[0;32mI (19526) AODV: PM1.0: 20, PM2.5: 30, PM10: 32[0m
+[0;32mI (19526) AODV: O3: 655.35 ppm, SO2: 7.33 ppm[0m
+[0;32mI (19536) AODV: CO: 1.00 ppm, NO2: 1.55 ppm[0m
+[0;32mI (19536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (24526) AODV: Node Number: 4[0m
+[0;32mI (24526) AODV: Temperature: 30.1°C, Humidity: 38.5%[0m
+[0;32mI (24526) AODV: PM1.0: 20, PM2.5: 30, PM10: 32[0m
+[0;32mI (24526) AODV: O3: 655.35 ppm, SO2: 7.90 ppm[0m
+[0;32mI (24536) AODV: CO: 126.64 ppm, NO2: 1.60 ppm[0m
+[0;32mI (24536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (29526) AODV: Node Number: 4[0m
+[0;32mI (29526) AODV: Temperature: 30.1°C, Humidity: 38.5%[0m
+[0;32mI (29526) AODV: PM1.0: 20, PM2.5: 30, PM10: 32[0m
+[0;32mI (29526) AODV: O3: 655.35 ppm, SO2: 7.41 ppm[0m
+[0;32mI (29536) AODV: CO: 1.00 ppm, NO2: 1.38 ppm[0m
+[0;32mI (29536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (34526) AODV: Node Number: 4[0m
+[0;32mI (34526) AODV: Temperature: 30.2°C, Humidity: 38.4%[0m
+[0;32mI (34526) AODV: PM1.0: 20, PM2.5: 30, PM10: 34[0m
+[0;32mI (34526) AODV: O3: 655.35 ppm, SO2: 6.78 ppm[0m
+[0;32mI (34536) AODV: CO: 127.28 ppm, NO2: 1.13 ppm[0m
+[0;32mI (34536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (39526) AODV: Node Number: 4[0m
+[0;32mI (39526) AODV: Temperature: 30.3°C, Humidity: 38.4%[0m
+[0;32mI (39526) AODV: PM1.0: 19, PM2.5: 29, PM10: 34[0m
+[0;32mI (39526) AODV: O3: 655.35 ppm, SO2: 7.72 ppm[0m
+[0;32mI (39536) AODV: CO: 10.00 ppm, NO2: 1.79 ppm[0m
+[0;32mI (39536) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (160476) AODV: Node Number: 4[0m
+[0;32mI (160476) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (160476) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (160476) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (160486) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (160486) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (164286) AODV: Node Number: 4[0m
+[0;32mI (164286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (164286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (164286) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (164296) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (164296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (169286) AODV: Node Number: 4[0m
+[0;32mI (169286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (169286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (169286) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (169296) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (169296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (174286) AODV: Node Number: 4[0m
+[0;32mI (174286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (174286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (174286) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (174296) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (174296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (179286) AODV: Node Number: 4[0m
+[0;32mI (179286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (179286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (179286) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (179296) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (179296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (184286) AODV: Node Number: 4[0m
+[0;32mI (184286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (184286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (184286) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (184296) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (184296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (189286) AODV: Node Number: 4[0m
+[0;32mI (189286) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (189286) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (189286) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (189296) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (189296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (194026) AODV: Node Number: 4[0m
+[0;32mI (194026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (194026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (194026) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (194036) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (194036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (199026) AODV: Node Number: 4[0m
+[0;32mI (199026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (199026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (199026) AODV: O3: 655.35 ppm, SO2: 527.77 ppm[0m
+[0;32mI (199036) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (199036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (204026) AODV: Node Number: 4[0m
+[0;32mI (204026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (204026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (204026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (204036) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (204036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (209026) AODV: Node Number: 4[0m
+[0;32mI (209026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (209026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (209026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (209036) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (209036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (214026) AODV: Node Number: 4[0m
+[0;32mI (214026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (214026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (214026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (214036) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (214036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (219026) AODV: Node Number: 4[0m
+[0;32mI (219026) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (219026) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (219026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (219036) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (219036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (307786) AODV: Node Number: 4[0m
+[0;32mI (307786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (307786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (307786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (307796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (307796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (312786) AODV: Node Number: 4[0m
+[0;32mI (312786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (312786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (312786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (312796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (312796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (317786) AODV: Node Number: 4[0m
+[0;32mI (317786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (317786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (317786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (317796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (317796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (322786) AODV: Node Number: 4[0m
+[0;32mI (322786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (322786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (322786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (322796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (322796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (327786) AODV: Node Number: 4[0m
+[0;32mI (327786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (327786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (327786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (327796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (327796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (332786) AODV: Node Number: 4[0m
+[0;32mI (332786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (332786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (332786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (332796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (332796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (337796) AODV: Node Number: 4[0m
+[0;32mI (337796) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (337796) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (337796) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (337806) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (337806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (342786) AODV: Node Number: 4[0m
+[0;32mI (342786) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (342786) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (342786) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (342796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (342796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (347546) AODV: Node Number: 4[0m
+[0;32mI (347546) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (347546) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (347546) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (347556) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (347556) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (352546) AODV: Node Number: 4[0m
+[0;32mI (352546) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (352546) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (352546) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (352556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (352556) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (357546) AODV: Node Number: 4[0m
+[0;32mI (357546) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (357546) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (357546) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (357556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (357556) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (362546) AODV: Node Number: 4[0m
+[0;32mI (362546) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (362546) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (362546) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (362556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (362556) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (367546) AODV: Node Number: 4[0m
+[0;32mI (367546) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (367546) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (367546) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (367556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (367556) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (403976) AODV: Node Number: 4[0m
+[0;32mI (403976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (403976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (403976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (403986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (403986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (408976) AODV: Node Number: 4[0m
+[0;32mI (408976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (408976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (408976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (408986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (408986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (413976) AODV: Node Number: 4[0m
+[0;32mI (413976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (413976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (413976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (413986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (413986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (418976) AODV: Node Number: 4[0m
+[0;32mI (418976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (418976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (418976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (418986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (418986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (423976) AODV: Node Number: 4[0m
+[0;32mI (423976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (423976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (423976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (423986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (423986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (428976) AODV: Node Number: 4[0m
+[0;32mI (428976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (428976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (428976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (428986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (428986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (433976) AODV: Node Number: 4[0m
+[0;32mI (433976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (433976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (433976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (433986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (433986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (438976) AODV: Node Number: 4[0m
+[0;32mI (438976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (438976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (438976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (438986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (438986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (443976) AODV: Node Number: 4[0m
+[0;32mI (443976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (443976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (443976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (443986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (443986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (448976) AODV: Node Number: 4[0m
+[0;32mI (448976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (448976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (448976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (448986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (448986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (453976) AODV: Node Number: 4[0m
+[0;32mI (453976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (453976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (453976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (453986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (453986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (458976) AODV: Node Number: 4[0m
+[0;32mI (458976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (458976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (458976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (458986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (458986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (463976) AODV: Node Number: 4[0m
+[0;32mI (463976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (463976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (463976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (463986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (463986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (468976) AODV: Node Number: 4[0m
+[0;32mI (468976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (468976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (468976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (468986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (468986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (473976) AODV: Node Number: 4[0m
+[0;32mI (473976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (473976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (473976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (473986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (473986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (478976) AODV: Node Number: 4[0m
+[0;32mI (478976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (478976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (478976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (478986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (478986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (483976) AODV: Node Number: 4[0m
+[0;32mI (483976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (483976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (483976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (483986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (483986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (488976) AODV: Node Number: 4[0m
+[0;32mI (488976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (488976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (488976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (488986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (488986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (493976) AODV: Node Number: 4[0m
+[0;32mI (493976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (493976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (493976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (493986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (493986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (498976) AODV: Node Number: 4[0m
+[0;32mI (498976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (498976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (498976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (498986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (498986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (503976) AODV: Node Number: 4[0m
+[0;32mI (503976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (503976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (503976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (503986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (503986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (508976) AODV: Node Number: 4[0m
+[0;32mI (508976) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (508976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (508976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (508986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (508986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (513976) AODV: Node Number: 4[0m
+[0;32mI (513976) AODV: Temperature: 0.0°C, Humidity: 0.0%[0m
+[0;32mI (513976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (513976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (513986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (513986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (518976) AODV: Node Number: 4[0m
+[0;32mI (518976) AODV: Temperature: 29.8°C, Humidity: 74.5%[0m
+[0;32mI (518976) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (518976) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (518986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (518986) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (519636) AODV: Node Number: 4[0m
+[0;32mI (519636) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (519636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (519636) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (519646) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (519646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (524636) AODV: Node Number: 4[0m
+[0;32mI (524636) AODV: Temperature: 29.8°C, Humidity: 61.5%[0m
+[0;32mI (524636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (524636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (524646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (524646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (529636) AODV: Node Number: 4[0m
+[0;32mI (529636) AODV: Temperature: 29.8°C, Humidity: 52.3%[0m
+[0;32mI (529636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (529636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (529646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (529646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (534636) AODV: Node Number: 4[0m
+[0;32mI (534636) AODV: Temperature: 30.3°C, Humidity: 77.3%[0m
+[0;32mI (534636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (534636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (534646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (534646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (539636) AODV: Node Number: 4[0m
+[0;32mI (539636) AODV: Temperature: 30.5°C, Humidity: 89.3%[0m
+[0;32mI (539636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (539636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (539646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (539646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (544636) AODV: Node Number: 4[0m
+[0;32mI (544636) AODV: Temperature: 31.9°C, Humidity: 99.3%[0m
+[0;32mI (544636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (544636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (544646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (544646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (549636) AODV: Node Number: 4[0m
+[0;32mI (549636) AODV: Temperature: 31.2°C, Humidity: 99.9%[0m
+[0;32mI (549636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (549636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (549646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (549646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (554636) AODV: Node Number: 4[0m
+[0;32mI (554636) AODV: Temperature: 30.3°C, Humidity: 93.5%[0m
+[0;32mI (554636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (554636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (554646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (554646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (559636) AODV: Node Number: 4[0m
+[0;32mI (559636) AODV: Temperature: 29.9°C, Humidity: 92.9%[0m
+[0;32mI (559636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (559636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (559646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (559646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (564636) AODV: Node Number: 4[0m
+[0;32mI (564636) AODV: Temperature: 29.7°C, Humidity: 88.9%[0m
+[0;32mI (564636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (564636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (564646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (564646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (569636) AODV: Node Number: 4[0m
+[0;32mI (569636) AODV: Temperature: 29.8°C, Humidity: 67.1%[0m
+[0;32mI (569636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (569636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (569646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (569646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (574636) AODV: Node Number: 4[0m
+[0;32mI (574636) AODV: Temperature: 29.9°C, Humidity: 58.4%[0m
+[0;32mI (574636) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (574636) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (574646) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (574646) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (600236) AODV: Node Number: 4[0m
+[0;32mI (600236) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (600236) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (600236) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (600246) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (600246) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (605226) AODV: Node Number: 4[0m
+[0;32mI (605226) AODV: Temperature: 29.9°C, Humidity: 44.3%[0m
+[0;32mI (605226) AODV: PM1.0: 22, PM2.5: 30, PM10: 35[0m
+[0;32mI (605226) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (605236) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (605236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (610226) AODV: Node Number: 4[0m
+[0;32mI (610226) AODV: Temperature: 29.9°C, Humidity: 43.6%[0m
+[0;32mI (610226) AODV: PM1.0: 23, PM2.5: 34, PM10: 41[0m
+[0;32mI (610226) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (610236) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (610236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (615226) AODV: Node Number: 4[0m
+[0;32mI (615226) AODV: Temperature: 29.9°C, Humidity: 44.4%[0m
+[0;32mI (615226) AODV: PM1.0: 21, PM2.5: 32, PM10: 36[0m
+[0;32mI (615226) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (615236) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (615236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (623666) AODV: Node Number: 4[0m
+[0;32mI (623666) AODV: Temperature: 29.9°C, Humidity: 44.0%[0m
+[0;32mI (623666) AODV: PM1.0: 23, PM2.5: 32, PM10: 33[0m
+[0;32mI (623666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (623676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (623676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (628666) AODV: Node Number: 4[0m
+[0;32mI (628666) AODV: Temperature: 29.9°C, Humidity: 44.4%[0m
+[0;32mI (628666) AODV: PM1.0: 22, PM2.5: 32, PM10: 34[0m
+[0;32mI (628666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (628676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (628676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (633666) AODV: Node Number: 4[0m
+[0;32mI (633666) AODV: Temperature: 29.9°C, Humidity: 44.9%[0m
+[0;32mI (633666) AODV: PM1.0: 23, PM2.5: 34, PM10: 41[0m
+[0;32mI (633666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (633676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (633676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (638666) AODV: Node Number: 4[0m
+[0;32mI (638666) AODV: Temperature: 29.9°C, Humidity: 44.2%[0m
+[0;32mI (638666) AODV: PM1.0: 22, PM2.5: 33, PM10: 40[0m
+[0;32mI (638666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (638676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (638676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (643666) AODV: Node Number: 4[0m
+[0;32mI (643666) AODV: Temperature: 29.9°C, Humidity: 44.0%[0m
+[0;32mI (643666) AODV: PM1.0: 22, PM2.5: 30, PM10: 34[0m
+[0;32mI (643666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (643676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (643676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (648666) AODV: Node Number: 4[0m
+[0;32mI (648666) AODV: Temperature: 29.9°C, Humidity: 43.8%[0m
+[0;32mI (648666) AODV: PM1.0: 22, PM2.5: 30, PM10: 33[0m
+[0;32mI (648666) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (648676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (648676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (659116) AODV: Node Number: 4[0m
+[0;32mI (659116) AODV: Temperature: 29.9°C, Humidity: 43.8%[0m
+[0;32mI (659116) AODV: PM1.0: 24, PM2.5: 33, PM10: 36[0m
+[0;32mI (659116) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (659126) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (659126) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (664116) AODV: Node Number: 4[0m
+[0;32mI (664116) AODV: Temperature: 29.9°C, Humidity: 44.9%[0m
+[0;32mI (664116) AODV: PM1.0: 21, PM2.5: 29, PM10: 30[0m
+[0;32mI (664116) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (664126) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (664126) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (669116) AODV: Node Number: 4[0m
+[0;32mI (669116) AODV: Temperature: 29.9°C, Humidity: 44.0%[0m
+[0;32mI (669116) AODV: PM1.0: 18, PM2.5: 24, PM10: 27[0m
+[0;32mI (669116) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (669126) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (669126) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (674116) AODV: Node Number: 4[0m
+[0;32mI (674116) AODV: Temperature: 29.9°C, Humidity: 43.5%[0m
+[0;32mI (674116) AODV: PM1.0: 19, PM2.5: 27, PM10: 31[0m
+[0;32mI (674116) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (674126) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (674126) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (679116) AODV: Node Number: 4[0m
+[0;32mI (679116) AODV: Temperature: 29.9°C, Humidity: 42.8%[0m
+[0;32mI (679116) AODV: PM1.0: 20, PM2.5: 30, PM10: 36[0m
+[0;32mI (679116) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (679126) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (679126) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (684126) AODV: Node Number: 4[0m
+[0;32mI (684126) AODV: Temperature: 29.9°C, Humidity: 43.8%[0m
+[0;32mI (684126) AODV: PM1.0: 20, PM2.5: 30, PM10: 34[0m
+[0;32mI (684126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (684136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (684136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (689126) AODV: Node Number: 4[0m
+[0;32mI (689126) AODV: Temperature: 29.9°C, Humidity: 49.4%[0m
+[0;32mI (689126) AODV: PM1.0: 20, PM2.5: 30, PM10: 36[0m
+[0;32mI (689126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (689136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (689136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (694126) AODV: Node Number: 4[0m
+[0;32mI (694126) AODV: Temperature: 29.9°C, Humidity: 49.2%[0m
+[0;32mI (694126) AODV: PM1.0: 20, PM2.5: 30, PM10: 35[0m
+[0;32mI (694126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (694136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (694136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (699126) AODV: Node Number: 4[0m
+[0;32mI (699126) AODV: Temperature: 29.9°C, Humidity: 44.8%[0m
+[0;32mI (699126) AODV: PM1.0: 21, PM2.5: 32, PM10: 37[0m
+[0;32mI (699126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (699136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (699136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (704126) AODV: Node Number: 4[0m
+[0;32mI (704126) AODV: Temperature: 29.9°C, Humidity: 43.6%[0m
+[0;32mI (704126) AODV: PM1.0: 20, PM2.5: 30, PM10: 36[0m
+[0;32mI (704126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (704136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (704136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (709126) AODV: Node Number: 4[0m
+[0;32mI (709126) AODV: Temperature: 29.9°C, Humidity: 42.6%[0m
+[0;32mI (709126) AODV: PM1.0: 21, PM2.5: 32, PM10: 39[0m
+[0;32mI (709126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (709136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (709136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (714126) AODV: Node Number: 4[0m
+[0;32mI (714126) AODV: Temperature: 29.9°C, Humidity: 42.4%[0m
+[0;32mI (714126) AODV: PM1.0: 23, PM2.5: 35, PM10: 42[0m
+[0;32mI (714126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (714136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (714136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (719126) AODV: Node Number: 4[0m
+[0;32mI (719126) AODV: Temperature: 29.9°C, Humidity: 42.2%[0m
+[0;32mI (719126) AODV: PM1.0: 23, PM2.5: 32, PM10: 38[0m
+[0;32mI (719126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (719136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (719136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (724126) AODV: Node Number: 4[0m
+[0;32mI (724126) AODV: Temperature: 29.9°C, Humidity: 42.0%[0m
+[0;32mI (724126) AODV: PM1.0: 22, PM2.5: 31, PM10: 37[0m
+[0;32mI (724126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (724136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (724136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (729126) AODV: Node Number: 4[0m
+[0;32mI (729126) AODV: Temperature: 29.9°C, Humidity: 41.9%[0m
+[0;32mI (729126) AODV: PM1.0: 22, PM2.5: 30, PM10: 37[0m
+[0;32mI (729126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (729136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (729136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (734126) AODV: Node Number: 4[0m
+[0;32mI (734126) AODV: Temperature: 29.9°C, Humidity: 41.9%[0m
+[0;32mI (734126) AODV: PM1.0: 23, PM2.5: 31, PM10: 37[0m
+[0;32mI (734126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (734136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (734136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (739126) AODV: Node Number: 4[0m
+[0;32mI (739126) AODV: Temperature: 29.9°C, Humidity: 41.7%[0m
+[0;32mI (739126) AODV: PM1.0: 21, PM2.5: 30, PM10: 36[0m
+[0;32mI (739126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (739136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (739136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (744126) AODV: Node Number: 4[0m
+[0;32mI (744126) AODV: Temperature: 29.9°C, Humidity: 41.7%[0m
+[0;32mI (744126) AODV: PM1.0: 23, PM2.5: 31, PM10: 36[0m
+[0;32mI (744126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (744136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (744136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (749126) AODV: Node Number: 4[0m
+[0;32mI (749126) AODV: Temperature: 29.9°C, Humidity: 41.7%[0m
+[0;32mI (749126) AODV: PM1.0: 21, PM2.5: 30, PM10: 33[0m
+[0;32mI (749126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (749136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (749136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (754126) AODV: Node Number: 4[0m
+[0;32mI (754126) AODV: Temperature: 29.9°C, Humidity: 44.5%[0m
+[0;32mI (754126) AODV: PM1.0: 22, PM2.5: 31, PM10: 38[0m
+[0;32mI (754126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (754136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (754136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (759126) AODV: Node Number: 4[0m
+[0;32mI (759126) AODV: Temperature: 29.9°C, Humidity: 45.0%[0m
+[0;32mI (759126) AODV: PM1.0: 22, PM2.5: 32, PM10: 39[0m
+[0;32mI (759126) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (759136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (759136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (764126) AODV: Node Number: 4[0m
+[0;32mI (764126) AODV: Temperature: 29.9°C, Humidity: 45.1%[0m
+[0;32mI (764126) AODV: PM1.0: 22, PM2.5: 34, PM10: 42[0m
+[0;32mI (764126) AODV: O3: 655.35 ppm, SO2: 56.91 ppm[0m
+[0;32mI (764136) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (764136) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (768666) AODV: Node Number: 4[0m
+[0;32mI (768666) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (768666) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (768666) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (768676) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (768676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (773666) AODV: Node Number: 4[0m
+[0;32mI (773666) AODV: Temperature: 29.9°C, Humidity: 47.6%[0m
+[0;32mI (773666) AODV: PM1.0: 21, PM2.5: 30, PM10: 34[0m
+[0;32mI (773666) AODV: O3: 655.35 ppm, SO2: 49.53 ppm[0m
+[0;32mI (773676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (773676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (778666) AODV: Node Number: 4[0m
+[0;32mI (778666) AODV: Temperature: 29.9°C, Humidity: 45.2%[0m
+[0;32mI (778666) AODV: PM1.0: 23, PM2.5: 33, PM10: 39[0m
+[0;32mI (778666) AODV: O3: 655.35 ppm, SO2: 107.98 ppm[0m
+[0;32mI (778676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (778676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (783666) AODV: Node Number: 4[0m
+[0;32mI (783666) AODV: Temperature: 29.9°C, Humidity: 43.5%[0m
+[0;32mI (783666) AODV: PM1.0: 23, PM2.5: 33, PM10: 40[0m
+[0;32mI (783666) AODV: O3: 655.35 ppm, SO2: 140.46 ppm[0m
+[0;32mI (783676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (783676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (788676) AODV: Node Number: 4[0m
+[0;32mI (788676) AODV: Temperature: 29.9°C, Humidity: 42.7%[0m
+[0;32mI (788676) AODV: PM1.0: 23, PM2.5: 32, PM10: 38[0m
+[0;32mI (788676) AODV: O3: 655.35 ppm, SO2: 161.73 ppm[0m
+[0;32mI (788686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (788686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (793666) AODV: Node Number: 4[0m
+[0;32mI (793666) AODV: Temperature: 29.9°C, Humidity: 42.5%[0m
+[0;32mI (793666) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (793666) AODV: O3: 655.35 ppm, SO2: 168.98 ppm[0m
+[0;32mI (793676) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (793676) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (798676) AODV: Node Number: 4[0m
+[0;32mI (798676) AODV: Temperature: 29.9°C, Humidity: 42.7%[0m
+[0;32mI (798676) AODV: PM1.0: 22, PM2.5: 29, PM10: 34[0m
+[0;32mI (798676) AODV: O3: 655.35 ppm, SO2: 173.77 ppm[0m
+[0;32mI (798686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (798686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (803676) AODV: Node Number: 4[0m
+[0;32mI (803676) AODV: Temperature: 29.9°C, Humidity: 42.8%[0m
+[0;32mI (803676) AODV: PM1.0: 22, PM2.5: 30, PM10: 33[0m
+[0;32mI (803676) AODV: O3: 655.35 ppm, SO2: 178.77 ppm[0m
+[0;32mI (803686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (803686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (808676) AODV: Node Number: 4[0m
+[0;32mI (808676) AODV: Temperature: 29.9°C, Humidity: 43.7%[0m
+[0;32mI (808676) AODV: PM1.0: 23, PM2.5: 30, PM10: 34[0m
+[0;32mI (808676) AODV: O3: 655.35 ppm, SO2: 182.67 ppm[0m
+[0;32mI (808686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (808686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (813676) AODV: Node Number: 4[0m
+[0;32mI (813676) AODV: Temperature: 29.9°C, Humidity: 43.5%[0m
+[0;32mI (813676) AODV: PM1.0: 22, PM2.5: 30, PM10: 33[0m
+[0;32mI (813676) AODV: O3: 655.35 ppm, SO2: 182.14 ppm[0m
+[0;32mI (813686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (813686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (818676) AODV: Node Number: 4[0m
+[0;32mI (818676) AODV: Temperature: 29.9°C, Humidity: 43.0%[0m
+[0;32mI (818676) AODV: PM1.0: 22, PM2.5: 30, PM10: 33[0m
+[0;32mI (818676) AODV: O3: 655.35 ppm, SO2: 184.26 ppm[0m
+[0;32mI (818686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (818686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (823676) AODV: Node Number: 4[0m
+[0;32mI (823676) AODV: Temperature: 29.9°C, Humidity: 43.3%[0m
+[0;32mI (823676) AODV: PM1.0: 21, PM2.5: 29, PM10: 32[0m
+[0;32mI (823676) AODV: O3: 655.35 ppm, SO2: 190.03 ppm[0m
+[0;32mI (823686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (823686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (828676) AODV: Node Number: 4[0m
+[0;32mI (828676) AODV: Temperature: 29.9°C, Humidity: 43.2%[0m
+[0;32mI (828676) AODV: PM1.0: 22, PM2.5: 32, PM10: 38[0m
+[0;32mI (828676) AODV: O3: 655.35 ppm, SO2: 188.91 ppm[0m
+[0;32mI (828686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (828686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (833676) AODV: Node Number: 4[0m
+[0;32mI (833676) AODV: Temperature: 29.9°C, Humidity: 42.8%[0m
+[0;32mI (833676) AODV: PM1.0: 22, PM2.5: 34, PM10: 42[0m
+[0;32mI (833676) AODV: O3: 655.35 ppm, SO2: 188.91 ppm[0m
+[0;32mI (833686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (833686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (838676) AODV: Node Number: 4[0m
+[0;32mI (838676) AODV: Temperature: 29.9°C, Humidity: 42.4%[0m
+[0;32mI (838676) AODV: PM1.0: 21, PM2.5: 33, PM10: 40[0m
+[0;32mI (838676) AODV: O3: 655.35 ppm, SO2: 189.19 ppm[0m
+[0;32mI (838686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (838686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (843676) AODV: Node Number: 4[0m
+[0;32mI (843676) AODV: Temperature: 29.9°C, Humidity: 42.2%[0m
+[0;32mI (843676) AODV: PM1.0: 22, PM2.5: 33, PM10: 41[0m
+[0;32mI (843676) AODV: O3: 655.35 ppm, SO2: 188.63 ppm[0m
+[0;32mI (843686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (843686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (848676) AODV: Node Number: 4[0m
+[0;32mI (848676) AODV: Temperature: 29.9°C, Humidity: 42.2%[0m
+[0;32mI (848676) AODV: PM1.0: 21, PM2.5: 31, PM10: 40[0m
+[0;32mI (848676) AODV: O3: 655.35 ppm, SO2: 189.47 ppm[0m
+[0;32mI (848686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (848686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (853676) AODV: Node Number: 4[0m
+[0;32mI (853676) AODV: Temperature: 29.9°C, Humidity: 42.1%[0m
+[0;32mI (853676) AODV: PM1.0: 22, PM2.5: 31, PM10: 43[0m
+[0;32mI (853676) AODV: O3: 655.35 ppm, SO2: 188.91 ppm[0m
+[0;32mI (853686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (853686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (858676) AODV: Node Number: 4[0m
+[0;32mI (858676) AODV: Temperature: 29.9°C, Humidity: 42.0%[0m
+[0;32mI (858676) AODV: PM1.0: 23, PM2.5: 32, PM10: 44[0m
+[0;32mI (858676) AODV: O3: 655.35 ppm, SO2: 189.75 ppm[0m
+[0;32mI (858686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (858686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (863676) AODV: Node Number: 4[0m
+[0;32mI (863676) AODV: Temperature: 29.9°C, Humidity: 42.0%[0m
+[0;32mI (863676) AODV: PM1.0: 22, PM2.5: 31, PM10: 43[0m
+[0;32mI (863676) AODV: O3: 655.35 ppm, SO2: 190.03 ppm[0m
+[0;32mI (863686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (863686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (868676) AODV: Node Number: 4[0m
+[0;32mI (868676) AODV: Temperature: 29.9°C, Humidity: 42.6%[0m
+[0;32mI (868676) AODV: PM1.0: 22, PM2.5: 32, PM10: 42[0m
+[0;32mI (868676) AODV: O3: 655.35 ppm, SO2: 190.59 ppm[0m
+[0;32mI (868686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (868686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (873676) AODV: Node Number: 4[0m
+[0;32mI (873676) AODV: Temperature: 29.9°C, Humidity: 42.9%[0m
+[0;32mI (873676) AODV: PM1.0: 22, PM2.5: 32, PM10: 40[0m
+[0;32mI (873676) AODV: O3: 655.35 ppm, SO2: 187.80 ppm[0m
+[0;32mI (873686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (873686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (878676) AODV: Node Number: 4[0m
+[0;32mI (878676) AODV: Temperature: 29.9°C, Humidity: 48.2%[0m
+[0;32mI (878676) AODV: PM1.0: 23, PM2.5: 32, PM10: 39[0m
+[0;32mI (878676) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (878686) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (878686) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (880926) AODV: Node Number: 4[0m
+[0;32mI (880926) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (880926) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (880926) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (880936) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (880936) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (885936) AODV: Node Number: 4[0m
+[0;32mI (885936) AODV: Temperature: 29.9°C, Humidity: 43.9%[0m
+[0;32mI (885936) AODV: PM1.0: 22, PM2.5: 34, PM10: 41[0m
+[0;32mI (885936) AODV: O3: 655.35 ppm, SO2: 192.59 ppm[0m
+[0;32mI (885946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (885946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (890926) AODV: Node Number: 4[0m
+[0;32mI (890926) AODV: Temperature: 29.9°C, Humidity: 43.1%[0m
+[0;32mI (890926) AODV: PM1.0: 23, PM2.5: 33, PM10: 37[0m
+[0;32mI (890926) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (890936) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (890936) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (895936) AODV: Node Number: 4[0m
+[0;32mI (895936) AODV: Temperature: 29.9°C, Humidity: 42.5%[0m
+[0;32mI (895936) AODV: PM1.0: 23, PM2.5: 33, PM10: 36[0m
+[0;32mI (895936) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (895946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (895946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (900936) AODV: Node Number: 4[0m
+[0;32mI (900936) AODV: Temperature: 29.9°C, Humidity: 43.2%[0m
+[0;32mI (900936) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (900936) AODV: O3: 655.35 ppm, SO2: 189.47 ppm[0m
+[0;32mI (900946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (900946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (905936) AODV: Node Number: 4[0m
+[0;32mI (905936) AODV: Temperature: 29.9°C, Humidity: 42.5%[0m
+[0;32mI (905936) AODV: PM1.0: 22, PM2.5: 32, PM10: 37[0m
+[0;32mI (905936) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (905946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (905946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (910936) AODV: Node Number: 4[0m
+[0;32mI (910936) AODV: Temperature: 29.9°C, Humidity: 42.1%[0m
+[0;32mI (910936) AODV: PM1.0: 22, PM2.5: 32, PM10: 36[0m
+[0;32mI (910936) AODV: O3: 655.35 ppm, SO2: 189.47 ppm[0m
+[0;32mI (910946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (910946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (915936) AODV: Node Number: 4[0m
+[0;32mI (915936) AODV: Temperature: 29.9°C, Humidity: 42.3%[0m
+[0;32mI (915936) AODV: PM1.0: 21, PM2.5: 31, PM10: 33[0m
+[0;32mI (915936) AODV: O3: 655.35 ppm, SO2: 187.52 ppm[0m
+[0;32mI (915946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (915946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (920936) AODV: Node Number: 4[0m
+[0;32mI (920936) AODV: Temperature: 29.9°C, Humidity: 42.3%[0m
+[0;32mI (920936) AODV: PM1.0: 21, PM2.5: 30, PM10: 34[0m
+[0;32mI (920936) AODV: O3: 655.35 ppm, SO2: 183.46 ppm[0m
+[0;32mI (920946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (920946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (925936) AODV: Node Number: 4[0m
+[0;32mI (925936) AODV: Temperature: 29.9°C, Humidity: 44.0%[0m
+[0;32mI (925936) AODV: PM1.0: 22, PM2.5: 32, PM10: 36[0m
+[0;32mI (925936) AODV: O3: 655.35 ppm, SO2: 181.35 ppm[0m
+[0;32mI (925946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (925946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (930936) AODV: Node Number: 4[0m
+[0;32mI (930936) AODV: Temperature: 29.9°C, Humidity: 43.8%[0m
+[0;32mI (930936) AODV: PM1.0: 22, PM2.5: 32, PM10: 36[0m
+[0;32mI (930936) AODV: O3: 655.35 ppm, SO2: 185.34 ppm[0m
+[0;32mI (930946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (930946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (935936) AODV: Node Number: 4[0m
+[0;32mI (935936) AODV: Temperature: 29.9°C, Humidity: 45.4%[0m
+[0;32mI (935936) AODV: PM1.0: 21, PM2.5: 32, PM10: 38[0m
+[0;32mI (935936) AODV: O3: 655.35 ppm, SO2: 185.34 ppm[0m
+[0;32mI (935946) AODV: CO: 235.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (935956) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (940936) AODV: Node Number: 4[0m
+[0;32mI (940936) AODV: Temperature: 29.9°C, Humidity: 48.2%[0m
+[0;32mI (940936) AODV: PM1.0: 22, PM2.5: 33, PM10: 36[0m
+[0;32mI (940936) AODV: O3: 655.35 ppm, SO2: 174.50 ppm[0m
+[0;32mI (940946) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (940946) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (942626) AODV: Node Number: 4[0m
+[0;32mI (942626) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (942626) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (942626) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (942636) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (942636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (947626) AODV: Node Number: 4[0m
+[0;32mI (947626) AODV: Temperature: 30.0°C, Humidity: 46.6%[0m
+[0;32mI (947626) AODV: PM1.0: 22, PM2.5: 32, PM10: 38[0m
+[0;32mI (947626) AODV: O3: 655.35 ppm, SO2: 178.77 ppm[0m
+[0;32mI (947636) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (947636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (952626) AODV: Node Number: 4[0m
+[0;32mI (952626) AODV: Temperature: 30.0°C, Humidity: 44.7%[0m
+[0;32mI (952626) AODV: PM1.0: 22, PM2.5: 33, PM10: 42[0m
+[0;32mI (952626) AODV: O3: 655.35 ppm, SO2: 182.67 ppm[0m
+[0;32mI (952636) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (952636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (957626) AODV: Node Number: 4[0m
+[0;32mI (957626) AODV: Temperature: 30.0°C, Humidity: 45.7%[0m
+[0;32mI (957626) AODV: PM1.0: 22, PM2.5: 33, PM10: 44[0m
+[0;32mI (957626) AODV: O3: 655.35 ppm, SO2: 182.40 ppm[0m
+[0;32mI (957636) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (957636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (962626) AODV: Node Number: 4[0m
+[0;32mI (962626) AODV: Temperature: 30.0°C, Humidity: 44.6%[0m
+[0;32mI (962626) AODV: PM1.0: 22, PM2.5: 33, PM10: 46[0m
+[0;32mI (962626) AODV: O3: 655.35 ppm, SO2: 184.53 ppm[0m
+[0;32mI (962636) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (962636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (967626) AODV: Node Number: 4[0m
+[0;32mI (967626) AODV: Temperature: 30.0°C, Humidity: 43.4%[0m
+[0;32mI (967626) AODV: PM1.0: 22, PM2.5: 33, PM10: 43[0m
+[0;32mI (967626) AODV: O3: 655.35 ppm, SO2: 185.61 ppm[0m
+[0;32mI (967636) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (967636) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (977786) AODV: Node Number: 4[0m
+[0;32mI (977786) AODV: Temperature: 30.0°C, Humidity: 42.8%[0m
+[0;32mI (977786) AODV: PM1.0: 23, PM2.5: 31, PM10: 37[0m
+[0;32mI (977786) AODV: O3: 655.35 ppm, SO2: 192.59 ppm[0m
+[0;32mI (977796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (977796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (982786) AODV: Node Number: 4[0m
+[0;32mI (982786) AODV: Temperature: 30.0°C, Humidity: 43.0%[0m
+[0;32mI (982786) AODV: PM1.0: 22, PM2.5: 31, PM10: 38[0m
+[0;32mI (982786) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (982796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (982796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (987786) AODV: Node Number: 4[0m
+[0;32mI (987786) AODV: Temperature: 30.0°C, Humidity: 44.5%[0m
+[0;32mI (987786) AODV: PM1.0: 21, PM2.5: 30, PM10: 32[0m
+[0;32mI (987786) AODV: O3: 655.35 ppm, SO2: 194.33 ppm[0m
+[0;32mI (987796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (987796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (992786) AODV: Node Number: 4[0m
+[0;32mI (992786) AODV: Temperature: 30.0°C, Humidity: 44.9%[0m
+[0;32mI (992786) AODV: PM1.0: 19, PM2.5: 25, PM10: 27[0m
+[0;32mI (992786) AODV: O3: 655.35 ppm, SO2: 195.20 ppm[0m
+[0;32mI (992796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (992796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (997786) AODV: Node Number: 4[0m
+[0;32mI (997786) AODV: Temperature: 30.0°C, Humidity: 45.1%[0m
+[0;32mI (997786) AODV: PM1.0: 18, PM2.5: 26, PM10: 32[0m
+[0;32mI (997786) AODV: O3: 655.35 ppm, SO2: 194.04 ppm[0m
+[0;32mI (997796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (997796) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1002786) AODV: Node Number: 4[0m
+[0;32mI (1002786) AODV: Temperature: 30.1°C, Humidity: 49.3%[0m
+[0;32mI (1002786) AODV: PM1.0: 19, PM2.5: 30, PM10: 35[0m
+[0;32mI (1002786) AODV: O3: 655.35 ppm, SO2: 194.33 ppm[0m
+[0;32mI (1002796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1002806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1007786) AODV: Node Number: 4[0m
+[0;32mI (1007786) AODV: Temperature: 30.1°C, Humidity: 45.9%[0m
+[0;32mI (1007786) AODV: PM1.0: 21, PM2.5: 30, PM10: 35[0m
+[0;32mI (1007786) AODV: O3: 655.35 ppm, SO2: 194.04 ppm[0m
+[0;32mI (1007796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1007806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1012786) AODV: Node Number: 4[0m
+[0;32mI (1012786) AODV: Temperature: 30.1°C, Humidity: 43.5%[0m
+[0;32mI (1012786) AODV: PM1.0: 22, PM2.5: 32, PM10: 41[0m
+[0;32mI (1012786) AODV: O3: 655.35 ppm, SO2: 192.88 ppm[0m
+[0;32mI (1012796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1012806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1017786) AODV: Node Number: 4[0m
+[0;32mI (1017786) AODV: Temperature: 30.1°C, Humidity: 43.8%[0m
+[0;32mI (1017786) AODV: PM1.0: 22, PM2.5: 32, PM10: 42[0m
+[0;32mI (1017786) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (1017796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1017806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1022786) AODV: Node Number: 4[0m
+[0;32mI (1022786) AODV: Temperature: 30.1°C, Humidity: 43.8%[0m
+[0;32mI (1022786) AODV: PM1.0: 22, PM2.5: 32, PM10: 42[0m
+[0;32mI (1022786) AODV: O3: 655.35 ppm, SO2: 191.73 ppm[0m
+[0;32mI (1022796) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1022806) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1029976) AODV: Node Number: 4[0m
+[0;32mI (1029976) AODV: Temperature: 30.1°C, Humidity: 44.7%[0m
+[0;32mI (1029976) AODV: PM1.0: 22, PM2.5: 27, PM10: 27[0m
+[0;32mI (1029976) AODV: O3: 655.35 ppm, SO2: 196.09 ppm[0m
+[0;32mI (1029986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1029996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1034976) AODV: Node Number: 4[0m
+[0;32mI (1034976) AODV: Temperature: 30.1°C, Humidity: 43.7%[0m
+[0;32mI (1034976) AODV: PM1.0: 22, PM2.5: 28, PM10: 31[0m
+[0;32mI (1034976) AODV: O3: 655.35 ppm, SO2: 191.73 ppm[0m
+[0;32mI (1034986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1034996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1039976) AODV: Node Number: 4[0m
+[0;32mI (1039976) AODV: Temperature: 30.1°C, Humidity: 42.7%[0m
+[0;32mI (1039976) AODV: PM1.0: 20, PM2.5: 25, PM10: 29[0m
+[0;32mI (1039976) AODV: O3: 655.35 ppm, SO2: 191.73 ppm[0m
+[0;32mI (1039986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1039996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1044976) AODV: Node Number: 4[0m
+[0;32mI (1044976) AODV: Temperature: 30.2°C, Humidity: 42.9%[0m
+[0;32mI (1044976) AODV: PM1.0: 18, PM2.5: 23, PM10: 23[0m
+[0;32mI (1044976) AODV: O3: 655.35 ppm, SO2: 191.73 ppm[0m
+[0;32mI (1044986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1044996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1049976) AODV: Node Number: 4[0m
+[0;32mI (1049976) AODV: Temperature: 30.2°C, Humidity: 42.6%[0m
+[0;32mI (1049976) AODV: PM1.0: 19, PM2.5: 24, PM10: 26[0m
+[0;32mI (1049976) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (1049986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1049996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1060366) AODV: Node Number: 4[0m
+[0;32mI (1060366) AODV: Temperature: 30.2°C, Humidity: 44.1%[0m
+[0;32mI (1060366) AODV: PM1.0: 22, PM2.5: 30, PM10: 30[0m
+[0;32mI (1060366) AODV: O3: 655.35 ppm, SO2: 194.04 ppm[0m
+[0;32mI (1060376) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1060386) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1067216) AODV: Node Number: 4[0m
+[0;32mI (1067216) AODV: Temperature: 30.2°C, Humidity: 44.6%[0m
+[0;32mI (1067216) AODV: PM1.0: 20, PM2.5: 29, PM10: 34[0m
+[0;32mI (1067216) AODV: O3: 655.35 ppm, SO2: 197.58 ppm[0m
+[0;32mI (1067226) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1067236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1072216) AODV: Node Number: 4[0m
+[0;32mI (1072216) AODV: Temperature: 30.3°C, Humidity: 45.0%[0m
+[0;32mI (1072216) AODV: PM1.0: 22, PM2.5: 32, PM10: 42[0m
+[0;32mI (1072216) AODV: O3: 655.35 ppm, SO2: 188.35 ppm[0m
+[0;32mI (1072226) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1072236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1077216) AODV: Node Number: 4[0m
+[0;32mI (1077216) AODV: Temperature: 30.3°C, Humidity: 44.1%[0m
+[0;32mI (1077216) AODV: PM1.0: 23, PM2.5: 32, PM10: 43[0m
+[0;32mI (1077216) AODV: O3: 655.35 ppm, SO2: 180.31 ppm[0m
+[0;32mI (1077226) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1077236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1082226) AODV: Node Number: 4[0m
+[0;32mI (1082226) AODV: Temperature: 30.3°C, Humidity: 43.9%[0m
+[0;32mI (1082226) AODV: PM1.0: 20, PM2.5: 27, PM10: 30[0m
+[0;32mI (1082226) AODV: O3: 655.35 ppm, SO2: 179.79 ppm[0m
+[0;32mI (1082236) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1082246) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1087216) AODV: Node Number: 4[0m
+[0;32mI (1087216) AODV: Temperature: 30.3°C, Humidity: 43.9%[0m
+[0;32mI (1087216) AODV: PM1.0: 20, PM2.5: 27, PM10: 28[0m
+[0;32mI (1087216) AODV: O3: 655.35 ppm, SO2: 181.61 ppm[0m
+[0;32mI (1087226) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1087236) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1092226) AODV: Node Number: 4[0m
+[0;32mI (1092226) AODV: Temperature: 30.3°C, Humidity: 44.8%[0m
+[0;32mI (1092226) AODV: PM1.0: 20, PM2.5: 28, PM10: 29[0m
+[0;32mI (1092226) AODV: O3: 655.35 ppm, SO2: 181.09 ppm[0m
+[0;32mI (1092236) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1092246) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1097246) AODV: Node Number: 4[0m
+[0;32mI (1097246) AODV: Temperature: 30.3°C, Humidity: 43.6%[0m
+[0;32mI (1097246) AODV: PM1.0: 20, PM2.5: 30, PM10: 31[0m
+[0;32mI (1097246) AODV: O3: 655.35 ppm, SO2: 183.99 ppm[0m
+[0;32mI (1097256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1097266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1102246) AODV: Node Number: 4[0m
+[0;32mI (1102246) AODV: Temperature: 30.4°C, Humidity: 42.8%[0m
+[0;32mI (1102246) AODV: PM1.0: 21, PM2.5: 30, PM10: 31[0m
+[0;32mI (1102246) AODV: O3: 655.35 ppm, SO2: 188.91 ppm[0m
+[0;32mI (1102256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1102266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1107246) AODV: Node Number: 4[0m
+[0;32mI (1107246) AODV: Temperature: 30.3°C, Humidity: 42.2%[0m
+[0;32mI (1107246) AODV: PM1.0: 22, PM2.5: 30, PM10: 32[0m
+[0;32mI (1107246) AODV: O3: 655.35 ppm, SO2: 190.59 ppm[0m
+[0;32mI (1107256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1107266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1112246) AODV: Node Number: 4[0m
+[0;32mI (1112246) AODV: Temperature: 30.3°C, Humidity: 42.1%[0m
+[0;32mI (1112246) AODV: PM1.0: 23, PM2.5: 32, PM10: 36[0m
+[0;32mI (1112246) AODV: O3: 655.35 ppm, SO2: 186.70 ppm[0m
+[0;32mI (1112256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1112266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1117246) AODV: Node Number: 4[0m
+[0;32mI (1117246) AODV: Temperature: 30.3°C, Humidity: 42.1%[0m
+[0;32mI (1117246) AODV: PM1.0: 24, PM2.5: 34, PM10: 42[0m
+[0;32mI (1117246) AODV: O3: 655.35 ppm, SO2: 191.45 ppm[0m
+[0;32mI (1117256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1117266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1122246) AODV: Node Number: 4[0m
+[0;32mI (1122246) AODV: Temperature: 30.3°C, Humidity: 42.7%[0m
+[0;32mI (1122246) AODV: PM1.0: 23, PM2.5: 35, PM10: 43[0m
+[0;32mI (1122246) AODV: O3: 655.35 ppm, SO2: 185.07 ppm[0m
+[0;32mI (1122256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1122266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1127246) AODV: Node Number: 4[0m
+[0;32mI (1127246) AODV: Temperature: 30.3°C, Humidity: 45.3%[0m
+[0;32mI (1127246) AODV: PM1.0: 23, PM2.5: 33, PM10: 39[0m
+[0;32mI (1127246) AODV: O3: 655.35 ppm, SO2: 186.15 ppm[0m
+[0;32mI (1127256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1127266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1132246) AODV: Node Number: 4[0m
+[0;32mI (1132246) AODV: Temperature: 30.3°C, Humidity: 43.7%[0m
+[0;32mI (1132246) AODV: PM1.0: 22, PM2.5: 33, PM10: 35[0m
+[0;32mI (1132246) AODV: O3: 655.35 ppm, SO2: 185.34 ppm[0m
+[0;32mI (1132256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1132266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1137246) AODV: Node Number: 4[0m
+[0;32mI (1137246) AODV: Temperature: 30.3°C, Humidity: 43.4%[0m
+[0;32mI (1137246) AODV: PM1.0: 22, PM2.5: 32, PM10: 35[0m
+[0;32mI (1137246) AODV: O3: 655.35 ppm, SO2: 184.26 ppm[0m
+[0;32mI (1137256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1137266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1142246) AODV: Node Number: 4[0m
+[0;32mI (1142246) AODV: Temperature: 30.3°C, Humidity: 42.9%[0m
+[0;32mI (1142246) AODV: PM1.0: 21, PM2.5: 31, PM10: 35[0m
+[0;32mI (1142246) AODV: O3: 655.35 ppm, SO2: 188.63 ppm[0m
+[0;32mI (1142256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1142266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1147246) AODV: Node Number: 4[0m
+[0;32mI (1147246) AODV: Temperature: 30.3°C, Humidity: 42.9%[0m
+[0;32mI (1147246) AODV: PM1.0: 23, PM2.5: 32, PM10: 38[0m
+[0;32mI (1147246) AODV: O3: 655.35 ppm, SO2: 178.26 ppm[0m
+[0;32mI (1147256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1147266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1152246) AODV: Node Number: 4[0m
+[0;32mI (1152246) AODV: Temperature: 30.3°C, Humidity: 44.4%[0m
+[0;32mI (1152246) AODV: PM1.0: 22, PM2.5: 31, PM10: 38[0m
+[0;32mI (1152246) AODV: O3: 655.35 ppm, SO2: 177.24 ppm[0m
+[0;32mI (1152256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1152266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1157246) AODV: Node Number: 4[0m
+[0;32mI (1157246) AODV: Temperature: 30.3°C, Humidity: 43.8%[0m
+[0;32mI (1157246) AODV: PM1.0: 22, PM2.5: 30, PM10: 37[0m
+[0;32mI (1157246) AODV: O3: 655.35 ppm, SO2: 133.30 ppm[0m
+[0;32mI (1157256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1157266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1162256) AODV: Node Number: 4[0m
+[0;32mI (1162256) AODV: Temperature: 30.3°C, Humidity: 44.4%[0m
+[0;32mI (1162256) AODV: PM1.0: 21, PM2.5: 29, PM10: 33[0m
+[0;32mI (1162256) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1162266) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1162276) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1167246) AODV: Node Number: 4[0m
+[0;32mI (1167246) AODV: Temperature: 30.2°C, Humidity: 45.1%[0m
+[0;32mI (1167246) AODV: PM1.0: 22, PM2.5: 30, PM10: 32[0m
+[0;32mI (1167246) AODV: O3: 655.35 ppm, SO2: 47.39 ppm[0m
+[0;32mI (1167256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1167266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1172246) AODV: Node Number: 4[0m
+[0;32mI (1172246) AODV: Temperature: 30.3°C, Humidity: 60.2%[0m
+[0;32mI (1172246) AODV: PM1.0: 23, PM2.5: 32, PM10: 34[0m
+[0;32mI (1172246) AODV: O3: 655.35 ppm, SO2: 541.76 ppm[0m
+[0;32mI (1172256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1172266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1177246) AODV: Node Number: 4[0m
+[0;32mI (1177246) AODV: Temperature: 30.3°C, Humidity: 65.1%[0m
+[0;32mI (1177246) AODV: PM1.0: 23, PM2.5: 32, PM10: 36[0m
+[0;32mI (1177246) AODV: O3: 655.35 ppm, SO2: 465.74 ppm[0m
+[0;32mI (1177256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1177266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1182246) AODV: Node Number: 4[0m
+[0;32mI (1182246) AODV: Temperature: 30.3°C, Humidity: 58.5%[0m
+[0;32mI (1182246) AODV: PM1.0: 23, PM2.5: 31, PM10: 35[0m
+[0;32mI (1182246) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1182256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1182266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1187246) AODV: Node Number: 4[0m
+[0;32mI (1187246) AODV: Temperature: 30.4°C, Humidity: 65.5%[0m
+[0;32mI (1187246) AODV: PM1.0: 22, PM2.5: 32, PM10: 36[0m
+[0;32mI (1187246) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1187256) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1187266) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1196856) AODV: Node Number: 4[0m
+[0;32mI (1196856) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (1196856) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (1196856) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (1196866) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (1196876) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1201846) AODV: Node Number: 4[0m
+[0;32mI (1201846) AODV: Temperature: 30.3°C, Humidity: 51.4%[0m
+[0;32mI (1201846) AODV: PM1.0: 24, PM2.5: 34, PM10: 40[0m
+[0;32mI (1201846) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1201856) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1201866) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1206846) AODV: Node Number: 4[0m
+[0;32mI (1206846) AODV: Temperature: 30.3°C, Humidity: 57.6%[0m
+[0;32mI (1206846) AODV: PM1.0: 24, PM2.5: 33, PM10: 39[0m
+[0;32mI (1206846) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1206856) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1206866) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1211846) AODV: Node Number: 4[0m
+[0;32mI (1211846) AODV: Temperature: 30.3°C, Humidity: 58.0%[0m
+[0;32mI (1211846) AODV: PM1.0: 21, PM2.5: 29, PM10: 33[0m
+[0;32mI (1211846) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1211856) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1211866) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1221846) AODV: Node Number: 4[0m
+[0;32mI (1221846) AODV: Temperature: 30.3°C, Humidity: 47.1%[0m
+[0;32mI (1221846) AODV: PM1.0: 22, PM2.5: 31, PM10: 34[0m
+[0;32mI (1221846) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1221856) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1221866) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1227806) AODV: Node Number: 4[0m
+[0;32mI (1227806) AODV: Temperature: 30.3°C, Humidity: 46.8%[0m
+[0;32mI (1227806) AODV: PM1.0: 23, PM2.5: 32, PM10: 45[0m
+[0;32mI (1227806) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1227816) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1227826) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1232806) AODV: Node Number: 4[0m
+[0;32mI (1232806) AODV: Temperature: 30.2°C, Humidity: 48.9%[0m
+[0;32mI (1232806) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1232806) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1232816) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1232826) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1237796) AODV: Node Number: 4[0m
+[0;32mI (1237796) AODV: Temperature: 30.3°C, Humidity: 50.8%[0m
+[0;32mI (1237796) AODV: PM1.0: 21, PM2.5: 30, PM10: 32[0m
+[0;32mI (1237796) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1237806) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1237816) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1242806) AODV: Node Number: 4[0m
+[0;32mI (1242806) AODV: Temperature: 30.3°C, Humidity: 51.5%[0m
+[0;32mI (1242806) AODV: PM1.0: 19, PM2.5: 29, PM10: 31[0m
+[0;32mI (1242806) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1242816) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1242826) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1247806) AODV: Node Number: 4[0m
+[0;32mI (1247806) AODV: Temperature: 30.3°C, Humidity: 49.8%[0m
+[0;32mI (1247806) AODV: PM1.0: 19, PM2.5: 28, PM10: 30[0m
+[0;32mI (1247806) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1247816) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1247826) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1252806) AODV: Node Number: 4[0m
+[0;32mI (1252806) AODV: Temperature: 30.3°C, Humidity: 49.2%[0m
+[0;32mI (1252806) AODV: PM1.0: 21, PM2.5: 30, PM10: 37[0m
+[0;32mI (1252806) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1252816) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1252826) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1257816) AODV: Node Number: 4[0m
+[0;32mI (1257816) AODV: Temperature: 30.4°C, Humidity: 49.7%[0m
+[0;32mI (1257816) AODV: PM1.0: 23, PM2.5: 33, PM10: 42[0m
+[0;32mI (1257816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1257826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1257836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1262816) AODV: Node Number: 4[0m
+[0;32mI (1262816) AODV: Temperature: 30.4°C, Humidity: 49.2%[0m
+[0;32mI (1262816) AODV: PM1.0: 22, PM2.5: 32, PM10: 39[0m
+[0;32mI (1262816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1262826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1262836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1267816) AODV: Node Number: 4[0m
+[0;32mI (1267816) AODV: Temperature: 30.4°C, Humidity: 49.5%[0m
+[0;32mI (1267816) AODV: PM1.0: 21, PM2.5: 32, PM10: 38[0m
+[0;32mI (1267816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1267826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1267836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1272816) AODV: Node Number: 4[0m
+[0;32mI (1272816) AODV: Temperature: 30.4°C, Humidity: 49.3%[0m
+[0;32mI (1272816) AODV: PM1.0: 21, PM2.5: 31, PM10: 36[0m
+[0;32mI (1272816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1272826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1272836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1277816) AODV: Node Number: 4[0m
+[0;32mI (1277816) AODV: Temperature: 30.4°C, Humidity: 47.6%[0m
+[0;32mI (1277816) AODV: PM1.0: 21, PM2.5: 29, PM10: 34[0m
+[0;32mI (1277816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1277826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1277836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1287816) AODV: Node Number: 4[0m
+[0;32mI (1287816) AODV: Temperature: 30.5°C, Humidity: 52.1%[0m
+[0;32mI (1287816) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1287816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1287826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1287836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1292816) AODV: Node Number: 4[0m
+[0;32mI (1292816) AODV: Temperature: 30.5°C, Humidity: 49.6%[0m
+[0;32mI (1292816) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1292816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1292826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1292836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1297816) AODV: Node Number: 4[0m
+[0;32mI (1297816) AODV: Temperature: 30.5°C, Humidity: 48.7%[0m
+[0;32mI (1297816) AODV: PM1.0: 20, PM2.5: 30, PM10: 37[0m
+[0;32mI (1297816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1297826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1297836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1302816) AODV: Node Number: 4[0m
+[0;32mI (1302816) AODV: Temperature: 30.5°C, Humidity: 48.4%[0m
+[0;32mI (1302816) AODV: PM1.0: 21, PM2.5: 31, PM10: 39[0m
+[0;32mI (1302816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1302826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1302836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1307816) AODV: Node Number: 4[0m
+[0;32mI (1307816) AODV: Temperature: 30.5°C, Humidity: 50.0%[0m
+[0;32mI (1307816) AODV: PM1.0: 22, PM2.5: 30, PM10: 38[0m
+[0;32mI (1307816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1307826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1307836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1312816) AODV: Node Number: 4[0m
+[0;32mI (1312816) AODV: Temperature: 30.6°C, Humidity: 50.7%[0m
+[0;32mI (1312816) AODV: PM1.0: 22, PM2.5: 30, PM10: 35[0m
+[0;32mI (1312816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1312826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1312836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1317816) AODV: Node Number: 4[0m
+[0;32mI (1317816) AODV: Temperature: 30.5°C, Humidity: 47.3%[0m
+[0;32mI (1317816) AODV: PM1.0: 23, PM2.5: 34, PM10: 43[0m
+[0;32mI (1317816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1317826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1317836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1322816) AODV: Node Number: 4[0m
+[0;32mI (1322816) AODV: Temperature: 30.6°C, Humidity: 48.7%[0m
+[0;32mI (1322816) AODV: PM1.0: 23, PM2.5: 32, PM10: 36[0m
+[0;32mI (1322816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1322826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1322836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1327816) AODV: Node Number: 4[0m
+[0;32mI (1327816) AODV: Temperature: 30.6°C, Humidity: 56.3%[0m
+[0;32mI (1327816) AODV: PM1.0: 23, PM2.5: 32, PM10: 37[0m
+[0;32mI (1327816) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1327826) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1327836) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1330006) AODV: Node Number: 4[0m
+[0;32mI (1330006) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (1330006) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (1330006) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (1330016) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (1330026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1335006) AODV: Node Number: 4[0m
+[0;32mI (1335006) AODV: Temperature: 30.6°C, Humidity: 61.6%[0m
+[0;32mI (1335006) AODV: PM1.0: 22, PM2.5: 30, PM10: 34[0m
+[0;32mI (1335006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1335016) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1335026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1340006) AODV: Node Number: 4[0m
+[0;32mI (1340006) AODV: Temperature: 30.6°C, Humidity: 58.6%[0m
+[0;32mI (1340006) AODV: PM1.0: 21, PM2.5: 30, PM10: 36[0m
+[0;32mI (1340006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1340016) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1340026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1345006) AODV: Node Number: 4[0m
+[0;32mI (1345006) AODV: Temperature: 30.6°C, Humidity: 57.2%[0m
+[0;32mI (1345006) AODV: PM1.0: 21, PM2.5: 31, PM10: 34[0m
+[0;32mI (1345006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1345016) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1345026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1350006) AODV: Node Number: 4[0m
+[0;32mI (1350006) AODV: Temperature: 30.6°C, Humidity: 56.1%[0m
+[0;32mI (1350006) AODV: PM1.0: 21, PM2.5: 31, PM10: 33[0m
+[0;32mI (1350006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1350016) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1350026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1355006) AODV: Node Number: 4[0m
+[0;32mI (1355006) AODV: Temperature: 30.7°C, Humidity: 63.7%[0m
+[0;32mI (1355006) AODV: PM1.0: 22, PM2.5: 32, PM10: 37[0m
+[0;32mI (1355006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1355016) AODV: CO: 5.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1355026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1360016) AODV: Node Number: 4[0m
+[0;32mI (1360016) AODV: Temperature: 30.6°C, Humidity: 63.1%[0m
+[0;32mI (1360016) AODV: PM1.0: 22, PM2.5: 31, PM10: 37[0m
+[0;32mI (1360016) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1360026) AODV: CO: 16.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1360036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1365006) AODV: Node Number: 4[0m
+[0;32mI (1365006) AODV: Temperature: 30.7°C, Humidity: 62.4%[0m
+[0;32mI (1365006) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1365006) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1365016) AODV: CO: 18.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1365026) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1370016) AODV: Node Number: 4[0m
+[0;32mI (1370016) AODV: Temperature: 30.6°C, Humidity: 54.8%[0m
+[0;32mI (1370016) AODV: PM1.0: 20, PM2.5: 30, PM10: 34[0m
+[0;32mI (1370016) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1370026) AODV: CO: 23.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1370036) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1375026) AODV: Node Number: 4[0m
+[0;32mI (1375026) AODV: Temperature: 30.6°C, Humidity: 51.4%[0m
+[0;32mI (1375026) AODV: PM1.0: 19, PM2.5: 28, PM10: 31[0m
+[0;32mI (1375026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1375036) AODV: CO: 32.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1375046) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1380036) AODV: Node Number: 4[0m
+[0;32mI (1380036) AODV: Temperature: 30.6°C, Humidity: 50.8%[0m
+[0;32mI (1380036) AODV: PM1.0: 21, PM2.5: 30, PM10: 31[0m
+[0;32mI (1380036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1380046) AODV: CO: 17.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1380056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1385026) AODV: Node Number: 4[0m
+[0;32mI (1385026) AODV: Temperature: 30.5°C, Humidity: 52.4%[0m
+[0;32mI (1385026) AODV: PM1.0: 20, PM2.5: 29, PM10: 31[0m
+[0;32mI (1385026) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1385036) AODV: CO: 20.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1385046) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1390036) AODV: Node Number: 4[0m
+[0;32mI (1390036) AODV: Temperature: 30.5°C, Humidity: 51.2%[0m
+[0;32mI (1390036) AODV: PM1.0: 21, PM2.5: 29, PM10: 31[0m
+[0;32mI (1390036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1390046) AODV: CO: 16.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1390056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1395036) AODV: Node Number: 4[0m
+[0;32mI (1395036) AODV: Temperature: 30.4°C, Humidity: 50.8%[0m
+[0;32mI (1395036) AODV: PM1.0: 21, PM2.5: 31, PM10: 35[0m
+[0;32mI (1395036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1395046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1395056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1400036) AODV: Node Number: 4[0m
+[0;32mI (1400036) AODV: Temperature: 30.4°C, Humidity: 50.1%[0m
+[0;32mI (1400036) AODV: PM1.0: 22, PM2.5: 31, PM10: 37[0m
+[0;32mI (1400036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1400046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1400056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1405036) AODV: Node Number: 4[0m
+[0;32mI (1405036) AODV: Temperature: 30.4°C, Humidity: 49.0%[0m
+[0;32mI (1405036) AODV: PM1.0: 23, PM2.5: 33, PM10: 41[0m
+[0;32mI (1405036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1405046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1405056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1410036) AODV: Node Number: 4[0m
+[0;32mI (1410036) AODV: Temperature: 30.3°C, Humidity: 49.9%[0m
+[0;32mI (1410036) AODV: PM1.0: 23, PM2.5: 33, PM10: 37[0m
+[0;32mI (1410036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1410046) AODV: CO: 33.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1410056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1415036) AODV: Node Number: 4[0m
+[0;32mI (1415036) AODV: Temperature: 30.3°C, Humidity: 52.0%[0m
+[0;32mI (1415036) AODV: PM1.0: 23, PM2.5: 32, PM10: 36[0m
+[0;32mI (1415036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1415046) AODV: CO: 42.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1415056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1420036) AODV: Node Number: 4[0m
+[0;32mI (1420036) AODV: Temperature: 30.3°C, Humidity: 51.2%[0m
+[0;32mI (1420036) AODV: PM1.0: 23, PM2.5: 32, PM10: 35[0m
+[0;32mI (1420036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1420046) AODV: CO: 38.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1420056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1425036) AODV: Node Number: 4[0m
+[0;32mI (1425036) AODV: Temperature: 30.3°C, Humidity: 51.7%[0m
+[0;32mI (1425036) AODV: PM1.0: 23, PM2.5: 32, PM10: 36[0m
+[0;32mI (1425036) AODV: O3: 655.35 ppm, SO2: 655.35 ppm[0m
+[0;32mI (1425046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1425056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1430036) AODV: Node Number: 4[0m
+[0;32mI (1430036) AODV: Temperature: 30.3°C, Humidity: 51.5%[0m
+[0;32mI (1430036) AODV: PM1.0: 23, PM2.5: 32, PM10: 37[0m
+[0;32mI (1430036) AODV: O3: 655.35 ppm, SO2: 240.90 ppm[0m
+[0;32mI (1430046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1430056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1435036) AODV: Node Number: 4[0m
+[0;32mI (1435036) AODV: Temperature: 30.3°C, Humidity: 52.5%[0m
+[0;32mI (1435036) AODV: PM1.0: 23, PM2.5: 32, PM10: 38[0m
+[0;32mI (1435036) AODV: O3: 655.35 ppm, SO2: 163.28 ppm[0m
+[0;32mI (1435046) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1435056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1440046) AODV: Node Number: 4[0m
+[0;32mI (1440046) AODV: Temperature: 30.3°C, Humidity: 53.1%[0m
+[0;32mI (1440046) AODV: PM1.0: 22, PM2.5: 30, PM10: 34[0m
+[0;32mI (1440046) AODV: O3: 655.35 ppm, SO2: 100.55 ppm[0m
+[0;32mI (1440056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1440066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1445046) AODV: Node Number: 4[0m
+[0;32mI (1445046) AODV: Temperature: 30.4°C, Humidity: 52.1%[0m
+[0;32mI (1445046) AODV: PM1.0: 23, PM2.5: 31, PM10: 37[0m
+[0;32mI (1445046) AODV: O3: 655.35 ppm, SO2: 623.51 ppm[0m
+[0;32mI (1445056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1445066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1450046) AODV: Node Number: 4[0m
+[0;32mI (1450046) AODV: Temperature: 30.4°C, Humidity: 52.4%[0m
+[0;32mI (1450046) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1450046) AODV: O3: 655.35 ppm, SO2: 543.11 ppm[0m
+[0;32mI (1450056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1450066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1455046) AODV: Node Number: 4[0m
+[0;32mI (1455046) AODV: Temperature: 30.4°C, Humidity: 51.7%[0m
+[0;32mI (1455046) AODV: PM1.0: 22, PM2.5: 30, PM10: 34[0m
+[0;32mI (1455046) AODV: O3: 655.35 ppm, SO2: 419.64 ppm[0m
+[0;32mI (1455056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1455066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1460046) AODV: Node Number: 4[0m
+[0;32mI (1460046) AODV: Temperature: 30.4°C, Humidity: 51.0%[0m
+[0;32mI (1460046) AODV: PM1.0: 21, PM2.5: 30, PM10: 34[0m
+[0;32mI (1460046) AODV: O3: 655.35 ppm, SO2: 570.88 ppm[0m
+[0;32mI (1460056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1460066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1465046) AODV: Node Number: 4[0m
+[0;32mI (1465046) AODV: Temperature: 30.4°C, Humidity: 50.3%[0m
+[0;32mI (1465046) AODV: PM1.0: 21, PM2.5: 29, PM10: 35[0m
+[0;32mI (1465046) AODV: O3: 655.35 ppm, SO2: 142.97 ppm[0m
+[0;32mI (1465056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1465066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1470046) AODV: Node Number: 4[0m
+[0;32mI (1470046) AODV: Temperature: 30.5°C, Humidity: 51.6%[0m
+[0;32mI (1470046) AODV: PM1.0: 22, PM2.5: 30, PM10: 36[0m
+[0;32mI (1470046) AODV: O3: 655.35 ppm, SO2: 107.62 ppm[0m
+[0;32mI (1470056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1470066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1475046) AODV: Node Number: 4[0m
+[0;32mI (1475046) AODV: Temperature: 30.5°C, Humidity: 52.3%[0m
+[0;32mI (1475046) AODV: PM1.0: 22, PM2.5: 29, PM10: 35[0m
+[0;32mI (1475046) AODV: O3: 655.35 ppm, SO2: 133.63 ppm[0m
+[0;32mI (1475056) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1475066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1637556) AODV: Node Number: 4[0m
+[0;32mI (1637556) AODV: Temperature: 30.3°C, Humidity: 48.5%[0m
+[0;32mI (1637556) AODV: PM1.0: 22, PM2.5: 33, PM10: 35[0m
+[0;32mI (1637556) AODV: O3: 655.35 ppm, SO2: 209.83 ppm[0m
+[0;32mI (1637566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1637576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1642556) AODV: Node Number: 4[0m
+[0;32mI (1642556) AODV: Temperature: 30.3°C, Humidity: 47.0%[0m
+[0;32mI (1642556) AODV: PM1.0: 22, PM2.5: 32, PM10: 34[0m
+[0;32mI (1642556) AODV: O3: 655.35 ppm, SO2: 105.82 ppm[0m
+[0;32mI (1642566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1642576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1647556) AODV: Node Number: 4[0m
+[0;32mI (1647556) AODV: Temperature: 30.4°C, Humidity: 55.6%[0m
+[0;32mI (1647556) AODV: PM1.0: 22, PM2.5: 32, PM10: 33[0m
+[0;32mI (1647556) AODV: O3: 655.35 ppm, SO2: 120.62 ppm[0m
+[0;32mI (1647566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1647576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1652556) AODV: Node Number: 4[0m
+[0;32mI (1652556) AODV: Temperature: 30.4°C, Humidity: 64.7%[0m
+[0;32mI (1652556) AODV: PM1.0: 20, PM2.5: 30, PM10: 30[0m
+[0;32mI (1652556) AODV: O3: 655.35 ppm, SO2: 134.95 ppm[0m
+[0;32mI (1652566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1652576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1657556) AODV: Node Number: 4[0m
+[0;32mI (1657556) AODV: Temperature: 30.5°C, Humidity: 66.1%[0m
+[0;32mI (1657556) AODV: PM1.0: 22, PM2.5: 29, PM10: 31[0m
+[0;32mI (1657556) AODV: O3: 655.35 ppm, SO2: 142.97 ppm[0m
+[0;32mI (1657566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1657576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1662556) AODV: Node Number: 4[0m
+[0;32mI (1662556) AODV: Temperature: 30.5°C, Humidity: 62.2%[0m
+[0;32mI (1662556) AODV: PM1.0: 23, PM2.5: 30, PM10: 34[0m
+[0;32mI (1662556) AODV: O3: 655.35 ppm, SO2: 156.19 ppm[0m
+[0;32mI (1662566) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1662576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1667566) AODV: Node Number: 4[0m
+[0;32mI (1667566) AODV: Temperature: 30.5°C, Humidity: 60.5%[0m
+[0;32mI (1667566) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1667566) AODV: O3: 655.35 ppm, SO2: 162.17 ppm[0m
+[0;32mI (1667576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1667586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1672566) AODV: Node Number: 4[0m
+[0;32mI (1672566) AODV: Temperature: 30.6°C, Humidity: 57.4%[0m
+[0;32mI (1672566) AODV: PM1.0: 22, PM2.5: 34, PM10: 43[0m
+[0;32mI (1672566) AODV: O3: 655.35 ppm, SO2: 164.39 ppm[0m
+[0;32mI (1672576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1672586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1677566) AODV: Node Number: 4[0m
+[0;32mI (1677566) AODV: Temperature: 30.6°C, Humidity: 55.7%[0m
+[0;32mI (1677566) AODV: PM1.0: 22, PM2.5: 32, PM10: 37[0m
+[0;32mI (1677566) AODV: O3: 655.35 ppm, SO2: 167.35 ppm[0m
+[0;32mI (1677576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1677586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1682576) AODV: Node Number: 4[0m
+[0;32mI (1682576) AODV: Temperature: 30.6°C, Humidity: 55.6%[0m
+[0;32mI (1682576) AODV: PM1.0: 22, PM2.5: 32, PM10: 35[0m
+[0;32mI (1682576) AODV: O3: 655.35 ppm, SO2: 166.89 ppm[0m
+[0;32mI (1682586) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1682596) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1687566) AODV: Node Number: 4[0m
+[0;32mI (1687566) AODV: Temperature: 30.7°C, Humidity: 56.3%[0m
+[0;32mI (1687566) AODV: PM1.0: 21, PM2.5: 32, PM10: 35[0m
+[0;32mI (1687566) AODV: O3: 655.35 ppm, SO2: 138.70 ppm[0m
+[0;32mI (1687576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1687586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1692566) AODV: Node Number: 4[0m
+[0;32mI (1692566) AODV: Temperature: 30.7°C, Humidity: 58.8%[0m
+[0;32mI (1692566) AODV: PM1.0: 20, PM2.5: 29, PM10: 31[0m
+[0;32mI (1692566) AODV: O3: 655.35 ppm, SO2: 161.30 ppm[0m
+[0;32mI (1692576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1692586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1697566) AODV: Node Number: 4[0m
+[0;32mI (1697566) AODV: Temperature: 30.8°C, Humidity: 58.1%[0m
+[0;32mI (1697566) AODV: PM1.0: 20, PM2.5: 31, PM10: 37[0m
+[0;32mI (1697566) AODV: O3: 655.35 ppm, SO2: 163.94 ppm[0m
+[0;32mI (1697576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1697586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1702566) AODV: Node Number: 4[0m
+[0;32mI (1702566) AODV: Temperature: 30.9°C, Humidity: 63.4%[0m
+[0;32mI (1702566) AODV: PM1.0: 21, PM2.5: 32, PM10: 40[0m
+[0;32mI (1702566) AODV: O3: 655.35 ppm, SO2: 161.73 ppm[0m
+[0;32mI (1702576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1702586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1707566) AODV: Node Number: 4[0m
+[0;32mI (1707566) AODV: Temperature: 30.9°C, Humidity: 65.9%[0m
+[0;32mI (1707566) AODV: PM1.0: 22, PM2.5: 33, PM10: 36[0m
+[0;32mI (1707566) AODV: O3: 655.35 ppm, SO2: 159.78 ppm[0m
+[0;32mI (1707576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1707586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1712566) AODV: Node Number: 4[0m
+[0;32mI (1712566) AODV: Temperature: 31.0°C, Humidity: 67.8%[0m
+[0;32mI (1712566) AODV: PM1.0: 23, PM2.5: 35, PM10: 40[0m
+[0;32mI (1712566) AODV: O3: 655.35 ppm, SO2: 159.57 ppm[0m
+[0;32mI (1712576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1712586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1717566) AODV: Node Number: 4[0m
+[0;32mI (1717566) AODV: Temperature: 31.1°C, Humidity: 69.1%[0m
+[0;32mI (1717566) AODV: PM1.0: 23, PM2.5: 36, PM10: 42[0m
+[0;32mI (1717566) AODV: O3: 655.35 ppm, SO2: 159.57 ppm[0m
+[0;32mI (1717576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1717586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1722566) AODV: Node Number: 4[0m
+[0;32mI (1722566) AODV: Temperature: 31.1°C, Humidity: 68.9%[0m
+[0;32mI (1722566) AODV: PM1.0: 24, PM2.5: 35, PM10: 45[0m
+[0;32mI (1722566) AODV: O3: 655.35 ppm, SO2: 159.14 ppm[0m
+[0;32mI (1722576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1722586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1727566) AODV: Node Number: 4[0m
+[0;32mI (1727566) AODV: Temperature: 31.2°C, Humidity: 69.1%[0m
+[0;32mI (1727566) AODV: PM1.0: 22, PM2.5: 32, PM10: 41[0m
+[0;32mI (1727566) AODV: O3: 655.35 ppm, SO2: 159.78 ppm[0m
+[0;32mI (1727576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1727586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1732566) AODV: Node Number: 4[0m
+[0;32mI (1732566) AODV: Temperature: 31.2°C, Humidity: 69.4%[0m
+[0;32mI (1732566) AODV: PM1.0: 22, PM2.5: 34, PM10: 45[0m
+[0;32mI (1732566) AODV: O3: 655.35 ppm, SO2: 159.35 ppm[0m
+[0;32mI (1732576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1732586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1737566) AODV: Node Number: 4[0m
+[0;32mI (1737566) AODV: Temperature: 31.3°C, Humidity: 70.4%[0m
+[0;32mI (1737566) AODV: PM1.0: 23, PM2.5: 36, PM10: 48[0m
+[0;32mI (1737566) AODV: O3: 655.35 ppm, SO2: 159.35 ppm[0m
+[0;32mI (1737576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1737586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1742566) AODV: Node Number: 4[0m
+[0;32mI (1742566) AODV: Temperature: 31.3°C, Humidity: 69.7%[0m
+[0;32mI (1742566) AODV: PM1.0: 24, PM2.5: 35, PM10: 44[0m
+[0;32mI (1742566) AODV: O3: 655.35 ppm, SO2: 159.14 ppm[0m
+[0;32mI (1742576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1742586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1747566) AODV: Node Number: 4[0m
+[0;32mI (1747566) AODV: Temperature: 31.3°C, Humidity: 70.0%[0m
+[0;32mI (1747566) AODV: PM1.0: 22, PM2.5: 34, PM10: 41[0m
+[0;32mI (1747566) AODV: O3: 655.35 ppm, SO2: 157.86 ppm[0m
+[0;32mI (1747576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1747586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1839586) AODV: Node Number: 4[0m
+[0;32mI (1839586) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (1839586) AODV: PM1.0: 22, PM2.5: 32, PM10: 34[0m
+[0;32mI (1839586) AODV: O3: 655.35 ppm, SO2: 329.87 ppm[0m
+[0;32mI (1839596) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1839606) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1844586) AODV: Node Number: 4[0m
+[0;32mI (1844586) AODV: Temperature: 30.4°C, Humidity: 48.8%[0m
+[0;32mI (1844586) AODV: PM1.0: 22, PM2.5: 33, PM10: 35[0m
+[0;32mI (1844586) AODV: O3: 655.35 ppm, SO2: 152.52 ppm[0m
+[0;32mI (1844596) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1844606) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1849586) AODV: Node Number: 4[0m
+[0;32mI (1849586) AODV: Temperature: 30.4°C, Humidity: 48.2%[0m
+[0;32mI (1849586) AODV: PM1.0: 23, PM2.5: 33, PM10: 35[0m
+[0;32mI (1849586) AODV: O3: 655.35 ppm, SO2: 163.72 ppm[0m
+[0;32mI (1849596) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1849606) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1856716) AODV: Node Number: 4[0m
+[0;32mI (1856716) AODV: Temperature: 30.3°C, Humidity: 49.6%[0m
+[0;32mI (1856716) AODV: PM1.0: 24, PM2.5: 35, PM10: 47[0m
+[0;32mI (1856716) AODV: O3: 655.35 ppm, SO2: 182.14 ppm[0m
+[0;32mI (1856726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1856736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1861716) AODV: Node Number: 4[0m
+[0;32mI (1861716) AODV: Temperature: 30.3°C, Humidity: 48.8%[0m
+[0;32mI (1861716) AODV: PM1.0: 22, PM2.5: 31, PM10: 38[0m
+[0;32mI (1861716) AODV: O3: 655.35 ppm, SO2: 180.57 ppm[0m
+[0;32mI (1861726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1861736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1866716) AODV: Node Number: 4[0m
+[0;32mI (1866716) AODV: Temperature: 30.2°C, Humidity: 48.4%[0m
+[0;32mI (1866716) AODV: PM1.0: 21, PM2.5: 26, PM10: 30[0m
+[0;32mI (1866716) AODV: O3: 655.35 ppm, SO2: 183.73 ppm[0m
+[0;32mI (1866726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1866736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1871716) AODV: Node Number: 4[0m
+[0;32mI (1871716) AODV: Temperature: 30.1°C, Humidity: 49.7%[0m
+[0;32mI (1871716) AODV: PM1.0: 20, PM2.5: 25, PM10: 28[0m
+[0;32mI (1871716) AODV: O3: 655.35 ppm, SO2: 173.52 ppm[0m
+[0;32mI (1871726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1871736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1876716) AODV: Node Number: 4[0m
+[0;32mI (1876716) AODV: Temperature: 30.1°C, Humidity: 48.3%[0m
+[0;32mI (1876716) AODV: PM1.0: 21, PM2.5: 28, PM10: 29[0m
+[0;32mI (1876716) AODV: O3: 655.35 ppm, SO2: 178.51 ppm[0m
+[0;32mI (1876726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1876736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1881716) AODV: Node Number: 4[0m
+[0;32mI (1881716) AODV: Temperature: 30.0°C, Humidity: 47.6%[0m
+[0;32mI (1881716) AODV: PM1.0: 22, PM2.5: 33, PM10: 41[0m
+[0;32mI (1881716) AODV: O3: 655.35 ppm, SO2: 180.83 ppm[0m
+[0;32mI (1881726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1881736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1886716) AODV: Node Number: 4[0m
+[0;32mI (1886716) AODV: Temperature: 29.9°C, Humidity: 47.4%[0m
+[0;32mI (1886716) AODV: PM1.0: 23, PM2.5: 34, PM10: 43[0m
+[0;32mI (1886716) AODV: O3: 655.35 ppm, SO2: 181.35 ppm[0m
+[0;32mI (1886726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1886736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1891716) AODV: Node Number: 4[0m
+[0;32mI (1891716) AODV: Temperature: 29.9°C, Humidity: 47.5%[0m
+[0;32mI (1891716) AODV: PM1.0: 20, PM2.5: 30, PM10: 32[0m
+[0;32mI (1891716) AODV: O3: 655.35 ppm, SO2: 182.67 ppm[0m
+[0;32mI (1891726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1891736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1896716) AODV: Node Number: 4[0m
+[0;32mI (1896716) AODV: Temperature: 29.8°C, Humidity: 48.0%[0m
+[0;32mI (1896716) AODV: PM1.0: 21, PM2.5: 31, PM10: 32[0m
+[0;32mI (1896716) AODV: O3: 655.35 ppm, SO2: 183.46 ppm[0m
+[0;32mI (1896726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1896736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1901716) AODV: Node Number: 4[0m
+[0;32mI (1901716) AODV: Temperature: 29.7°C, Humidity: 47.8%[0m
+[0;32mI (1901716) AODV: PM1.0: 21, PM2.5: 31, PM10: 32[0m
+[0;32mI (1901716) AODV: O3: 655.35 ppm, SO2: 181.87 ppm[0m
+[0;32mI (1901726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1901736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1906716) AODV: Node Number: 4[0m
+[0;32mI (1906716) AODV: Temperature: 29.6°C, Humidity: 47.9%[0m
+[0;32mI (1906716) AODV: PM1.0: 23, PM2.5: 31, PM10: 33[0m
+[0;32mI (1906716) AODV: O3: 655.35 ppm, SO2: 180.57 ppm[0m
+[0;32mI (1906726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1906736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1911716) AODV: Node Number: 4[0m
+[0;32mI (1911716) AODV: Temperature: 29.6°C, Humidity: 48.8%[0m
+[0;32mI (1911716) AODV: PM1.0: 22, PM2.5: 30, PM10: 32[0m
+[0;32mI (1911716) AODV: O3: 655.35 ppm, SO2: 181.09 ppm[0m
+[0;32mI (1911726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1911736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1916716) AODV: Node Number: 4[0m
+[0;32mI (1916716) AODV: Temperature: 29.5°C, Humidity: 51.0%[0m
+[0;32mI (1916716) AODV: PM1.0: 21, PM2.5: 28, PM10: 29[0m
+[0;32mI (1916716) AODV: O3: 655.35 ppm, SO2: 174.50 ppm[0m
+[0;32mI (1916726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1916736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1921716) AODV: Node Number: 4[0m
+[0;32mI (1921716) AODV: Temperature: 29.5°C, Humidity: 51.5%[0m
+[0;32mI (1921716) AODV: PM1.0: 22, PM2.5: 30, PM10: 30[0m
+[0;32mI (1921716) AODV: O3: 655.35 ppm, SO2: 175.74 ppm[0m
+[0;32mI (1921726) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1921736) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1926726) AODV: Node Number: 4[0m
+[0;32mI (1926726) AODV: Temperature: 29.6°C, Humidity: 63.1%[0m
+[0;32mI (1926726) AODV: PM1.0: 22, PM2.5: 30, PM10: 32[0m
+[0;32mI (1926726) AODV: O3: 655.35 ppm, SO2: 173.28 ppm[0m
+[0;32mI (1926736) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1926746) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1931726) AODV: Node Number: 4[0m
+[0;32mI (1931726) AODV: Temperature: 29.6°C, Humidity: 57.4%[0m
+[0;32mI (1931726) AODV: PM1.0: 22, PM2.5: 30, PM10: 34[0m
+[0;32mI (1931726) AODV: O3: 655.35 ppm, SO2: 175.24 ppm[0m
+[0;32mI (1931736) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1931746) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1936726) AODV: Node Number: 4[0m
+[0;32mI (1936726) AODV: Temperature: 29.6°C, Humidity: 53.8%[0m
+[0;32mI (1936726) AODV: PM1.0: 22, PM2.5: 31, PM10: 36[0m
+[0;32mI (1936726) AODV: O3: 655.35 ppm, SO2: 178.51 ppm[0m
+[0;32mI (1936736) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1936746) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1941726) AODV: Node Number: 4[0m
+[0;32mI (1941726) AODV: Temperature: 29.6°C, Humidity: 53.8%[0m
+[0;32mI (1941726) AODV: PM1.0: 20, PM2.5: 29, PM10: 35[0m
+[0;32mI (1941726) AODV: O3: 655.35 ppm, SO2: 174.99 ppm[0m
+[0;32mI (1941736) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1941746) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (1999546) AODV: Node Number: 4[0m
+[0;32mI (1999546) AODV: Temperature: 29.6°C, Humidity: 48.5%[0m
+[0;32mI (1999546) AODV: PM1.0: 17, PM2.5: 23, PM10: 23[0m
+[0;32mI (1999546) AODV: O3: 655.35 ppm, SO2: 279.01 ppm[0m
+[0;32mI (1999556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (1999566) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2004546) AODV: Node Number: 4[0m
+[0;32mI (2004546) AODV: Temperature: 29.6°C, Humidity: 49.5%[0m
+[0;32mI (2004546) AODV: PM1.0: 19, PM2.5: 26, PM10: 30[0m
+[0;32mI (2004546) AODV: O3: 655.35 ppm, SO2: 254.23 ppm[0m
+[0;32mI (2004556) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2004566) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2016416) AODV: Node Number: 4[0m
+[0;32mI (2016416) AODV: Temperature: 29.7°C, Humidity: 49.5%[0m
+[0;32mI (2016416) AODV: PM1.0: 24, PM2.5: 34, PM10: 37[0m
+[0;32mI (2016416) AODV: O3: 655.35 ppm, SO2: 222.63 ppm[0m
+[0;32mI (2016426) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2016436) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2021416) AODV: Node Number: 4[0m
+[0;32mI (2021416) AODV: Temperature: 29.7°C, Humidity: 50.6%[0m
+[0;32mI (2021416) AODV: PM1.0: 23, PM2.5: 33, PM10: 35[0m
+[0;32mI (2021416) AODV: O3: 655.35 ppm, SO2: 223.36 ppm[0m
+[0;32mI (2021426) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2021436) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2026416) AODV: Node Number: 4[0m
+[0;32mI (2026416) AODV: Temperature: 29.7°C, Humidity: 48.6%[0m
+[0;32mI (2026416) AODV: PM1.0: 22, PM2.5: 32, PM10: 34[0m
+[0;32mI (2026416) AODV: O3: 655.35 ppm, SO2: 214.53 ppm[0m
+[0;32mI (2026426) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2026436) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2031416) AODV: Node Number: 4[0m
+[0;32mI (2031416) AODV: Temperature: 29.7°C, Humidity: 47.4%[0m
+[0;32mI (2031416) AODV: PM1.0: 22, PM2.5: 32, PM10: 35[0m
+[0;32mI (2031416) AODV: O3: 655.35 ppm, SO2: 173.77 ppm[0m
+[0;32mI (2031426) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2031436) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2036416) AODV: Node Number: 4[0m
+[0;32mI (2036416) AODV: Temperature: 29.7°C, Humidity: 46.9%[0m
+[0;32mI (2036416) AODV: PM1.0: 23, PM2.5: 30, PM10: 35[0m
+[0;32mI (2036416) AODV: O3: 655.35 ppm, SO2: 181.09 ppm[0m
+[0;32mI (2036426) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2036436) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2037896) AODV: Node Number: 4[0m
+[0;32mI (2037896) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2037896) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (2037896) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (2037906) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2037916) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2039556) AODV: Node Number: 4[0m
+[0;32mI (2039556) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2039556) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (2039556) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (2039566) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2039576) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2041566) AODV: Node Number: 4[0m
+[0;32mI (2041566) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2041566) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (2041566) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (2041576) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2041586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2046566) AODV: Node Number: 4[0m
+[0;32mI (2046566) AODV: Temperature: 29.8°C, Humidity: 47.6%[0m
+[0;32mI (2046566) AODV: PM1.0: 22, PM2.5: 31, PM10: 39[0m
+[0;32mI (2046566) AODV: O3: 655.35 ppm, SO2: 197.58 ppm[0m
+[0;32mI (2046576) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2046586) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2055456) AODV: Node Number: 4[0m
+[0;32mI (2055456) AODV: Temperature: 29.8°C, Humidity: 50.6%[0m
+[0;32mI (2055456) AODV: PM1.0: 4, PM2.5: 4, PM10: 4[0m
+[0;32mI (2055456) AODV: O3: 655.35 ppm, SO2: 129.13 ppm[0m
+[0;32mI (2055466) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2055476) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2063426) AODV: Node Number: 4[0m
+[0;32mI (2063426) AODV: Temperature: 29.8°C, Humidity: 50.1%[0m
+[0;32mI (2063426) AODV: PM1.0: 21, PM2.5: 31, PM10: 32[0m
+[0;32mI (2063426) AODV: O3: 655.35 ppm, SO2: 138.01 ppm[0m
+[0;32mI (2063436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2063446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2068426) AODV: Node Number: 4[0m
+[0;32mI (2068426) AODV: Temperature: 29.8°C, Humidity: 47.8%[0m
+[0;32mI (2068426) AODV: PM1.0: 21, PM2.5: 32, PM10: 34[0m
+[0;32mI (2068426) AODV: O3: 655.35 ppm, SO2: 146.87 ppm[0m
+[0;32mI (2068436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2068446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2073426) AODV: Node Number: 4[0m
+[0;32mI (2073426) AODV: Temperature: 29.8°C, Humidity: 47.3%[0m
+[0;32mI (2073426) AODV: PM1.0: 21, PM2.5: 32, PM10: 37[0m
+[0;32mI (2073426) AODV: O3: 655.35 ppm, SO2: 156.19 ppm[0m
+[0;32mI (2073436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2073446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2078426) AODV: Node Number: 4[0m
+[0;32mI (2078426) AODV: Temperature: 29.8°C, Humidity: 47.7%[0m
+[0;32mI (2078426) AODV: PM1.0: 17, PM2.5: 25, PM10: 30[0m
+[0;32mI (2078426) AODV: O3: 655.35 ppm, SO2: 167.58 ppm[0m
+[0;32mI (2078436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2078446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2083426) AODV: Node Number: 4[0m
+[0;32mI (2083426) AODV: Temperature: 29.8°C, Humidity: 50.5%[0m
+[0;32mI (2083426) AODV: PM1.0: 20, PM2.5: 24, PM10: 26[0m
+[0;32mI (2083426) AODV: O3: 655.35 ppm, SO2: 170.87 ppm[0m
+[0;32mI (2083436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2083446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2088426) AODV: Node Number: 4[0m
+[0;32mI (2088426) AODV: Temperature: 29.8°C, Humidity: 48.9%[0m
+[0;32mI (2088426) AODV: PM1.0: 22, PM2.5: 29, PM10: 32[0m
+[0;32mI (2088426) AODV: O3: 655.35 ppm, SO2: 172.31 ppm[0m
+[0;32mI (2088436) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2088446) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2093436) AODV: Node Number: 4[0m
+[0;32mI (2093436) AODV: Temperature: 29.8°C, Humidity: 51.1%[0m
+[0;32mI (2093436) AODV: PM1.0: 23, PM2.5: 32, PM10: 35[0m
+[0;32mI (2093436) AODV: O3: 655.35 ppm, SO2: 168.51 ppm[0m
+[0;32mI (2093446) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2093456) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2098436) AODV: Node Number: 4[0m
+[0;32mI (2098436) AODV: Temperature: 29.8°C, Humidity: 52.2%[0m
+[0;32mI (2098436) AODV: PM1.0: 22, PM2.5: 32, PM10: 37[0m
+[0;32mI (2098436) AODV: O3: 655.35 ppm, SO2: 170.39 ppm[0m
+[0;32mI (2098446) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2098456) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2103436) AODV: Node Number: 4[0m
+[0;32mI (2103436) AODV: Temperature: 29.9°C, Humidity: 49.5%[0m
+[0;32mI (2103436) AODV: PM1.0: 22, PM2.5: 33, PM10: 37[0m
+[0;32mI (2103436) AODV: O3: 655.35 ppm, SO2: 176.74 ppm[0m
+[0;32mI (2103446) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2103456) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2108436) AODV: Node Number: 4[0m
+[0;32mI (2108436) AODV: Temperature: 29.8°C, Humidity: 48.5%[0m
+[0;32mI (2108436) AODV: PM1.0: 22, PM2.5: 32, PM10: 37[0m
+[0;32mI (2108436) AODV: O3: 655.35 ppm, SO2: 178.51 ppm[0m
+[0;32mI (2108446) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2108456) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2112986) AODV: Node Number: 4[0m
+[0;32mI (2112986) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2112986) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (2112986) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (2112996) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2113006) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2117976) AODV: Node Number: 4[0m
+[0;32mI (2117976) AODV: Temperature: 29.9°C, Humidity: 48.7%[0m
+[0;32mI (2117976) AODV: PM1.0: 23, PM2.5: 35, PM10: 41[0m
+[0;32mI (2117976) AODV: O3: 655.35 ppm, SO2: 169.21 ppm[0m
+[0;32mI (2117986) AODV: CO: 1.00 ppm, NO2: 0.05 ppm[0m
+[0;32mI (2117996) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2306276) AODV: Node Number: 4[0m
+[0;32mI (2306276) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2306276) AODV: PM1.0: 19, PM2.5: 26, PM10: 36[0m
+[0;32mI (2306276) AODV: O3: 655.35 ppm, SO2: 32.36 ppm[0m
+[0;32mI (2306286) AODV: CO: 480.00 ppm, NO2: 2.75 ppm[0m
+[0;32mI (2306296) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2307036) AODV: Node Number: 4[0m
+[0;32mI (2307036) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2307036) AODV: PM1.0: 15, PM2.5: 25, PM10: 40[0m
+[0;32mI (2307036) AODV: O3: 12.34 ppm, SO2: 5.67 ppm[0m
+[0;32mI (2307046) AODV: CO: 0.90 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2307056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2312036) AODV: Node Number: 4[0m
+[0;32mI (2312036) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2312036) AODV: PM1.0: 17, PM2.5: 27, PM10: 34[0m
+[0;32mI (2312036) AODV: O3: 655.35 ppm, SO2: 32.46 ppm[0m
+[0;32mI (2312046) AODV: CO: 360.00 ppm, NO2: 2.70 ppm[0m
+[0;32mI (2312056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2317036) AODV: Node Number: 4[0m
+[0;32mI (2317036) AODV: Temperature: 25.5°C, Humidity: 60.5%[0m
+[0;32mI (2317036) AODV: PM1.0: 12, PM2.5: 23, PM10: 28[0m
+[0;32mI (2317036) AODV: O3: 655.35 ppm, SO2: 27.41 ppm[0m
+[0;32mI (2317046) AODV: CO: 352.00 ppm, NO2: 3.62 ppm[0m
+[0;32mI (2317056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2322036) AODV: Node Number: 4[0m
+[0;32mI (2322036) AODV: Temperature: 0.0°C, Humidity: 0.0%[0m
+[0;32mI (2322036) AODV: PM1.0: 13, PM2.5: 23, PM10: 27[0m
+[0;32mI (2322036) AODV: O3: 655.35 ppm, SO2: 24.83 ppm[0m
+[0;32mI (2322046) AODV: CO: 557.00 ppm, NO2: 4.34 ppm[0m
+[0;32mI (2322056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2327036) AODV: Node Number: 4[0m
+[0;32mI (2327036) AODV: Temperature: 30.0°C, Humidity: 57.4%[0m
+[0;32mI (2327036) AODV: PM1.0: 13, PM2.5: 24, PM10: 27[0m
+[0;32mI (2327036) AODV: O3: 655.35 ppm, SO2: 23.28 ppm[0m
+[0;32mI (2327046) AODV: CO: 297.00 ppm, NO2: 3.62 ppm[0m
+[0;32mI (2327056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2332036) AODV: Node Number: 4[0m
+[0;32mI (2332036) AODV: Temperature: 30.2°C, Humidity: 57.9%[0m
+[0;32mI (2332036) AODV: PM1.0: 15, PM2.5: 26, PM10: 29[0m
+[0;32mI (2332036) AODV: O3: 655.35 ppm, SO2: 22.58 ppm[0m
+[0;32mI (2332046) AODV: CO: 1.00 ppm, NO2: 3.95 ppm[0m
+[0;32mI (2332056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2337036) AODV: Node Number: 4[0m
+[0;32mI (2337036) AODV: Temperature: 30.3°C, Humidity: 57.4%[0m
+[0;32mI (2337036) AODV: PM1.0: 18, PM2.5: 31, PM10: 36[0m
+[0;32mI (2337036) AODV: O3: 655.35 ppm, SO2: 23.02 ppm[0m
+[0;32mI (2337046) AODV: CO: 151.64 ppm, NO2: 4.35 ppm[0m
+[0;32mI (2337056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2342036) AODV: Node Number: 4[0m
+[0;32mI (2342036) AODV: Temperature: 30.3°C, Humidity: 56.4%[0m
+[0;32mI (2342036) AODV: PM1.0: 18, PM2.5: 29, PM10: 34[0m
+[0;32mI (2342036) AODV: O3: 655.35 ppm, SO2: 23.73 ppm[0m
+[0;32mI (2342046) AODV: CO: 134.64 ppm, NO2: 4.02 ppm[0m
+[0;32mI (2342056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2347036) AODV: Node Number: 4[0m
+[0;32mI (2347036) AODV: Temperature: 30.4°C, Humidity: 55.2%[0m
+[0;32mI (2347036) AODV: PM1.0: 17, PM2.5: 28, PM10: 31[0m
+[0;32mI (2347036) AODV: O3: 655.35 ppm, SO2: 23.49 ppm[0m
+[0;32mI (2347046) AODV: CO: 292.00 ppm, NO2: 3.36 ppm[0m
+[0;32mI (2347056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2352036) AODV: Node Number: 4[0m
+[0;32mI (2352036) AODV: Temperature: 30.5°C, Humidity: 54.1%[0m
+[0;32mI (2352036) AODV: PM1.0: 16, PM2.5: 25, PM10: 27[0m
+[0;32mI (2352036) AODV: O3: 655.35 ppm, SO2: 23.38 ppm[0m
+[0;32mI (2352046) AODV: CO: 154.64 ppm, NO2: 3.46 ppm[0m
+[0;32mI (2352056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2357036) AODV: Node Number: 4[0m
+[0;32mI (2357036) AODV: Temperature: 30.5°C, Humidity: 53.2%[0m
+[0;32mI (2357036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2357036) AODV: O3: 655.35 ppm, SO2: 23.62 ppm[0m
+[0;32mI (2357046) AODV: CO: 404.00 ppm, NO2: 3.91 ppm[0m
+[0;32mI (2357056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2362036) AODV: Node Number: 4[0m
+[0;32mI (2362036) AODV: Temperature: 30.5°C, Humidity: 52.2%[0m
+[0;32mI (2362036) AODV: PM1.0: 18, PM2.5: 27, PM10: 27[0m
+[0;32mI (2362036) AODV: O3: 655.35 ppm, SO2: 23.57 ppm[0m
+[0;32mI (2362046) AODV: CO: 349.00 ppm, NO2: 3.99 ppm[0m
+[0;32mI (2362056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2367036) AODV: Node Number: 4[0m
+[0;32mI (2367036) AODV: Temperature: 30.6°C, Humidity: 51.3%[0m
+[0;32mI (2367036) AODV: PM1.0: 19, PM2.5: 27, PM10: 27[0m
+[0;32mI (2367036) AODV: O3: 655.35 ppm, SO2: 23.99 ppm[0m
+[0;32mI (2367046) AODV: CO: 101.00 ppm, NO2: 3.89 ppm[0m
+[0;32mI (2367056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2372036) AODV: Node Number: 4[0m
+[0;32mI (2372036) AODV: Temperature: 30.5°C, Humidity: 50.5%[0m
+[0;32mI (2372036) AODV: PM1.0: 19, PM2.5: 26, PM10: 28[0m
+[0;32mI (2372036) AODV: O3: 655.35 ppm, SO2: 24.23 ppm[0m
+[0;32mI (2372046) AODV: CO: 1.00 ppm, NO2: 3.28 ppm[0m
+[0;32mI (2372056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2377036) AODV: Node Number: 4[0m
+[0;32mI (2377036) AODV: Temperature: 30.5°C, Humidity: 49.8%[0m
+[0;32mI (2377036) AODV: PM1.0: 17, PM2.5: 24, PM10: 26[0m
+[0;32mI (2377036) AODV: O3: 655.35 ppm, SO2: 23.99 ppm[0m
+[0;32mI (2377046) AODV: CO: 360.00 ppm, NO2: 3.40 ppm[0m
+[0;32mI (2377056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2382036) AODV: Node Number: 4[0m
+[0;32mI (2382036) AODV: Temperature: 30.6°C, Humidity: 49.2%[0m
+[0;32mI (2382036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2382036) AODV: O3: 655.35 ppm, SO2: 34.88 ppm[0m
+[0;32mI (2382046) AODV: CO: 1.00 ppm, NO2: 1.23 ppm[0m
+[0;32mI (2382056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2387036) AODV: Node Number: 4[0m
+[0;32mI (2387036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2387036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2387036) AODV: O3: 655.35 ppm, SO2: 3.40 ppm[0m
+[0;32mI (2387046) AODV: CO: 66.84 ppm, NO2: 37.25 ppm[0m
+[0;32mI (2387056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2392036) AODV: Node Number: 4[0m
+[0;32mI (2392036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2392036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2392036) AODV: O3: 655.35 ppm, SO2: 3.38 ppm[0m
+[0;32mI (2392046) AODV: CO: 155.56 ppm, NO2: 36.63 ppm[0m
+[0;32mI (2392056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2397036) AODV: Node Number: 4[0m
+[0;32mI (2397036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2397036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2397036) AODV: O3: 655.35 ppm, SO2: 3.85 ppm[0m
+[0;32mI (2397046) AODV: CO: 179.92 ppm, NO2: 35.93 ppm[0m
+[0;32mI (2397056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2402036) AODV: Node Number: 4[0m
+[0;32mI (2402036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2402036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2402036) AODV: O3: 655.35 ppm, SO2: 3.90 ppm[0m
+[0;32mI (2402046) AODV: CO: 516.92 ppm, NO2: 35.79 ppm[0m
+[0;32mI (2402056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2407036) AODV: Node Number: 4[0m
+[0;32mI (2407036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2407036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2407036) AODV: O3: 655.35 ppm, SO2: 1.87 ppm[0m
+[0;32mI (2407046) AODV: CO: 397.56 ppm, NO2: 37.49 ppm[0m
+[0;32mI (2407056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2412036) AODV: Node Number: 4[0m
+[0;32mI (2412036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2412036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2412036) AODV: O3: 655.35 ppm, SO2: 1.80 ppm[0m
+[0;32mI (2412046) AODV: CO: 422.92 ppm, NO2: 37.02 ppm[0m
+[0;32mI (2412056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2417036) AODV: Node Number: 4[0m
+[0;32mI (2417036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2417036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2417036) AODV: O3: 655.35 ppm, SO2: 1.79 ppm[0m
+[0;32mI (2417046) AODV: CO: 99.20 ppm, NO2: 37.50 ppm[0m
+[0;32mI (2417056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2422036) AODV: Node Number: 4[0m
+[0;32mI (2422036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2422036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2422036) AODV: O3: 655.35 ppm, SO2: 2.50 ppm[0m
+[0;32mI (2422046) AODV: CO: 180.56 ppm, NO2: 37.02 ppm[0m
+[0;32mI (2422056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2427036) AODV: Node Number: 4[0m
+[0;32mI (2427036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2427036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2427036) AODV: O3: 655.35 ppm, SO2: 3.58 ppm[0m
+[0;32mI (2427046) AODV: CO: 57.20 ppm, NO2: 36.49 ppm[0m
+[0;32mI (2427056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2432036) AODV: Node Number: 4[0m
+[0;32mI (2432036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2432036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2432036) AODV: O3: 655.35 ppm, SO2: 3.69 ppm[0m
+[0;32mI (2432046) AODV: CO: 627.92 ppm, NO2: 36.11 ppm[0m
+[0;32mI (2432056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2437036) AODV: Node Number: 4[0m
+[0;32mI (2437036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2437036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2437036) AODV: O3: 655.35 ppm, SO2: 3.45 ppm[0m
+[0;32mI (2437046) AODV: CO: 594.56 ppm, NO2: 36.33 ppm[0m
+[0;32mI (2437056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2442036) AODV: Node Number: 4[0m
+[0;32mI (2442036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2442036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2442036) AODV: O3: 655.35 ppm, SO2: 3.09 ppm[0m
+[0;32mI (2442046) AODV: CO: 422.56 ppm, NO2: 36.63 ppm[0m
+[0;32mI (2442056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2447036) AODV: Node Number: 4[0m
+[0;32mI (2447036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2447036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2447036) AODV: O3: 655.35 ppm, SO2: 3.45 ppm[0m
+[0;32mI (2447046) AODV: CO: 557.56 ppm, NO2: 36.41 ppm[0m
+[0;32mI (2447056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2452036) AODV: Node Number: 4[0m
+[0;32mI (2452036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2452036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2452036) AODV: O3: 655.35 ppm, SO2: 3.09 ppm[0m
+[0;32mI (2452046) AODV: CO: 505.56 ppm, NO2: 36.68 ppm[0m
+[0;32mI (2452056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2457036) AODV: Node Number: 4[0m
+[0;32mI (2457036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2457036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2457036) AODV: O3: 655.35 ppm, SO2: 3.07 ppm[0m
+[0;32mI (2457046) AODV: CO: 316.56 ppm, NO2: 36.59 ppm[0m
+[0;32mI (2457056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2462036) AODV: Node Number: 4[0m
+[0;32mI (2462036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2462036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2462036) AODV: O3: 655.35 ppm, SO2: 2.00 ppm[0m
+[0;32mI (2462046) AODV: CO: 456.92 ppm, NO2: 36.49 ppm[0m
+[0;32mI (2462056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2467036) AODV: Node Number: 4[0m
+[0;32mI (2467036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2467036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2467036) AODV: O3: 655.35 ppm, SO2: 1.61 ppm[0m
+[0;32mI (2467046) AODV: CO: 443.20 ppm, NO2: 37.84 ppm[0m
+[0;32mI (2467056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2472036) AODV: Node Number: 4[0m
+[0;32mI (2472036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2472036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2472036) AODV: O3: 655.35 ppm, SO2: 1.53 ppm[0m
+[0;32mI (2472046) AODV: CO: 475.56 ppm, NO2: 37.52 ppm[0m
+[0;32mI (2472056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2477036) AODV: Node Number: 4[0m
+[0;32mI (2477036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2477036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2477036) AODV: O3: 655.35 ppm, SO2: 1.67 ppm[0m
+[0;32mI (2477046) AODV: CO: 146.56 ppm, NO2: 36.71 ppm[0m
+[0;32mI (2477056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2482036) AODV: Node Number: 4[0m
+[0;32mI (2482036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2482036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2482036) AODV: O3: 655.35 ppm, SO2: 1.52 ppm[0m
+[0;32mI (2482046) AODV: CO: 66.84 ppm, NO2: 38.50 ppm[0m
+[0;32mI (2482056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2487036) AODV: Node Number: 4[0m
+[0;32mI (2487036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2487036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2487036) AODV: O3: 655.35 ppm, SO2: 1.60 ppm[0m
+[0;32mI (2487046) AODV: CO: 427.56 ppm, NO2: 37.46 ppm[0m
+[0;32mI (2487056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2492036) AODV: Node Number: 4[0m
+[0;32mI (2492036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2492036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2492036) AODV: O3: 655.35 ppm, SO2: 3.48 ppm[0m
+[0;32mI (2492046) AODV: CO: 95.20 ppm, NO2: 36.55 ppm[0m
+[0;32mI (2492056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2497036) AODV: Node Number: 4[0m
+[0;32mI (2497036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2497036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2497036) AODV: O3: 655.35 ppm, SO2: 3.38 ppm[0m
+[0;32mI (2497046) AODV: CO: 489.56 ppm, NO2: 36.25 ppm[0m
+[0;32mI (2497056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2502036) AODV: Node Number: 4[0m
+[0;32mI (2502036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2502036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2502036) AODV: O3: 655.35 ppm, SO2: 3.54 ppm[0m
+[0;32mI (2502046) AODV: CO: 637.92 ppm, NO2: 35.56 ppm[0m
+[0;32mI (2502056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2507036) AODV: Node Number: 4[0m
+[0;32mI (2507036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2507036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2507036) AODV: O3: 655.35 ppm, SO2: 3.33 ppm[0m
+[0;32mI (2507046) AODV: CO: 80.56 ppm, NO2: 35.79 ppm[0m
+[0;32mI (2507056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2512036) AODV: Node Number: 4[0m
+[0;32mI (2512036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2512036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2512036) AODV: O3: 655.35 ppm, SO2: 3.51 ppm[0m
+[0;32mI (2512046) AODV: CO: 10.20 ppm, NO2: 36.40 ppm[0m
+[0;32mI (2512056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2517036) AODV: Node Number: 4[0m
+[0;32mI (2517036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2517036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2517036) AODV: O3: 655.35 ppm, SO2: 2.97 ppm[0m
+[0;32mI (2517046) AODV: CO: 270.20 ppm, NO2: 36.91 ppm[0m
+[0;32mI (2517056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2522046) AODV: Node Number: 4[0m
+[0;32mI (2522046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2522046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2522046) AODV: O3: 655.35 ppm, SO2: 3.40 ppm[0m
+[0;32mI (2522056) AODV: CO: 349.20 ppm, NO2: 37.00 ppm[0m
+[0;32mI (2522066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2527036) AODV: Node Number: 4[0m
+[0;32mI (2527036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2527036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2527036) AODV: O3: 655.35 ppm, SO2: 3.44 ppm[0m
+[0;32mI (2527046) AODV: CO: 348.20 ppm, NO2: 37.04 ppm[0m
+[0;32mI (2527056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2532036) AODV: Node Number: 4[0m
+[0;32mI (2532036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2532036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2532036) AODV: O3: 655.35 ppm, SO2: 3.19 ppm[0m
+[0;32mI (2532046) AODV: CO: 263.20 ppm, NO2: 36.82 ppm[0m
+[0;32mI (2532056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2537046) AODV: Node Number: 4[0m
+[0;32mI (2537046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2537046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2537046) AODV: O3: 655.35 ppm, SO2: 1.80 ppm[0m
+[0;32mI (2537056) AODV: CO: 599.56 ppm, NO2: 37.39 ppm[0m
+[0;32mI (2537066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2542036) AODV: Node Number: 4[0m
+[0;32mI (2542036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2542036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2542036) AODV: O3: 655.35 ppm, SO2: 1.74 ppm[0m
+[0;32mI (2542046) AODV: CO: 620.92 ppm, NO2: 36.56 ppm[0m
+[0;32mI (2542056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2547036) AODV: Node Number: 4[0m
+[0;32mI (2547036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2547036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2547036) AODV: O3: 655.35 ppm, SO2: 1.76 ppm[0m
+[0;32mI (2547046) AODV: CO: 99.20 ppm, NO2: 37.24 ppm[0m
+[0;32mI (2547056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2552046) AODV: Node Number: 4[0m
+[0;32mI (2552046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2552046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2552046) AODV: O3: 655.35 ppm, SO2: 1.66 ppm[0m
+[0;32mI (2552056) AODV: CO: 35.20 ppm, NO2: 37.54 ppm[0m
+[0;32mI (2552066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2557036) AODV: Node Number: 4[0m
+[0;32mI (2557036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2557036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2557036) AODV: O3: 655.35 ppm, SO2: 1.82 ppm[0m
+[0;32mI (2557046) AODV: CO: 579.92 ppm, NO2: 36.30 ppm[0m
+[0;32mI (2557056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2562036) AODV: Node Number: 4[0m
+[0;32mI (2562036) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2562036) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2562036) AODV: O3: 655.35 ppm, SO2: 1.66 ppm[0m
+[0;32mI (2562046) AODV: CO: 268.56 ppm, NO2: 36.62 ppm[0m
+[0;32mI (2562056) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2567046) AODV: Node Number: 4[0m
+[0;32mI (2567046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2567046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2567046) AODV: O3: 655.35 ppm, SO2: 1.79 ppm[0m
+[0;32mI (2567056) AODV: CO: 407.56 ppm, NO2: 36.70 ppm[0m
+[0;32mI (2567066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2572046) AODV: Node Number: 4[0m
+[0;32mI (2572046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2572046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2572046) AODV: O3: 655.35 ppm, SO2: 1.79 ppm[0m
+[0;32mI (2572056) AODV: CO: 229.56 ppm, NO2: 36.53 ppm[0m
+[0;32mI (2572066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2577046) AODV: Node Number: 4[0m
+[0;32mI (2577046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2577046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2577046) AODV: O3: 655.35 ppm, SO2: 3.09 ppm[0m
+[0;32mI (2577056) AODV: CO: 547.56 ppm, NO2: 36.48 ppm[0m
+[0;32mI (2577066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2582046) AODV: Node Number: 4[0m
+[0;32mI (2582046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2582046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2582046) AODV: O3: 655.35 ppm, SO2: 3.12 ppm[0m
+[0;32mI (2582056) AODV: CO: 455.56 ppm, NO2: 36.50 ppm[0m
+[0;32mI (2582066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2587046) AODV: Node Number: 4[0m
+[0;32mI (2587046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2587046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2587046) AODV: O3: 655.35 ppm, SO2: 3.83 ppm[0m
+[0;32mI (2587056) AODV: CO: 457.92 ppm, NO2: 35.13 ppm[0m
+[0;32mI (2587066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2592046) AODV: Node Number: 4[0m
+[0;32mI (2592046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2592046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2592046) AODV: O3: 655.35 ppm, SO2: 3.47 ppm[0m
+[0;32mI (2592056) AODV: CO: 652.56 ppm, NO2: 36.18 ppm[0m
+[0;32mI (2592066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2597046) AODV: Node Number: 4[0m
+[0;32mI (2597046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2597046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2597046) AODV: O3: 655.35 ppm, SO2: 3.36 ppm[0m
+[0;32mI (2597056) AODV: CO: 10.84 ppm, NO2: 37.34 ppm[0m
+[0;32mI (2597066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2602046) AODV: Node Number: 4[0m
+[0;32mI (2602046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2602046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2602046) AODV: O3: 655.35 ppm, SO2: 3.26 ppm[0m
+[0;32mI (2602056) AODV: CO: 552.56 ppm, NO2: 36.33 ppm[0m
+[0;32mI (2602066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2607046) AODV: Node Number: 4[0m
+[0;32mI (2607046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2607046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2607046) AODV: O3: 655.35 ppm, SO2: 3.25 ppm[0m
+[0;32mI (2607056) AODV: CO: 505.56 ppm, NO2: 36.32 ppm[0m
+[0;32mI (2607066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2612046) AODV: Node Number: 4[0m
+[0;32mI (2612046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2612046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2612046) AODV: O3: 655.35 ppm, SO2: 3.27 ppm[0m
+[0;32mI (2612056) AODV: CO: 267.56 ppm, NO2: 36.20 ppm[0m
+[0;32mI (2612066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2617046) AODV: Node Number: 4[0m
+[0;32mI (2617046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2617046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2617046) AODV: O3: 655.35 ppm, SO2: 3.52 ppm[0m
+[0;32mI (2617056) AODV: CO: 44.56 ppm, NO2: 35.61 ppm[0m
+[0;32mI (2617066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2622046) AODV: Node Number: 4[0m
+[0;32mI (2622046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2622046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2622046) AODV: O3: 655.35 ppm, SO2: 1.53 ppm[0m
+[0;32mI (2622056) AODV: CO: 172.20 ppm, NO2: 37.49 ppm[0m
+[0;32mI (2622066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2627046) AODV: Node Number: 4[0m
+[0;32mI (2627046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2627046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2627046) AODV: O3: 655.35 ppm, SO2: 1.61 ppm[0m
+[0;32mI (2627056) AODV: CO: 651.56 ppm, NO2: 37.41 ppm[0m
+[0;32mI (2627066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2632046) AODV: Node Number: 4[0m
+[0;32mI (2632046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2632046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2632046) AODV: O3: 655.35 ppm, SO2: 1.50 ppm[0m
+[0;32mI (2632056) AODV: CO: 220.56 ppm, NO2: 36.56 ppm[0m
+[0;32mI (2632066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2637046) AODV: Node Number: 4[0m
+[0;32mI (2637046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2637046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2637046) AODV: O3: 655.35 ppm, SO2: 2.48 ppm[0m
+[0;32mI (2637056) AODV: CO: 646.56 ppm, NO2: 36.66 ppm[0m
+[0;32mI (2637066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m
+
+Available after enqueue: 19 
+
+
+Available after dequeue: 20 
+
+[0;32mI (2642046) AODV: Node Number: 4[0m
+[0;32mI (2642046) AODV: Temperature: 30.5°C, Humidity: 49.1%[0m
+[0;32mI (2642046) AODV: PM1.0: 17, PM2.5: 26, PM10: 26[0m
+[0;32mI (2642046) AODV: O3: 655.35 ppm, SO2: 3.55 ppm[0m
+[0;32mI (2642056) AODV: CO: 358.20 ppm, NO2: 36.75 ppm[0m
+[0;32mI (2642066) AODV: Latitude: 95.250046, Longitude: 20.100004[0m

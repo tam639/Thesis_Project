@@ -1,0 +1,341 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc90h ( 48272) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bcb8 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001df14 vaddr=40080000 size=02104h (  8452) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b448h (111688) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003b470 vaddr=40082104 size=0b7fch ( 47100) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     NODE[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  c01686e9b...[0m
+[0;32mI (243) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008D900 len 00012700 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (323) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (342) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (392) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (392) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (402) AODV: Routing Table:[0m
+[0;32mI (402) AODV: ---------------------------------------------------[0m
+[0;32mI (412) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (422) AODV: ---------------------------------------------------[0m
+[0;32mI (422) AODV: ---------------------------------------------------[0m
+[0;32mI (432) AODV: Route table is empty![0m
+[0;32mI (432) AODV: Sending RREQ for 1[0m
+[0;32mI (442) AODV: rreq.src_add = 4; rreq.src_seq_num = 1[0m
+[0;32mI (442) AODV: rreq.broadcast_id = 1; rreq.dest_add = 1[0m
+[0;32mI (452) AODV: rreq.dest_seq_num = 1; rreq.hop_count = 0[0m
+[0;32mI (462) main_task: Returned from app_main()[0m
+[0;32mI (9642) AODV: data 1 = 3[0m
+[0;32mI (9642) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (9642) AODV: Route added: 3 -> 3 (seq: 0, hops: 1)[0m
+[0;32mI (9642) AODV: Routing Table:[0m
+[0;32mI (9642) AODV: ---------------------------------------------------[0m
+[0;32mI (9652) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (9652) AODV: ---------------------------------------------------[0m
+[0;32mI (9662) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (9672) AODV: ---------------------------------------------------[0m
+[0;32mI (9672) AODV: Sending RREQ for 1[0m
+[0;32mI (9682) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (9682) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (9692) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (10422) AODV: Read 5 bytes: 0101030900[0m
+[0;32mI (10422) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (10422) AODV: data2 = 3; data3 = 9[0m
+[0;32mI (10422) AODV: data4 = 0; data5 = 45[0m
+[0;32mI (10422) AODV: Handling RREP to 3 from 1[0m
+[0;32mI (10432) AODV: Route added: 1 -> 1 (seq: 9, hops: 1)[0m
+[0;32mI (10432) AODV: Routing Table:[0m
+[0;32mI (10442) AODV: ---------------------------------------------------[0m
+[0;32mI (10442) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (10452) AODV: ---------------------------------------------------[0m
+[0;32mI (10462) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (10462) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (10472) AODV: ---------------------------------------------------[0m
+[0;32mI (10482) AODV: Sending RREP to 3[0m
+[0;32mI (10482) AODV: next hop = 3[0m
+[0;32mI (10482) AODV: rrep.src_add = 1; rrep.dest_add = 3[0m
+[0;32mI (10492) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 1[0m
+[0;32mI (141032) AODV: data 1 = 3[0m
+[0;32mI (141032) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (141032) AODV: Routing Table:[0m
+[0;32mI (141032) AODV: ---------------------------------------------------[0m
+[0;32mI (141032) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (141042) AODV: ---------------------------------------------------[0m
+[0;32mI (141052) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (141052) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (141062) AODV: ---------------------------------------------------[0m
+[0;32mI (141072) AODV: Sending RREQ for 1[0m
+[0;32mI (141072) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (141082) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (141082) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (141812) AODV: Read 5 bytes: 0101030900[0m
+[0;32mI (141812) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (141812) AODV: data2 = 3; data3 = 9[0m
+[0;32mI (141812) AODV: data4 = 0; data5 = 45[0m
+[0;32mI (141812) AODV: Handling RREP to 3 from 1[0m
+[0;32mI (141822) AODV: Routing Table:[0m
+[0;32mI (141822) AODV: ---------------------------------------------------[0m
+[0;32mI (141832) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (141832) AODV: ---------------------------------------------------[0m
+[0;32mI (141842) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (141852) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (141852) AODV: ---------------------------------------------------[0m
+[0;32mI (141862) AODV: Sending RREP to 3[0m
+[0;32mI (141862) AODV: next hop = 3[0m
+[0;32mI (141872) AODV: rrep.src_add = 1; rrep.dest_add = 3[0m
+[0;32mI (141872) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (290692) AODV: data 1 = 3[0m
+[0;32mI (290692) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (290692) AODV: Routing Table:[0m
+[0;32mI (290692) AODV: ---------------------------------------------------[0m
+[0;32mI (290692) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (290702) AODV: ---------------------------------------------------[0m
+[0;32mI (290712) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (290712) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (290722) AODV: ---------------------------------------------------[0m
+[0;32mI (290732) AODV: Sending RREQ for 1[0m
+[0;32mI (290732) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (290742) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (290742) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (291472) AODV: Read 5 bytes: 0101030900[0m
+[0;32mI (291472) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (291472) AODV: data2 = 3; data3 = 9[0m
+[0;32mI (291472) AODV: data4 = 0; data5 = 45[0m
+[0;32mI (291472) AODV: Handling RREP to 3 from 1[0m
+[0;32mI (291482) AODV: Routing Table:[0m
+[0;32mI (291482) AODV: ---------------------------------------------------[0m
+[0;32mI (291492) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (291492) AODV: ---------------------------------------------------[0m
+[0;32mI (291502) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (291512) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (291512) AODV: ---------------------------------------------------[0m
+[0;32mI (291522) AODV: Sending RREP to 3[0m
+[0;32mI (291522) AODV: next hop = 3[0m
+[0;32mI (291532) AODV: rrep.src_add = 1; rrep.dest_add = 3[0m
+[0;32mI (291532) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (297532) AODV: data 1 = 3[0m
+[0;32mI (297532) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (297532) AODV: Routing Table:[0m
+[0;32mI (297532) AODV: ---------------------------------------------------[0m
+[0;32mI (297532) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (297542) AODV: ---------------------------------------------------[0m
+[0;32mI (297552) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (297552) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (297562) AODV: ---------------------------------------------------[0m
+[0;32mI (297572) AODV: Sending RREQ for 1[0m
+[0;32mI (297572) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (297582) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (297582) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (298312) AODV: Read 5 bytes: 0101030900[0m
+[0;32mI (298312) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (298312) AODV: data2 = 3; data3 = 9[0m
+[0;32mI (298312) AODV: data4 = 0; data5 = 45[0m
+[0;32mI (298312) AODV: Handling RREP to 3 from 1[0m
+[0;32mI (298322) AODV: Routing Table:[0m
+[0;32mI (298322) AODV: ---------------------------------------------------[0m
+[0;32mI (298332) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (298332) AODV: ---------------------------------------------------[0m
+[0;32mI (298342) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (298352) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (298352) AODV: ---------------------------------------------------[0m
+[0;32mI (298362) AODV: Sending RREP to 3[0m
+[0;32mI (298362) AODV: next hop = 3[0m
+[0;32mI (298372) AODV: rrep.src_add = 1; rrep.dest_add = 3[0m
+[0;32mI (298372) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (356372) AODV: data 1 = 3[0m
+[0;32mI (356372) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (356372) AODV: Routing Table:[0m
+[0;32mI (356372) AODV: ---------------------------------------------------[0m
+[0;32mI (356372) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (356382) AODV: ---------------------------------------------------[0m
+[0;32mI (356392) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (356392) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (356402) AODV: ---------------------------------------------------[0m
+[0;32mI (356412) AODV: Sending RREQ for 1[0m
+[0;32mI (356412) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (356422) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (356422) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (369272) AODV: Read 7 bytes: 03030000010000[0m
+[0;32mI (369272) AODV: data0 = 3; data1 = 3[0m
+[0;32mI (369272) AODV: data2 = 0; data3 = 0[0m
+[0;32mI (369272) AODV: data4 = 1; data5 = 0[0m
+[0;32mI (369272) AODV: Error length is not equal to 5.[0m
+[0;32mI (379022) AODV: data 1 = 3[0m
+[0;32mI (379022) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (379022) AODV: Routing Table:[0m
+[0;32mI (379022) AODV: ---------------------------------------------------[0m
+[0;32mI (379022) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (379032) AODV: ---------------------------------------------------[0m
+[0;32mI (379042) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (379042) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (379052) AODV: ---------------------------------------------------[0m
+[0;32mI (379062) AODV: Sending RREQ for 1[0m
+[0;32mI (379062) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (379072) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (379072) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+[0;32mI (379802) AODV: Read 5 bytes: 0101030900[0m
+[0;32mI (379802) AODV: data0 = 1; data1 = 1[0m
+[0;32mI (379802) AODV: data2 = 3; data3 = 9[0m
+[0;32mI (379802) AODV: data4 = 0; data5 = 0[0m
+[0;32mI (379802) AODV: Handling RREP to 3 from 1[0m
+[0;32mI (379812) AODV: Routing Table:[0m
+[0;32mI (379812) AODV: ---------------------------------------------------[0m
+[0;32mI (379822) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (379822) AODV: ---------------------------------------------------[0m
+[0;32mI (379832) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (379842) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (379842) AODV: ---------------------------------------------------[0m
+[0;32mI (379852) AODV: Sending RREP to 3[0m
+[0;32mI (379852) AODV: next hop = 3[0m
+[0;32mI (379862) AODV: rrep.src_add = 1; rrep.dest_add = 3[0m
+[0;32mI (379862) AODV: rrep.dest_seq_num = 9; rrep.hop_count = 0[0m
+[0;32mI (392222) AODV: data 1 = 3[0m
+[0;32mI (392222) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (392222) AODV: Routing Table:[0m
+[0;32mI (392222) AODV: ---------------------------------------------------[0m
+[0;32mI (392222) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (392232) AODV: ---------------------------------------------------[0m
+[0;32mI (392242) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (392242) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (392252) AODV: ---------------------------------------------------[0m
+[0;32mI (392262) AODV: Sending RREQ for 1[0m
+[0;32mI (392262) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (392272) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (392272) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+����������������������������������������������������������������ytes: 03030000010000[0m
+[0;32mI (437382) AODV: data0 = 3; data1 = 3[0m
+[0;32mI (437382) AODV: data2 = 0; data3 = 0[0m
+[0;32mI (437382) AODV: data4 = 1; data5 = 0[0m
+[0;32mI (437382) AODV: Error length is not equal to 5.[0m
+[0;32mI (451442) AODV: data 1 = 3[0m
+[0;32mI (451442) AODV: Handling RREQ from 3 to 1[0m
+[0;32mI (451442) AODV: Routing Table:[0m
+[0;32mI (451442) AODV: ---------------------------------------------------[0m
+[0;32mI (451442) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (451452) AODV: ---------------------------------------------------[0m
+[0;32mI (451462) AODV:         3 |        3 |         0 |         1[0m
+[0;32mI (451462) AODV:         1 |        1 |         9 |         1[0m
+[0;32mI (451472) AODV: ---------------------------------------------------[0m
+[0;32mI (451482) AODV: Sending RREQ for 1[0m
+[0;32mI (451482) AODV: rreq.src_add = 3; rreq.src_seq_num = 0[0m
+[0;32mI (451492) AODV: rreq.broadcast_id = 0; rreq.dest_add = 1[0m
+[0;32mI (451492) AODV: rreq.dest_seq_num = 0; rreq.hop_count = 1[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc90h ( 48272) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bcb8 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001df14 vaddr=40080000 size=02104h (  8452) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b448h (111688) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003b470 vaddr=40082104 size=0b7fch ( 47100) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     NODE[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  c01686e9b...[0m
+[0;32mI (243) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008D900 len 00012700 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (323) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (342) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (392) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (392) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (402) AODV: Routing Table:[0m
+[0;32mI (402) AODV: ---------------------------------------------------[0m
+[0;32mI (412) AODV: Dest Addr | Next Hop | Dest Seq | Hop Count[0m
+[0;32mI (422) AODV: ---------------------------------------------------[0m
+[0;32mI (422) AODV: ---------------------------------------------------[0m
+[0;32mI (432) AODV: Route table is empty![0m
+[0;32mI (432) AODV: Sending RREQ for 1[0m
+[0;32mI (442) AODV: rreq.src_add = 4; rreq.src_seq_num = 1[0m
+[0;32mI (442) AODV: rreq.broadcast_id = 1; rreq.dest_add = 1[0m
+[0;32mI (452) AODV: rreq.dest_seq_num = 1; rreq.hop_count = 0[0m
+[0;32mI (462) main_task: Returned from app_main()[0m

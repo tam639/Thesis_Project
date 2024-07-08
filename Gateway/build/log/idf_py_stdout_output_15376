@@ -1,0 +1,180 @@
+�������m[0m
+[0;32mI (36) boot�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 04:25:36[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0f4h ( 45300) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b11c vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d378 vaddr=40080000 size=02ca0h ( 11424) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16e84h ( 93828) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036eac vaddr=40082ca0 size=0aac0h ( 43712) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: Project name:     main[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Jun 15 2024 04:24:58[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  76fe437bf...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D760 len 000128A0 (74 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Sending message: Hiiiii!
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) main_task: Returned from app_main()[0m
+[0;32mI (355) AODV: Error RREQ![0m
+[0;32mI (3375) AODV: Error RREQ![0m
+[0;32mI (6395) AODV: Error RREQ![0m
+[0;32mI (9415) AODV: Error RREQ![0m
+[0;32mI (12435) AODV: Error RREQ![0m
+[0;32mI (15455) AODV: Error RREQ![0m
+[0;32mI (18475) AODV: Error RREQ![0m
+[0;32mI (21495) AODV: Error RREQ![0m
+[0;32mI (24515) AODV: Error RREQ![0m
+[0;32mI (27535) AODV: Error RREQ![0m
+[0;32mI (30555) AODV: Error RREQ![0m
+[0;32mI (33575) AODV: Error RREQ![0m
+[0;32mI (36595) AODV: Error RREQ![0m
+[0;32mI (39615) AODV: Error RREQ![0m
+[0;32mI (42635) AODV: Error RREQ![0m
+[0;32mI (45655) AODV: Error RREQ![0m
+[0;32mI (48675) AODV: Error RREQ![0m
+[0;32mI (51695) AODV: Error RREQ![0m
+[0;32mI (54715) AODV: Error RREQ![0m
+[0;32mI (57735) AODV: Error RREQ![0m
+[0;32mI (60755) AODV: Error RREQ![0m
+[0;32mI (63775) AODV: Error RREQ![0m
+[0;32mI (66795) AODV: Error RREQ![0m
+[0;32mI (69815) AODV: Error RREQ![0m
+[0;32mI (72835) AODV: Error RREQ![0m
+[0;32mI (75855) AODV: Error RREQ![0m
+[0;32mI (78875) AODV: Error RREQ![0m
+[0;32mI (81895) AODV: Error RREQ![0m
+[0;32mI (84915) AODV: Error RREQ![0m
+[0;32mI (87935) AODV: Error RREQ![0m
+[0;32mI (90955) AODV: Error RREQ![0m
+[0;32mI (93975) AODV: Error RREQ![0m
+[0;32mI (96995) AODV: Error RREQ![0m
+[0;32mI (100015) AODV: Error RREQ![0m
+[0;32mI (103035) AODV: Error RREQ![0m
+[0;32mI (106055) AODV: Error RREQ![0m
+[0;32mI (109075) AODV: Error RREQ![0m
+[0;32mI (112095) AODV: Error RREQ![0m
+[0;32mI (115115) AODV: Error RREQ![0m
+[0;32mI (118135) AODV: Error RREQ![0m
+[0;32mI (121155) AODV: Error RREQ![0m
+[0;32mI (124175) AODV: Error RREQ![0m
+[0;32mI (127195) AODV: Error RREQ![0m
+[0;32mI (130215) AODV: Error RREQ![0m
+[0;32mI (133235) AODV: Error RREQ![0m
+[0;32mI (136255) AODV: Error RREQ![0m
+[0;32mI (139275) AODV: Error RREQ![0m
+[0;32mI (142295) AODV: Error RREQ![0m
+[0;32mI (145315) AODV: Error RREQ![0m
+[0;32mI (148335) AODV: Error RREQ![0m
+[0;32mI (151355) AODV: Error RREQ![0m
+[0;32mI (154375) AODV: Error RREQ![0m
+[0;32mI (157395) AODV: Error RREQ![0m
+[0;32mI (160415) AODV: Error RREQ![0m
+[0;32mI (163435) AODV: Error RREQ![0m
+[0;32mI (166455) AODV: Error RREQ![0m
+[0;32mI (169475) AODV: Error RREQ![0m
+[0;32mI (172495) AODV: Error RREQ![0m
+[0;32mI (175515) AODV: Error RREQ![0m
+[0;32mI (178535) AODV: Error RREQ![0m
+[0;32mI (181555) AODV: Error RREQ![0m
+[0;32mI (184575) AODV: Error RREQ![0m
+[0;32mI (187595) AODV: Error RREQ![0m
+[0;32mI (190615) AODV: Error RREQ![0m
+[0;32mI (193635) AODV: Error RREQ![0m
+[0;32mI (196655) AODV: Error RREQ![0m
+[0;32mI (199675) AODV: Error RREQ![0m
+[0;32mI (202695) AODV: Error RREQ![0m
+[0;32mI (205715) AODV: Error RREQ![0m
+[0;32mI (208735) AODV: Error RREQ![0m
+[0;32mI (211755) AODV: Error RREQ![0m
+[0;32mI (214775) AODV: Error RREQ![0m
+[0;32mI (217795) AODV: Error RREQ![0m
+[0;32mI (220815) AODV: Error RREQ![0m
+[0;32mI (223835) AODV: Error RREQ![0m
+[0;32mI (226855) AODV: Error RREQ![0m
+[0;32mI (229875) AODV: Error RREQ![0m
+[0;32mI (232895) AODV: Error RREQ![0m
+[0;32mI (235915) AODV: Error RREQ![0m
+[0;32mI (238935) AODV: Error RREQ![0m
+[0;32mI (241955) AODV: Error RREQ![0m
+[0;32mI (244975) AODV: Error RREQ![0m
+[0;32mI (247995) AODV: Error RREQ![0m
+[0;32mI (251015) AODV: Error RREQ![0m
+[0;32mI (254035) AODV: Error RREQ![0m
+[0;32mI (257055) AODV: Error RREQ![0m
+[0;32mI (260075) AODV: Error RREQ![0m
+[0;32mI (263095) AODV: Error RREQ![0m
+[0;32mI (266115) AODV: Error RREQ![0m
+[0;32mI (269135) AODV: Error RREQ![0m
+[0;32mI (272155) AODV: Error RREQ![0m
+[0;32mI (275175) AODV: Error RREQ![0m
+[0;32mI (278195) AODV: Error RREQ![0m
+[0;32mI (281215) AODV: Error RREQ![0m
+[0;32mI (284235) AODV: Error RREQ![0m
+[0;32mI (287255) AODV: Error RREQ![0m
+[0;32mI (290275) AODV: Error RREQ![0m
+[0;32mI (293295) AODV: Error RREQ![0m
+[0;32mI (296315) AODV: Error RREQ![0m
+[0;32mI (299335) AODV: Error RREQ![0m
+[0;32mI (302355) AODV: Error RREQ![0m
+[0;32mI (305375) AODV: Error RREQ![0m
+[0;32mI (308395) AODV: Error RREQ![0m
+[0;32mI (311415) AODV: Error RREQ![0m
+[0;32mI (314435) AODV: Error RREQ![0m
+[0;32mI (317455) AODV: Error RREQ![0m
+[0;32mI (320475) AODV: Error RREQ![0m
+[0;32mI (323495) AODV: Error RREQ![0m
+[0;32mI (326515) AODV: Error RREQ![0m
+[0;32mI (329535) AODV: Error RREQ![0m
+[0;32mI (332555) AODV: Error RREQ![0m
+[0;32mI (335575) AODV: Error RREQ![0m
+[0;32mI (338595) AODV: Error RREQ![0m
+[0;32mI (341615) AODV: Error RREQ![0m
+[0;32mI (344635) AODV: Error RREQ![0m
+[0;32mI (347655) AODV: Error RREQ![0m
+[0;32mI (350675) AODV: Error RREQ![0m
+[0;32mI (353695) AODV: Error RREQ![0m
+[0;32mI (356715) AODV: Error RREQ![0m

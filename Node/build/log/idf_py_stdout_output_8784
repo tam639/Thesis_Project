@@ -1,0 +1,279 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 28 2024 03:55:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d5d8h ( 54744) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001d600 vaddr=3ffb0000 size=02654h (  9812) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fc5c vaddr=40080000 size=003bch (   956) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=2197ch (137596) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=000419a4 vaddr=400803bc size=0e6e0h ( 59104) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (216) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (236) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (236) cpu_start: Application information:[0m
+[0;32mI (239) cpu_start: Project name:     NODE[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (248) cpu_start: Compile time:     Jun 28 2024 03:55:09[0m
+[0;32mI (254) cpu_start: ELF file SHA256:  e97c03f3d...[0m
+[0;32mI (260) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (265) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (270) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (275) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (280) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (287) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFB3580 len 0002CA80 (178 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (312) heap_init: At 4008EA9C len 00011564 (69 KiB): IRAM[0m
+[0;32mI (319) spi_flash: detected chip: generic[0m
+[0;32mI (322) spi_flash: flash io: dio[0m
+[0;33mW (326) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (340) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (348) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (358) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Sending message: Hiiiii!
+[0;32mI (388) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (388) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (408) SSD1306: INTERFACE is i2c[0m
+[0;32mI (408) SSD1306: CONFIG_SDA_GPIO=21[0m
+[0;32mI (408) SSD1306: CONFIG_SCL_GPIO=22[0m
+[0;32mI (418) SSD1306: CONFIG_RESET_GPIO=33[0m
+[0;32mI (418) SSD1306: New i2c driver is used[0m
+[0;32mI (418) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (428) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (438) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (448) main_task: Returned from app_main()[0m
+[0;32mI (498) SSD1306: Panel is 128x64[0m
+[0;32mI (498) SSD1306: OLED configured successfully[0m
+[0;32mI (2398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (4398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (5398) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (5528) DHT: Sensor Timeout
+[0m
+[0;32mI (6398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (8398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (10398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (10398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (12398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (12688) DHT: Sensor Timeout
+[0m
+[0;32mI (14398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (15398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (16398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (18398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (20398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (20398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (22398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (24398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (25398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (26398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (28398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (30398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (30398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (32398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (34398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (35398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (36398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (38398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (39218) DHT: Sensor Timeout
+[0m
+[0;32mI (40398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (40398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (42398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (44398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (45398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (46398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (48398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (50398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (50398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (51478) DHT: CheckSum error
+[0m
+[0;32mI (52398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (54398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (55398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (56398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (58398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (60398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (60398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (62398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (64398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (65398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (66398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (68398) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (70398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (70408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (72408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (74408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (75398) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (76408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (78008) DHT: Sensor Timeout
+[0m
+[0;32mI (78408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (80408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (80408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (82408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (84408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (85408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (86408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (88408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (90408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (90408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (92408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (94408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (95408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (96408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (98408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (100408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (100408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (102408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (104408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (105408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (106408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (108408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (110408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (110408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (112408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (114408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (115408) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (115768) DHT: Sensor Timeout
+[0m
+[0;32mI (116408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (118408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (120408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (120408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (122408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (124408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (125408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (126408) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (128428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (130058) DHT: Sensor Timeout
+[0m
+[0;32mI (130408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (130428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (132428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (134428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (135408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (136428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (137228) DHT: Sensor Timeout
+[0m
+[0;32mI (138428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (140408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (140428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (142428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (144428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (145408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (146428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (148428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (149478) DHT: CheckSum error
+[0m
+[0;32mI (150408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (150428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (152428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (154428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (155408) Transmit UART: Encoded and sent data over UART.[0m
+[0;31mE (155608) DHT: Sensor Timeout
+[0m
+[0;32mI (156428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (158428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (160408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (160428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (162428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (164428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (165408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (166428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (168428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (170408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (170428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (172428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (174428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (175408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (176428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (178428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (180408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (180428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (182428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (184428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (185408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (186428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (188428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (190408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (190428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (192428) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (193358) DHT: Sensor Timeout
+[0m
+[0;32mI (194448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (195408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (196448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (198448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (199478) DHT: CheckSum error
+[0m
+[0;32mI (200408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (200448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (202448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (204448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (205408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (206448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (208448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (210408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (210448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;31mE (211728) DHT: Sensor Timeout
+[0m
+[0;32mI (212448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (214448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (215408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (216448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (218448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (220408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (220448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (222448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (224448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (225408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (226448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (228448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (230408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (230448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (232448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (234448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (235408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (236448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (238448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (240408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (240448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (242448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (244448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (245408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (246448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (248448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (250408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (250448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (252448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (254448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
+[0;32mI (255408) Transmit UART: Encoded and sent data over UART.[0m
+[0;32mI (256448) uart_example: Sent Temperature: 25.50, Humidity: 60.20[0m
